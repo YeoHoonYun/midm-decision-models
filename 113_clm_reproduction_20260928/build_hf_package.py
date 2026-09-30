@@ -49,6 +49,7 @@ def main():
     ap.add_argument("--baseline-name", default=None)
     ap.add_argument("--train-suites", nargs="+", required=True)
     ap.add_argument("--epochs", type=int, default=1)
+    ap.add_argument("--repo-id", default=None, help="Hugging Face repo id shown in the model card usage example")
     ap.add_argument("--out-root", default=os.path.join(HERE, "..", "..", "research_topics",
                     "clm_decision_heads_novelty_20260928", "huggingface"))
     a = ap.parse_args()
@@ -101,7 +102,7 @@ line.
 ## Use
 ```python
 from midm import MiDM          # midm.py ships in this repo
-m = MiDM.from_pretrained("<this repo id or local folder>")   # 4-bit NF4 base by default (as in training)
+m = MiDM.from_pretrained("{a.repo_id or '<this repo id or local folder>'}")   # 4-bit NF4 base by default (as in training)
 m.predict(state={{"order_total": 1240, "po_total": 1420}},
           questions={{"action": {{"type": "choice", "instructions": "What should happen to this invoice?",
                                   "criteria": {{"approve": "Approve and pay.", "hold": "Hold for review.",
