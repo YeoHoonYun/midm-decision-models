@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Load a hf/<name> release with ONLY its own midm.py, then (1) run the public predict() API on a demo
+"""Load a MiDM release folder with ONLY its own midm.py, then (1) run the public predict() API on a demo
 request and (2) re-score a dev suite through the package path. It should match the training-repo
 eval of the same checkpoint (small numeric drift allowed).
 
-    python verify_hf_package.py hf/MiDM-4B-q35-e1-bx --suite td_holdout --expect 0.8333
+    python verify_hf_package.py ../../research_topics/clm_decision_heads_novelty_20260928/huggingface/MiDM-4B-q35-e1-bx --suite td_holdout --expect 0.8333
 """
 import argparse
 import importlib.util

@@ -6,7 +6,7 @@
         --baseline results/pointer/FINAL_B_qwen35-4b-1ep.json --baseline-name MiDM-4B-q35-e1 \
         --train-suites td_train kev_train breadth_v1 pp6_new
 
-Output: hf/<name>/ with adapter_config.json, adapter_model.safetensors, pointer_head.safetensors,
+Output: <out-root>/<name>/ (default: the research folder's huggingface/) with adapter_config.json, adapter_model.safetensors, pointer_head.safetensors,
 midm_config.json, midm.py, requirements.txt, README.md (model card).
 """
 import argparse
@@ -49,8 +49,10 @@ def main():
     ap.add_argument("--baseline-name", default=None)
     ap.add_argument("--train-suites", nargs="+", required=True)
     ap.add_argument("--epochs", type=int, default=1)
+    ap.add_argument("--out-root", default=os.path.join(HERE, "..", "..", "research_topics",
+                    "clm_decision_heads_novelty_20260928", "huggingface"))
     a = ap.parse_args()
-    out = os.path.join(HERE, "hf", a.name)
+    out = os.path.abspath(os.path.join(a.out_root, a.name))
     os.makedirs(out, exist_ok=True)
     for f in ("adapter_config.json", "adapter_model.safetensors"):
         shutil.copy2(os.path.join(HERE, a.adapter, f), os.path.join(out, f))
