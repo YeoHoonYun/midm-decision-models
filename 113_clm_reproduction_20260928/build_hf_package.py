@@ -31,6 +31,26 @@ DATA = {
 }
 
 
+# Reported numbers of other systems (unpaired; from their cards/boards, see docs/research). None = not reported.
+# columns: td_test, kevT_dev, kevT_test, jb_public
+REFERENCE = [
+    ("TypeSafe Jev (commercial, zero-shot)", 0.727, 0.857, None, 0.866),
+    ("CLM-8B (frozen Qwen3-8B + heads; typed-dec. from CLM PR #2, JevBench board)", 0.685, None, None, 0.407),
+    ("CLM recipe re-trained by us (frozen Qwen3-8B, z-score, 3 seeds)", 0.766, None, None, None),
+    ("CLM-style frozen Qwen3-4B + heads (ours, same data as MiDM)", 0.759, 0.366, 0.411, 0.411),
+    ("Kev-9B (reported)", None, 0.822, 0.852, None),
+]
+REF_SUITES = ["td_test", "kevT_dev", "kevT_test", "jb_public"]
+
+
+def comparison(name, sc):
+    f = lambda v: "–" if v is None else f"{v:.3f}"
+    rows = [f"| {n} | " + " | ".join(f(v) for v in vals) + " |" for n, *vals in REFERENCE]
+    rows.append(f"| **{name}** (this model) | " + " | ".join(f"**{f(sc.get(s))}**" for s in REF_SUITES) + " |")
+    return ("| system | typed-decisions test | Kev transfer-v4 dev | Kev transfer-v4 test | JevBench public |\n"
+            "|---|---|---|---|---|\n" + "\n".join(rows))
+
+
 def scores(path):
     d = json.load(open(path))["eval"]
     out = {k: v["acc"] for k, v in d.items()}
@@ -117,9 +137,19 @@ A GPU with about 9 GB free is needed for the 4B model in 4-bit.
 
 Kev transfer suites contain sources never seen in training (e.g. MMLU, SciQ, emotion, PAWS, QNLI).
 JevBench "public" is the 231 public items only; sealed-set performance is typically much lower on that board.
-For reference, numbers reported by others on the same suites are not paired with ours and come from
-different protocols. They include TypeSafe Jev 0.727 on typed-decisions (zero-shot) and Kev-9B 0.852 on
-Kev transfer-v4 test.
+
+## Comparison with CLM-8B and TypeSafe Jev
+{comparison(a.name, sc)}
+
+Rows not marked "ours"/"by us" are numbers reported by their authors or boards. They are **not paired** with ours
+and use different protocols. Jev is zero-shot, while this model was trained on typed-decisions train, so the
+typed-decisions column favours this model. On unseen sources (Kev transfer) and JevBench public, Jev and Kev-9B
+remain ahead. CLM-style frozen-encoder heads are competitive in-distribution but fall to about 0.4 on unseen
+sources.
+
+CLM-8B DeepSWE claim (best-of-4 verifier, 38 held-out tasks). We reproduce 31/38 = 81.6% exactly. Only 13 tasks
+can be changed by the selector. On those, the result is 10/13 against a random expectation of 7.0 (exact one-sided
+p = 0.062). The CLM base head before DeepSWE fine-tuning gets 27/38 = 71.1%, below random (73.7%).
 
 ## Training
 - Base: `{a.base}`, frozen, 4-bit NF4. LoRA r={cfgj.get('r')}, alpha={cfgj.get('lora_alpha')} on all attention/MLP

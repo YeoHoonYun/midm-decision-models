@@ -39,6 +39,35 @@ Findings, with paired row-clustered bootstrap results in `results/stats/stats.md
   off-distribution because small tiers are overconfident there. The router therefore sends unknown domains
   straight to the strongest model.
 
+## Comparison with CLM-8B and TypeSafe Jev
+
+| system | typed-decisions test | Kev transfer-v4 dev | Kev transfer-v4 test | JevBench public | DeepSWE held-out 38 (Bo4) |
+|---|---|---|---|---|---|
+| TypeSafe Jev (commercial, zero-shot; reported) | 0.727 | 0.857 | – | **0.866** | 71.1% (reported) |
+| CLM-8B (reported: typed-dec. from CLM PR #2, JevBench board) | 0.685 | – | – | 0.407 | 81.6% (claim) |
+| CLM-8B released DeepSWE head, run by us | – | – | – | – | 31/38 = 81.6% (reproduced) |
+| CLM-v0.1-8B base head, zero-shot, run by us | – | – | – | – | 27/38 = 71.1% (< random 73.7%) |
+| CLM recipe re-trained by us (frozen Qwen3-8B, z-score, 3 seeds) | 0.766 | – | – | – | – |
+| CLM-style frozen Qwen3-4B + heads (ours, same data as MiDM) | 0.759 | 0.366 | 0.411 | 0.411 | – |
+| Kev-9B (reported) | – | 0.822 | **0.852** | – | – |
+| MiDM-8B-q3-e2 | **0.805** | 0.729 | 0.772 | 0.706 | – |
+| MiDM-4B-q35-e1 | **0.805** | 0.755 | 0.764 | 0.710 | – |
+| **MiDM-4B-q35-e1-bx** | 0.788 | 0.791 | 0.798 | 0.710 | – |
+
+How to read this:
+- **Reported rows are not paired with ours.** They come from their authors' cards and boards and use different
+  protocols. Jev is zero-shot. MiDM was trained on typed-decisions train, so the typed-decisions column favours MiDM.
+- **Against CLM.** On the same data, the frozen-encoder design scores about 0.76 in-distribution but falls to
+  about 0.4 on unseen sources and JevBench. MiDM keeps 0.76–0.80. CLM's DeepSWE headline reproduces exactly,
+  but the edge over random is 3 tasks out of 13 decidable ones (p = 0.062). The base head is below random.
+- **Against Jev and Kev.** MiDM (≤8B, trained locally on two consumer GPUs) is still behind Jev on Kev transfer
+  dev (−6.6 pp) and JevBench public (−15.6 pp), and behind Kev-9B on Kev transfer test (−5.4 pp).
+- **Where MiDM wins.** It runs locally in 4-bit on one GPU, and a 4B model matches 8B.
+
+## Release
+- Hugging Face: [yunicro/MiDM-4B-q35-e1-bx](https://huggingface.co/yunicro/MiDM-4B-q35-e1-bx) (currently private).
+  It contains the LoRA adapter, pointer head, `midm.py` and the model card.
+
 ## Layout
 - `113_clm_reproduction_20260928/`: CLM reproduction, frozen-head study and MiDM training/eval. See its `README.md`.
   - `pointer_lora.py`: MiDM train/eval (QLoRA, pointer head, `--tta`, `--save-probs`).
@@ -62,7 +91,7 @@ Findings, with paired row-clustered bootstrap results in `results/stats/stats.md
    then `pointer_lora.py eval ... --save-probs`.
 
 Datasets and model weights are not redistributed here. Datasets keep their own licences. The adapters are
-released separately on Hugging Face (link: TODO).
+released separately on Hugging Face: https://huggingface.co/yunicro/MiDM-4B-q35-e1-bx
 
 ## Citation
 See `CITATION.cff`. A DOI will be added after the Zenodo release.
