@@ -106,6 +106,10 @@ PAIRS = [  # (label, model A, model B) -> B minus A
     ("balanced breadth + MC: Qwen3.5-4B e1 -> +breadth_v1+arc/obqa/csqa", "B_qwen35-4b-1ep", "E_q35_4b_e1_breadth_mc"),
     ("TTA: Qwen3.5-4B e1, 1 order -> 4 orders", "B_qwen35-4b-1ep", "T4_q35_4b_e1"),
     ("seed: Qwen3-4B e1 seed0 -> seed1 (noise reference)", "qwen3-4b", "S_q3_4b_e1_s1"),
+    ("size (Qwen3.5): 0.8B e1 -> 2B e1", "R_q35_0p8b_e1", "R_q35_2b_e1"),
+    ("size (Qwen3.5): 2B e1 -> 4B e1", "R_q35_2b_e1", "B_qwen35-4b-1ep"),
+    ("generation at small size: Qwen3-1.7B e1 -> Qwen3.5-2B e1", "qwen3-1.7b", "R_q35_2b_e1"),
+    ("generation at small size: Qwen3-0.6B e1 -> Qwen3.5-0.8B e1", "qwen3-0.6b", "R_q35_0p8b_e1"),
 ]
 
 
