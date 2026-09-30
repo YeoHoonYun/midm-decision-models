@@ -1,0 +1,147 @@
+{
+ "n_tasks": 38,
+ "n_rollouts": 151,
+ "N": 4,
+ "aggregation": {
+  "type": "final_window_mean",
+  "window": 12
+ },
+ "instance_key": "task",
+ "n_configs": 1,
+ "random_pick": 0.7368421052631579,
+ "oracle_any": 0.8947368421052632,
+ "all_pass_tasks": 21,
+ "all_fail_tasks": 4,
+ "mixed_tasks": 13,
+ "embeddings_dir": "113_clm_reproduction_20260928\\data\\emb_cache\\data_deepswe_eval_parquet",
+ "checkpoint": "heads\\clm_v0.1_8b\\CLM_v0.1-8B.pt",
+ "tasks_file": "heads\\deepswe\\heldout_tasks.json",
+ "index_trajectories_without_embeddings": [],
+ "embedded_trajectories_outside_index": 298,
+ "short_groups_retained": {
+  "opa-template-string-reconstruction": 3
+ },
+ "selectors": {
+  "clm:last_12_mean": {
+   "rate": 0.7105263157894737,
+   "n_tasks": 38,
+   "resolved": 27,
+   "picks": {
+    "abs-module-cache-flags": [
+     "abs-module-cache-flags__nwc88dn"
+    ],
+    "abs-stepped-slices": [
+     "abs-stepped-slices__WaRqvCW"
+    ],
+    "adaptix-name-mapping-aliases": [
+     "adaptix-name-mapping-aliases__VpWjnLD"
+    ],
+    "anko-default-function-arguments": [
+     "anko-default-function-arguments__wFdmhQn"
+    ],
+    "anko-typed-variable-bindings": [
+     "anko-typed-variable-bindings__nRHCiPs"
+    ],
+    "bandit-structured-nosec-directives": [
+     "bandit-structured-nosec-directiv__ae5KeaD"
+    ],
+    "claude-code-by-agents-recursive-delegation": [
+     "claude-code-by-agents-recursive__93894d5"
+    ],
+    "dasel-html-document-format": [
+     "dasel-html-document-format__iGzTZaN"
+    ],
+    "dynamodb-toolbox-conditional-attribute-requirements": [
+     "dynamodb-toolbox-conditional-att__FMwsrig"
+    ],
+    "fastapi-implicit-head-options": [
+     "fastapi-implicit-head-options__bVzQb7M"
+    ],
+    "fd-deterministic-multi-key-sorting": [
+     "fd-deterministic-multi-key-sorti__iERyM5Z"
+    ],
+    "httpx-multipart-response-parsing": [
+     "httpx-multipart-response-parsing__peyqgmz"
+    ],
+    "igel-persist-feature-schema": [
+     "igel-persist-feature-schema__kS9vgxh"
+    ],
+    "kcp-go-multiplexed-kcp-streams": [
+     "kcp-go-multiplexed-kcp-streams__gFas97a"
+    ],
+    "kgateway-consistent-hash-policy": [
+     "kgateway-consistent-hash-policy__jYKzbRJ"
+    ],
+    "kombu-single-active-consumer-priority": [
+     "kombu-single-active-consumer-pri__dmvMsyV"
+    ],
+    "koota-composite-trait-aspects": [
+     "koota-composite-trait-aspects__Poq3thQ"
+    ],
+    "koota-deferred-mutation-buffer": [
+     "koota-deferred-mutation-buffer__URYFY3q"
+    ],
+    "koota-entity-snapshot-rollback": [
+     "koota-entity-snapshot-rollback__dRWuTiR"
+    ],
+    "koota-pair-relation-tracking": [
+     "koota-pair-relation-tracking__e4YzugW"
+    ],
+    "meriyah-explicit-resource-declarations": [
+     "meriyah-explicit-resource-declar__TYKdJPn"
+    ],
+    "mobly-grouped-test-barriers": [
+     "mobly-grouped-test-barriers__NDoi4oY"
+    ],
+    "numba-stencil-boundary-modes": [
+     "numba-stencil-boundary-modes__Gan9PBK"
+    ],
+    "obsidian-linter-link-format-conversion": [
+     "obsidian-linter-link-format-conv__JMtW5ra"
+    ],
+    "opa-template-string-reconstruction": [
+     "opa-template-string-reconstructi__Wh83vPJ"
+    ],
+    "participle-grammar-conflict-analysis": [
+     "participle-grammar-conflict-anal__6ZF8BFo"
+    ],
+    "prometheus-transactional-reload-status": [
+     "prometheus-transactional-reload__qyRAxEQ"
+    ],
+    "returns-validated-error-accumulation": [
+     "returns-validated-error-accumula__MnEPhvn"
+    ],
+    "sql-formatter-bigquery-pipe-formatting": [
+     "sql-formatter-bigquery-pipe-form__Yd7P5P4"
+    ],
+    "sqlite-utils-safe-import-checkpoints": [
+     "sqlite-utils-safe-import-checkpo__v2ErSsT"
+    ],
+    "tengo-callable-instance-isolation": [
+     "tengo-callable-instance-isolatio__GL4gCiF"
+    ],
+    "tengo-destructuring-bindings": [
+     "tengo-destructuring-bindings__qW2jvcr"
+    ],
+    "testem-bail-on-test-failure": [
+     "testem-bail-on-test-failure__Lu4bMCa"
+    ],
+    "testem-per-launcher-reports": [
+     "testem-per-launcher-reports__7TseWjC"
+    ],
+    "textual-richlog-follow-state": [
+     "textual-richlog-follow-state__o69Jht4"
+    ],
+    "true-myth-iterable-collection-combinators": [
+     "true-myth-iterable-collection-co__BbPHaLb"
+    ],
+    "ts-pattern-match-each": [
+     "ts-pattern-match-each__3bPAaap"
+    ],
+    "ytt-jsonpath-query-api": [
+     "ytt-jsonpath-query-api__yG55kiA"
+    ]
+   }
+  }
+ }
+}

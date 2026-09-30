@@ -1,0 +1,13 @@
+MiDM: Minimal Decision Models and an audit of CLM-8B
+Copyright 2026 YeoHoon Yoon
+
+This product includes software adapted from the CLM project
+(https://github.com/Contrastive-LM/CLM), licensed under the Apache License, Version 2.0:
+the typed-decision request/answer rendering helpers in 113_clm_reproduction_20260928/hf_template/midm.py
+(to_text, state_text, candidates, confidence, answer_from_probs). Other scripts import the CLM
+package from a separate clone and do not redistribute it.
+
+Datasets referenced by the code (LocalLLaMA/typed-decisions, jaredpalmer/kev-suites and their upstream
+sources, JevBench public items, GLUE MRPC/QQP/RTE, GoEmotions, Civil Comments, WinoGrande, ARC,
+OpenBookQA, CommonsenseQA) are NOT included and remain under their own licences and terms.
+Base models (Qwen3, Qwen3.5) are downloaded from their own repositories under their own licences.

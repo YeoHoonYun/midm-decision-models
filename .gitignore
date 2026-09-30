@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+*.pyc
+**/hf_cache/
+**/runs/
+**/logs/
+**/repo/
+**/ext/
+**/heads/
+**/hf/
+**/data/*
+!**/data/breadth_v1/
+**/data/breadth_v1/train.jsonl
+**/results/probs/
+**/results/**/*.jsonl
+*.safetensors
+*.pt

@@ -1,0 +1,100 @@
+{
+ "n_test_decisions": {
+  "agent_trace_observability": 500,
+  "customer_service": 500,
+  "invoice_processing": 500,
+  "security_incidents": 500
+ },
+ "rows": [
+  {
+   "encoder": "Qwen3-0.6B",
+   "patience": 5,
+   "per_workflow_mean": {
+    "agent_trace_observability": 0.454,
+    "customer_service": 0.496,
+    "invoice_processing": 0.524,
+    "security_incidents": 0.5906666666666667
+   },
+   "pooled": [
+    0.484,
+    0.564,
+    0.5005
+   ]
+  },
+  {
+   "encoder": "Qwen3-0.6B",
+   "patience": 20,
+   "per_workflow_mean": {
+    "agent_trace_observability": 0.534,
+    "customer_service": 0.5673333333333334,
+    "invoice_processing": 0.6046666666666667,
+    "security_incidents": 0.62
+   },
+   "pooled": [
+    0.599,
+    0.5675,
+    0.578
+   ]
+  },
+  {
+   "encoder": "Qwen3-1.7B",
+   "patience": 5,
+   "per_workflow_mean": {
+    "agent_trace_observability": 0.43133333333333335,
+    "customer_service": 0.5486666666666666,
+    "invoice_processing": 0.538,
+    "security_incidents": 0.6126666666666667
+   },
+   "pooled": [
+    0.554,
+    0.552,
+    0.492
+   ]
+  },
+  {
+   "encoder": "Qwen3-1.7B",
+   "patience": 20,
+   "per_workflow_mean": {
+    "agent_trace_observability": 0.5573333333333333,
+    "customer_service": 0.598,
+    "invoice_processing": 0.5846666666666667,
+    "security_incidents": 0.6433333333333333
+   },
+   "pooled": [
+    0.6065,
+    0.577,
+    0.604
+   ]
+  },
+  {
+   "encoder": "Qwen3-4B",
+   "patience": 5,
+   "per_workflow_mean": {
+    "agent_trace_observability": 0.5993333333333334,
+    "customer_service": 0.5706666666666667,
+    "invoice_processing": 0.6586666666666666,
+    "security_incidents": 0.6066666666666667
+   },
+   "pooled": [
+    0.5885,
+    0.6505,
+    0.5875
+   ]
+  },
+  {
+   "encoder": "Qwen3-4B",
+   "patience": 20,
+   "per_workflow_mean": {
+    "agent_trace_observability": 0.606,
+    "customer_service": 0.6006666666666667,
+    "invoice_processing": 0.648,
+    "security_incidents": 0.6686666666666666
+   },
+   "pooled": [
+    0.64,
+    0.607,
+    0.6455
+   ]
+  }
+ ]
+}

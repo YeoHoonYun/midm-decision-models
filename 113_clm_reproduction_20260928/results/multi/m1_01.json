@@ -1,0 +1,68 @@
+{
+ "args": {
+  "encoder": "Qwen/Qwen3-Embedding-0.6B",
+  "train": [
+   "td_train",
+   "kev_train"
+  ],
+  "select": [
+   "kev_dev"
+  ],
+  "eval": [
+   "td_test",
+   "kev_dev",
+   "kevT_dev",
+   "kevT9_dev",
+   "jb_original",
+   "jb_easy",
+   "jb_hard"
+  ],
+  "norm": "zscore",
+  "loss": "infonce",
+  "width": 1536,
+  "depth": 3,
+  "proj": 512,
+  "lr": 0.0005,
+  "wd": 0.0,
+  "dropout": 0.0,
+  "batch": 256,
+  "epochs": 20,
+  "td_weight": 1.0,
+  "seed": 0,
+  "final": false,
+  "save": null,
+  "device": "cuda",
+  "out": "113_clm_reproduction_20260928\\results\\multi\\m1_01.json"
+ },
+ "minutes": 0.55,
+ "history": [
+  {
+   "epoch": 5,
+   "td_holdout": 0.5616666674613953,
+   "kev_dev": 0.664850115776062
+  },
+  {
+   "epoch": 10,
+   "td_holdout": 0.6566666960716248,
+   "kev_dev": 0.6498637795448303
+  },
+  {
+   "epoch": 15,
+   "td_holdout": 0.7116666436195374,
+   "kev_dev": 0.6614441275596619
+  },
+  {
+   "epoch": 20,
+   "td_holdout": 0.7083333134651184,
+   "kev_dev": 0.6655313372612
+  }
+ ],
+ "select_score": 0.6869323253631592,
+ "best_epoch": 20,
+ "best_select_score": 0.6869323253631592,
+ "last": {
+  "epoch": 20,
+  "td_holdout": 0.7083333134651184,
+  "kev_dev": 0.6655313372612
+ }
+}

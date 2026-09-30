@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this software or its results, please cite it as below."
+title: "MiDM: Minimal Decision Models and an audit of CLM-8B"
+type: software
+authors:
+  - family-names: "Yoon"
+    given-names: "YeoHoon"
+    affiliation: "Seoul School of Integrated Sciences and Technologies, Seoul, KR"
+    orcid: "https://orcid.org/0009-0007-2669-8127"
+license: Apache-2.0
+version: "0.1.0"
+date-released: "2026-10-01"
+keywords:
+  - decision model
+  - typed decisions
+  - LoRA
+  - pointer head
+  - reproducibility
+  - evaluation audit
+abstract: >-
+  Code and results for a controlled study of small (8B or fewer parameters) typed-decision models (MiDM:
+  LoRA-tuned causal LMs with a pointer head over option lines). The work includes an exact reproduction and
+  statistical audit of the CLM-8B DeepSWE verifier claim, and it identifies which factors matter for transfer:
+  base-model generation and balanced data breadth. Adapter variants, TTA, calibration and ensembles did not.

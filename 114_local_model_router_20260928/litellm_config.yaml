@@ -1,0 +1,44 @@
+# LiteLLM proxy: one OpenAI-compatible gateway (http://127.0.0.1:4000) for LLMs and feature models,
+# plus pass-through of the typed-decision API to the local decision router.
+#   .venv\Scripts\litellm.exe --config litellm_config.yaml --port 4000
+model_list:
+  # --- LLMs: experiment 34's shared Ollama instances (two replicas, load-balanced) ---
+  - model_name: qwen3-8b
+    litellm_params: {model: ollama_chat/qwen3:8b, api_base: "http://127.0.0.1:11439"}
+  - model_name: qwen3-8b
+    litellm_params: {model: ollama_chat/qwen3:8b, api_base: "http://127.0.0.1:11443"}
+  - model_name: qwen3-4b
+    litellm_params: {model: ollama_chat/qwen3:4b-instruct, api_base: "http://127.0.0.1:11439"}
+  - model_name: qwen3-4b
+    litellm_params: {model: ollama_chat/qwen3:4b-instruct, api_base: "http://127.0.0.1:11443"}
+  - model_name: qwen3-0.6b
+    litellm_params: {model: ollama_chat/qwen3:0.6b, api_base: "http://127.0.0.1:11439"}
+  - model_name: gpt-oss-20b
+    litellm_params: {model: ollama_chat/gpt-oss:20b, api_base: "http://127.0.0.1:11439"}
+  - model_name: gpt-oss-20b
+    litellm_params: {model: ollama_chat/gpt-oss:20b, api_base: "http://127.0.0.1:11443"}
+  - model_name: sqlcoder-15b
+    litellm_params: {model: ollama_chat/sqlcoder:15b, api_base: "http://127.0.0.1:11439"}
+  # --- feature models: OpenAI-compatible embeddings served by experiments/113 embed_server.py ---
+  - model_name: qwen3-embedding-0.6b
+    litellm_params: {model: openai/qwen3-embedding-0.6b, api_base: "http://127.0.0.1:8090/v1", api_key: "local"}
+
+router_settings:
+  routing_strategy: least-busy
+  num_retries: 1
+  timeout: 120
+  fallbacks: [{"qwen3-8b": ["qwen3-4b"]}, {"gpt-oss-20b": ["qwen3-8b"]}]
+
+litellm_settings:
+  drop_params: true
+  request_timeout: 120
+
+general_settings:
+  # typed decisions (TypeSafe / System One wire format) go to the local decision router
+  pass_through_endpoints:
+    - path: "/v1/systemone"
+      target: "http://127.0.0.1:8800/v1/systemone"
+    - path: "/v1/rank"
+      target: "http://127.0.0.1:8800/v1/rank"
+    - path: "/v1/decision-models"
+      target: "http://127.0.0.1:8800/v1/models"

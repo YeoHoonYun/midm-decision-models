@@ -1,0 +1,88 @@
+{
+ "args": {
+  "encoder": "Qwen/Qwen3-Embedding-0.6B",
+  "train": [
+   "td_train",
+   "kev_train"
+  ],
+  "select": [
+   "kev_dev"
+  ],
+  "eval": [
+   "td_test",
+   "kev_dev",
+   "kevT_dev",
+   "kevT9_dev",
+   "jb_original",
+   "jb_easy",
+   "jb_hard"
+  ],
+  "norm": "zscore",
+  "loss": "infonce",
+  "width": 1536,
+  "depth": 3,
+  "proj": 512,
+  "lr": 0.0005,
+  "wd": 0.0,
+  "dropout": 0.0,
+  "batch": 256,
+  "epochs": 40,
+  "td_weight": 1.0,
+  "seed": 0,
+  "final": false,
+  "save": null,
+  "device": "cuda",
+  "out": "113_clm_reproduction_20260928\\results\\multi\\m1_02.json"
+ },
+ "minutes": 0.8,
+ "history": [
+  {
+   "epoch": 5,
+   "td_holdout": 0.5716666579246521,
+   "kev_dev": 0.6491825580596924
+  },
+  {
+   "epoch": 10,
+   "td_holdout": 0.6683333516120911,
+   "kev_dev": 0.6689373254776001
+  },
+  {
+   "epoch": 15,
+   "td_holdout": 0.6816666722297668,
+   "kev_dev": 0.6614441275596619
+  },
+  {
+   "epoch": 20,
+   "td_holdout": 0.6866666674613953,
+   "kev_dev": 0.6559945344924927
+  },
+  {
+   "epoch": 25,
+   "td_holdout": 0.6733333468437195,
+   "kev_dev": 0.6784741282463074
+  },
+  {
+   "epoch": 30,
+   "td_holdout": 0.7116666436195374,
+   "kev_dev": 0.6750681400299072
+  },
+  {
+   "epoch": 35,
+   "td_holdout": 0.7166666388511658,
+   "kev_dev": 0.6846048831939697
+  },
+  {
+   "epoch": 40,
+   "td_holdout": 0.70333331823349,
+   "kev_dev": 0.6852861046791077
+  }
+ ],
+ "select_score": 0.6943097114562988,
+ "best_epoch": 35,
+ "best_select_score": 0.7006357610225677,
+ "last": {
+  "epoch": 40,
+  "td_holdout": 0.70333331823349,
+  "kev_dev": 0.6852861046791077
+ }
+}

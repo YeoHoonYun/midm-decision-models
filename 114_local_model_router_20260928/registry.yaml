@@ -1,0 +1,96 @@
+# Local model registry: one catalogue behind the gateway. Decision models are MiDM (see MODELS.md).
+# kind: decision (typed choice / noul / score -> distributions), feature (embeddings / scores), llm (chat).
+# residency: resident = kept in VRAM while the gateway runs; on_demand = started through the GPU queue
+#            (experiments/_ops/GPU_QUEUE_SPEC.md); shared = owned by another experiment, read-only use.
+# Quality numbers are the one-time evaluations of experiment 113 (see its README), not live metrics.
+
+decision:
+  - name: MiDM-0.6B-q3-e1
+    backend: pointer            # experiments/113 serve_pointer.py (QLoRA pointer cross-encoder)
+    base: Qwen/Qwen3-0.6B
+    adapter: ../113_clm_reproduction_20260928/runs/ptr0p6b/final
+    url: http://127.0.0.1:8710
+    vram_gib: 2
+    residency: resident
+    quality: {typed_decisions: 0.736, kev_dev: 0.785, kev_transfer_test: 0.585, jevbench_public: 0.576}
+  - name: MiDM-1.7B-q3-e1
+    backend: pointer
+    base: Qwen/Qwen3-1.7B
+    adapter: ../113_clm_reproduction_20260928/runs/ptr1p7b/final
+    url: http://127.0.0.1:8711
+    vram_gib: 3
+    residency: on_demand
+    quality: {typed_decisions: 0.782, kev_dev: 0.817, kev_transfer_test: 0.641, jevbench_public: 0.632}
+  - name: MiDM-4B-q3-e2
+    backend: pointer
+    base: Qwen/Qwen3-4B
+    adapter: ../113_clm_reproduction_20260928/runs/B/qwen3_4b_2ep/final   # stage B, 2 epochs
+    url: http://127.0.0.1:8712
+    vram_gib: 4
+    residency: on_demand
+    quality: {typed_decisions: 0.797, kev_dev: 0.848, kev_transfer_test: 0.725, jevbench_public: 0.684}
+  - name: MiDM-4B-q35-e1
+    backend: pointer
+    base: Qwen/Qwen3.5-4B-Base
+    adapter: ../113_clm_reproduction_20260928/runs/B/qwen35_4b_1ep/final   # 1 epoch, bf16 (best transfer)
+    url: http://127.0.0.1:8714
+    vram_gib: 9
+    residency: on_demand
+    env: {PTR_BF16: "1"}
+    quality: {typed_decisions: 0.805, kev_dev: 0.861, kev_transfer_test: 0.764, jevbench_public: 0.710}
+  - name: MiDM-4B-q35-e1-bx
+    backend: pointer
+    base: Qwen/Qwen3.5-4B-Base
+    adapter: ../113_clm_reproduction_20260928/runs/E/q35_4b_e1_breadth_mc/final   # 1 ep, broadened data (breadth_v1 + arc/obqa/csqa)
+    url: http://127.0.0.1:8715
+    vram_gib: 9
+    residency: on_demand
+    env: {PTR_BF16: "1"}
+    quality: {typed_decisions: 0.788, kev_dev: 0.856, kev_transfer_test: 0.798, jevbench_public: 0.710}
+  - name: MiDM-8B-q3-e2
+    backend: pointer
+    base: Qwen/Qwen3-8B
+    adapter: ../113_clm_reproduction_20260928/runs/B/qwen3_8b_2ep/final   # stage B, 2 epochs, bf16
+    url: http://127.0.0.1:8713
+    vram_gib: 8
+    residency: on_demand
+    quality: {typed_decisions: 0.805, kev_dev: 0.864, kev_transfer_test: 0.772, jevbench_public: 0.706}
+  - name: clm-typed-0.6b
+    backend: clm                # experiments/113 serve_clm.py (bi-encoder heads, cached vectors)
+    url: http://127.0.0.1:8700
+    vram_gib: 2
+    residency: on_demand
+    note: fastest (cached state/action vectors) but weak off-distribution
+
+# Cascade used by the "MiDM-Auto" model (alias decider-auto) (DECISIONS.md D1/D1a): only for requests whose "domain" is
+# in known_domains; thresholds from calibrate_cascade.py on dev (kev_dev + td_holdout), never on tests.
+# Unknown / untagged domains go straight to the first live model in `direct` (small tiers are
+# overconfident off-distribution: -3..-8 pp on Kev transfer).
+cascade:
+  tiers: [MiDM-0.6B-q3-e1, MiDM-4B-q35-e1, MiDM-8B-q3-e2]   # D1 rule across cascades incl. Qwen3.5-4B (09-30)
+  min_confidence: [0.66, 0.30]
+  fallback_tiers: [MiDM-0.6B-q3-e1, MiDM-4B-q35-e1]      # when MiDM-8B-q3-e2 is not resident
+  fallback_min_confidence: [0.66]
+  # unknown domains: Qwen3.5-4B is as good as 8B off-distribution (Kev T test 0.764 vs 0.772, JevBench
+  # 0.710 vs 0.706) at half the cost, so it leads the direct list
+  # D7 (10-01): unknown domains -> best on Kev transfer DEV (0.791 vs 0.755 / 0.729); test only confirms
+  direct: [MiDM-4B-q35-e1-bx, MiDM-4B-q35-e1, MiDM-8B-q3-e2, MiDM-4B-q3-e2, MiDM-1.7B-q3-e1, MiDM-0.6B-q3-e1]
+  known_domains: [agent_trace_observability, customer_service, invoice_processing, security_incidents,
+                  agnews, yelp, compositional, dbpedia14, banking77, trec, mnli, imdb, sst5, boolq,
+                  amazon, legacy_policy]
+
+feature:
+  - name: qwen3-embedding-0.6b
+    backend: openai_embeddings   # experiments/113 embed_server.py
+    base: Qwen/Qwen3-Embedding-0.6B
+    url: http://127.0.0.1:8090/v1
+    vram_gib: 2
+    residency: on_demand
+
+llm:
+  - name: llm-judge
+    litellm_model: qwen3-8b      # the decision router asks the gateway's chat endpoint
+  - name: ollama-shared
+    urls: [http://127.0.0.1:11439, http://127.0.0.1:11443]   # experiment 34's Ollama instances
+    residency: shared            # do not pull / delete / keep_alive-pin models here
+    models: [qwen3:0.6b, qwen3:1.7b, qwen3:4b, qwen3:4b-instruct, qwen3:8b, gpt-oss:20b, sqlcoder:7b, sqlcoder:15b]

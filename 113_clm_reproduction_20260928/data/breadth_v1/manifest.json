@@ -1,0 +1,303 @@
+{
+  "name": "breadth_v1",
+  "seed": 20261001,
+  "created": "2026-10-01",
+  "split_used": "train",
+  "sources": {
+    "mrpc": {
+      "repo": "nyu-mll/glue",
+      "config": "mrpc",
+      "revision": "bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c",
+      "file": "mrpc/train-00000-of-00001.parquet",
+      "task_type": "sentence_pair/paraphrase",
+      "question_type": "noul"
+    },
+    "qqp": {
+      "repo": "nyu-mll/glue",
+      "config": "qqp",
+      "revision": "bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c",
+      "file": "qqp/train-00000-of-00001.parquet",
+      "task_type": "sentence_pair/paraphrase",
+      "question_type": "choice"
+    },
+    "rte": {
+      "repo": "nyu-mll/glue",
+      "config": "rte",
+      "revision": "bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c",
+      "file": "rte/train-00000-of-00001.parquet",
+      "task_type": "sentence_pair/entailment",
+      "question_type": "noul"
+    },
+    "go_emotions": {
+      "repo": "google-research-datasets/go_emotions",
+      "config": "simplified",
+      "revision": "add492243ff905527e67aeb8b80c082af02207c3",
+      "file": "simplified/train-00000-of-00001.parquet",
+      "task_type": "affect",
+      "question_type": "choice"
+    },
+    "civil_comments": {
+      "repo": "google/civil_comments",
+      "config": "data",
+      "revision": "f2970eb3a55777454c94069077cc8d9b5866312d",
+      "file": "data/train-00000-of-00002.parquet",
+      "task_type": "toxicity",
+      "question_type": "noul"
+    },
+    "winogrande": {
+      "repo": "allenai/winogrande",
+      "config": "winogrande_xl",
+      "revision": "01e74176c63542e6b0bcb004dcdea22d94fb67b5",
+      "file": "winogrande_xl/train-00000-of-00001.parquet",
+      "task_type": "reasoning/coreference",
+      "question_type": "choice"
+    }
+  },
+  "counts": {
+    "mrpc": 1000,
+    "qqp": 1000,
+    "rte": 1000,
+    "go_emotions": 1000,
+    "civil_comments": 1000,
+    "winogrande": 1000
+  },
+  "total_rows": 6000,
+  "label_maps": {
+    "mrpc": {
+      "1 (equivalent)": true,
+      "0 (not_equivalent)": false
+    },
+    "qqp": {
+      "1 (duplicate)": "duplicate",
+      "0 (not_duplicate)": "distinct"
+    },
+    "rte": {
+      "0 (entailment)": true,
+      "1 (not_entailment)": false
+    },
+    "go_emotions": {
+      "rule": "simplified config; rows with exactly one label; key = label name",
+      "names": [
+        "admiration",
+        "amusement",
+        "anger",
+        "annoyance",
+        "approval",
+        "caring",
+        "confusion",
+        "curiosity",
+        "desire",
+        "disappointment",
+        "disapproval",
+        "disgust",
+        "embarrassment",
+        "excitement",
+        "fear",
+        "gratitude",
+        "grief",
+        "joy",
+        "love",
+        "nervousness",
+        "optimism",
+        "pride",
+        "realization",
+        "relief",
+        "remorse",
+        "sadness",
+        "surprise",
+        "neutral"
+      ]
+    },
+    "civil_comments": {
+      "toxicity >= 0.5": true,
+      "toxicity == 0.0": false,
+      "dropped": "0 < toxicity < 0.5 (ambiguous); text length outside 30-700 chars"
+    },
+    "winogrande": {
+      "answer '1'": "opt_1 (= option1)",
+      "answer '2'": "opt_2 (= option2)"
+    }
+  },
+  "excluded_eval_sources": [
+    "emotion",
+    "mmlu",
+    "mmlu_pro",
+    "paws",
+    "qnli",
+    "sciq",
+    "tweet_offensive"
+  ],
+  "excluded_repos": [
+    "TIGER-Lab/MMLU-Pro",
+    "allenai/sciq",
+    "cais/mmlu",
+    "cardiffnlp/tweet_eval",
+    "dair-ai/emotion",
+    "google-research-datasets/paws"
+  ],
+  "excluded_configs": [
+    "nyu-mll/glue:qnli"
+  ],
+  "contamination": {
+    "suites_checked": [
+      "kevT_dev",
+      "kevT_test",
+      "kevT9_dev",
+      "jb_original",
+      "jb_easy",
+      "jb_hard",
+      "td_test",
+      "kev_dev"
+    ],
+    "shingle_suites": [
+      "kevT_dev",
+      "kevT_test",
+      "kevT9_dev",
+      "jb_original",
+      "jb_easy",
+      "jb_hard"
+    ],
+    "shingle_k_words": 13,
+    "note": "A row is dropped on any hit against any suite: exact or normalized (lowercase, collapsed whitespace) sha256 of state text / state leaves / quoted hypothesis vs eval state texts, state leaves and instructions (>20 chars); the same vs eval candidate texts (>20 chars); and any shared 13-word shingle vs eval state texts. Shingles were checked against all listed suites (superset of kevT_* and jb_*).",
+    "eval_index_sizes": {
+      "kevT_dev": {
+        "texts": 1922,
+        "candidates": 356,
+        "shingles": 19853
+      },
+      "kevT_test": {
+        "texts": 1887,
+        "candidates": 356,
+        "shingles": 21543
+      },
+      "kevT9_dev": {
+        "texts": 3280,
+        "candidates": 1250,
+        "shingles": 34478
+      },
+      "jb_original": {
+        "texts": 149,
+        "candidates": 20,
+        "shingles": 930
+      },
+      "jb_easy": {
+        "texts": 109,
+        "candidates": 22,
+        "shingles": 338
+      },
+      "jb_hard": {
+        "texts": 550,
+        "candidates": 320,
+        "shingles": 58112
+      },
+      "td_test": {
+        "texts": 2962,
+        "candidates": 58,
+        "shingles": 45065
+      },
+      "kev_dev": {
+        "texts": 2899,
+        "candidates": 450,
+        "shingles": 48693
+      }
+    },
+    "per_source": {
+      "mrpc": {
+        "considered": 3668,
+        "clean_available": 3668,
+        "selected": 1000,
+        "selected_overlap_existing_train_norm": 0,
+        "drop_hits_by_suite": {},
+        "label_counts": {
+          "False": 500,
+          "True": 500
+        }
+      },
+      "qqp": {
+        "considered": 16000,
+        "clean_available": 16000,
+        "selected": 1000,
+        "selected_overlap_existing_train_norm": 0,
+        "drop_hits_by_suite": {},
+        "label_counts": {
+          "distinct": 500,
+          "duplicate": 500
+        }
+      },
+      "rte": {
+        "considered": 2490,
+        "duplicate_within": 2,
+        "clean_available": 2488,
+        "selected": 1000,
+        "selected_overlap_existing_train_norm": 0,
+        "drop_hits_by_suite": {},
+        "label_counts": {
+          "False": 500,
+          "True": 500
+        }
+      },
+      "go_emotions": {
+        "considered": 36308,
+        "duplicate_within": 192,
+        "clean_available": 36116,
+        "selected": 1000,
+        "selected_overlap_existing_train_norm": 0,
+        "drop_hits_by_suite": {},
+        "label_counts": {
+          "admiration": 36,
+          "amusement": 36,
+          "anger": 36,
+          "annoyance": 36,
+          "approval": 36,
+          "caring": 36,
+          "confusion": 36,
+          "curiosity": 36,
+          "desire": 36,
+          "disappointment": 36,
+          "disapproval": 36,
+          "disgust": 36,
+          "embarrassment": 36,
+          "excitement": 36,
+          "fear": 36,
+          "gratitude": 36,
+          "grief": 36,
+          "joy": 36,
+          "love": 36,
+          "nervousness": 36,
+          "neutral": 35,
+          "optimism": 35,
+          "pride": 35,
+          "realization": 35,
+          "relief": 35,
+          "remorse": 35,
+          "sadness": 35,
+          "surprise": 35
+        }
+      },
+      "civil_comments": {
+        "considered": 13570,
+        "duplicate_within": 7,
+        "clean_available": 13563,
+        "selected": 1000,
+        "selected_overlap_existing_train_norm": 0,
+        "drop_hits_by_suite": {},
+        "label_counts": {
+          "False": 500,
+          "True": 500
+        }
+      },
+      "winogrande": {
+        "considered": 16000,
+        "duplicate_within": 2,
+        "clean_available": 15998,
+        "selected": 1000,
+        "selected_overlap_existing_train_norm": 0,
+        "drop_hits_by_suite": {},
+        "label_counts": {
+          "opt_1": 500,
+          "opt_2": 500
+        }
+      }
+    }
+  }
+}

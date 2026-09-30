@@ -1,0 +1,89 @@
+{
+ "args": {
+  "encoder": "Qwen/Qwen3-4B",
+  "train": [
+   "td_train",
+   "kev_train"
+  ],
+  "select": [
+   "kev_dev"
+  ],
+  "eval": [
+   "td_test",
+   "kev_dev",
+   "kevT_dev",
+   "kevT_test",
+   "kevT9_dev",
+   "jb_original",
+   "jb_easy",
+   "jb_hard"
+  ],
+  "norm": "zscore",
+  "loss": "infonce",
+  "width": 1536,
+  "depth": 3,
+  "proj": 512,
+  "lr": 0.0005,
+  "wd": 0.0,
+  "dropout": 0.0,
+  "batch": 256,
+  "epochs": 40,
+  "td_weight": 1.0,
+  "seed": 0,
+  "final": true,
+  "save": "heads\\multi_qwen3-4b_e40.pt",
+  "device": "cuda",
+  "out": "results\\multi\\FINAL_qwen3-4b_e40.json"
+ },
+ "minutes": 0.73,
+ "eval": {
+  "td_test": {
+   "n": 2000,
+   "acc": 0.7590000033378601,
+   "brier": 0.3680631220340729,
+   "ece": 0.13643457617200117
+  },
+  "kev_dev": {
+   "n": 1468,
+   "acc": 0.7145776748657227,
+   "brier": 0.44457632303237915,
+   "ece": 0.17413257985849437
+  },
+  "kevT_dev": {
+   "n": 764,
+   "acc": 0.3664921522140503,
+   "brier": 0.9298811554908752,
+   "ece": 0.3835619152900316
+  },
+  "kevT_test": {
+   "n": 764,
+   "acc": 0.4109947681427002,
+   "brier": 0.8770488500595093,
+   "ece": 0.3277241001722134
+  },
+  "kevT9_dev": {
+   "n": 1264,
+   "acc": 0.37025317549705505,
+   "brier": 0.910171389579773,
+   "ece": 0.34575865818765283
+  },
+  "jb_original": {
+   "n": 72,
+   "acc": 0.4027777910232544,
+   "brier": 0.9762390851974487,
+   "ece": 0.3813359160905888
+  },
+  "jb_easy": {
+   "n": 48,
+   "acc": 0.5416666865348816,
+   "brier": 0.6706226468086243,
+   "ece": 0.2059586844418313
+  },
+  "jb_hard": {
+   "n": 111,
+   "acc": 0.36036035418510437,
+   "brier": 0.8631117939949036,
+   "ece": 0.34453577425373855
+  }
+ }
+}

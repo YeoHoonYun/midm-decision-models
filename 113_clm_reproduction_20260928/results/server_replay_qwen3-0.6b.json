@@ -1,0 +1,43 @@
+{
+ "url": "http://127.0.0.1:8700/v1/systemone",
+ "model": "clm-latest",
+ "workflow": "all",
+ "passes": [
+  {
+   "pass": "sequential_cold",
+   "requests": 400,
+   "decisions": 2000,
+   "accuracy": 0.6515,
+   "client_ms_p50": 8.3,
+   "client_ms_p95": 9.4,
+   "server_ms_p50": 4.0,
+   "server_ms_p95": 5.1,
+   "throughput_rps": 114.4,
+   "wall_s": 3.5
+  },
+  {
+   "pass": "sequential_warm",
+   "requests": 400,
+   "decisions": 2000,
+   "accuracy": 0.6515,
+   "client_ms_p50": 3.2,
+   "client_ms_p95": 15.3,
+   "server_ms_p50": 0.9,
+   "server_ms_p95": 1.5,
+   "throughput_rps": 209.73,
+   "wall_s": 1.9
+  },
+  {
+   "pass": "concurrent8_warm",
+   "requests": 400,
+   "decisions": 2000,
+   "accuracy": 0.6515,
+   "client_ms_p50": 15.1,
+   "client_ms_p95": 19.9,
+   "server_ms_p50": 4.3,
+   "server_ms_p95": 6.8,
+   "throughput_rps": 500.27,
+   "wall_s": 0.8
+  }
+ ]
+}

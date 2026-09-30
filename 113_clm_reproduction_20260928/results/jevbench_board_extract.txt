@@ -1,0 +1,64 @@
+﻿Imajev-4B | ranked | 0.861 | 0.370 | 1.000 | 0.990 | 0.721 | 0.040 | 80.350
+Plumb-4B (crh225, JevK5 v0.2 + LoRA) | ranked | 0.896 | 0.380 | 1.000 | 0.979 |  | 0.016 | 75.485
+decider-4b v2 (Mapika) | ranked | 0.835 | 0.347 | 1.000 | 0.969 |  | 0.017 | 74.997
+Jev 1.13.0 (TypeSafe AI) | ranked | 0.866 | 0.367 | 1.000 | 0.990 |  | 0.652 | 76.339
+JevK5 v0.2.0 | ranked | 0.853 | 0.331 | 1.000 | 0.958 |  |  | 74.534
+djev (Maisa, diffusion-gemma) | ranked | 0.840 | 0.299 | 1.000 | 0.979 |  | 0.237 | 55.356
+Jev-Omni (akhilaaa3, Gemma-4-12B merged) | ranked | 0.887 | 0.321 | 1.000 | 0.969 |  | 0.217 | 64.088
+metask-jev-4b | ranked | 0.797 | 0.276 | 1.000 | 0.979 |  | 0.066 | 66.897
+SemIf, formerly OpenJev (Qwen3.5-4B, TheoLeeCJ) | ranked | 0.810 | 0.263 | 1.000 | 0.979 |  | 0.198 | 66.761
+Jobe Qwen3.5-4B (frozen) | ranked | 0.810 | 0.256 | 1.000 | 0.979 |  | 0.135 | 66.099
+local-jev Qwen3.5-4B | ranked | 0.805 | 0.260 | 1.000 | 0.958 |  | 0.708 | 73.300
+system-one-open (Gemma 4 E2B LoRA on an L4) | ranked | 0.732 | 0.276 | 1.000 | 0.938 |  | 0.652 | 54.867
+spark-s1-4b-v6 (Open Spark Jev, abhishek085) | ranked | 0.792 | 0.266 | 1.000 | 0.979 |  | 0.314 | 47.576
+Malkuth-4B (newfull5, Kev post-train) | ranked | 0.749 | 0.234 | 1.000 | 0.958 |  | 0.089 | 61.486
+jqv (Qwen3-32B zero-shot) | ranked | 0.801 | 0.282 | 1.000 | 0.958 |  | 0.747 | 71.646
+Qwen3-Reranker-4B | ranked | 0.680 | 0.299 | 1.000 | 0.792 |  | 0.130 | 65.219
+decider-35b-a3b (Mapika) | ranked | 0.831 | 0.315 | 1.000 | 0.969 |  | 0.292 | 65.280
+Raw Qwen3 4B Instruct 2507 direct logits | ranked | 0.697 | 0.273 | 1.000 | 0.865 |  | 0.082 | 29.103
+OpenSourceJev (Qwen3.5-4B Q4_K_M, native llama.cpp) | ranked | 0.784 | 0.263 | 1.000 | 0.927 |  |  | 60.329
+Malkuth-2B (newfull5, Kev post-train) | ranked | 0.697 | 0.244 | 1.000 | 0.885 |  | 0.045 | 53.472
+JEV Qwen3.5-9B Base NVFP4 | ranked | 0.753 | 0.295 | 1.000 | 0.917 |  | 0.020 | 67.673
+OpenJev (DiffusionGemma 26B-A4B NVFP4, razorback16) | ranked | 0.818 | 0.286 | 1.000 | 0.958 |  | 0.241 | 54.994
+kev 4B (research preview) | ranked | 0.662 | 0.224 | 1.000 | 0.917 |  | 0.550 | 39.641
+Qwen3.5-9B Jev-like data-mix v2 | ranked | 0.784 | 0.292 | 1.000 | 0.948 |  |  | 61.349
+SimpleJev Qwen3.8-27B | ranked | 0.866 | 0.357 | 1.000 | 0.969 |  | 1.014 | 74.495
+NInfer Qwen3.8-Flash-Next mixed | ranked | 0.896 | 0.341 | 1.000 | 0.990 |  | 0.079 | 78.584
+swanOne (blockbrain, Qwen3.8-Flash-Next NVFP4) | ranked | 0.887 | 0.386 | 1.000 | 0.958 |  | 0.281 | 71.026
+open-alternative-jev (Qwen3.5-4B, IkerMoel) | ranked | 0.740 | 0.244 | 1.000 | 0.844 |  | 0.207 | 58.691
+jev-local (Qwen3.5-9B) | ranked | 0.749 | 0.295 | 1.000 | 0.844 |  | 1.045 | 64.178
+decider-2b (Mapika) | ranked | 0.710 | 0.247 | 1.000 | 0.854 |  | 0.261 | 43.487
+Laya (Convai Innovations, ModernBERT-large 421M) | ranked | 0.584 | 0.308 | 0.944 | 0.729 |  | 0.787 | 63.676
+openjev-sglang (Qwen3.6-35B-A3B on SGLang) | ranked | 0.853 | 0.331 | 1.000 | 0.958 |  | 0.678 | 69.242
+NInfer Qwen3.8-27B NVFP4 (T=1.5) | ranked | 0.831 | 0.331 | 1.000 | 0.979 |  | 0.368 | 75.960
+NInfer Qwen3.8-27B NVFP4 | ranked | 0.831 | 0.331 | 1.000 | 0.979 |  | 0.368 | 67.161
+kev 8B (research preview) | ranked | 0.714 | 0.218 | 1.000 | 0.927 |  | 0.590 | 40.166
+JevOne | ranked | 0.896 | 0.338 | 1.000 | 0.969 |  | 0.087 | 77.598
+typecastlm (Mikhail Gribov, Qwen3.5-4B computed head) | ranked | 0.779 | 0.299 | 0.986 | 0.938 |  | 0.028 | 62.087
+SimpleJev Qwen3.6-35B-A3B | ranked | 0.814 | 0.282 | 1.000 | 0.938 |  | 0.852 | 59.795
+kev 0.6B (research preview) | ranked | 0.667 | 0.240 | 1.000 | 0.812 |  | 0.590 | 49.958
+Raw Qwen3 8B direct logits | ranked | 0.684 | 0.263 | 1.000 | 0.865 |  | 0.085 | 24.104
+system-one (Qwen3-8B, Sean Goedecke) | ranked | 0.719 | 0.244 | 1.000 | 0.906 |  | 0.166 | 32.828
+OpenDecision (ModernBERT-large zero-shot) | ranked | 0.532 | 0.256 | 0.875 | 0.625 |  | 0.338 | 57.063
+LitJev (Qwen3.8-27B) | ranked | 0.861 | 0.308 | 1.000 | 0.979 |  | 2.025 | 76.624
+openJev Verdict 1.4 | ranked | 0.576 | 0.279 | 0.861 | 0.677 |  | 0.314 | 72.033
+kev 0.5B | ranked | 0.494 | 0.273 | 0.958 | 0.521 |  | 0.430 | 49.688
+Bespoke Nimble 9B (Bespoke Labs) | ranked | 0.797 | 0.289 | 1.000 | 0.948 |  | 0.389 | 56.447
+openJev Verdict (heman10x, ModernBERT-base 151M) | ranked | 0.554 | 0.247 | 0.861 | 0.656 |  | 0.278 | 46.991
+Raw Qwen3 1.7B direct logits | ranked | 0.541 | 0.260 | 0.819 | 0.552 |  | 0.067 | 24.285
+reflex-27b (Qwen3.8-27B) | ranked | 0.870 | 0.295 | 1.000 | 0.958 |  | 1.888 | 77.238
+JevAct (einptein, jev1-2b-v2) | ranked | 0.619 | 0.234 | 0.986 | 0.688 |  | 0.399 | 55.064
+djev (thinking) | ranked | 0.874 | 0.601 | 0.958 | 0.990 |  | 0.426 | 87.778
+OpenJev (thinking, BF16) | ranked | 0.887 | 0.422 | 1.000 | 1.000 |  | 0.463 | 58.097
+Qwen3.5-0.8B Decision Model (Mourad Ghafiri) | ranked | 0.593 | 0.347 | 0.986 | 0.552 |  | 7.150 | 68.227
+open-jev-deberta-v3-large (local CPU) | ranked | 0.524 | 0.295 | 1.000 | 0.490 |  | 1.768 | 66.601
+smalljev semantic-v9 | ranked | 0.606 | 0.269 | 0.972 | 0.688 |  | 0.414 | 59.176
+Instinct (ZooWork, Qwen3.8-27B) | ranked | 0.866 | 0.351 | 0.986 | 0.958 |  | 0.259 | 78.673
+Open-Jev 9B (Zefan Cai) | ranked | 0.775 | 0.299 | 1.000 | 0.906 |  | 0.755 | 61.781
+Open-Jev 2B (Zefan Cai) | ranked | 0.645 | 0.263 | 1.000 | 0.792 |  | 0.665 | 55.274
+CLM-8B (Contrastive-LM, clm-latest) | ranked | 0.407 | 0.240 | 0.667 | 0.385 |  | 0.017 | 39.813
+SimpleJev (Qwen3.5-0.8B, CPU) | ranked | 0.545 | 0.347 | 0.875 | 0.573 |  | 3.994 | 49.074
+Raw Qwen3 0.6B direct logits | ranked | 0.481 | 0.256 | 0.889 | 0.542 |  | 0.068 | 20.703
+verdict-small (Manavarya09, multilingual-e5-small 118M) | ranked | 0.537 | 0.289 | 0.889 | 0.510 |  | 0.053 | 66.939
+Open Jev JSON Canvas (JoshuaSP) | ranked | 0.844 | 0.312 | 1.000 | 0.990 |  | 0.224 | 0.000
+Qwen3.8 27B (Chutes TEE) | partial | 0.719 | 0.218 | 0.986 | 0.990 |  | 5.754 | 93.559

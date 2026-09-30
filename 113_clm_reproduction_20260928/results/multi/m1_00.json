@@ -1,0 +1,88 @@
+{
+ "args": {
+  "encoder": "Qwen/Qwen3-0.6B",
+  "train": [
+   "td_train",
+   "kev_train"
+  ],
+  "select": [
+   "kev_dev"
+  ],
+  "eval": [
+   "td_test",
+   "kev_dev",
+   "kevT_dev",
+   "kevT9_dev",
+   "jb_original",
+   "jb_easy",
+   "jb_hard"
+  ],
+  "norm": "zscore",
+  "loss": "infonce",
+  "width": 1536,
+  "depth": 3,
+  "proj": 512,
+  "lr": 0.0005,
+  "wd": 0.0,
+  "dropout": 0.0,
+  "batch": 256,
+  "epochs": 40,
+  "td_weight": 1.0,
+  "seed": 0,
+  "final": false,
+  "save": null,
+  "device": "cuda",
+  "out": "113_clm_reproduction_20260928\\results\\multi\\m1_00.json"
+ },
+ "minutes": 0.88,
+ "history": [
+  {
+   "epoch": 5,
+   "td_holdout": 0.49000000953674316,
+   "kev_dev": 0.5769754648208618
+  },
+  {
+   "epoch": 10,
+   "td_holdout": 0.6700000166893005,
+   "kev_dev": 0.6212534308433533
+  },
+  {
+   "epoch": 15,
+   "td_holdout": 0.7066666483879089,
+   "kev_dev": 0.6198909878730774
+  },
+  {
+   "epoch": 20,
+   "td_holdout": 0.6266666650772095,
+   "kev_dev": 0.636239767074585
+  },
+  {
+   "epoch": 25,
+   "td_holdout": 0.7116666436195374,
+   "kev_dev": 0.6519073843955994
+  },
+  {
+   "epoch": 30,
+   "td_holdout": 0.7366666793823242,
+   "kev_dev": 0.6553133726119995
+  },
+  {
+   "epoch": 35,
+   "td_holdout": 0.7366666793823242,
+   "kev_dev": 0.6573569774627686
+  },
+  {
+   "epoch": 40,
+   "td_holdout": 0.746666669845581,
+   "kev_dev": 0.6546321511268616
+  }
+ ],
+ "select_score": 0.7006494104862213,
+ "best_epoch": 40,
+ "best_select_score": 0.7006494104862213,
+ "last": {
+  "epoch": 40,
+  "td_holdout": 0.746666669845581,
+  "kev_dev": 0.6546321511268616
+ }
+}

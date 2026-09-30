@@ -1,0 +1,61 @@
+{
+ "args": {
+  "encoder": "Qwen/Qwen3-0.6B",
+  "train": [
+   "td_train",
+   "kev_train"
+  ],
+  "select": [
+   "kev_dev"
+  ],
+  "eval": [
+   "td_test",
+   "kev_dev",
+   "jb_original",
+   "jb_easy"
+  ],
+  "norm": "zscore",
+  "loss": "infonce",
+  "width": 1536,
+  "depth": 3,
+  "proj": 512,
+  "lr": 0.0005,
+  "wd": 0.0,
+  "dropout": 0.0,
+  "batch": 256,
+  "epochs": 20,
+  "td_weight": 1.0,
+  "seed": 0,
+  "final": true,
+  "save": "heads\\multi_qwen3-0.6b_e20.pt",
+  "device": "cuda",
+  "out": "results\\multi\\final_smoke_qwen3-0.6b_e20.json"
+ },
+ "minutes": 0.85,
+ "eval": {
+  "td_test": {
+   "n": 2000,
+   "acc": 0.7225000262260437,
+   "brier": 0.41407278180122375,
+   "ece": 0.13238795210774967
+  },
+  "kev_dev": {
+   "n": 1468,
+   "acc": 0.6532697677612305,
+   "brier": 0.49971911311149597,
+   "ece": 0.18055808277804206
+  },
+  "jb_original": {
+   "n": 72,
+   "acc": 0.2777777910232544,
+   "brier": 1.1105175018310547,
+   "ece": 0.5070252982987806
+  },
+  "jb_easy": {
+   "n": 48,
+   "acc": 0.4791666567325592,
+   "brier": 0.67393559217453,
+   "ece": 0.2032048499642104
+  }
+ }
+}
