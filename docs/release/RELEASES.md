@@ -57,7 +57,7 @@
 | 인용 | `CITATION.cff`: YeoHoon Yoon, Seoul School of Integrated Sciences and Technologies, ORCID 0009-0007-2669-8127 |
 | 포함 | 실험 113과 114의 코드, 결과 JSON, stats, ledger, 문서 |
 | 제외 | 데이터, 확률 덤프, 가중치 |
-| 주요 커밋 | `cae10c6` v0.1.0 → `7de0918` → `61f14ab` → `70d7ae2` → `b1744d4` → (이번) CLM·Jev 비교와 HF 링크 |
+| 주요 커밋 | `cae10c6` v0.1.0 → `7de0918` → `61f14ab` → `70d7ae2` → `b1744d4` → `977f60c` CLM·Jev 비교와 HF 링크 |
 
 ## 3. Zenodo (DOI)
 - 아직 발급되지 않았다.
