@@ -121,7 +121,7 @@ PAIRS = [  # (label, model A, model B) -> B minus A
     ("generation, both bf16: Qwen3-4B e1 -> Qwen3.5-4B e1", "P_q3_4b_e1_bf16", "B_qwen35-4b-1ep"),
     ("precision: Qwen3.5-2B e1 fp16 -> bf16", "R_q35_2b_e1", "P_q35_2b_e1_bf16"),
     ("size (Qwen3.5), both bf16: 2B e1 -> 4B e1", "P_q35_2b_e1_bf16", "B_qwen35-4b-1ep"),
-    ("ablation: + LoRA (joint options fixed; Qwen3-4B bf16)", "H_q3_4b_headonly", "P_q3_4b_e1_bf16"),
+    ("ablation: + LoRA (joint options fixed; Qwen3-4B, both fp16)", "H_q3_4b_headonly", "qwen3-4b"),
 ]
 
 

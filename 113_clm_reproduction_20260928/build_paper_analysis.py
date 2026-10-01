@@ -45,7 +45,7 @@ NAMES = {
     "P_q35_2b_e1_bf16": ("MiDM-2B-q35-e1 (bf16 control)", "Qwen3.5-2B-Base", 1, "td+kev"),
     "R_q35_2b_e1_bx": ("MiDM-2B-q35-e1-bx", "Qwen3.5-2B-Base", 1, "td+kev+breadth_v1+pp6_new"),
     "R_q35_0p8b_e1_bx": ("MiDM-0.8B-q35-e1-bx", "Qwen3.5-0.8B-Base", 1, "td+kev+breadth_v1+pp6_new"),
-    "H_q3_4b_headonly": ("ablation: joint options, no LoRA (Qwen3-4B, bf16)", "Qwen3-4B", 1, "td+kev"),
+    "H_q3_4b_headonly": ("ablation: joint options, no LoRA (Qwen3-4B, fp16)", "Qwen3-4B", 1, "td+kev"),
 }
 # per-source breakdowns: which probs files, in which order
 BREAKDOWN = ["B_qwen3-8b-2ep", "B_qwen35-4b-1ep", "D_qwen3-4b-1ep-broad", "E_q35_4b_e1_breadth",
@@ -205,6 +205,7 @@ def copies(out):
                                          "results/r2_deepswe_heldout38_zeroshot_v0.1_head.json",
                                          "results/deepswe_lto/summary.md", "results/deepswe_lto/summary.json"],
                        "search": ["results/sweep_summary.md", "results/choice_summary.md"],
+                       "jev_paired": ["results/jev_paired/jev_paired.md", "results/jev_paired/jev_paired.json"],
                        "router": ["../114_local_model_router_20260928/DECISIONS.md",
                                   "../114_local_model_router_20260928/MODELS.md"]}.items():
         os.makedirs(os.path.join(out, sub), exist_ok=True)
