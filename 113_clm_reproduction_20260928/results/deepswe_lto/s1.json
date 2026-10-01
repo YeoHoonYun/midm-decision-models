@@ -13,9 +13,9 @@
  "all_pass_tasks": 21,
  "all_fail_tasks": 4,
  "mixed_tasks": 13,
- "embeddings_dir": "F:\\local_llm_study\\experiments\\113_clm_reproduction_20260928\\data\\emb_cache\\data_deepswe_eval_parquet",
- "checkpoint": "F:\\local_llm_study\\experiments\\113_clm_reproduction_20260928\\runs\\deepswe_lto\\s1\\best_head.pt",
- "tasks_file": "F:\\local_llm_study\\experiments\\113_clm_reproduction_20260928\\heads\\deepswe\\heldout_tasks.json",
+ "embeddings_dir": "data\\emb_cache\\data_deepswe_eval_parquet",
+ "checkpoint": "runs\\deepswe_lto\\s1\\best_head.pt",
+ "tasks_file": "heads\\deepswe\\heldout_tasks.json",
  "index_trajectories_without_embeddings": [],
  "embedded_trajectories_outside_index": 298,
  "short_groups_retained": {
