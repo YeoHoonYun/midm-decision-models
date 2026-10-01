@@ -2,7 +2,7 @@
 
 This update collects literature for the MiDM findings: base-model generation, epochs, breadth + knowledge MC, PEFT null results, cascade and CLM audit.
 - **[V]** means checked on arXiv, ACL Anthology or a proceedings page during the search.
-- **[M]** means from well-established memory: the ID and venue are believed correct but were not re-fetched. Spot-check these before submission.
+- **[M]** means a well-known reference whose ID and venue were not re-checked in this pass. Spot-check these before submission.
 - **UNVERIFIED** means not confirmed.
 
 This supplements `novelty_review.md` and `references.json`.
