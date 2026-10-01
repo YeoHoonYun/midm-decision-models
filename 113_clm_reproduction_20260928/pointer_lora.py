@@ -265,6 +265,7 @@ def cmd_eval(a):
                      for e, p in zip(ex, probs)]
         print(f"[ptr-eval] {s}: {m}", flush=True)
     if a.save_probs:
+        os.makedirs(os.path.dirname(os.path.abspath(a.save_probs)), exist_ok=True)
         with open(a.save_probs, "w", encoding="utf-8") as f:
             for r in dump:
                 f.write(json.dumps(r) + "\n")
