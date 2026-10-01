@@ -1,5 +1,7 @@
 # MiDM: Minimal Decision Models, and an audit of CLM-8B
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23084584.svg)](https://doi.org/10.5281/zenodo.23084584)
+
 Code, results and write-up for a controlled study of small (≤8B) typed-decision models on two consumer GPUs
 (RTX 3090 + RTX 2080 Ti, Windows, no vLLM).
 
@@ -112,7 +114,7 @@ Datasets and model weights are not redistributed here. Datasets keep their own l
 released separately on Hugging Face: https://huggingface.co/yunicro/MiDM-4B-q35-e1-bx
 
 ## Citation
-See `CITATION.cff`. A DOI will be added after the Zenodo release.
+See `CITATION.cff`. Archived on Zenodo: https://doi.org/10.5281/zenodo.23084584 (all versions: https://doi.org/10.5281/zenodo.23084583)
 
 ## License
 Apache-2.0 (`LICENSE`); third-party notices are in `NOTICE`.
