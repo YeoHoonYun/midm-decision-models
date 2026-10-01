@@ -74,6 +74,8 @@
    - Jev API는 p50 0.665 s다(네트워크 포함).
    - HF 패키지 검증은 통과했다(td_holdout 0.835, 학습 저장소 값 0.833).
 
+**코드·모델 공개(v0.1.0):** Zenodo DOI 10.5281/zenodo.23084584 · GitHub YeoHoonYun/midm-decision-models · HF yunicro/MiDM-4B-q35-e1-bx (모두 public)
+
 주 출처:
 - 실험 113: `experiments/113_clm_reproduction_20260928/README.md`, `results/`, `runs/search/*/train_summary.json`
 - 실험 114: `experiments/114_local_model_router_20260928/README.md`, `DECISIONS.md`, `results/cascade*_*.json`, `ood/`

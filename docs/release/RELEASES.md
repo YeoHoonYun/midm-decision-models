@@ -1,14 +1,28 @@
 # MiDM 배포 정보 (논문 "Code and model availability" 근거)
 
-최종 갱신: 2026-10-01
+최종 갱신: 2026-10-01 23:30 — **v0.1.0 공개 배포 완료**
 
+## 0. 최종 공개 상태 (v0.1.0)
+
+| 채널 | 주소 | 상태 |
+|---|---|---|
+| **Zenodo DOI** | **https://doi.org/10.5281/zenodo.23084584** (전체 버전 concept DOI: 10.5281/zenodo.23084583) | 공개, open access, 압축본 1개(393 KB) |
+| GitHub | https://github.com/YeoHoonYun/midm-decision-models | **public**. 릴리스는 https://github.com/YeoHoonYun/midm-decision-models/releases/tag/v0.1.0 |
+| Hugging Face | https://huggingface.co/yunicro/MiDM-4B-q35-e1-bx | **public** (commit 957e982, 모델 카드에 DOI·견고성 절 포함) |
+
+- 릴리스 대상 커밋은 `b3dcb96`(태그 v0.1.0)이다. 이후 DOI를 반영한 커밋은 `f12bb13`, README 링크 정리는 `72fda54`다.
+- 기계 판독용 기록: `release_v0.1.0.json`. 릴리스 노트: `release_notes_v0.1.0.md`. HF 패키지 검증 결과: `verify_MiDM-4B-q35-e1-bx.json`(td_holdout 0.835, 일치).
+- 커밋 작성자 이메일은 모두 GitHub noreply다. 공개 전에 비밀값, 개인 이메일, 로컬 절대경로를 스캔했고 0건이었다.
+- **논문 인용 문구:** Yoon, Y. (2026). *MiDM: Minimal Decision Models and an audit of CLM-8B* (v0.1.0) [Software]. Zenodo. https://doi.org/10.5281/zenodo.23084584
+- **이후 버전:** 수정할 내용은 GitHub에 반영한 뒤 `publish_release.py --version 0.1.1`을 실행한다. 새 버전 DOI가 발급되고, concept DOI는 그대로 유지된다.
+- **권장:** 채팅에 노출된 HF 토큰과 Zenodo 토큰은 각 사이트에서 폐기하고 새로 발급한다.
 ## 1. Hugging Face
 
 | 항목 | 값 |
 |---|---|
 | repo | https://huggingface.co/yunicro/MiDM-4B-q35-e1-bx |
 | 계정 | `yunicro` |
-| 공개 여부 | **private** (공개 전에 학습 데이터 이용 조건 확인 필요: Yelp, Amazon reviews 등) |
+| 공개 여부 | **public** (2026-10-01 전환. 학습 데이터 이용 조건은 모델 카드에 명시) |
 | 라이선스 | Apache-2.0 (어댑터와 코드만. base 모델과 데이터셋은 각자의 조건을 따름) |
 | base 모델 | `Qwen/Qwen3.5-4B-Base` (4-bit NF4, 사용자가 별도로 내려받음) |
 | 로컬 원본 | `huggingface/MiDM-4B-q35-e1-bx/` (`build_hf_package.py --repo-id yunicro/MiDM-4B-q35-e1-bx`로 생성) |
@@ -21,6 +35,7 @@
 |---|---|---|
 | 2026-09-30 23:30 (KST 10-01 08:30) | `e02cfa1` | v0.1.0 최초 업로드 (7개 파일) |
 | 2026-09-30 23:34 (KST 10-01 08:34) | `680de33` | 모델 카드에 CLM-8B·TypeSafe Jev 비교 표와 DeepSWE 감사 요약 추가 |
+| 2026-10-01 (KST 23:2x) | `957e982` | 견고성 절(3 seed, 패키지 검증, latency, 약점)과 DOI 인용 추가, **public 전환** |
 
 파일 (SHA-256, 로컬 기준. 원격 LFS 해시는 두 가중치 파일에서 일치를 확인함)
 
@@ -45,19 +60,19 @@
 | Kev transfer-v9 dev | 0.705 | 0.675 |
 | JevBench public (231) | 0.710 | 0.710 |
 
-**검증 상태.** 패키지 경로 검증(queue job 102)은 논문 seed 실험 뒤로 보류돼 있다. 이 검증은 `verify_hf_package.py`로 패키지의 `midm.py`만 써서 모델을 불러 데모를 실행하고, td_holdout을 다시 채점해 0.8333 ±0.005가 나오는지 확인한다. 끝나면 결과를 여기에 기록한다. 결과 파일은 `huggingface/verify_MiDM-4B-q35-e1-bx.json`이다.
+**검증 상태.** 통과했다(2026-10-01 23:11, queue job 102). 패키지의 `midm.py`만으로 불러 td_holdout 0.835를 얻었고, 학습 저장소 값 0.8333과 ±0.005 이내로 일치한다. 결과 파일은 `verify_MiDM-4B-q35-e1-bx.json`이다.
 
 ## 2. GitHub
 
 | 항목 | 값 |
 |---|---|
 | 로컬 repo | `github/midm-decision-models/` (branch `main`) |
-| 원격 | https://github.com/YeoHoonYun/midm-decision-models (**private**, 2026-10-01 생성, branch `main`, `gh` CLI로 푸시) |
+| 원격 | https://github.com/YeoHoonYun/midm-decision-models (**public**, 2026-10-01 생성·공개, branch `main`, 태그 `v0.1.0`) |
 | 라이선스 | Apache-2.0, `NOTICE`(CLM 스키마 헬퍼 Apache-2.0 표기) |
 | 인용 | `CITATION.cff`: YeoHoon Yoon, Seoul School of Integrated Sciences and Technologies, ORCID 0009-0007-2669-8127 |
 | 포함 | 실험 113과 114의 코드, 결과 JSON, stats, ledger, 문서 |
 | 제외 | 데이터, 확률 덤프, 가중치 |
-| 주요 커밋 | `cae10c6` v0.1.0 → `7de0918` → `61f14ab` → `70d7ae2` → `b1744d4` → `977f60c` CLM·Jev 비교와 HF 링크 |
+| 주요 커밋 | noreply로 기록을 재작성한 뒤 `db00c0e`, 최종 결과 `6f7a622`, 경로 정리 `b3dcb96`(태그 v0.1.0), DOI 반영 `f12bb13`, README 링크 `72fda54` |
 
 ## 2b. 공개 배포 절차 (2026-10-01 결정, 실험 완료 후 실행)
 
@@ -73,10 +88,8 @@
   5. `paper/release/release_v0.1.0.json`에 기록을 남긴다.
 
 ## 3. Zenodo (DOI)
-- 아직 발급되지 않았다.
-- 절차: 저장소를 public으로 전환 → Zenodo에서 GitHub 계정 연결 → repo 토글 ON → GitHub Release(`v0.1.0`) 생성 → DOI 자동 발급.
-- Zenodo 연동은 public repo에서만 동작한다. 발급 후 DOI를 `CITATION.cff`, GitHub README, HF 모델 카드, 논문에 반영한다.
-- 메타데이터는 `.zenodo.json`에 준비돼 있다.
+- **발급 완료:** 10.5281/zenodo.23084584 (record 23084584), concept DOI 10.5281/zenodo.23084583. 2026-10-01에 API 업로드로 발급했고, 대상은 태그 v0.1.0의 git archive다.
+- 메타데이터는 `.zenodo.json`에서 가져왔다(저자, ORCID, 소속, Apache-2.0, 관련 식별자: GitHub 태그와 HF 모델).
 
 ## 4. 비교 대상 수치의 출처 (논문 표에 쓰는 값, 모두 비짝지음)
 
