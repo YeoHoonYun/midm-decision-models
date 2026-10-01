@@ -13,6 +13,41 @@
    "random_expectation_decidable": 7.0,
    "p_one_sided_ge": 0.8187007904052734,
    "p_one_sided_le": 0.37883758544921875
+  },
+  "retrained_s1": {
+   "decidable_tasks": 13,
+   "observed_successes_decidable": 10.0,
+   "random_expectation_decidable": 7.0,
+   "p_one_sided_ge": 0.06230449676513672,
+   "p_one_sided_le": 0.9857349395751953
+  },
+  "retrained_s2": {
+   "decidable_tasks": 13,
+   "observed_successes_decidable": 9.0,
+   "random_expectation_decidable": 7.0,
+   "p_one_sided_ge": 0.18200254440307617,
+   "p_one_sided_le": 0.9376955032348633
+  },
+  "retrained_s3": {
+   "decidable_tasks": 13,
+   "observed_successes_decidable": 11.0,
+   "random_expectation_decidable": 7.0,
+   "p_one_sided_ge": 0.014265060424804688,
+   "p_one_sided_le": 0.9980688095092773
+  },
+  "retrained_s4": {
+   "decidable_tasks": 13,
+   "observed_successes_decidable": 10.0,
+   "random_expectation_decidable": 7.0,
+   "p_one_sided_ge": 0.06230449676513672,
+   "p_one_sided_le": 0.9857349395751953
+  },
+  "retrained_s42": {
+   "decidable_tasks": 13,
+   "observed_successes_decidable": 10.0,
+   "random_expectation_decidable": 7.0,
+   "p_one_sided_ge": 0.06230449676513672,
+   "p_one_sided_le": 0.9857349395751953
   }
  },
  "paired": {

@@ -30,8 +30,13 @@ def deepswe():
     for t, (task, ok) in traj.items():
         by_task[task][t] = ok
     res = {}
-    for name, f in (("released_head", "r1_deepswe_heldout38_released_head.json"),
-                    ("base_head_zeroshot", "r2_deepswe_heldout38_zeroshot_v0.1_head.json")):
+    runs = [("released_head", "r1_deepswe_heldout38_released_head.json"),
+            ("base_head_zeroshot", "r2_deepswe_heldout38_zeroshot_v0.1_head.json")]
+    lto = os.path.join(HERE, "results", "deepswe_lto")
+    if os.path.isdir(lto):   # our retrained heads (held-out tasks excluded), one per seed
+        runs += [(f"retrained_{os.path.splitext(f)[0]}", os.path.join("deepswe_lto", f))
+                 for f in sorted(os.listdir(lto)) if f[0] == "s" and f[1:-5].isdigit() and f.endswith(".json")]
+    for name, f in runs:
         r = json.load(open(os.path.join(HERE, "results", f)))
         picks = next(iter(r["selectors"].values()))["picks"]
         ps, obs_dec, n_dec = [], 0.0, 0

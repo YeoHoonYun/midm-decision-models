@@ -6,6 +6,11 @@
 |---|---|---|---|---|---|
 | released_head | 13 | 10.0 | 7.0 | 0.0623 | 0.9857 |
 | base_head_zeroshot | 13 | 6.0 | 7.0 | 0.8187 | 0.3788 |
+| retrained_s1 | 13 | 10.0 | 7.0 | 0.0623 | 0.9857 |
+| retrained_s2 | 13 | 9.0 | 7.0 | 0.1820 | 0.9377 |
+| retrained_s3 | 13 | 11.0 | 7.0 | 0.0143 | 0.9981 |
+| retrained_s4 | 13 | 10.0 | 7.0 | 0.0623 | 0.9857 |
+| retrained_s42 | 13 | 10.0 | 7.0 | 0.0623 | 0.9857 |
 
 ## Paired row-clustered bootstrap (B minus A, accuracy pp, 95% CI, 4000 resamples)
 

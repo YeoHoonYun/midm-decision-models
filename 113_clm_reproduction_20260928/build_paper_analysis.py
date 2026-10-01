@@ -202,7 +202,8 @@ def copies(out):
     for sub, files in {"stats": ["results/stats/stats.md", "results/stats/stats.json"],
                        "ledger": ["results/ledger/test_read_ledger.md", "results/ledger/test_read_ledger.jsonl"],
                        "deepswe_audit": ["results/r1_deepswe_heldout38_released_head.json",
-                                         "results/r2_deepswe_heldout38_zeroshot_v0.1_head.json"],
+                                         "results/r2_deepswe_heldout38_zeroshot_v0.1_head.json",
+                                         "results/deepswe_lto/summary.md", "results/deepswe_lto/summary.json"],
                        "search": ["results/sweep_summary.md", "results/choice_summary.md"],
                        "router": ["../114_local_model_router_20260928/DECISIONS.md",
                                   "../114_local_model_router_20260928/MODELS.md"]}.items():

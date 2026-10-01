@@ -1,0 +1,49 @@
+{
+ "leak_check": {
+  "pool_tasks": 113,
+  "pool_samples": 405919,
+  "heldout_tasks": 38,
+  "heldout_tasks_in_pool": 38,
+  "heldout_samples_in_pool": 132352
+ },
+ "recipe": {
+  "init": "CLM_v0.1-8B.pt",
+  "batch": 512,
+  "holdout": "heldout_tasks.json",
+  "eval": "bon_eval --n 4 --window 12"
+ },
+ "runs": {
+  "42": {
+   "accuracy": 0.8157894736842105,
+   "solved": 31,
+   "random_pick": 0.7368421052631579,
+   "oracle": 0.8947368421052632
+  },
+  "1": {
+   "accuracy": 0.8157894736842105,
+   "solved": 31,
+   "random_pick": 0.7368421052631579,
+   "oracle": 0.8947368421052632
+  },
+  "2": {
+   "accuracy": 0.7894736842105263,
+   "solved": 30,
+   "random_pick": 0.7368421052631579,
+   "oracle": 0.8947368421052632
+  },
+  "3": {
+   "accuracy": 0.8421052631578947,
+   "solved": 32,
+   "random_pick": 0.7368421052631579,
+   "oracle": 0.8947368421052632
+  },
+  "4": {
+   "accuracy": 0.8157894736842105,
+   "solved": 31,
+   "random_pick": 0.7368421052631579,
+   "oracle": 0.8947368421052632
+  }
+ },
+ "accuracy_mean": 0.8157894736842104,
+ "accuracy_sd": 0.01860807318911965
+}
