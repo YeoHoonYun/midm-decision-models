@@ -59,6 +59,19 @@
 | 제외 | 데이터, 확률 덤프, 가중치 |
 | 주요 커밋 | `cae10c6` v0.1.0 → `7de0918` → `61f14ab` → `70d7ae2` → `b1744d4` → `977f60c` CLM·Jev 비교와 HF 링크 |
 
+## 2b. 공개 배포 절차 (2026-10-01 결정, 실험 완료 후 실행)
+
+사용자 결정: GitHub와 HF를 **공개**로 전환하고 Zenodo DOI를 발급한다.
+
+- **커밋 이메일:** 공개 전에 커밋 18개의 작성자 이메일을 GitHub noreply(`45550361+YeoHoonYun@users.noreply.github.com`)로 바꿔 강제 푸시했다(`main` = `db00c0e`). 이후 커밋도 이 저장소에서는 noreply로 기록된다.
+- **Zenodo:** GitHub 연동 대신 **API 업로드**를 쓴다. 토큰은 `%USERPROFILE%\.config\zenodo\token`에 소유자 전용 ACL로 보관하고, 어떤 저장소에도 넣지 않는다. 같은 계정에 기존 레코드 1건(NSR 연구, 10.5281/zenodo.22927634)이 있으며, 이번 릴리스는 별도의 새 레코드다.
+- **실행:** `experiments/113_clm_reproduction_20260928/publish_release.py --version 0.1.0` (`--dry-run` 확인 완료: 압축본 354KB)
+  1. GitHub: 태그 `v0.1.0`을 푸시하고, 저장소를 공개로 전환하고, GitHub Release를 만든다.
+  2. Zenodo: `.zenodo.json` 메타데이터와 태그 압축본을 업로드하고 publish해 DOI를 받는다. **영구적이며 삭제할 수 없다.**
+  3. CITATION.cff와 README에 DOI(배지 포함)를 넣고 커밋·푸시한다.
+  4. HF 모델 카드에 DOI와 GitHub 링크를 넣고 공개로 전환한다.
+  5. `paper/release/release_v0.1.0.json`에 기록을 남긴다.
+
 ## 3. Zenodo (DOI)
 - 아직 발급되지 않았다.
 - 절차: 저장소를 public으로 전환 → Zenodo에서 GitHub 계정 연결 → repo 토글 ON → GitHub Release(`v0.1.0`) 생성 → DOI 자동 발급.
