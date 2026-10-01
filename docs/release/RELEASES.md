@@ -52,7 +52,7 @@
 | 항목 | 값 |
 |---|---|
 | 로컬 repo | `github/midm-decision-models/` (branch `main`) |
-| 원격 | **미생성** (예정: private `midm-decision-models`, 소유자 로그인 필요) |
+| 원격 | https://github.com/YeoHoonYun/midm-decision-models (**private**, 2026-10-01 생성, branch `main`, `gh` CLI로 푸시) |
 | 라이선스 | Apache-2.0, `NOTICE`(CLM 스키마 헬퍼 Apache-2.0 표기) |
 | 인용 | `CITATION.cff`: YeoHoon Yoon, Seoul School of Integrated Sciences and Technologies, ORCID 0009-0007-2669-8127 |
 | 포함 | 실험 113과 114의 코드, 결과 JSON, stats, ledger, 문서 |
@@ -61,7 +61,7 @@
 
 ## 3. Zenodo (DOI)
 - 아직 발급되지 않았다.
-- 절차: GitHub 원격 생성 → Zenodo에서 GitHub 계정 연결 → repo 토글 ON → GitHub Release(`v0.1.0`) 생성 → DOI 자동 발급.
+- 절차: 저장소를 public으로 전환 → Zenodo에서 GitHub 계정 연결 → repo 토글 ON → GitHub Release(`v0.1.0`) 생성 → DOI 자동 발급.
 - Zenodo 연동은 public repo에서만 동작한다. 발급 후 DOI를 `CITATION.cff`, GitHub README, HF 모델 카드, 논문에 반영한다.
 - 메타데이터는 `.zenodo.json`에 준비돼 있다.
 
