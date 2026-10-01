@@ -117,6 +117,8 @@ PAIRS = [  # (label, model A, model B) -> B minus A
     ("generation at small size: Qwen3-0.6B e1 -> Qwen3.5-0.8B e1", "qwen3-0.6b", "R_q35_0p8b_e1"),
     ("-bx at 2B: Qwen3.5-2B e1 -> +breadth_v1+arc/obqa/csqa", "R_q35_2b_e1", "R_q35_2b_e1_bx"),
     ("-bx at 0.8B: Qwen3.5-0.8B e1 -> +breadth_v1+arc/obqa/csqa", "R_q35_0p8b_e1", "R_q35_0p8b_e1_bx"),
+    ("-bx, seed 1: Qwen3.5-4B e1 s1 -> -bx s1", "q35_4b_e1_s1", "q35_4b_e1_bx_s1"),
+    ("-bx, seed 2: Qwen3.5-4B e1 s2 -> -bx s2", "q35_4b_e1_s2", "q35_4b_e1_bx_s2"),
     ("long context: -bx (1024) -> -bxL (+long_v1, 4096)", "E_q35_4b_e1_breadth_mc", "E_q35_4b_e1_bxL"),
     ("precision: Qwen3-4B e1 fp16 -> bf16", "qwen3-4b", "P_q3_4b_e1_bf16"),
     ("generation, both bf16: Qwen3-4B e1 -> Qwen3.5-4B e1", "P_q3_4b_e1_bf16", "B_qwen35-4b-1ep"),
@@ -131,7 +133,9 @@ def main():
     res = {"deepswe": deepswe(), "paired": {}}
     probs = os.path.join(HERE, "results", "probs")
     for label, a, b in PAIRS:
-        pa, pb = os.path.join(probs, f"{a}.jsonl"), os.path.join(probs, f"{b}.jsonl")
+        find = lambda t: next((p for p in (os.path.join(probs, f"{t}.jsonl"), os.path.join(HERE, "results", "seeds", f"{t}.jsonl"))
+                               if os.path.exists(p)), os.path.join(probs, f"{t}.jsonl"))
+        pa, pb = find(a), find(b)
         if os.path.exists(pa) and os.path.exists(pb):
             res["paired"][label] = {"a": a, "b": b, "suites": paired(pa, pb)}
     json.dump(res, open(os.path.join(OUT, "stats.json"), "w"), indent=1)
