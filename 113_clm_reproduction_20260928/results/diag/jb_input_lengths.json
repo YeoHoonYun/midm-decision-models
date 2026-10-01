@@ -1,0 +1,79 @@
+{
+ "jb_easy": {
+  "n": 48,
+  "median_tokens": 77,
+  "max_tokens": 97,
+  "over_1024": 0
+ },
+ "jb_hard:adversarial": {
+  "n": 6,
+  "median_tokens": 249,
+  "max_tokens": 270,
+  "over_1024": 0
+ },
+ "jb_hard:ambiguous": {
+  "n": 7,
+  "median_tokens": 463,
+  "max_tokens": 601,
+  "over_1024": 0
+ },
+ "jb_hard:judge_hard": {
+  "n": 17,
+  "median_tokens": 260,
+  "max_tokens": 365,
+  "over_1024": 0
+ },
+ "jb_hard:long_policy": {
+  "n": 19,
+  "median_tokens": 2602,
+  "max_tokens": 3897,
+  "over_1024": 19
+ },
+ "jb_hard:multi_hop": {
+  "n": 18,
+  "median_tokens": 2294,
+  "max_tokens": 2930,
+  "over_1024": 17
+ },
+ "jb_hard:probability": {
+  "n": 10,
+  "median_tokens": 985,
+  "max_tokens": 1885,
+  "over_1024": 4
+ },
+ "jb_hard:routing_hard": {
+  "n": 5,
+  "median_tokens": 255,
+  "max_tokens": 274,
+  "over_1024": 0
+ },
+ "jb_hard:temporal_numeric": {
+  "n": 15,
+  "median_tokens": 562,
+  "max_tokens": 1269,
+  "over_1024": 1
+ },
+ "jb_hard:tradeoff": {
+  "n": 6,
+  "median_tokens": 725,
+  "max_tokens": 806,
+  "over_1024": 0
+ },
+ "jb_hard:trap": {
+  "n": 8,
+  "median_tokens": 268,
+  "max_tokens": 317,
+  "over_1024": 0
+ },
+ "jb_original": {
+  "n": 72,
+  "median_tokens": 77,
+  "max_tokens": 105,
+  "over_1024": 0
+ },
+ "_summary": {
+  "long_policy_plus_multi_hop_n": 37,
+  "long_policy_plus_multi_hop_over_1024": 36,
+  "definition": "full MiDM input (state + instructions + 'Options:' + all option lines), Qwen3.5-4B-Base tokenizer"
+ }
+}

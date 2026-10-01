@@ -56,7 +56,7 @@
 6. **Jev와 문항별 짝지은 비교**: JevBench가 공개한 문항별 결과를 썼다.
    - 차이는 hard 등급에 몰려 있다: 0.450 vs 0.730, Jev만 맞힌 문항 32개, MiDM만 맞힌 문항 1개. original 등급(−6.9pp, CI가 0을 포함)과 easy 등급(동률)은 사실상 대등하다.
    - 입력을 4096으로 늘려도 hard는 +0.9pp에 그친다.
-   - 긴 문서 학습셋 long_v1(ContractNLI, HotpotQA yes/no, 문서 덧붙이기 증강)으로 재학습한 -bxL은 long dev에서 0.656에서 0.856으로 올랐다. 그러나 JevBench hard는 0.441이고 transfer는 −2.0pp(ns)여서 채택하지 않는다.
+   - 긴 문서 학습셋 long_v1(ContractNLI, HotpotQA yes/no, 문서 덧붙이기 증강)으로 재학습한 -bxL은 long dev(215문항)에서 0.856이다. 같은 dev에서 -bx는 입력 1,024 토큰일 때 0.656, 재학습 없이 4,096 토큰으로 늘렸을 때 0.786이었다. 그러나 JevBench hard는 0.441이고 transfer는 −2.0pp(ns)여서 채택하지 않는다.
    - 결론: 남은 격차는 입력 길이가 아니라 한 번의 forward로 하는 점수화가 다단계 추론에 갖는 한계다.
 7. **SQL·코드 선택기로의 전이 (Study115, 오프라인)**: 저장된 후보와 정답 표시만 썼고, DB는 열지 않았다. λ는 Spider dev로 정했다.
 

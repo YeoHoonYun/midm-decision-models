@@ -1,0 +1,13 @@
+{
+ "ckpt": "runs\\E\\q35_4b_e1_breadth_mc\\final",
+ "model": "Qwen/Qwen3.5-4B-Base",
+ "tta": 1,
+ "eval": {
+  "long_v1_dev": {
+   "n": 215,
+   "acc": 0.786046511627907,
+   "brier": 0.29629678061737513,
+   "sec": 334.2
+  }
+ }
+}
