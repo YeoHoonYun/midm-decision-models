@@ -85,7 +85,7 @@ How to read this:
 - **Where MiDM wins.** It runs locally in 4-bit on one GPU, and a 4B model matches 8B.
 
 ## Release
-- Hugging Face: [yunicro/MiDM-4B-q35-e1-bx](https://huggingface.co/yunicro/MiDM-4B-q35-e1-bx) (currently private).
+- Hugging Face: [yunicro/MiDM-4B-q35-e1-bx](https://huggingface.co/yunicro/MiDM-4B-q35-e1-bx) (public).
   It contains the LoRA adapter, pointer head, `midm.py` and the model card.
 
 ## Layout
@@ -111,7 +111,7 @@ How to read this:
    then `pointer_lora.py eval ... --save-probs`.
 
 Datasets and model weights are not redistributed here. Datasets keep their own licences. The adapters are
-released separately on Hugging Face: https://huggingface.co/yunicro/MiDM-4B-q35-e1-bx
+released separately on Hugging Face: https://huggingface.co/yunicro/MiDM-4B-q35-e1-bx (Zenodo DOI 10.5281/zenodo.23084584)
 
 ## Citation
 See `CITATION.cff`. Archived on Zenodo: https://doi.org/10.5281/zenodo.23084584 (all versions: https://doi.org/10.5281/zenodo.23084583)
