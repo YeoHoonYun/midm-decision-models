@@ -20,6 +20,60 @@
 - **Qwen3.5 크기 사다리.** 2B → 4B에서 Kev T test가 +10.2pp로 크게 뛴다. 0.8B → 2B는 +7.1pp다.
 - test-read ledger(SHA-256)가 생겼고, 47개 파일을 기록했다(§6.5 갱신).
 
+**2026-10-01 저녁 업데이트** (한계 해소 실험. 표는 `paper/analysis/`, 계획은 `paper/PLAN_limitations_20261001.md`)
+
+1. **Seed (한계 3 해소)**
+   - Qwen3.5-4B e1: 3 seed, Kev T test 0.763 ± 0.005.
+   - -bx: 3 seed, 0.796 ± 0.002.
+   - 같은 seed끼리 짝지은 -bx 이득은 +3.4 / +3.8 / +2.7pp(p = 0.042 / 0.014 / 0.062)다.
+   - typed-decisions 손실은 3 seed 평균 −0.5pp로 잡음 수준이다. seed 0의 −1.7pp는 우연이었다.
+2. **정밀도 교란 해소**
+   - fp16에서 bf16으로 바꿔도 성능 차이는 유의하지 않다(4B, 2B 모두).
+   - bf16끼리 비교한 세대 효과(4B)는 Kev T dev +5.9pp(p < 0.001), T-v9 +3.9pp(p = 0.001), Kev T test +3.4pp(p = 0.066)다. 효과는 있지만 처음 추정한 +5.0pp보다 작다.
+   - bf16끼리 비교한 2B → 4B는 Kev T test +10.2pp(p < 0.001)다.
+3. **크기 하한**: -bx의 효과는 크기에 따라 다르다.
+
+   | 크기 | Kev T test |
+   |---|---|
+   | 0.8B | −1.7pp (ns) |
+   | 2B | +5.8pp (p = 0.001) |
+   | 4B | +3.3pp (3 seed) |
+
+   세대 효과는 2B 이하에서 유의하지 않다. 따라서 실용 하한은 4B다.
+4. **요인 분리 (논의 6.1(1) 해소)**: Qwen3-4B, 같은 데이터로 비교했다.
+
+   | 구조 | Kev T test |
+   |---|---|
+   | frozen 양방향 head | 0.411 |
+   | 옵션 공동 읽기, LoRA 없음 | 0.630 |
+   | 옵션 공동 읽기 + LoRA | 0.715 |
+
+   transfer 이득의 약 70%는 옵션을 함께 읽는 구조에서 온다.
+5. **DeepSWE 누출 (한계 10 해소)**
+   - 학습 풀에 held-out 38과제(132,352 step)가 들어 있다.
+   - 목록으로 제외하고 재학습한 5 seed의 결과는 81.6% ± 1.9(30–32/38)다.
+   - 따라서 81.6%는 누출이나 운 좋은 seed 때문이 아니다. 우리의 비판은 "decidable 13과제로는 우위가 약하다"는 점으로 좁힌다(seed별 p는 0.014–0.18).
+6. **Jev와 문항별 짝지은 비교**: JevBench가 공개한 문항별 결과를 썼다.
+   - 차이는 hard 등급에 몰려 있다: 0.450 vs 0.730, Jev만 맞힌 문항 32개, MiDM만 맞힌 문항 1개. original 등급(−6.9pp, CI가 0을 포함)과 easy 등급(동률)은 사실상 대등하다.
+   - 입력을 4096으로 늘려도 hard는 +0.9pp에 그친다.
+   - 긴 문서 학습셋 long_v1(ContractNLI, HotpotQA yes/no, 문서 덧붙이기 증강)으로 재학습한 -bxL은 long dev에서 0.656에서 0.856으로 올랐다. 그러나 JevBench hard는 0.441이고 transfer는 −2.0pp(ns)여서 채택하지 않는다.
+   - 결론: 남은 격차는 입력 길이가 아니라 한 번의 forward로 하는 점수화가 다단계 추론에 갖는 한계다.
+7. **SQL·코드 선택기로의 전이 (Study115, 오프라인)**: 저장된 후보와 정답 표시만 썼고, DB는 열지 않았다. λ는 Spider dev로 정했다.
+
+   | 평가 | RAG 없음 | RAG 있음 | Solar |
+   |---|---|---|---|
+   | Spider test, 다수결 0.773 | 0.756 | 0.783 | 0.793 (RAG 있음 대비 −1.0pp, ns) |
+   | holdout, 다수결 0.799 | 0.805 | 0.817 | 0.798 (RAG 있음 대비 +1.8pp, ns) |
+
+   LiveCodeBench hard 80문항에서는 다수결 0.188 대비 0.288이다(+10pp, p = 0.004).
+   RAG가 선택기를 강화한다. 다만 zero-shot으로는 Solar를 유의하게 넘지 못한다.
+8. **속도와 cascade 비용 (한계 9 수정)**: `paper/analysis/speed/` 참조.
+   - 묶음 처리 시 배포 모델 4B-q35는 70 ms/문항이다.
+   - batch 1 latency는 0.6B 151 / 1.7B 156 / 4B-q35 309 / 8B 196 ms다.
+   - 실측 기준으로 cascade는 8B 단독보다 빠르지 않다(237–309 ms).
+   - Jev API는 p50 0.665 s다(네트워크 포함).
+   - HF 패키지 검증은 통과했다(td_holdout 0.835, 학습 저장소 값 0.833).
+
 주 출처:
 - 실험 113: `experiments/113_clm_reproduction_20260928/README.md`, `results/`, `runs/search/*/train_summary.json`
 - 실험 114: `experiments/114_local_model_router_20260928/README.md`, `DECISIONS.md`, `results/cascade*_*.json`, `ood/`

@@ -73,6 +73,32 @@ def main():
                for k, v in lat["tiers"].items()]
     else:
         md += ["Pending: queue job `LAT_cascade_tiers` (latency.py) runs after the seed jobs."]
+    if lat:   # cascade expected latency with measured per-tier latency (sequential escalation)
+        alias = {"qwen3-0.6b": "MiDM-0.6B-q3-e1", "qwen3-1.7b": "MiDM-1.7B-q3-e1",
+                 "B_qwen35-4b-1ep": "MiDM-4B-q35-e1", "B_qwen3-8b-2ep": "MiDM-8B-q3-e2"}
+        rdir = os.path.join(HERE, "..", "114_local_model_router_20260928", "results")
+        rows = []
+        for f in sorted(os.listdir(rdir)) if os.path.isdir(rdir) else []:
+            if not f.startswith("cascade") or not f.endswith(".json"):
+                continue
+            c = json.load(open(os.path.join(rdir, f)))
+            names = [alias.get(t) for t in c["tiers"]]
+            if None in names or any(n not in lat["tiers"] for n in names):
+                continue
+            ms = [lat["tiers"][n]["mean_ms"] for n in names]
+            share = c["chosen"]["share_answered_by_tier"]
+            reach = [sum(share[i:]) for i in range(len(share))]
+            exp_ms = sum(r * m for r, m in zip(reach, ms))
+            rows.append((f[:-5], " → ".join(names), c["chosen"]["acc"], exp_ms, ms[-1]))
+        if rows:
+            md += ["", "### Cascade expected latency with the measured tiers (dev escalation shares)", "",
+                   "| cascade | tiers | dev acc | expected ms/question | top tier alone ms |", "|---|---|---|---|---|"]
+            md += [f"| {a} | {b} | {c:.3f} | {d:.0f} | {e:.0f} |" for a, b, c, d, e in rows]
+            md += ["", "At batch 1 in this stack (4-bit NF4, transformers, Windows) per-call overhead dominates: the 0.6B tier "
+                   "costs ~150 ms and the 8B ~196 ms, and Qwen3.5-4B is slowest (~309 ms) because its linear-attention "
+                   "kernels fall back to the reference PyTorch implementation (no flash-linear-attention / causal-conv1d). "
+                   "The provisional cost weights (0.6B=1, 4B=6, 8B=12) therefore overstate the saving; with measured "
+                   "latency a cascade is not faster than the 8B tier alone here."]
     md += ["", "## 3. Published per-item response time on JevBench public (231 items)", "",
            "From JevBench's per-task results file. Hosted endpoints, so this is end-to-end time including the network; "
            "it is not a like-for-like model speed comparison with the local numbers above.", "",

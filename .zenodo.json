@@ -1,15 +1,27 @@
 {
-  "title": "MiDM: Minimal Decision Models and an audit of CLM-8B",
-  "upload_type": "software",
-  "description": "<p>Code and results for a controlled study of small (8B or fewer parameters) typed-decision models. MiDM is a LoRA-tuned causal LM with a pointer head over option lines. The release also contains an exact reproduction and statistical audit of the CLM-8B DeepSWE verifier claim, and it shows which factors matter for transfer to unseen sources: base-model generation and balanced data breadth. Adapter variants, TTA, calibration and ensembles did not help.</p>",
-  "creators": [
-    {
-      "name": "Yoon, YeoHoon",
-      "affiliation": "Seoul School of Integrated Sciences and Technologies, Seoul, KR",
-      "orcid": "0009-0007-2669-8127"
-    }
-  ],
-  "license": "Apache-2.0",
-  "keywords": ["decision model", "typed decisions", "LoRA", "pointer head", "reproducibility", "evaluation audit", "CLM", "Qwen3.5"],
-  "access_right": "open"
+    "title":  "MiDM: Minimal Decision Models and an audit of CLM-8B",
+    "upload_type":  "software",
+    "description":  "\u003cp\u003eCode and results for a controlled study of small (8B or fewer parameters) typed-decision models. MiDM is a LoRA-tuned causal LM with a pointer head that scores every option line of a question in one pass. The release contains: (1) an exact reproduction and statistical audit of the CLM-8B DeepSWE verifier claim, including a leak check and a 5-seed retrain; (2) controlled experiments with seeds, precision controls and ablations showing that jointly reading the options, the base-model generation at 4B and above, and a balanced data mix drive transfer to unseen sources, while adapter variants, TTA, calibration, ensembles and a second epoch do not; (3) a per-item comparison with TypeSafe Jev on public JevBench items; (4) measured latency for a confidence cascade; and (5) an offline evaluation of MiDM as a best-of-N selector for SQL and code.\u003c/p\u003e",
+    "creators":  [
+                     {
+                         "name":  "Yoon, YeoHoon",
+                         "affiliation":  "Seoul School of Integrated Sciences and Technologies, Seoul, KR",
+                         "orcid":  "0009-0007-2669-8127"
+                     }
+                 ],
+    "license":  "Apache-2.0",
+    "keywords":  [
+                     "decision model",
+                     "typed decisions",
+                     "LoRA",
+                     "pointer head",
+                     "reproducibility",
+                     "evaluation audit",
+                     "CLM",
+                     "Qwen3.5",
+                     "JevBench",
+                     "DeepSWE",
+                     "best-of-N selection"
+                 ],
+    "access_right":  "open"
 }

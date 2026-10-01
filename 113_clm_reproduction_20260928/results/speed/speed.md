@@ -20,7 +20,26 @@ Token-budget batches (4096 tokens), 4-bit NF4 base, transformers on Windows, no 
 
 ## 2. Single-question latency (batch 1)
 
-Pending: queue job `LAT_cascade_tiers` (latency.py) runs after the seed jobs.
+Measured on NVIDIA GeForce RTX 3090 (torch.bfloat16), n=300 td_holdout questions.
+
+| tier | p50 ms | p90 ms | mean ms | cost ratio vs smallest |
+|---|---|---|---|---|
+| MiDM-0.6B-q3-e1 | 150.0 | 161.7 | 151.3 | 1.00 |
+| MiDM-1.7B-q3-e1 | 154.2 | 166.8 | 156.1 | 1.03 |
+| MiDM-4B-q35-e1 | 300.4 | 363.6 | 309.0 | 2.04 |
+| MiDM-8B-q3-e2 | 193.2 | 209.7 | 196.2 | 1.30 |
+
+### Cascade expected latency with the measured tiers (dev escalation shares)
+
+| cascade | tiers | dev acc | expected ms/question | top tier alone ms |
+|---|---|---|---|---|
+| cascadeB_0.6b_8b2 | MiDM-0.6B-q3-e1 → MiDM-8B-q3-e2 | 0.853 | 250 | 196 |
+| cascadeB_1.7b_8b2 | MiDM-1.7B-q3-e1 → MiDM-8B-q3-e2 | 0.852 | 237 | 196 |
+| cascadeC_0.6b_35x4b | MiDM-0.6B-q3-e1 → MiDM-4B-q35-e1 | 0.852 | 279 | 309 |
+| cascadeC_0.6b_35x4b_8b2 | MiDM-0.6B-q3-e1 → MiDM-4B-q35-e1 → MiDM-8B-q3-e2 | 0.853 | 279 | 196 |
+| cascadeC_35x4b_8b2 | MiDM-4B-q35-e1 → MiDM-8B-q3-e2 | 0.857 | 309 | 196 |
+
+At batch 1 in this stack (4-bit NF4, transformers, Windows) per-call overhead dominates: the 0.6B tier costs ~150 ms and the 8B ~196 ms, and Qwen3.5-4B is slowest (~309 ms) because its linear-attention kernels fall back to the reference PyTorch implementation (no flash-linear-attention / causal-conv1d). The provisional cost weights (0.6B=1, 4B=6, 8B=12) therefore overstate the saving; with measured latency a cascade is not faster than the 8B tier alone here.
 
 ## 3. Published per-item response time on JevBench public (231 items)
 
