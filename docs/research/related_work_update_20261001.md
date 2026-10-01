@@ -1,6 +1,6 @@
 # Related work update (2026-10-01)
 
-This update was compiled by a literature-search agent for the MiDM findings: base-model generation, epochs, breadth + knowledge MC, PEFT null results, cascade and CLM audit.
+This update collects literature for the MiDM findings: base-model generation, epochs, breadth + knowledge MC, PEFT null results, cascade and CLM audit.
 - **[V]** means checked on arXiv, ACL Anthology or a proceedings page during the search.
 - **[M]** means from well-established memory: the ID and venue are believed correct but were not re-fetched. Spot-check these before submission.
 - **UNVERIFIED** means not confirmed.

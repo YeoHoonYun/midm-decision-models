@@ -3,12 +3,22 @@
 작성일: 2026-09-28 (stage B 결과와 cascade 재계산 반영: 2026-09-29)
 상태: **내부 초안** (arXiv tech report 또는 workshop 후보)
 
-모든 수치는 디스크의 결과 파일에서 옮겼다. 초안은 보고서 에이전트가 작성했고, 메인 세션이 stage B 수치와 수정된 cascade 수치를 채웠다.
+모든 수치는 디스크의 결과 파일에서 옮겼다.
 
 **명칭(2026-10-01):** 본 연구의 QLoRA pointer cross-encoder 결정 모델을 **MiDM (Minimal Decision Model)** 이라 부른다. 아키텍처명과 모델 계열명이 같다.
 - 모델 이름 규칙은 `MiDM-{크기}-{base}-e{epoch}`이다. 대표 모델은 `MiDM-4B-q35-e1`(Qwen3.5-4B-Base, 1 epoch)과 `MiDM-8B-q3-e2`다.
 - cascade 라우터는 `MiDM-Auto`다.
 - 전체 목록은 `experiments/114_local_model_router_20260928/MODELS.md`에 있다.
+
+**2026-10-01 업데이트 요약** (상세는 §4.5b, 표는 `paper/analysis/`, 관련 연구는 `paper/related_work/related_work_update_20261001.md`)
+- **논문 방향.** "새 아키텍처"가 아니라 **실증·재현 논문**으로 간다. pointer head 구조는 jina-reranker-v3(arXiv:2509.25085)와 사실상 같아서 신규성을 주장하지 않는다. 기여는 (1) CLM 감사, (2) 무엇이 효과 있고 무엇이 없는지에 대한 통제 실험, (3) confidence cascade다.
+- **효과 있음.**
+  - base 세대(Qwen3 → Qwen3.5)가 4B에서 Kev T test +5.0pp다(p = 0.004). **단, 0.8B와 2B에서는 transfer에서 유의하지 않다**(+0.7pp, p = 0.78; +2.1pp, p = 0.29). 세대 효과는 크기와 상호작용한다.
+  - 데이터 구성(breadth_v1 + 지식형 MC, "-bx")은 Kev T test +3.4pp(p = 0.042), T-v9 dev +3.0pp(p = 0.009)다. 대신 td_test는 −1.7pp다(p = 0.024). seed 재현은 진행 중이다.
+- **효과 없음.** breadth만 추가, TTA(옵션 순서 4개), 온도 보정, 앙상블(비용 대비), DoRA, rsLoRA, r64, attention-only, 어댑터 병합과 라우팅.
+- **해로움.** Qwen3.5의 두 번째 epoch(Kev T test −2.9pp, p = 0.053; T-v9 −2.8pp, p = 0.002).
+- **Qwen3.5 크기 사다리.** 2B → 4B에서 Kev T test가 +10.2pp로 크게 뛴다. 0.8B → 2B는 +7.1pp다.
+- test-read ledger(SHA-256)가 생겼고, 47개 파일을 기록했다(§6.5 갱신).
 
 주 출처:
 - 실험 113: `experiments/113_clm_reproduction_20260928/README.md`, `results/`, `runs/search/*/train_summary.json`
@@ -109,7 +119,7 @@ pointer 학습 데이터는 td_train(10% 행 holdout 제외)과 Kev decision-v7 
   - 0.6B smoke run이 td_test를 읽었다(0.7225). 선택에는 쓰지 않았다.
   - 8B 1 epoch 최종 평가는 외부 프로세스 kill로 중단돼 재실행했다.
   - cascade와 OOD 분석을 위해 확률 덤프로 test suite를 다시 읽었다.
-- **한계.** 기계 판독용 test-read ledger는 없다.
+- **ledger.** (2026-10-01) 기계 판독용 test-read ledger(SHA-256, 47개 파일)를 `results/ledger/`에 만들었다.
 
 ### 3.5 Stage A (adapter 탐색, Qwen3-1.7B proxy)
 - `--holdout-sources boolq mnli sst5`로 세 Kev source를 학습에서 뺐다. 해당 kev_dev 276행은 미지 source의 대리 지표 `src_holdout`으로 썼다.
@@ -229,6 +239,25 @@ Pointer 크기 사다리(1 epoch):
   - 즉 한 과제 유형을 더하면 그 유형만 오르고 문장쌍 과제는 희석된다. transfer를 넓히려면 유형을 균형 있게 넓혀야 한다.
   - 이 run은 Kev보다 넓은 데이터를 쓴 것이므로 Kev와의 동일 조건 비교가 아니다.
 
+### 4.5b Qwen3.5 확장: 데이터 구성, 크기, TTA (2026-10-01 추가)
+출처: `paper/analysis/results_master.md`, `per_source.md`, `stats/stats.md`. 모두 3090 bf16, 1 epoch, 같은 레시피다. Δ는 paired row-clustered bootstrap 결과다.
+
+| 비교 | td_test Δ (p) | Kev T test Δ (p) | 해석 |
+|---|---|---|---|
+| Qwen3-8B e2 → Qwen3.5-4B e1 | +0.0 (1.00) | −0.8 (0.69) | 절반 크기로 동등 |
+| Qwen3.5-4B e1 → e2 | −0.4 (0.48) | −2.9 (0.053) | 두 번째 epoch가 transfer를 해침 (T-v9 −2.8, p = 0.002) |
+| + breadth_v1 (E1) | −1.4 (0.053) | +1.4 (0.41) | 효과 없음 |
+| + breadth_v1 + arc/obqa/csqa (E2, "-bx") | −1.7 (0.024) | **+3.4 (0.042)** | transfer↑, in-distribution↓ (trade-off) |
+| TTA 4 orders | −0.4 (0.15) | +0.1 (0.88) | 효과 없음 (shuffle 학습이 이미 순서 편향을 제거) |
+| Qwen3-0.6B → Qwen3.5-0.8B | +3.5 (<0.001) | +0.7 (0.78) | 작은 크기에선 세대 이득이 in-distribution에만 |
+| Qwen3-1.7B → Qwen3.5-2B | +0.6 (0.39) | +2.1 (0.29) | 유의하지 않음 |
+| Qwen3.5 0.8B → 2B | +1.8 (0.007) | +7.1 (0.001) | |
+| Qwen3.5 2B → 4B | +1.7 (0.014) | **+10.2 (<0.001)** | transfer는 4B에서 크게 뜀 |
+
+- **-bx의 source별 이득**(Kev T test, 4B-q35-e1 → -bx): mmlu 0.560 → 0.629, composition 0.698 → 0.854, deadline 0.700 → 0.725, paws 0.800 → 0.812. sciq는 0.974 → 0.940으로 떨어진다. td_test에서는 customer_service(−3.6)와 invoice_processing(−5.0)에서 잃는다.
+- **kevT9_dev는 kevT_dev를 포함한다**(공통 source의 수치가 동일). 독립 transfer 셋이 아니라 확장으로 보고한다.
+- **진행 중.** q35-4B seed 1·2, -bx seed 1·2(약 16:15 완료 예정), -bx 2B·0.8B. -bx의 +3.4pp가 seed 간에 재현되는지가 핵심 확인 사항이다.
+
 ### 4.6 Cascade (실험 114)
 출처: `results/cascade_*.json`(1 epoch tier), `results/cascadeB_*.json`(stage-B tier), `DECISIONS.md`
 
@@ -285,12 +314,14 @@ Pointer 크기 사다리(1 epoch):
 5. **test를 다시 읽었다.**
    - cascade와 OOD 분석이 확률 덤프로 test를 재읽기했다. 이 재평가 수치는 1회 평가와 소수 셋째 자리에서 다르다(예: 4B Kev T test 0.7160 vs 0.7147).
    - 0.6B smoke run이 td_test를 읽었다.
-   - 기계 판독 ledger는 없다.
+   - ~~기계 판독 ledger는 없다.~~ (2026-10-01) `results/ledger/test_read_ledger.{jsonl,md}`에 held-out을 읽은 결과 파일 47개의 SHA-256을 기록했다. 사본은 `paper/analysis/ledger/`에 있다.
 6. **1–2 epoch만 학습했다.** 4B 1 epoch run은 step 400에서 optimizer 상태를 새로 만들어 재개했다.
 7. **(수정 완료) cascade 행 키 중복.** 첫 `calibrate_cascade.py`는 `(suite, qid, group)`으로 키잉해 행이 덮어써졌다. dev는 2,068 중 1,720, Kev T는 764 중 544만 쓰였다. 키를 `(suite, 위치)`로 바꾸고 tier 정렬 검사를 넣어 재계산했다. §4.6은 수정 후 수치다.
 8. **(수정 완료) 선택 기록 부정확.** multi head 선택에서 README는 m1_06(0.753)을 최선으로 적었지만, m1_09(0.755)가 0.002 높았다. 더 단순한 기본값을 택한 것인데 당시 기록하지 않았다. 차이는 잡음 수준이고, 기록은 정정했다.
 9. **비용은 잠정 가중치다.** 실측 latency가 아니고, Windows와 공유 GPU 환경이다.
-10. **Qwen3 계열만 완료했다.** Qwen3.5는 진행 중이다.
+10. ~~Qwen3 계열만 완료했다.~~ (2026-10-01) Qwen3.5 0.8B, 2B, 4B를 완료했다(§4.5b). Qwen3.5-9B는 8B 제한을 넘어 하지 않았다.
+11. **pointer seed.** Qwen3-4B e1은 3 seed(Kev T test 0.723 ± 0.006)다. Qwen3.5-4B와 -bx는 seed 실험이 진행 중이다.
+12. **아키텍처 신규성.** 옵션별 마지막 토큰 점수는 jina-reranker-v3, LS-LLaMA, FIRST와 겹친다. 신규성은 적용 영역과 통제 실험에 둔다.
 
 ---
 
