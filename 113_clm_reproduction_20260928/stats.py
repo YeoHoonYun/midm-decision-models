@@ -117,6 +117,7 @@ PAIRS = [  # (label, model A, model B) -> B minus A
     ("generation at small size: Qwen3-0.6B e1 -> Qwen3.5-0.8B e1", "qwen3-0.6b", "R_q35_0p8b_e1"),
     ("-bx at 2B: Qwen3.5-2B e1 -> +breadth_v1+arc/obqa/csqa", "R_q35_2b_e1", "R_q35_2b_e1_bx"),
     ("-bx at 0.8B: Qwen3.5-0.8B e1 -> +breadth_v1+arc/obqa/csqa", "R_q35_0p8b_e1", "R_q35_0p8b_e1_bx"),
+    ("long context: -bx (1024) -> -bxL (+long_v1, 4096)", "E_q35_4b_e1_breadth_mc", "E_q35_4b_e1_bxL"),
     ("precision: Qwen3-4B e1 fp16 -> bf16", "qwen3-4b", "P_q3_4b_e1_bf16"),
     ("generation, both bf16: Qwen3-4B e1 -> Qwen3.5-4B e1", "P_q3_4b_e1_bf16", "B_qwen35-4b-1ep"),
     ("precision: Qwen3.5-2B e1 fp16 -> bf16", "R_q35_2b_e1", "P_q35_2b_e1_bf16"),

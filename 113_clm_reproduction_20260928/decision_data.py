@@ -72,6 +72,9 @@ PP6_NEW = ("arc", "openbookqa", "csqa")   # public-pool-v6 sources absent from d
 def load(suite):
     if suite == "breadth_v1":   # balanced breadth (sentence-pair / affect / toxicity / commonsense), data/breadth_v1
         return list(_kev(_rows(os.path.join(HERE, "data", "breadth_v1", "train.jsonl")), suite))
+    if suite in ("long_v1", "long_v1_dev"):   # long-context rows (1k-3.8k tokens), data/long_v1
+        fn = "train.jsonl" if suite == "long_v1" else "dev.jsonl"
+        return list(_kev(_rows(os.path.join(HERE, "data", "long_v1", fn)), suite))
     if suite == "pp6_new":   # breadth experiment: extra training sources (never an eval suite)
         rows = [r for r in _rows(f"{KEV}/public-pool-v6/train.jsonl")
                 if (r.get("_meta") or {}).get("source") in PP6_NEW]

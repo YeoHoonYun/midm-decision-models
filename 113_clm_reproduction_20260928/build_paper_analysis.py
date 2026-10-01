@@ -45,6 +45,7 @@ NAMES = {
     "P_q35_2b_e1_bf16": ("MiDM-2B-q35-e1 (bf16 control)", "Qwen3.5-2B-Base", 1, "td+kev"),
     "R_q35_2b_e1_bx": ("MiDM-2B-q35-e1-bx", "Qwen3.5-2B-Base", 1, "td+kev+breadth_v1+pp6_new"),
     "R_q35_0p8b_e1_bx": ("MiDM-0.8B-q35-e1-bx", "Qwen3.5-0.8B-Base", 1, "td+kev+breadth_v1+pp6_new"),
+    "E_q35_4b_e1_bxL": ("MiDM-4B-q35-e1-bxL (long ctx 4096)", "Qwen3.5-4B-Base", 1, "td+kev+breadth_v1+pp6_new+long_v1"),
     "H_q3_4b_headonly": ("ablation: joint options, no LoRA (Qwen3-4B, fp16)", "Qwen3-4B", 1, "td+kev"),
 }
 # per-source breakdowns: which probs files, in which order
