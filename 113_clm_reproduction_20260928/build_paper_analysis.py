@@ -207,6 +207,8 @@ def copies(out):
                                          "results/deepswe_lto/summary.md", "results/deepswe_lto/summary.json"],
                        "search": ["results/sweep_summary.md", "results/choice_summary.md"],
                        "jev_paired": ["results/jev_paired/jev_paired.md", "results/jev_paired/jev_paired.json"],
+                       "speed": ["results/speed/speed.md", "results/speed/speed.json", "results/latency/latency.md",
+                                 "results/latency/latency.json"],
                        "router": ["../114_local_model_router_20260928/DECISIONS.md",
                                   "../114_local_model_router_20260928/MODELS.md"]}.items():
         os.makedirs(os.path.join(out, sub), exist_ok=True)

@@ -1,0 +1,126 @@
+{
+ "throughput": [
+  {
+   "model": "MiDM-0.6B-q3-e1",
+   "hw": "manual run (before queue)",
+   "questions": 6491,
+   "seconds": 95.0,
+   "q_per_s": 68.32631578947368,
+   "ms_per_q": 14.635649360653213,
+   "td_test_ms_per_q": 18.65
+  },
+  {
+   "model": "MiDM-1.7B-q3-e1",
+   "hw": "manual run (before queue)",
+   "questions": 6491,
+   "seconds": 182.3,
+   "q_per_s": 35.606143719144264,
+   "ms_per_q": 28.085040825758742,
+   "td_test_ms_per_q": 36.1
+  },
+  {
+   "model": "MiDM-0.8B-q35-e1",
+   "hw": "RTX 2080 Ti fp16",
+   "questions": 7091,
+   "seconds": 246.4,
+   "q_per_s": 28.77840909090909,
+   "ms_per_q": 34.74827245804541,
+   "td_test_ms_per_q": 41.6
+  },
+  {
+   "model": "MiDM-2B-q35-e1",
+   "hw": "RTX 2080 Ti fp16",
+   "questions": 7091,
+   "seconds": 330.9,
+   "q_per_s": 21.42943487458447,
+   "ms_per_q": 46.66478634889296,
+   "td_test_ms_per_q": 56.9
+  },
+  {
+   "model": "MiDM-2B-q35-e1 (bf16)",
+   "hw": "RTX 3090 bf16",
+   "questions": 7091,
+   "seconds": 215.8,
+   "q_per_s": 32.859128822984246,
+   "ms_per_q": 30.43294316739529,
+   "td_test_ms_per_q": 38.1
+  },
+  {
+   "model": "MiDM-4B-q3-e1",
+   "hw": "manual run (before queue)",
+   "questions": 6491,
+   "seconds": 405.1,
+   "q_per_s": 16.023204147124165,
+   "ms_per_q": 62.409490063164384,
+   "td_test_ms_per_q": 79.75
+  },
+  {
+   "model": "MiDM-4B-q3-e1 (bf16)",
+   "hw": "RTX 3090 bf16",
+   "questions": 7091,
+   "seconds": 357.5,
+   "q_per_s": 19.834965034965034,
+   "ms_per_q": 50.41602030743196,
+   "td_test_ms_per_q": 62.4
+  },
+  {
+   "model": "MiDM-4B-q35-e1",
+   "hw": "RTX 3090 bf16",
+   "questions": 7091,
+   "seconds": 487.5,
+   "q_per_s": 14.545641025641025,
+   "ms_per_q": 68.74911860104358,
+   "td_test_ms_per_q": 86.5
+  },
+  {
+   "model": "MiDM-4B-q35-e1-bx",
+   "hw": "RTX 3090 bf16",
+   "questions": 7091,
+   "seconds": 497.5,
+   "q_per_s": 14.253266331658292,
+   "ms_per_q": 70.1593569313214,
+   "td_test_ms_per_q": 88.3
+  },
+  {
+   "model": "MiDM-8B-q3-e1",
+   "hw": "RTX 3090 fp16",
+   "questions": 7091,
+   "seconds": 617.1,
+   "q_per_s": 11.490844271592934,
+   "ms_per_q": 87.02580736144408,
+   "td_test_ms_per_q": 108.95
+  },
+  {
+   "model": "MiDM-8B-q3-e2",
+   "hw": "RTX 3090 bf16",
+   "questions": 7091,
+   "seconds": 581.6,
+   "q_per_s": 12.19222833562586,
+   "ms_per_q": 82.01946128895783,
+   "td_test_ms_per_q": 102.1
+  }
+ ],
+ "jevbench_published_latency": {
+  "jev-1.13.0": {
+   "n": 231,
+   "p50_s": 0.665,
+   "p95_s": 0.804
+  },
+  "kev-8b": {
+   "n": 231,
+   "p50_s": 0.591,
+   "p95_s": 1.925
+  },
+  "kev-4b": {
+   "n": 231,
+   "p50_s": 0.586,
+   "p95_s": 1.645
+  },
+  "kev-0.6b": {
+   "n": 231,
+   "p50_s": 0.587,
+   "p95_s": 1.087
+  }
+ },
+ "single_question_latency": null
+}
