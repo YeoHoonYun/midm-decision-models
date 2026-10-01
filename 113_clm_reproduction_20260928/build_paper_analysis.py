@@ -41,6 +41,11 @@ NAMES = {
     "T_q35_4b_e1_tta4": ("MiDM-4B-q35-e1 + TTA4", "Qwen3.5-4B-Base", 1, "td+kev"),
     "R_q35_0p8b_e1": ("MiDM-0.8B-q35-e1", "Qwen3.5-0.8B-Base", 1, "td+kev"),
     "R_q35_2b_e1": ("MiDM-2B-q35-e1", "Qwen3.5-2B-Base", 1, "td+kev"),
+    "P_q3_4b_e1_bf16": ("MiDM-4B-q3-e1 (bf16 control)", "Qwen3-4B", 1, "td+kev"),
+    "P_q35_2b_e1_bf16": ("MiDM-2B-q35-e1 (bf16 control)", "Qwen3.5-2B-Base", 1, "td+kev"),
+    "R_q35_2b_e1_bx": ("MiDM-2B-q35-e1-bx", "Qwen3.5-2B-Base", 1, "td+kev+breadth_v1+pp6_new"),
+    "R_q35_0p8b_e1_bx": ("MiDM-0.8B-q35-e1-bx", "Qwen3.5-0.8B-Base", 1, "td+kev+breadth_v1+pp6_new"),
+    "H_q3_4b_headonly": ("ablation: joint options, no LoRA (Qwen3-4B, bf16)", "Qwen3-4B", 1, "td+kev"),
 }
 # per-source breakdowns: which probs files, in which order
 BREAKDOWN = ["B_qwen3-8b-2ep", "B_qwen35-4b-1ep", "D_qwen3-4b-1ep-broad", "E_q35_4b_e1_breadth",
@@ -150,6 +155,30 @@ def per_source(out):
     open(os.path.join(out, "per_source.md"), "w", encoding="utf-8").write("\n".join(md))
 
 
+def kevt9_new(out):
+    """kevT9_dev restricted to rows whose source does not occur in kevT_dev (the independent part)."""
+    def src(g):
+        return re.sub(r"^v\d+-legacy-transfer-|[-_]\d+$", "", g.split("/")[0])
+    md = ["# kevT9_dev without the kevT_dev sources", "",
+          "kevT9_dev contains every kevT_dev source with identical items. This table scores only the new sources, so it "
+          "is independent of kevT_dev (which was used to choose the unknown-domain model).", "",
+          "| model | kevT9_dev (all) | kevT9_dev new sources only | n new | new sources |", "|---|---|---|---|---|"]
+    for tag in NAMES:
+        p = os.path.join(HERE, "results", "probs", f"{tag}.jsonl")
+        if not os.path.exists(p):
+            continue
+        rows = [json.loads(l) for l in open(p, encoding="utf-8")]
+        dev_src = {src(r["group"]) for r in rows if r["suite"] == "kevT_dev"}
+        t9 = [r for r in rows if r["suite"] == "kevT9_dev"]
+        if not t9 or not dev_src:
+            continue
+        hit = lambda r: int(max(range(len(r["probs"])), key=r["probs"].__getitem__) == r["label"])
+        new = [r for r in t9 if src(r["group"]) not in dev_src]
+        md.append(f"| {NAMES[tag][0]} | {sum(map(hit, t9)) / len(t9):.3f} | {sum(map(hit, new)) / len(new):.3f} | "
+                  f"{len(new)} | {', '.join(sorted({src(r['group']) for r in new}))} |")
+    open(os.path.join(out, "kevT9_new_sources.md"), "w", encoding="utf-8").write("\n".join(md) + "\n")
+
+
 def cascade(out):
     md = ["# Confidence cascades (exp 114 router)", "",
           "Thresholds chosen on dev (kev_dev + td_holdout) as the cheapest setting within `tol` of the best "
@@ -192,6 +221,7 @@ def main():
     rows = master(out)
     seeds(out, rows)
     per_source(out)
+    kevt9_new(out)
     cascade(out)
     copies(out)
     print(f"wrote {out}")

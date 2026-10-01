@@ -1611,6 +1611,234 @@
      "p_bootstrap_two_sided": 0.0
     }
    }
+  },
+  "-bx at 2B: Qwen3.5-2B e1 -> +breadth_v1+arc/obqa/csqa": {
+   "a": "R_q35_2b_e1",
+   "b": "R_q35_2b_e1_bx",
+   "suites": {
+    "jb_easy": {
+     "n_questions": 48,
+     "n_rows": 1,
+     "acc_a": 1.0,
+     "acc_b": 1.0,
+     "diff_b_minus_a": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "p_bootstrap_two_sided": 1.0
+    },
+    "jb_hard": {
+     "n_questions": 111,
+     "n_rows": 111,
+     "acc_a": 0.38738738738738737,
+     "acc_b": 0.3963963963963964,
+     "diff_b_minus_a": 0.009009009009009009,
+     "ci95": [
+      -0.06306306306306306,
+      0.08108108108108109
+     ],
+     "p_bootstrap_two_sided": 0.901
+    },
+    "jb_original": {
+     "n_questions": 72,
+     "n_rows": 36,
+     "acc_a": 0.8611111111111112,
+     "acc_b": 0.8194444444444444,
+     "diff_b_minus_a": -0.041666666666666664,
+     "ci95": [
+      -0.09722222222222222,
+      0.013888888888888888
+     ],
+     "p_bootstrap_two_sided": 0.2305
+    },
+    "kevT9_dev": {
+     "n_questions": 1264,
+     "n_rows": 934,
+     "acc_a": 0.5522151898734177,
+     "acc_b": 0.6075949367088608,
+     "diff_b_minus_a": 0.055379746835443035,
+     "ci95": [
+      0.03039757575757576,
+      0.07990556900726394
+     ],
+     "p_bootstrap_two_sided": 0.0
+    },
+    "kevT_dev": {
+     "n_questions": 764,
+     "n_rows": 544,
+     "acc_a": 0.6282722513089005,
+     "acc_b": 0.6897905759162304,
+     "diff_b_minus_a": 0.061518324607329845,
+     "ci95": [
+      0.029943073859961193,
+      0.09493690396291499
+     ],
+     "p_bootstrap_two_sided": 0.0
+    },
+    "kevT_test": {
+     "n_questions": 764,
+     "n_rows": 544,
+     "acc_a": 0.662303664921466,
+     "acc_b": 0.7198952879581152,
+     "diff_b_minus_a": 0.05759162303664921,
+     "ci95": [
+      0.02356020942408377,
+      0.09268994345788738
+     ],
+     "p_bootstrap_two_sided": 0.0005
+    },
+    "kev_dev": {
+     "n_questions": 1468,
+     "n_rows": 880,
+     "acc_a": 0.8276566757493188,
+     "acc_b": 0.837874659400545,
+     "diff_b_minus_a": 0.010217983651226158,
+     "ci95": [
+      -0.00726205366547293,
+      0.02824858757062147
+     ],
+     "p_bootstrap_two_sided": 0.268
+    },
+    "td_holdout": {
+     "n_questions": 600,
+     "n_rows": 120,
+     "acc_a": 0.82,
+     "acc_b": 0.8333333333333334,
+     "diff_b_minus_a": 0.013333333333333334,
+     "ci95": [
+      -0.016666666666666666,
+      0.043333333333333335
+     ],
+     "p_bootstrap_two_sided": 0.4155
+    },
+    "td_test": {
+     "n_questions": 2000,
+     "n_rows": 400,
+     "acc_a": 0.788,
+     "acc_b": 0.7735,
+     "diff_b_minus_a": -0.0145,
+     "ci95": [
+      -0.029,
+      -0.00048749999999995455
+     ],
+     "p_bootstrap_two_sided": 0.05
+    }
+   }
+  },
+  "-bx at 0.8B: Qwen3.5-0.8B e1 -> +breadth_v1+arc/obqa/csqa": {
+   "a": "R_q35_0p8b_e1",
+   "b": "R_q35_0p8b_e1_bx",
+   "suites": {
+    "jb_easy": {
+     "n_questions": 48,
+     "n_rows": 1,
+     "acc_a": 1.0,
+     "acc_b": 1.0,
+     "diff_b_minus_a": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "p_bootstrap_two_sided": 1.0
+    },
+    "jb_hard": {
+     "n_questions": 111,
+     "n_rows": 111,
+     "acc_a": 0.34234234234234234,
+     "acc_b": 0.3963963963963964,
+     "diff_b_minus_a": 0.05405405405405406,
+     "ci95": [
+      -0.02702702702702703,
+      0.13513513513513514
+     ],
+     "p_bootstrap_two_sided": 0.2345
+    },
+    "jb_original": {
+     "n_questions": 72,
+     "n_rows": 36,
+     "acc_a": 0.7777777777777778,
+     "acc_b": 0.7777777777777778,
+     "diff_b_minus_a": 0.0,
+     "ci95": [
+      -0.08333333333333333,
+      0.08333333333333333
+     ],
+     "p_bootstrap_two_sided": 1.0
+    },
+    "kevT9_dev": {
+     "n_questions": 1264,
+     "n_rows": 934,
+     "acc_a": 0.5363924050632911,
+     "acc_b": 0.5261075949367089,
+     "diff_b_minus_a": -0.010284810126582278,
+     "ci95": [
+      -0.0379751951945806,
+      0.01727106428719437
+     ],
+     "p_bootstrap_two_sided": 0.512
+    },
+    "kevT_dev": {
+     "n_questions": 764,
+     "n_rows": 544,
+     "acc_a": 0.6164921465968587,
+     "acc_b": 0.6007853403141361,
+     "diff_b_minus_a": -0.015706806282722512,
+     "ci95": [
+      -0.0560766405117697,
+      0.024424867811831195
+     ],
+     "p_bootstrap_two_sided": 0.4535
+    },
+    "kevT_test": {
+     "n_questions": 764,
+     "n_rows": 544,
+     "acc_a": 0.5916230366492147,
+     "acc_b": 0.574607329842932,
+     "diff_b_minus_a": -0.017015706806282723,
+     "ci95": [
+      -0.055419115589140776,
+      0.02193730310156632
+     ],
+     "p_bootstrap_two_sided": 0.396
+    },
+    "kev_dev": {
+     "n_questions": 1468,
+     "n_rows": 880,
+     "acc_a": 0.8051771117166212,
+     "acc_b": 0.7840599455040872,
+     "diff_b_minus_a": -0.02111716621253406,
+     "ci95": [
+      -0.040249936778837675,
+      -0.0013112830487101111
+     ],
+     "p_bootstrap_two_sided": 0.0435
+    },
+    "td_holdout": {
+     "n_questions": 600,
+     "n_rows": 120,
+     "acc_a": 0.81,
+     "acc_b": 0.795,
+     "diff_b_minus_a": -0.015,
+     "ci95": [
+      -0.045,
+      0.016666666666666666
+     ],
+     "p_bootstrap_two_sided": 0.3535
+    },
+    "td_test": {
+     "n_questions": 2000,
+     "n_rows": 400,
+     "acc_a": 0.7705,
+     "acc_b": 0.746,
+     "diff_b_minus_a": -0.0245,
+     "ci95": [
+      -0.0405,
+      -0.0095
+     ],
+     "p_bootstrap_two_sided": 0.002
+    }
+   }
   }
  }
 }

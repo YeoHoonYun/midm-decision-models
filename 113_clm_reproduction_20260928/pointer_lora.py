@@ -13,6 +13,7 @@ attention/MLP projections, gradient checkpointing, token-budget batches.
 from __future__ import annotations
 
 import argparse
+import contextlib
 import json
 import math
 import os
@@ -75,10 +76,18 @@ def load_model(name, ckpt=None, r=16, train=True, adapter="lora", target_set="al
     if not is35:
         names = [n for n in names if not n.startswith(("in_proj", "out_proj"))]
     targets = rf".*language_model.*\.({'|'.join(names)})" if is35 else names
-    if train:
+    head_only = adapter == "none" or (ckpt and not os.path.exists(os.path.join(ckpt, "adapter_config.json")))
+    if head_only:   # ablation: frozen base, only the pointer head is trained (no LoRA)
+        base.requires_grad_(False)
+        base.config.use_cache = False
+        base._midm_frozen = True
+        model = base
+    elif train:
         base = prepare_model_for_kbit_training(base, use_gradient_checkpointing=True)
         base.config.use_cache = False
-    if ckpt:
+    if head_only:
+        pass
+    elif ckpt:
         model = PeftModel.from_pretrained(base, ckpt, is_trainable=train)
     else:
         model = get_peft_model(base, LoraConfig(r=r, lora_alpha=alpha or 2 * r, lora_dropout=0.05, bias="none",
@@ -97,7 +106,8 @@ def forward(model, head, batch):
     att = torch.zeros((len(batch), L), dtype=torch.long)
     for r, (i, _) in enumerate(batch):
         ids[r, :len(i)] = torch.tensor(i); att[r, :len(i)] = 1
-    with torch.autocast("cuda", dtype=DTYPE):
+    frozen = torch.no_grad() if getattr(model, "_midm_frozen", False) else contextlib.nullcontext()
+    with frozen, torch.autocast("cuda", dtype=DTYPE):
         h = model(input_ids=ids.cuda(), attention_mask=att.cuda()).last_hidden_state
     out = []
     for r, (_, pos) in enumerate(batch):
@@ -182,8 +192,9 @@ def cmd_train(a):
         items.append((ids, pos, torch.tensor([e.target[j] for j in order])))
     print(f"[ptr] train items {len(items)}, tokens {sum(len(i[0]) for i in items)}", flush=True)
     params = [p for p in model.parameters() if p.requires_grad] + list(head.parameters())
-    opt = torch.optim.AdamW([{"params": [p for p in model.parameters() if p.requires_grad], "lr": a.lr},
-                             {"params": head.parameters(), "lr": a.lr * 10}], weight_decay=0.0)
+    lora = [p for p in model.parameters() if p.requires_grad]
+    opt = torch.optim.AdamW(([{"params": lora, "lr": a.lr}] if lora else [])
+                            + [{"params": head.parameters(), "lr": a.lr * 10}], weight_decay=0.0)
     steps_per_epoch = sum(1 for _ in batches(items, a.budget, True, random.Random(1)))
     total = a.max_steps or steps_per_epoch * a.epochs
     sched = torch.optim.lr_scheduler.LambdaLR(opt, lambda s: min(1.0, (s + 1) / 30) * 0.5 * (1 + math.cos(math.pi * min(s, total) / total)))
@@ -234,7 +245,10 @@ def cmd_train(a):
 def save(model, head, out, tag):
     d = os.path.join(out, tag)
     os.makedirs(d, exist_ok=True)
-    model.save_pretrained(d)
+    if getattr(model, "_midm_frozen", False):   # head-only ablation: the base is unchanged, save the head only
+        open(os.path.join(d, "HEAD_ONLY"), "w").write("frozen base; pointer head only\n")
+    else:
+        model.save_pretrained(d)
     torch.save(head.state_dict(), os.path.join(d, "pointer_head.pt"))
 
 
@@ -267,7 +281,8 @@ def main():
     t.add_argument("--out", required=True)
     t.add_argument("--rank", type=int, default=16)
     t.add_argument("--alpha", type=int, default=None, help="LoRA alpha (default 2 x rank)")
-    t.add_argument("--adapter", choices=["lora", "dora", "rslora"], default="lora")
+    t.add_argument("--adapter", choices=["lora", "dora", "rslora", "none"], default="lora",
+                   help="none = frozen base, pointer head only (ablation)")
     t.add_argument("--targets", choices=["all", "attn"], default="all")
     t.add_argument("--holdout-sources", nargs="*", default=None,
                    help="Kev train sources left out entirely; their kev_dev rows become the src_holdout select set")
