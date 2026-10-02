@@ -114,7 +114,19 @@ Datasets and model weights are not redistributed here. Datasets keep their own l
 released separately on Hugging Face: https://huggingface.co/yunicro/MiDM-4B-q35-e1-bx (Zenodo DOI 10.5281/zenodo.23084584)
 
 ## Citation
-See `CITATION.cff`. Archived on Zenodo: https://doi.org/10.5281/zenodo.23084584 (all versions: https://doi.org/10.5281/zenodo.23084583)
+Authors: YeoHoon Yoon and Kyung-Sung Kim (Graduate School of AI, aSSIST University, Seoul, Republic of Korea).
 
+```bibtex
+@software{yoon_kim_2026_midm,
+  author    = {Yoon, YeoHoon and Kim, Kyung-Sung},
+  title     = {MiDM: Minimal Decision Models and an audit of CLM-8B},
+  year      = {2026},
+  version   = {0.1.0},
+  publisher = {Zenodo},
+  doi       = {10.5281/zenodo.23084584},
+  url       = {https://github.com/YeoHoonYun/midm-decision-models}
+}
+```
+See `CITATION.cff`. Archived on Zenodo: https://doi.org/10.5281/zenodo.23084584 (all versions: https://doi.org/10.5281/zenodo.23084583)
 ## License
 Apache-2.0 (`LICENSE`); third-party notices are in `NOTICE`.

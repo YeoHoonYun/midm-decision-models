@@ -5,8 +5,12 @@
     "creators":  [
                      {
                          "name":  "Yoon, YeoHoon",
-                         "affiliation":  "Seoul School of Integrated Sciences and Technologies, Seoul, KR",
+                         "affiliation":  "Graduate School of AI, aSSIST University, Seoul, Republic of Korea",
                          "orcid":  "0009-0007-2669-8127"
+                     },
+                     {
+                         "name":  "Kim, Kyung-Sung",
+                         "affiliation":  "Graduate School of AI, aSSIST University, Seoul, Republic of Korea"
                      }
                  ],
     "license":  "Apache-2.0",
