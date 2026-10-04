@@ -31,3 +31,5 @@ Model: https://huggingface.co/yunicro/MiDM-9B-q35-e1-bx (tag `v0.2.0`).
 Code: https://github.com/YeoHoonYun/midm-decision-models/releases/tag/v0.2.0 .
 The previous model remains https://huggingface.co/yunicro/MiDM-4B-q35-e1-bx .
 The existing Zenodo v0.1.0 DOI does not archive v0.2.0. A follow-up deposit must use the existing record's **new-version** action to preserve concept DOI `10.5281/zenodo.23084583`; no new DOI is claimed here.
+
+Package correction: evaluation/inference context4096 matches the source evaluation; training context1024. Previous1024 package scored509/600 and was not published. Revalidation required.
