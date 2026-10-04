@@ -11,9 +11,8 @@ authors:
     given-names: "Kyung-Sung"
     affiliation: "Graduate School of AI, aSSIST University, Seoul, Republic of Korea"
 license: Apache-2.0
-doi: "10.5281/zenodo.23084584"
-version: "0.1.0"
-date-released: "2026-10-01"
+version: "0.2.0"
+date-released: "2026-10-04"
 keywords:
   - decision model
   - typed decisions
@@ -22,7 +21,7 @@ keywords:
   - reproducibility
   - evaluation audit
 abstract: >-
-  Code and results for a controlled study of small (8B or fewer parameters) typed-decision models (MiDM:
+  Code and results for a controlled study of small (up to 9B parameters) typed-decision models (MiDM:
   LoRA-tuned causal LMs with a pointer head over option lines). The work includes an exact reproduction and
   statistical audit of the CLM-8B DeepSWE verifier claim, and it identifies which factors matter for transfer:
   base-model generation and balanced data breadth. Adapter variants, TTA, calibration and ensembles did not.

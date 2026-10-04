@@ -15,7 +15,11 @@ Code, results and write-up for a controlled study of small (≤8B) typed-decisio
   changed by the selector. On those tasks the result is 10/13 against a random expectation of 7.0, which
   gives an exact one-sided **p = 0.062**. The base head before task fine-tuning is below random.
 
-## Headline results (each evaluation suite read once; `113_clm_reproduction_20260928/results/`)
+## v0.2.0: MiDM 9B
+
+[Model](https://huggingface.co/yunicro/MiDM-9B-q35-e1-bx) ? [Release evaluation and limitations](docs/releases/v0.2.0/README.md). Typed Decisions holdout: 83.17% ? 85.50%; JevBench hard: 45.05% ? 54.05%. SQL/code results below remain 4B results. The Zenodo badge above archives v0.1.0, not this update.
+
+## Historical v0.1.0 headline results (each evaluation suite read once; `113_clm_reproduction_20260928/results/`)
 
 | model | typed-decisions test | Kev transfer-v4 test | Kev transfer-v4 dev | JevBench public |
 |---|---|---|---|---|
@@ -113,7 +117,9 @@ How to read this:
 Datasets and model weights are not redistributed here. Datasets keep their own licences. The adapters are
 released separately on Hugging Face: https://huggingface.co/yunicro/MiDM-4B-q35-e1-bx (Zenodo DOI 10.5281/zenodo.23084584)
 
-## Citation
+## Citation (archived v0.1.0)
+
+For v0.2.0, use CITATION.cff and the GitHub release URL until its Zenodo version is deposited.
 Authors: YeoHoon Yoon and Kyung-Sung Kim (Graduate School of AI, aSSIST University, Seoul, Republic of Korea).
 
 ```bibtex

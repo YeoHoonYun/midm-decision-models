@@ -1,0 +1,20 @@
+{
+  "architecture": "MiDM",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "hidden_size": 4096,
+  "max_len": 1024,
+  "option_line_format": "\\n- {key}: {text}",
+  "options_header": "\\n\\nOptions:",
+  "quantization_at_training": "bitsandbytes nf4 double-quant",
+  "lora": {
+    "r": 16,
+    "alpha": 32
+  },
+  "epochs": 1,
+  "train_suites": [
+    "td_train",
+    "kev_train",
+    "breadth_v1",
+    "pp6_new"
+  ]
+}

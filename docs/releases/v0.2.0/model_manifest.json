@@ -1,0 +1,16 @@
+{
+  "version": "0.2.0",
+  "model": "MiDM-9B-q35-e1-bx",
+  "files": {
+    "adapter_config.json": "96f5ae3d77c1c0ef156344c0664cda89bd3a1449ca2f71d398744a2dc073d2d5",
+    "adapter_model.safetensors": "7231ef52a482760601bd6e9038ec9aae40034d0f63c6fb5de677b5f81e6dd5c2",
+    "evaluation.json": "e35113e104680a16156a07a39717df8c3b336f87212a0b576e0b518ff0b3e471",
+    "LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "midm.py": "2a3985c09b38802d240acec138b507358ee4bd30e413c82dd3215ee7ac0681fd",
+    "midm_config.json": "4d19709465d65b39744814de9d2399fb59af9224d429a8884d1a85c24efc8cce",
+    "NOTICE": "8c1e780a6af2a8c5402c719d95bd3be4ebd5f05c7fce0f9def1cff665c4ca21d",
+    "pointer_head.safetensors": "f534d840c1b521c04292e763db200e6ab10df12fb4ebdabc78de734c07d88e4a",
+    "README.md": "bb091542f71a61d5f506231ef8023f454d37fb02244ac0c02618c88135d50e03",
+    "requirements.txt": "550b986e177232471ed3dee7efacb0d8b0dacf0cbc7044b9b81a58dc38d808c2"
+  }
+}

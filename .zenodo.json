@@ -1,31 +1,32 @@
 {
-    "title":  "MiDM: Minimal Decision Models and an audit of CLM-8B",
-    "upload_type":  "software",
-    "description":  "\u003cp\u003eCode and results for a controlled study of small (8B or fewer parameters) typed-decision models. MiDM is a LoRA-tuned causal LM with a pointer head that scores every option line of a question in one pass. The release contains: (1) an exact reproduction and statistical audit of the CLM-8B DeepSWE verifier claim, including a leak check and a 5-seed retrain; (2) controlled experiments with seeds, precision controls and ablations showing that jointly reading the options, the base-model generation at 4B and above, and a balanced data mix drive transfer to unseen sources, while adapter variants, TTA, calibration, ensembles and a second epoch do not; (3) a per-item comparison with TypeSafe Jev on public JevBench items; (4) measured latency for a confidence cascade; and (5) an offline evaluation of MiDM as a best-of-N selector for SQL and code.\u003c/p\u003e",
-    "creators":  [
-                     {
-                         "name":  "Yoon, YeoHoon",
-                         "affiliation":  "Graduate School of AI, aSSIST University, Seoul, Republic of Korea",
-                         "orcid":  "0009-0007-2669-8127"
-                     },
-                     {
-                         "name":  "Kim, Kyung-Sung",
-                         "affiliation":  "Graduate School of AI, aSSIST University, Seoul, Republic of Korea"
-                     }
-                 ],
-    "license":  "Apache-2.0",
-    "keywords":  [
-                     "decision model",
-                     "typed decisions",
-                     "LoRA",
-                     "pointer head",
-                     "reproducibility",
-                     "evaluation audit",
-                     "CLM",
-                     "Qwen3.5",
-                     "JevBench",
-                     "DeepSWE",
-                     "best-of-N selection"
-                 ],
-    "access_right":  "open"
+  "title": "MiDM: Minimal Decision Models and an audit of CLM-8B",
+  "upload_type": "software",
+  "description": "<p>Code and results for a controlled study of small (up to 9B parameters) typed-decision models. MiDM is a LoRA-tuned causal LM with a pointer head that scores every option line of a question in one pass. The release contains: (1) an exact reproduction and statistical audit of the CLM-8B DeepSWE verifier claim, including a leak check and a 5-seed retrain; (2) controlled experiments with seeds, precision controls and ablations showing that jointly reading the options, the base-model generation at 4B and above, and a balanced data mix drive transfer to unseen sources, while adapter variants, TTA, calibration, ensembles and a second epoch do not; (3) a per-item comparison with TypeSafe Jev on public JevBench items; (4) measured latency for a confidence cascade; and (5) an offline evaluation of MiDM as a best-of-N selector for SQL and code.</p><p>Version 0.2.0 adds a 9B checkpoint and matched development evaluations. SQL/code selection results remain those of the previous 4B checkpoint.</p>",
+  "creators": [
+    {
+      "name": "Yoon, YeoHoon",
+      "affiliation": "Graduate School of AI, aSSIST University, Seoul, Republic of Korea",
+      "orcid": "0009-0007-2669-8127"
+    },
+    {
+      "name": "Kim, Kyung-Sung",
+      "affiliation": "Graduate School of AI, aSSIST University, Seoul, Republic of Korea"
+    }
+  ],
+  "license": "Apache-2.0",
+  "keywords": [
+    "decision model",
+    "typed decisions",
+    "LoRA",
+    "pointer head",
+    "reproducibility",
+    "evaluation audit",
+    "CLM",
+    "Qwen3.5",
+    "JevBench",
+    "DeepSWE",
+    "best-of-N selection"
+  ],
+  "access_right": "open",
+  "version": "0.2.0"
 }
