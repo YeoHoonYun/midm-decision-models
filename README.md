@@ -1,6 +1,6 @@
 # MiDM: Minimal Decision Models, and an audit of CLM-8B
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23162744.svg)](https://doi.org/10.5281/zenodo.23162744)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23164651.svg)](https://doi.org/10.5281/zenodo.23164651)
 
 Code, results and write-up for a controlled study of small (up to 9B) typed-decision models on two consumer GPUs
 (RTX 3090 + RTX 2080 Ti, Windows, no vLLM).
@@ -14,6 +14,16 @@ Code, results and write-up for a controlled study of small (up to 9B) typed-deci
   reproduce its DeepSWE best-of-4 verifier result exactly: 31/38 = 81.6%. Only 13 of the 38 tasks can be
   changed by the selector. On those tasks the result is 10/13 against a random expectation of 7.0, which
   gives an exact one-sided **p = 0.062**. The base head before task fine-tuning is below random.
+
+## v0.2.1: benchmark coverage, architectures and parameter-performance figures
+
+**Documentation/analysis update; model weights are unchanged.** [Full benchmark atlas](docs/evaluations/20261005/atlas/README.md) contains 13 model/settings rows, exact adapter/head parameter counts, provenance and reproducible PNG/SVG figures.
+
+![Matched model size and performance](docs/evaluations/20261005/atlas/matched_size_performance.png)
+
+![Architecture comparison](docs/evaluations/20261005/atlas/architecture.png)
+
+The atlas fills missing analysis and distinguishes measured, published and unavailable results. MiDM DeepSWE and local Terminal-Bench remain **unmeasured**: a recheck did not find the matching raw verifier candidate pools. No score is fabricated or copied from CLM. JevBench public accuracy is not its official sealed composite. Unknown proprietary parameter counts are not guessed.
 
 ## v0.2.0: MiDM 9B and completed evaluations
 
@@ -44,7 +54,7 @@ Findings, with paired row-clustered bootstrap results in `results/stats/stats.md
 - **Base generation and size.** These figures are precision-matched (bf16 vs bf16; fp16 vs bf16 alone was not significant).
   - Qwen3 → Qwen3.5 at 4B gives +3.4 to +5.9 pp on transfer suites.
   - Qwen3.5 2B → 4B gives +10.2 pp.
-  - Neither generation nor data mix helps at 2B or below, so about 4B is the practical floor.
+  - Effects depend on the suite and data mix; the historical 2B breadth gain above should not be read as a universal lower-size failure. See the current atlas for configuration-specific results.
   - Qwen3.5-4B equals Qwen3-8B (p = 0.69).
 - **No gain from:** DoRA, rsLoRA, rank 64, attention-only LoRA, per-domain adapters (routed or merged), TTA over
   option orders, temperature scaling, and ensembles. A second epoch hurts transfer (−2 to −3 pp).
@@ -67,30 +77,23 @@ Findings, with paired row-clustered bootstrap results in `results/stats/stats.md
   - SQL with retrieved examples: +1.1 pp on Spider test and +1.7 pp on a private holdout over majority vote.
   It does not beat the Solar Pro4 direct baseline significantly.
 
-## Comparison with CLM-8B and TypeSafe Jev
+## Current comparison and benchmark coverage
 
-| system | typed-decisions test | Kev transfer-v4 dev | Kev transfer-v4 test | JevBench public | DeepSWE held-out 38 (Bo4) |
-|---|---|---|---|---|---|
-| TypeSafe Jev (commercial, zero-shot; reported) | 0.727 | 0.857 | – | **0.866** | 71.1% (reported) |
-| CLM-8B (reported: typed-dec. from CLM PR #2, JevBench board) | 0.685 | – | – | 0.407 | 81.6% (claim) |
-| CLM-8B released DeepSWE head, run by us | – | – | – | – | 31/38 = 81.6% (reproduced) |
-| CLM-v0.1-8B base head, zero-shot, run by us | – | – | – | – | 27/38 = 71.1% (< random 73.7%) |
-| CLM recipe re-trained by us (frozen Qwen3-8B, z-score, 3 seeds) | 0.766 | – | – | – | – |
-| CLM-style frozen Qwen3-4B + heads (ours, same data as MiDM) | 0.759 | 0.366 | 0.411 | 0.411 | – |
-| Kev-9B (reported) | – | 0.822 | **0.852** | – | – |
-| MiDM-8B-q3-e2 | **0.805** | 0.729 | 0.772 | 0.706 | – |
-| MiDM-4B-q35-e1 | **0.805** | 0.755 | 0.764 | 0.710 | – |
-| **MiDM-4B-q35-e1-bx** | 0.788 | 0.791 | 0.798 | 0.710 | – |
+| System / evidence | Typed Decisions test | Kev transfer test | JevBench public accuracy | DeepSWE held-out 38 |
+|---|---:|---:|---:|---|
+| Local CLM-style Qwen3-4B control (historical) | 75.90% | 41.10% | 41.13% | Not measured |
+| MiDM Qwen3.5 4B (matched) | 78.85% | 79.84% | 71.43% | Raw candidate text unavailable |
+| MiDM Qwen3.5 9B (matched) | 79.30% | 82.59% | 77.06% | Raw candidate text unavailable |
+| Qwen3 4B reasoning (local) | Not measured in this matched run | Not measured in this matched run | 81.82% | Not measured |
+| Jev 1.13 Free (local API run) | Not measured in this matched run | Not measured in this matched run | 83.98% | Not measured |
+| Solar Pro4 (local API run) | Different dev subset; not a test score | Different dev subset; not a test score | 95.24% | Not measured |
+| Released CLM 8B task-specific head (local replay) | Not evaluated here | Not evaluated here | Not evaluated here | 31/38 = 81.58% |
 
-How to read this:
-- **Reported rows are not paired with ours.** They come from their authors' cards and boards and use different
-  protocols. Jev is zero-shot. MiDM was trained on typed-decisions train, so the typed-decisions column favours MiDM.
-- **Against CLM.** On the same data, the frozen-encoder design scores about 0.76 in-distribution but falls to
-  about 0.4 on unseen sources and JevBench. MiDM keeps 0.76–0.80. CLM's DeepSWE headline reproduces exactly,
-  but the edge over random is 3 tasks out of 13 decidable ones (p = 0.062). The base head is below random.
-- **Against Jev and Kev.** MiDM (≤8B, trained locally on two consumer GPUs) is still behind Jev on Kev transfer
-  dev (−6.6 pp) and JevBench public (−15.6 pp), and behind Kev-9B on Kev transfer test (−5.4 pp).
-- **Where MiDM wins.** It runs locally in 4-bit on one GPU, and a 4B model matches 8B.
+Only the MiDM 4B/9B primary rows are precision/protocol matched. Historical controls and API/reasoning rows differ in data, base, prompts and compute. All public JevBench rows above cover 231 items; public accuracy is not the official composite. The released CLM DeepSWE numerical result reproduces, but its mixed-task comparison with random has exact one-sided p=0.062.
+
+![Public comparison](docs/evaluations/20261005/atlas/public_comparison.png)
+
+See the [atlas](docs/evaluations/20261005/atlas/README.md) for published Jev/Kev outcomes, the hard tier, a parameter scatterplot, the historical architecture control, SQL/Python regressions, and the exact reasons each unavailable benchmark remains unmeasured. Model size, trainable adapter size, VRAM and latency are distinct quantities. The 9B model does not dominate reasoning models or improve all applications.
 
 ## Release
 - Hugging Face: [yunicro/MiDM-4B-q35-e1-bx](https://huggingface.co/yunicro/MiDM-4B-q35-e1-bx) (public).
@@ -119,11 +122,11 @@ How to read this:
    then `pointer_lora.py eval ... --save-probs`.
 
 Datasets and model weights are not redistributed here. Datasets keep their own licences. The adapters are
-released separately on Hugging Face: https://huggingface.co/yunicro/MiDM-4B-q35-e1-bx (Zenodo DOI 10.5281/zenodo.23162744)
+released separately on Hugging Face: https://huggingface.co/yunicro/MiDM-4B-q35-e1-bx (Zenodo DOI 10.5281/zenodo.23164651)
 
-## Citation (archived v0.1.0)
+## Citation (current documentation release)
 
-For v0.2.0, use CITATION.cff and the GitHub release URL until its Zenodo version is deposited.
+For v0.2.1, use the version DOI and CITATION.cff below. Historical v0.1.0/v0.2.0 tags and DOIs remain available.
 Authors: YeoHoon Yoon and Kyung-Sung Kim (Graduate School of AI, aSSIST University, Seoul, Republic of Korea).
 
 ```bibtex
@@ -131,13 +134,13 @@ Authors: YeoHoon Yoon and Kyung-Sung Kim (Graduate School of AI, aSSIST Universi
   author    = {Yoon, YeoHoon and Kim, Kyung-Sung},
   title     = {MiDM: Minimal Decision Models and an audit of CLM-8B},
   year      = {2026},
-  version   = {0.2.0},
+  version   = {0.2.1},
   publisher = {Zenodo},
-  doi       = {10.5281/zenodo.23162744},
+  doi       = {10.5281/zenodo.23164651},
   url       = {https://github.com/YeoHoonYun/midm-decision-models}
 }
 ```
-See `CITATION.cff`. Archived on Zenodo: https://doi.org/10.5281/zenodo.23162744 (all versions: https://doi.org/10.5281/zenodo.23084583)
+See `CITATION.cff`. Archived on Zenodo: https://doi.org/10.5281/zenodo.23164651 (all versions: https://doi.org/10.5281/zenodo.23084583)
 ## License
 Apache-2.0 (`LICENSE`); third-party notices are in `NOTICE`.
 

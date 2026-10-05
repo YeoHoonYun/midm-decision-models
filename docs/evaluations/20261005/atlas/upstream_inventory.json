@@ -1,0 +1,80 @@
+{
+  "checked_at": "2026-10-05T23:11:58.401173",
+  "sources": [
+    {
+      "url": "https://huggingface.co/api/models?author=Contrastive-LM&limit=100",
+      "sha": null,
+      "ids": [
+        "Contrastive-LM/CLM-v0.1-8B",
+        "Contrastive-LM/deepswe-clm-heads-8k"
+      ],
+      "file_count": 0,
+      "evaluation_related_files": []
+    },
+    {
+      "url": "https://huggingface.co/api/models/Contrastive-LM/CLM-v0.1-8B",
+      "sha": "e939398d4556fcd9400c76fa8c5a513202f42b0a",
+      "ids": null,
+      "file_count": 6,
+      "evaluation_related_files": []
+    },
+    {
+      "url": "https://huggingface.co/api/models/Contrastive-LM/deepswe-clm-heads-8k",
+      "sha": "c60876f3fdf7a75dc58d33b776e469b7e903d0ee",
+      "ids": null,
+      "file_count": 9,
+      "evaluation_related_files": [
+        "heldout_tasks.json",
+        "split_summary.json",
+        "task_split.json",
+        "verification.json"
+      ]
+    },
+    {
+      "url": "https://huggingface.co/api/datasets?author=Contrastive-LM&limit=100",
+      "sha": null,
+      "ids": [
+        "Contrastive-LM/deepswe-clm-train-embeddings-8k",
+        "Contrastive-LM/CLM-v0.1-Pretrain-Nemotron"
+      ],
+      "file_count": 0,
+      "evaluation_related_files": []
+    },
+    {
+      "url": "https://huggingface.co/api/datasets/Contrastive-LM/deepswe-clm-train-embeddings-8k",
+      "sha": "4e42267114a2b28dc1d4fab85a2fe2790abc16d2",
+      "ids": null,
+      "file_count": 18,
+      "evaluation_related_files": []
+    },
+    {
+      "url": "https://huggingface.co/api/datasets/Contrastive-LM/CLM-v0.1-Pretrain-Nemotron",
+      "sha": "05ca7d05c043350326c5e86c589b9542962747b4",
+      "ids": null,
+      "file_count": 1876,
+      "evaluation_related_files": []
+    },
+    {
+      "url": "https://api.github.com/repos/Contrastive-LM/CLM/git/trees/main?recursive=1",
+      "sha": "bb42c6c5bf914fd449bed2f6ca65be80602cb1f7",
+      "ids": null,
+      "file_count": 46,
+      "evaluation_related_files": [
+        "evaluation/bon_eval.py"
+      ]
+    }
+  ],
+  "local_deepswe_columns": [
+    "trajectory_id",
+    "step_idx",
+    "task_id",
+    "model",
+    "config",
+    "reward",
+    "fold",
+    "prm_score",
+    "state_embedding",
+    "action_embedding"
+  ],
+  "finding": "No matching raw DeepSWE candidate text or Terminal-Bench 30-task verifier pool found in these inspected releases. This is a scoped search, not proof that no such assets exist elsewhere."
+}

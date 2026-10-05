@@ -1,3 +1,9 @@
+# Current release: v0.2.1
+
+Benchmark/architecture analysis update; weights unchanged from v0.2.0. [Release notes](../releases/v0.2.1/README.md). DOI: https://doi.org/10.5281/zenodo.23164651 .
+
+The v0.1.0 record below is retained as historical release history.
+
 # MiDM 배포 정보 (논문 "Code and model availability" 근거)
 
 최종 갱신: 2026-10-01 23:30 — **v0.1.0 공개 배포 완료**

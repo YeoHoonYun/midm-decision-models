@@ -11,7 +11,7 @@ authors:
     given-names: "Kyung-Sung"
     affiliation: "Graduate School of AI, aSSIST University, Seoul, Republic of Korea"
 license: Apache-2.0
-version: "0.2.0"
+version: "0.2.1"
 date-released: "2026-10-05"
 keywords:
   - decision model
@@ -26,4 +26,4 @@ abstract: >-
   statistical audit of the CLM-8B DeepSWE verifier claim, and it identifies which factors matter for transfer:
   base-model generation and balanced data breadth. Adapter variants, TTA, calibration and ensembles did not.
 
-doi: 10.5281/zenodo.23162744
+doi: 10.5281/zenodo.23164651

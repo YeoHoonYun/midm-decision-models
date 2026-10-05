@@ -1,7 +1,7 @@
 {
   "title": "MiDM: Minimal Decision Models and an audit of CLM-8B",
   "upload_type": "software",
-  "description": "<p>MiDM v0.2.0: typed-decision models with a LoRA adapter and pointer head, including a new Qwen3.5-9B-Base checkpoint interface. Archive contains code, aggregate matched 4B/9B evaluations, CLM DeepSWE numerical reproduction and statistical audit, SQL/Python selection, routing and concurrency pilots, and aggregate report-integration checks.</p><p>The matched retrospective tests improve some decision tasks, but not SQL/Python consistently. The learned router remains below reasoning alone. MiDM DeepSWE and local Terminal-Bench are unmeasured because matching raw evaluation artifacts are unavailable. One-date report integration does not establish financial or semantic-quality superiority. No raw benchmark examples, private predictions, financial data, report text or credentials are included. Model adapters are hosted separately on Hugging Face.</p>",
+  "description": "<p>MiDM v0.2.1 documentation and benchmark-analysis release. Model weights are unchanged from v0.2.0. Includes a 13-row benchmark atlas, architecture comparison, exact adapter/pointer parameter counts, and five reproducible parameter-performance/comparison figures in PNG and SVG with source hashes.</p><p>Matched 4B/9B results are separated from historical local controls and published or API/reasoning comparators. Public JevBench accuracy is not the official composite. MiDM DeepSWE and local Terminal-Bench remain unmeasured because matching raw verifier candidate pools were not found in the rechecked upstream artifacts. No scores are invented. SQL/Python regressions and routing limits are retained. No private financial data, raw benchmark examples, generated report text or credentials are included. Model adapters remain separately hosted on Hugging Face.</p>",
   "creators": [
     {
       "name": "Yoon, YeoHoon",
@@ -28,5 +28,5 @@
     "best-of-N selection"
   ],
   "access_right": "open",
-  "version": "0.2.0"
+  "version": "0.2.1"
 }

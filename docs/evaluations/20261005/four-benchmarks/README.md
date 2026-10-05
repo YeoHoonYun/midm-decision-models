@@ -12,3 +12,7 @@ CLM DeepSWE fresh replay: 31/38 (81.58%). MiDM DeepSWE not scored: raw candidate
 Terminal-Bench not scored: matching traces/head/protocol absent. Published 87.6% is not substituted as a measurement.
 JevBench values are public-item accuracy, not official composite points. Typed-decisions values are hard-label argmax accuracy; compare published distribution-based scores only after matching the metric.
 Missing results are null, never zero. See SCORES.json for source hashes and protocol.
+
+## v0.2.1 analysis update
+
+[Benchmark coverage, architecture and parameter-performance atlas](../atlas/README.md). Completed measurements, explicit missing-artifact analysis and 13 comparison rows; no new inference or imputed scores.

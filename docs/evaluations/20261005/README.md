@@ -79,3 +79,7 @@ Operational conclusion: the tested short 4B workload benefited from two processe
 The final package reproduces the original development evaluation exactly: **513/600 (85.50%)**, identical choices on 600/600 questions and maximum absolute probability difference 0.0. The original protocol uses NF4/BF16, 4096-token context, 4096 padded tokens per batch, attention masks and TTA=1. Adapter weights, pointer head and encoded inputs match the source exactly. This is package reproducibility, not a new independent test.
 
 A separate single-question, unmasked check gave **509/600 (84.83%)** and failed its original tolerance gate. It is retained rather than hidden. That verification bypassed the public API batching/mask path. The matched check changes batching and mask together, so their individual effects were not isolated. Do not assume identical predictions across serving configurations.
+
+## v0.2.1 analysis update
+
+[Benchmark coverage, architecture and parameter-performance atlas](atlas/README.md). Completed measurements, explicit missing-artifact analysis and 13 comparison rows; no new inference or imputed scores.

@@ -1,0 +1,587 @@
+{
+  "created": "2026-10-05T23:16:39.058397",
+  "metric": "hard-label argmax accuracy; public JevBench accuracy is NOT official composite",
+  "parameter_axis": "nominal advertised base-model billions, not exact active/total count, trainable count or memory",
+  "models": [
+    {
+      "id": "midm_4b",
+      "name": "MiDM 4B (matched)",
+      "parameters_b_nominal": 4,
+      "family": "MiDM pointer + QLoRA",
+      "base": "Qwen3.5-4B-Base",
+      "provenance": "local matched BF16/NF4",
+      "metrics": {
+        "td_test": {
+          "n": 2000,
+          "correct": 1577,
+          "accuracy": 0.7885
+        },
+        "kevT_dev": {
+          "n": 764,
+          "correct": 604,
+          "accuracy": 0.7905759162303665
+        },
+        "kevT_test": {
+          "n": 764,
+          "correct": 610,
+          "accuracy": 0.7984293193717278
+        },
+        "jb_original": {
+          "n": 72,
+          "correct": 66,
+          "accuracy": 0.9166666666666666
+        },
+        "jb_easy": {
+          "n": 48,
+          "correct": 48,
+          "accuracy": 1.0
+        },
+        "jb_hard": {
+          "n": 111,
+          "correct": 51,
+          "accuracy": 0.4594594594594595
+        },
+        "jb_public": {
+          "n": 231,
+          "correct": 165,
+          "accuracy": 0.7142857142857143
+        }
+      }
+    },
+    {
+      "id": "midm_9b",
+      "name": "MiDM 9B (matched)",
+      "parameters_b_nominal": 9,
+      "family": "MiDM pointer + QLoRA",
+      "base": "Qwen3.5-9B-Base",
+      "provenance": "local matched BF16/NF4",
+      "metrics": {
+        "td_test": {
+          "n": 2000,
+          "correct": 1586,
+          "accuracy": 0.793
+        },
+        "kevT_dev": {
+          "n": 764,
+          "correct": 604,
+          "accuracy": 0.7905759162303665
+        },
+        "kevT_test": {
+          "n": 764,
+          "correct": 631,
+          "accuracy": 0.8259162303664922
+        },
+        "jb_original": {
+          "n": 72,
+          "correct": 70,
+          "accuracy": 0.9722222222222222
+        },
+        "jb_easy": {
+          "n": 48,
+          "correct": 48,
+          "accuracy": 1.0
+        },
+        "jb_hard": {
+          "n": 111,
+          "correct": 60,
+          "accuracy": 0.5405405405405406
+        },
+        "jb_public": {
+          "n": 231,
+          "correct": 178,
+          "accuracy": 0.7705627705627706
+        }
+      }
+    },
+    {
+      "id": "clm_style4",
+      "name": "CLM-style 4B control",
+      "parameters_b_nominal": 4,
+      "family": "Frozen independent encoders + projection heads",
+      "base": "Qwen/Qwen3-4B",
+      "provenance": "historical local; configuration differs",
+      "metrics": {
+        "td_test": {
+          "n": 2000,
+          "correct": 1518,
+          "accuracy": 0.759
+        },
+        "kevT_dev": {
+          "n": 764,
+          "correct": 280,
+          "accuracy": 0.36649214659685864
+        },
+        "kevT_test": {
+          "n": 764,
+          "correct": 314,
+          "accuracy": 0.4109947643979058
+        },
+        "jb_original": {
+          "n": 72,
+          "correct": 29,
+          "accuracy": 0.4027777777777778
+        },
+        "jb_easy": {
+          "n": 48,
+          "correct": 26,
+          "accuracy": 0.5416666666666666
+        },
+        "jb_hard": {
+          "n": 111,
+          "correct": 40,
+          "accuracy": 0.36036036036036034
+        },
+        "jb_public": {
+          "n": 231,
+          "correct": 95,
+          "accuracy": 0.41125541125541126
+        }
+      }
+    },
+    {
+      "id": "pointer_frozen4",
+      "name": "Frozen joint pointer 4B",
+      "parameters_b_nominal": 4,
+      "family": "Frozen causal encoder + pointer",
+      "base": "Qwen/Qwen3-4B",
+      "provenance": "historical local; configuration differs",
+      "metrics": {
+        "td_test": {
+          "n": 2000,
+          "correct": 1160,
+          "accuracy": 0.58
+        },
+        "kevT_dev": {
+          "n": 764,
+          "correct": 439,
+          "accuracy": 0.574607329842932
+        },
+        "kevT_test": {
+          "n": 764,
+          "correct": 481,
+          "accuracy": 0.6295811518324608
+        },
+        "jb_original": {
+          "n": 72,
+          "correct": 26,
+          "accuracy": 0.3611111111111111
+        },
+        "jb_easy": {
+          "n": 48,
+          "correct": 42,
+          "accuracy": 0.875
+        },
+        "jb_hard": {
+          "n": 111,
+          "correct": 41,
+          "accuracy": 0.36936936936936937
+        },
+        "jb_public": {
+          "n": 231,
+          "correct": 109,
+          "accuracy": 0.47186147186147187
+        }
+      }
+    },
+    {
+      "id": "midm_q3_4",
+      "name": "MiDM Qwen3 4B",
+      "parameters_b_nominal": 4,
+      "family": "MiDM pointer + QLoRA",
+      "base": "Qwen/Qwen3-4B",
+      "provenance": "historical local; configuration differs",
+      "metrics": {
+        "td_test": {
+          "n": 2000,
+          "correct": 1578,
+          "accuracy": 0.789
+        },
+        "kevT_dev": {
+          "n": 764,
+          "correct": 535,
+          "accuracy": 0.7002617801047121
+        },
+        "kevT_test": {
+          "n": 764,
+          "correct": 547,
+          "accuracy": 0.7159685863874345
+        },
+        "jb_original": {
+          "n": 72,
+          "correct": 67,
+          "accuracy": 0.9305555555555556
+        },
+        "jb_easy": {
+          "n": 48,
+          "correct": 48,
+          "accuracy": 1.0
+        },
+        "jb_hard": {
+          "n": 111,
+          "correct": 44,
+          "accuracy": 0.3963963963963964
+        },
+        "jb_public": {
+          "n": 231,
+          "correct": 159,
+          "accuracy": 0.6883116883116883
+        }
+      }
+    },
+    {
+      "id": "midm_q3_8",
+      "name": "MiDM Qwen3 8B (2ep)",
+      "parameters_b_nominal": 8,
+      "family": "MiDM pointer + QLoRA",
+      "base": "Qwen/Qwen3-8B",
+      "provenance": "historical local; configuration differs",
+      "metrics": {
+        "td_test": {
+          "n": 2000,
+          "correct": 1610,
+          "accuracy": 0.805
+        },
+        "kevT_dev": {
+          "n": 764,
+          "correct": 557,
+          "accuracy": 0.7290575916230366
+        },
+        "kevT_test": {
+          "n": 764,
+          "correct": 590,
+          "accuracy": 0.7722513089005235
+        },
+        "jb_original": {
+          "n": 72,
+          "correct": 68,
+          "accuracy": 0.9444444444444444
+        },
+        "jb_easy": {
+          "n": 48,
+          "correct": 48,
+          "accuracy": 1.0
+        },
+        "jb_hard": {
+          "n": 111,
+          "correct": 47,
+          "accuracy": 0.42342342342342343
+        },
+        "jb_public": {
+          "n": 231,
+          "correct": 163,
+          "accuracy": 0.7056277056277056
+        }
+      }
+    },
+    {
+      "id": "midm_q35_2",
+      "name": "MiDM Qwen3.5 2B",
+      "parameters_b_nominal": 2,
+      "family": "MiDM pointer + QLoRA",
+      "base": "Qwen/Qwen3.5-2B-Base",
+      "provenance": "historical local; configuration differs",
+      "metrics": {
+        "td_test": {
+          "n": 2000,
+          "correct": 1562,
+          "accuracy": 0.781
+        },
+        "kevT_dev": {
+          "n": 764,
+          "correct": 488,
+          "accuracy": 0.6387434554973822
+        },
+        "kevT_test": {
+          "n": 764,
+          "correct": 506,
+          "accuracy": 0.662303664921466
+        },
+        "jb_original": {
+          "n": 72,
+          "correct": 57,
+          "accuracy": 0.7916666666666666
+        },
+        "jb_easy": {
+          "n": 48,
+          "correct": 48,
+          "accuracy": 1.0
+        },
+        "jb_hard": {
+          "n": 111,
+          "correct": 42,
+          "accuracy": 0.3783783783783784
+        },
+        "jb_public": {
+          "n": 231,
+          "correct": 147,
+          "accuracy": 0.6363636363636364
+        }
+      }
+    },
+    {
+      "id": "kev-4b",
+      "name": "Kev 4B (published)",
+      "parameters_b_nominal": 4,
+      "family": "External typed-decision model; internals not audited",
+      "base": null,
+      "provenance": "benchmark-author per-item outcomes, JevBench v1.2 snapshot",
+      "metrics": {
+        "jb_public": {
+          "n": 231,
+          "correct": 153,
+          "accuracy": 0.6623376623376623
+        },
+        "jb_original": {
+          "n": 72,
+          "correct": 64,
+          "accuracy": 0.8888888888888888
+        },
+        "jb_easy": {
+          "n": 48,
+          "correct": 48,
+          "accuracy": 1.0
+        },
+        "jb_hard": {
+          "n": 111,
+          "correct": 41,
+          "accuracy": 0.36936936936936937
+        }
+      }
+    },
+    {
+      "id": "kev-8b",
+      "name": "Kev 8B (published)",
+      "parameters_b_nominal": 8,
+      "family": "External typed-decision model; internals not audited",
+      "base": null,
+      "provenance": "benchmark-author per-item outcomes, JevBench v1.2 snapshot",
+      "metrics": {
+        "jb_public": {
+          "n": 231,
+          "correct": 165,
+          "accuracy": 0.7142857142857143
+        },
+        "jb_original": {
+          "n": 72,
+          "correct": 67,
+          "accuracy": 0.9305555555555556
+        },
+        "jb_easy": {
+          "n": 48,
+          "correct": 48,
+          "accuracy": 1.0
+        },
+        "jb_hard": {
+          "n": 111,
+          "correct": 50,
+          "accuracy": 0.45045045045045046
+        }
+      }
+    },
+    {
+      "id": "jev-1.13.0",
+      "name": "Jev 1.13 (published)",
+      "parameters_b_nominal": null,
+      "family": "External typed-decision model; internals not audited",
+      "base": null,
+      "provenance": "benchmark-author per-item outcomes, JevBench v1.2 snapshot",
+      "metrics": {
+        "jb_public": {
+          "n": 231,
+          "correct": 200,
+          "accuracy": 0.8658008658008658
+        },
+        "jb_original": {
+          "n": 72,
+          "correct": 71,
+          "accuracy": 0.9861111111111112
+        },
+        "jb_easy": {
+          "n": 48,
+          "correct": 48,
+          "accuracy": 1.0
+        },
+        "jb_hard": {
+          "n": 111,
+          "correct": 81,
+          "accuracy": 0.7297297297297297
+        }
+      }
+    },
+    {
+      "id": "jev_free",
+      "name": "Jev 1.13 Free (local API run)",
+      "parameters_b_nominal": null,
+      "family": "Typed API",
+      "base": null,
+      "provenance": "local API responses; different prompting/compute from pointer models",
+      "metrics": {
+        "jb_easy": {
+          "n": 48,
+          "correct": 48,
+          "accuracy": 1.0
+        },
+        "jb_original": {
+          "n": 72,
+          "correct": 71,
+          "accuracy": 0.9861111111111112
+        },
+        "jb_hard": {
+          "n": 111,
+          "correct": 75,
+          "accuracy": 0.6756756756756757
+        },
+        "jb_public": {
+          "n": 231,
+          "correct": 194,
+          "accuracy": 0.8398268398268398
+        }
+      }
+    },
+    {
+      "id": "solar",
+      "name": "Solar Pro4 (local API run)",
+      "parameters_b_nominal": null,
+      "family": "Generative API",
+      "base": null,
+      "provenance": "local API responses; different prompting/compute from pointer models",
+      "metrics": {
+        "jb_easy": {
+          "n": 48,
+          "correct": 48,
+          "accuracy": 1.0
+        },
+        "jb_original": {
+          "n": 72,
+          "correct": 71,
+          "accuracy": 0.9861111111111112
+        },
+        "jb_hard": {
+          "n": 111,
+          "correct": 101,
+          "accuracy": 0.9099099099099099
+        },
+        "jb_public": {
+          "n": 231,
+          "correct": 220,
+          "accuracy": 0.9523809523809523
+        }
+      }
+    },
+    {
+      "id": "qwen3_4_reason",
+      "name": "Qwen3 4B reasoning",
+      "parameters_b_nominal": 4,
+      "family": "Generative local reasoning",
+      "base": "Qwen3-4B",
+      "provenance": "local reasoning run; different token budget and output path",
+      "metrics": {
+        "jb_easy": {
+          "n": 48,
+          "correct": 48,
+          "accuracy": 1.0
+        },
+        "jb_original": {
+          "n": 72,
+          "correct": 68,
+          "accuracy": 0.9444444444444444
+        },
+        "jb_hard": {
+          "n": 111,
+          "correct": 73,
+          "accuracy": 0.6576576576576577
+        },
+        "jb_public": {
+          "n": 231,
+          "correct": 189,
+          "accuracy": 0.8181818181818182
+        }
+      }
+    }
+  ],
+  "trainable_parameters": {
+    "4": {
+      "nominal_base_b": 4,
+      "lora_parameters": 30474240,
+      "pointer_parameters": 2561,
+      "rank": 16,
+      "alpha": 32,
+      "base": "Qwen/Qwen3.5-4B-Base",
+      "artifact_hashes": {
+        "adapter_model.safetensors": "7b165d1d0d57a29e9c9ae39f639f77edc1ef8d2084174eb2afcc364eb8f00055",
+        "pointer_head.safetensors": "7e9e1f0f94d00ad5835d7829c22ef74827f4a95dcbf335e9ceac3a6d60bd9d50",
+        "adapter_config.json": "50ba2db8ff05e6d6a1f8bdecd8005a3f76e8cf8e926ec84e3d7e5666d07ffc11"
+      }
+    },
+    "9": {
+      "nominal_base_b": 9,
+      "lora_parameters": 40108032,
+      "pointer_parameters": 4097,
+      "rank": 16,
+      "alpha": 32,
+      "base": "Qwen/Qwen3.5-9B-Base",
+      "artifact_hashes": {
+        "adapter_model.safetensors": "7231ef52a482760601bd6e9038ec9aae40034d0f63c6fb5de677b5f81e6dd5c2",
+        "pointer_head.safetensors": "f534d840c1b521c04292e763db200e6ab10df12fb4ebdabc78de734c07d88e4a",
+        "adapter_config.json": "96f5ae3d77c1c0ef156344c0664cda89bd3a1449ca2f71d398744a2dc073d2d5"
+      }
+    }
+  },
+  "matched_protocol": {
+    "dtype": "NF4/BF16",
+    "gpu": "RTX 3090",
+    "max_input_tokens": 4096,
+    "batch_token_budget": 4096,
+    "tta": 1
+  },
+  "sources": [
+    {
+      "source": "experiments/113_clm_reproduction_20260928/results/comparison_20261005/metrics.json",
+      "sha256": "8a7665f6b490259213cf1ea9a82651ec1e470fa71177a93d84a1138dfa00675a"
+    },
+    {
+      "source": "experiments/113_clm_reproduction_20260928/results/multi/FINAL_qwen3-4b_e40.json",
+      "sha256": "5b1f9a0fe1cc8ddb606bad84d55bf3e8474d1e77af4b59ffff5d86d7d3f8a967"
+    },
+    {
+      "source": "experiments/113_clm_reproduction_20260928/results/pointer/FINAL_H_q3_4b_headonly.json",
+      "sha256": "be7765ceaaf1aa71fb8210832da40ceba48f776e3ed0067df934bae1f81b81a1"
+    },
+    {
+      "source": "experiments/113_clm_reproduction_20260928/results/pointer/FINAL_qwen3-4b.json",
+      "sha256": "853d842cbe2d96bfeaad0b3879863e89878655dae41615b0848ef226fd069ab8"
+    },
+    {
+      "source": "experiments/113_clm_reproduction_20260928/results/pointer/FINAL_B_qwen3-8b-2ep.json",
+      "sha256": "bc80e97bd672812f442db984852484ba84ba2769b4ccb27a1844c660c659f29f"
+    },
+    {
+      "source": "experiments/113_clm_reproduction_20260928/results/pointer/FINAL_P_q35_2b_e1_bf16.json",
+      "sha256": "2ef9456fb45f8cfe73e8d6ce5a8824285d532a33e441f45df59e2ae1157d267a"
+    },
+    {
+      "source": "experiments/113_clm_reproduction_20260928/results/jev_paired/jev_paired.json",
+      "sha256": "cc82c78affa57db07373cdc173ddc4630a3d5efc94c3d089c8cecc08ae463a04"
+    },
+    {
+      "source": "experiments/116_api_vs_midm_20261003/free_model_catalog/comparison_latest.json",
+      "sha256": "4fa24e256c0dd910deddca300bfd9d093e0fbbb54b7a1c12033409d51b703c7d"
+    },
+    {
+      "source": "experiments/116_api_vs_midm_20261003/router_pilot_20261005/RESULTS.json",
+      "sha256": "2f78ad47cf8ee4f01e6e88dc346de8792c159af17eb9550a0e4dcf891a0fa044"
+    },
+    {
+      "source": "research_topics/clm_decision_heads_novelty_20260928/huggingface/MiDM-4B-q35-e1-bx/adapter_config.json",
+      "sha256": "50ba2db8ff05e6d6a1f8bdecd8005a3f76e8cf8e926ec84e3d7e5666d07ffc11"
+    },
+    {
+      "source": "research_topics/clm_decision_heads_novelty_20260928/huggingface/MiDM-9B-q35-e1-bx/adapter_config.json",
+      "sha256": "96f5ae3d77c1c0ef156344c0664cda89bd3a1449ca2f71d398744a2dc073d2d5"
+    },
+    {
+      "source": "experiments/113_clm_reproduction_20260928/results/benchmark_atlas_20261005/upstream_inventory.json",
+      "sha256": "516c617f6ee0ddf4253cd816a85a3f9514d7c2e2bb9b46950009506327e8563a"
+    }
+  ]
+}
