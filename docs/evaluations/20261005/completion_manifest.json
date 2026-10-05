@@ -1,0 +1,383 @@
+{
+  "date": "2026-10-05",
+  "status": "available tests completed; missing source-dependent scores explicitly unresolved",
+  "primary_metrics": {
+    "4b": {
+      "td_test": {
+        "n": 2000,
+        "acc": 0.7885,
+        "brier": 0.33440118592916407,
+        "sec": 173.2
+      },
+      "kevT_dev": {
+        "n": 764,
+        "acc": 0.7905759162303665,
+        "brier": 0.2968507554904294,
+        "sec": 35.6
+      },
+      "kevT_test": {
+        "n": 764,
+        "acc": 0.7984293193717278,
+        "brier": 0.2761821086025005,
+        "sec": 36.1
+      },
+      "jb_original": {
+        "n": 72,
+        "acc": 0.9166666666666666,
+        "brier": 0.13217198369289285,
+        "sec": 2.1
+      },
+      "jb_easy": {
+        "n": 48,
+        "acc": 1.0,
+        "brier": 0.00032269151732357976,
+        "sec": 1.6
+      },
+      "jb_hard": {
+        "n": 111,
+        "acc": 0.4594594594594595,
+        "brier": 0.692855496251083,
+        "sec": 58.0
+      }
+    },
+    "9b": {
+      "td_test": {
+        "n": 2000,
+        "acc": 0.793,
+        "brier": 0.335939321228092,
+        "sec": 261.3
+      },
+      "kevT_dev": {
+        "n": 764,
+        "acc": 0.7905759162303665,
+        "brier": 0.2873895383885948,
+        "sec": 55.5
+      },
+      "kevT_test": {
+        "n": 764,
+        "acc": 0.8259162303664922,
+        "brier": 0.25159397468731,
+        "sec": 53.2
+      },
+      "jb_original": {
+        "n": 72,
+        "acc": 0.9722222222222222,
+        "brier": 0.05652686709487398,
+        "sec": 2.9
+      },
+      "jb_easy": {
+        "n": 48,
+        "acc": 1.0,
+        "brier": 4.887540420794744e-06,
+        "sec": 2.1
+      },
+      "jb_hard": {
+        "n": 111,
+        "acc": 0.5405405405405406,
+        "brier": 0.6040495320680542,
+        "sec": 71.6
+      }
+    }
+  },
+  "router": {
+    "training_in_sample": {
+      "n": 400,
+      "midm_correct": 322,
+      "reason_correct": 296,
+      "router_correct": 330,
+      "escalated": 73,
+      "rescued": 13,
+      "harmed": 5,
+      "oracle_correct": 358,
+      "delta_vs_midm": 0.02,
+      "descriptive_group_bootstrap_ci95": [
+        0.0,
+        0.04210649574756564
+      ],
+      "groups": 284
+    },
+    "evaluation": {
+      "jb_easy": {
+        "n": 48,
+        "midm_correct": 48,
+        "reason_correct": 48,
+        "router_correct": 48,
+        "escalated": 40,
+        "rescued": 0,
+        "harmed": 0,
+        "oracle_correct": 48,
+        "delta_vs_midm": 0.0,
+        "descriptive_group_bootstrap_ci95": [
+          0.0,
+          0.0
+        ],
+        "groups": 1
+      },
+      "jb_original": {
+        "n": 72,
+        "midm_correct": 70,
+        "reason_correct": 68,
+        "router_correct": 70,
+        "escalated": 25,
+        "rescued": 2,
+        "harmed": 2,
+        "oracle_correct": 72,
+        "delta_vs_midm": 0.0,
+        "descriptive_group_bootstrap_ci95": [
+          -0.05555555555555555,
+          0.05555555555555555
+        ],
+        "groups": 36
+      },
+      "jb_hard": {
+        "n": 111,
+        "midm_correct": 60,
+        "reason_correct": 73,
+        "router_correct": 66,
+        "escalated": 35,
+        "rescued": 8,
+        "harmed": 2,
+        "oracle_correct": 85,
+        "delta_vs_midm": 0.05405405405405406,
+        "descriptive_group_bootstrap_ci95": [
+          0.0,
+          0.10810810810810811
+        ],
+        "groups": 111
+      }
+    },
+    "all_evaluation": {
+      "n": 231,
+      "midm_correct": 178,
+      "reason_correct": 189,
+      "router_correct": 184,
+      "escalated": 100,
+      "rescued": 10,
+      "harmed": 4,
+      "oracle_correct": 205,
+      "delta_vs_midm": 0.025974025974025976,
+      "descriptive_group_bootstrap_ci95": [
+        -0.005263854079643553,
+        0.06417112299465241
+      ],
+      "groups": 148
+    },
+    "limitations": [
+      "Seen benchmark, retrospective exploratory replay.",
+      "Routed accuracy uses stored rescored-choice predictions, not a new end-to-end tool or text-generation run.",
+      "No calculator or RAG is implemented here.",
+      "Routing-rate savings are call counts, not measured latency savings.",
+      "Policy is frozen regardless of hard-suite result."
+    ],
+    "external_calls": 0
+  },
+  "load_results": [
+    {
+      "label": "4B short (67/313 tokens)",
+      "gpu": "2080 Ti",
+      "scope": "synthetic 4B NF4 FP16 local concurrency stress; not benchmark accuracy or production latency",
+      "phases": [
+        {
+          "workers": 1,
+          "requests": 24,
+          "wall_seconds": 13.326251745223999,
+          "requests_per_second": 1.800956522422096,
+          "workers_metrics": [
+            {
+              "requests": 24,
+              "begin": 1791182979.5804548,
+              "end": 1791182992.9067066,
+              "latency_p50_s": 0.5391277999151498,
+              "latency_p95_s": 0.6730323999654502,
+              "prediction_changes_vs_warmup": 0,
+              "torch_peak_allocated_gib": 3.3272018432617188,
+              "input_lengths": [
+                67,
+                313
+              ],
+              "dtype": "torch.float16"
+            }
+          ]
+        },
+        {
+          "workers": 2,
+          "requests": 48,
+          "wall_seconds": 13.382397413253784,
+          "requests_per_second": 3.586801267197558,
+          "workers_metrics": [
+            {
+              "requests": 24,
+              "begin": 1791183050.0358286,
+              "end": 1791183063.373045,
+              "latency_p50_s": 0.559368200134486,
+              "latency_p95_s": 0.6389303999021649,
+              "prediction_changes_vs_warmup": 0,
+              "torch_peak_allocated_gib": 3.3272018432617188,
+              "input_lengths": [
+                67,
+                313
+              ],
+              "dtype": "torch.float16"
+            },
+            {
+              "requests": 24,
+              "begin": 1791183049.9906476,
+              "end": 1791183063.1077988,
+              "latency_p50_s": 0.5463287997990847,
+              "latency_p95_s": 0.6098837000317872,
+              "prediction_changes_vs_warmup": 0,
+              "torch_peak_allocated_gib": 3.3272018432617188,
+              "input_lengths": [
+                67,
+                313
+              ],
+              "dtype": "torch.float16"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "4B 2048 tokens",
+      "gpu": "2080 Ti",
+      "scope": "synthetic NF4 local concurrency stress; not benchmark accuracy or production latency",
+      "model_size": "4b",
+      "context_limit": 2048,
+      "phases": [
+        {
+          "workers": 1,
+          "requests": 12,
+          "wall_seconds": 13.277085781097412,
+          "requests_per_second": 0.9038127943019244,
+          "workers_metrics": [
+            {
+              "requests": 12,
+              "begin": 1791184624.8785112,
+              "end": 1791184638.155597,
+              "latency_p50_s": 1.1095229999627918,
+              "latency_p95_s": 1.194211599882692,
+              "prediction_changes_vs_warmup": 0,
+              "torch_peak_allocated_gib": 3.769284248352051,
+              "input_lengths": [
+                2048,
+                2048
+              ],
+              "dtype": "torch.float16"
+            }
+          ]
+        },
+        {
+          "workers": 2,
+          "requests": 24,
+          "wall_seconds": 31.05919313430786,
+          "requests_per_second": 0.7727180772603425,
+          "workers_metrics": [
+            {
+              "requests": 12,
+              "begin": 1791184694.0342023,
+              "end": 1791184725.0277603,
+              "latency_p50_s": 2.585604500025511,
+              "latency_p95_s": 2.6025233000982553,
+              "prediction_changes_vs_warmup": 0,
+              "torch_peak_allocated_gib": 3.769284248352051,
+              "input_lengths": [
+                2048,
+                2048
+              ],
+              "dtype": "torch.float16"
+            },
+            {
+              "requests": 12,
+              "begin": 1791184694.0756733,
+              "end": 1791184725.0933955,
+              "latency_p50_s": 2.596895599970594,
+              "latency_p95_s": 2.602718099951744,
+              "prediction_changes_vs_warmup": 0,
+              "torch_peak_allocated_gib": 3.769284248352051,
+              "input_lengths": [
+                2048,
+                2048
+              ],
+              "dtype": "torch.float16"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "9B 4096 tokens",
+      "gpu": "3090",
+      "scope": "synthetic NF4 local concurrency stress; not benchmark accuracy or production latency",
+      "model_size": "9b",
+      "context_limit": 4096,
+      "phases": [
+        {
+          "workers": 1,
+          "requests": 12,
+          "wall_seconds": 22.294395208358765,
+          "requests_per_second": 0.5382518739732791,
+          "workers_metrics": [
+            {
+              "requests": 12,
+              "begin": 1791199181.1817753,
+              "end": 1791199203.4761705,
+              "latency_p50_s": 1.8485285001806915,
+              "latency_p95_s": 1.9895782000385225,
+              "prediction_changes_vs_warmup": 0,
+              "torch_peak_allocated_gib": 6.734966278076172,
+              "input_lengths": [
+                4096,
+                4096
+              ],
+              "dtype": "torch.bfloat16"
+            }
+          ]
+        },
+        {
+          "workers": 2,
+          "requests": 24,
+          "wall_seconds": 55.035327434539795,
+          "requests_per_second": 0.43608353250093984,
+          "workers_metrics": [
+            {
+              "requests": 12,
+              "begin": 1791199259.28858,
+              "end": 1791199314.3127048,
+              "latency_p50_s": 4.589932299917564,
+              "latency_p95_s": 4.6040505999699235,
+              "prediction_changes_vs_warmup": 0,
+              "torch_peak_allocated_gib": 6.734966278076172,
+              "input_lengths": [
+                4096,
+                4096
+              ],
+              "dtype": "torch.bfloat16"
+            },
+            {
+              "requests": 12,
+              "begin": 1791199259.2773774,
+              "end": 1791199314.2900436,
+              "latency_p50_s": 4.594020899850875,
+              "latency_p95_s": 4.605079300003126,
+              "prediction_changes_vs_warmup": 0,
+              "torch_peak_allocated_gib": 6.734966278076172,
+              "input_lengths": [
+                4096,
+                4096
+              ],
+              "dtype": "torch.bfloat16"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "source_sha256": {
+    "113_clm_reproduction_20260928\\results\\comparison_20261005\\metrics.json": "8a7665f6b490259213cf1ea9a82651ec1e470fa71177a93d84a1138dfa00675a",
+    "116_api_vs_midm_20261003\\router_pilot_20261005\\RESULTS.json": "2f78ad47cf8ee4f01e6e88dc346de8792c159af17eb9550a0e4dcf891a0fa044",
+    "113_clm_reproduction_20260928\\results\\CLM_DeepSWE_reverify_20261005.json": "3f71027e05d6f7fdb153f8bb9b6aef22eb1d3c954a723ae9dc8b6cf2c66b342f",
+    "113_clm_reproduction_20260928\\results\\load_test_20261005\\RESULTS.json": "f605c53bc4dda078cab5ef2c110f823ee7f920cb331ef2ddebca49f2f73d60cb",
+    "113_clm_reproduction_20260928\\results\\load_test_4b_2048_20261005\\RESULTS.json": "e560cb5455b825b31bca8ee2dfd8e7960865ea2a0505603c1a2e1682151013df",
+    "113_clm_reproduction_20260928\\results\\load_test_9b_4096_20261005\\RESULTS.json": "8c56be9fc3f8e028f8b4b342c9dabf4f2cf5085682701ae7651507534b137f89"
+  }
+}

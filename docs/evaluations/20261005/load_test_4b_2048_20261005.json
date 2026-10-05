@@ -1,0 +1,65 @@
+{
+  "scope": "synthetic NF4 local concurrency stress; not benchmark accuracy or production latency",
+  "model_size": "4b",
+  "context_limit": 2048,
+  "phases": [
+    {
+      "workers": 1,
+      "requests": 12,
+      "wall_seconds": 13.277085781097412,
+      "requests_per_second": 0.9038127943019244,
+      "workers_metrics": [
+        {
+          "requests": 12,
+          "begin": 1791184624.8785112,
+          "end": 1791184638.155597,
+          "latency_p50_s": 1.1095229999627918,
+          "latency_p95_s": 1.194211599882692,
+          "prediction_changes_vs_warmup": 0,
+          "torch_peak_allocated_gib": 3.769284248352051,
+          "input_lengths": [
+            2048,
+            2048
+          ],
+          "dtype": "torch.float16"
+        }
+      ]
+    },
+    {
+      "workers": 2,
+      "requests": 24,
+      "wall_seconds": 31.05919313430786,
+      "requests_per_second": 0.7727180772603425,
+      "workers_metrics": [
+        {
+          "requests": 12,
+          "begin": 1791184694.0342023,
+          "end": 1791184725.0277603,
+          "latency_p50_s": 2.585604500025511,
+          "latency_p95_s": 2.6025233000982553,
+          "prediction_changes_vs_warmup": 0,
+          "torch_peak_allocated_gib": 3.769284248352051,
+          "input_lengths": [
+            2048,
+            2048
+          ],
+          "dtype": "torch.float16"
+        },
+        {
+          "requests": 12,
+          "begin": 1791184694.0756733,
+          "end": 1791184725.0933955,
+          "latency_p50_s": 2.596895599970594,
+          "latency_p95_s": 2.602718099951744,
+          "prediction_changes_vs_warmup": 0,
+          "torch_peak_allocated_gib": 3.769284248352051,
+          "input_lengths": [
+            2048,
+            2048
+          ],
+          "dtype": "torch.float16"
+        }
+      ]
+    }
+  ]
+}
