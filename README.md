@@ -130,3 +130,8 @@ Authors: YeoHoon Yoon and Kyung-Sung Kim (Graduate School of AI, aSSIST Universi
 See `CITATION.cff`. Archived on Zenodo: https://doi.org/10.5281/zenodo.23084584 (all versions: https://doi.org/10.5281/zenodo.23084583)
 ## License
 Apache-2.0 (`LICENSE`); third-party notices are in `NOTICE`.
+
+## Evaluation update — 2026-10-05
+
+[Completed CLM/MiDM verification](docs/evaluations/20261005/README.md): matched FP16 4B/9B test results and a fresh CLM DeepSWE replay. The 9B model release remains pending; this update publishes aggregate results only.
+

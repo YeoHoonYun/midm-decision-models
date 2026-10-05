@@ -1,0 +1,144 @@
+{
+  "date": "2026-10-05",
+  "protocol": {
+    "dtype": "torch.float16",
+    "max_len": 4096,
+    "batch_budget": 4096,
+    "tta": 1,
+    "gpu": "RTX 2080 Ti, 11 GiB"
+  },
+  "midm4b": {
+    "td_test": {
+      "n": 2000,
+      "acc": 0.789,
+      "brier": 0.3344858009732197,
+      "sec": 269.1
+    },
+    "kevT_dev": {
+      "n": 764,
+      "acc": 0.7892670157068062,
+      "brier": 0.29718877305421876,
+      "sec": 60.7
+    },
+    "kevT_test": {
+      "n": 764,
+      "acc": 0.7997382198952879,
+      "brier": 0.2759498727252387,
+      "sec": 180.3
+    },
+    "jb_original": {
+      "n": 72,
+      "acc": 0.9166666666666666,
+      "brier": 0.1320489375575941,
+      "sec": 3.3
+    },
+    "jb_easy": {
+      "n": 48,
+      "acc": 1.0,
+      "brier": 0.00032041304378800536,
+      "sec": 2.5
+    },
+    "jb_hard": {
+      "n": 111,
+      "acc": 0.4594594594594595,
+      "brier": 0.6922698730051199,
+      "sec": 79.6
+    }
+  },
+  "midm9b": {
+    "td_test": {
+      "n": 2000,
+      "acc": 0.7935,
+      "brier": 0.33595967980667046,
+      "sec": 366.9
+    },
+    "kevT_dev": {
+      "n": 764,
+      "acc": 0.7918848167539267,
+      "brier": 0.28758657295182055,
+      "sec": 112.8
+    },
+    "kevT_test": {
+      "n": 764,
+      "acc": 0.8259162303664922,
+      "brier": 0.2516692447499908,
+      "sec": 2470.9
+    },
+    "jb_original": {
+      "n": 72,
+      "acc": 0.9722222222222222,
+      "brier": 0.056839773752291954,
+      "sec": 4.4
+    },
+    "jb_easy": {
+      "n": 48,
+      "acc": 1.0,
+      "brier": 5.072867774421068e-06,
+      "sec": 3.1
+    },
+    "jb_hard": {
+      "n": 111,
+      "acc": 0.5405405405405406,
+      "brier": 0.6041903941774623,
+      "sec": 93.4
+    }
+  },
+  "historical_clm_style_4b": {
+    "td_test": {
+      "n": 2000,
+      "acc": 0.7590000033378601,
+      "brier": 0.3680631220340729,
+      "ece": 0.13643457617200117
+    },
+    "kevT_dev": {
+      "n": 764,
+      "acc": 0.3664921522140503,
+      "brier": 0.9298811554908752,
+      "ece": 0.3835619152900316
+    },
+    "kevT_test": {
+      "n": 764,
+      "acc": 0.4109947681427002,
+      "brier": 0.8770488500595093,
+      "ece": 0.3277241001722134
+    },
+    "jb_original": {
+      "n": 72,
+      "acc": 0.4027777910232544,
+      "brier": 0.9762390851974487,
+      "ece": 0.3813359160905888
+    },
+    "jb_easy": {
+      "n": 48,
+      "acc": 0.5416666865348816,
+      "brier": 0.6706226468086243,
+      "ece": 0.2059586844418313
+    },
+    "jb_hard": {
+      "n": 111,
+      "acc": 0.36036035418510437,
+      "brier": 0.8631117939949036,
+      "ece": 0.34453577425373855
+    }
+  },
+  "deepswe": {
+    "n": 38,
+    "correct": 31,
+    "accuracy": 0.8157894736842105,
+    "model": "released CLM DeepSWE head; not MiDM"
+  },
+  "input_hashes": {
+    "td_test": "9d28659655313a1cd630547987e7d6d6161ad0eb9a748b47dbf8cc54789e67a8",
+    "kevT_dev": "efbd6b94e2eca61da6c0a710a7de8dcb89fbe707cd34337508e17c0d441c2e07",
+    "kevT_test": "ead620bc80f5d1271ee534762af5e219a7fd0fae9ef5e37b5596535049f82450",
+    "jb_original": "8b2114be36f980853b4331ebf82d6e3a56f40c0edbdc8be98fafe4499c20d28b",
+    "jb_easy": "619e977aa45afe951306cf5ba4dbdc8d2562c55cc47f13718ffd45d311ee21f7",
+    "jb_hard": "ce2e51d4dcc8f2cde65b04eb7337b290367d0765999becbf41f851df98cd70d4"
+  },
+  "source_hashes": {
+    "4b_metrics": "08ce6c19c409e84bd4d96036410fe44c268abb4ab532eb5f7017f71a2c24f1d1",
+    "9b_metrics": "d50873bd02d59595553cf6f4803c06b20733cebab85035a1d443146825bacdfa",
+    "clm_historical": "5b1f9a0fe1cc8ddb606bad84d55bf3e8474d1e77af4b59ffff5d86d7d3f8a967",
+    "deepswe_replay": "3f71027e05d6f7fdb153f8bb9b6aef22eb1d3c954a723ae9dc8b6cf2c66b342f"
+  }
+}
