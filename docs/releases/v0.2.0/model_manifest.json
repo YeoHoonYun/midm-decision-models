@@ -4,13 +4,15 @@
   "files": {
     "adapter_config.json": "96f5ae3d77c1c0ef156344c0664cda89bd3a1449ca2f71d398744a2dc073d2d5",
     "adapter_model.safetensors": "7231ef52a482760601bd6e9038ec9aae40034d0f63c6fb5de677b5f81e6dd5c2",
-    "evaluation.json": "e35113e104680a16156a07a39717df8c3b336f87212a0b576e0b518ff0b3e471",
+    "evaluation.json": "a3684eef4f8a678a4d821319eff403f83e1dd45db6b432f63e956f8a8d20f746",
     "LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
     "midm.py": "2a3985c09b38802d240acec138b507358ee4bd30e413c82dd3215ee7ac0681fd",
     "midm_config.json": "fe75b3e6b3eab1e9f3a9e9ec9475d4c5551ca9d57473320838a51c1affd8b077",
     "NOTICE": "8c1e780a6af2a8c5402c719d95bd3be4ebd5f05c7fce0f9def1cff665c4ca21d",
+    "package_validation.json": "efb81406f22b909db9a77fbce5c3b3fe80af8201c5cda6abff11d31077957470",
     "pointer_head.safetensors": "f534d840c1b521c04292e763db200e6ab10df12fb4ebdabc78de734c07d88e4a",
-    "README.md": "a1df6af659663c0f37f239cbd302d5d7890e4b5b80251feb317617ed344f4196",
-    "requirements.txt": "550b986e177232471ed3dee7efacb0d8b0dacf0cbc7044b9b81a58dc38d808c2"
+    "README.md": "072ddecdfb2c60ebf6232f39567e9194e47bed6f7f5cd7cea084abf5b3940cdd",
+    "requirements.txt": "550b986e177232471ed3dee7efacb0d8b0dacf0cbc7044b9b81a58dc38d808c2",
+    "VERIFICATION.md": "4459ba20a9f9447df6ff205b5dfce778a18a1d64ca25614dec500a828f2e7b89"
   }
 }

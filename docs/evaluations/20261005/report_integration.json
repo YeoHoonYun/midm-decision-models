@@ -1,0 +1,87 @@
+{
+  "scope": "one-date local report integration; not financial accuracy",
+  "as_of": "2026-09-28",
+  "horizons": [
+    5,
+    20
+  ],
+  "reports": [
+    {
+      "variant": "legacy06",
+      "sections": 19,
+      "format_valid": 19,
+      "korean": 19,
+      "unknown_fact_ids": 2,
+      "unknown_inline_citations": 0,
+      "empty_fact_ids": 0,
+      "truncated_sections": 0,
+      "writing_seconds": 21.19701150013134,
+      "calls": 19,
+      "changed_prompts_vs_original": [],
+      "selector_seconds": 49.29615269973874,
+      "selector_load_seconds": 8.304958800086752,
+      "order_agreement": 4,
+      "order_pairs": 4,
+      "ui_check": "PASS"
+    },
+    {
+      "variant": "midm4b",
+      "sections": 19,
+      "format_valid": 19,
+      "korean": 19,
+      "unknown_fact_ids": 1,
+      "unknown_inline_citations": 0,
+      "empty_fact_ids": 0,
+      "truncated_sections": 0,
+      "writing_seconds": 21.429145499831066,
+      "calls": 19,
+      "changed_prompts_vs_original": [],
+      "selector_seconds": 4.994001900078729,
+      "selector_load_seconds": 64.54593780008145,
+      "order_agreement": 1,
+      "order_pairs": 4,
+      "ui_check": "PASS"
+    },
+    {
+      "variant": "midm9b",
+      "sections": 19,
+      "format_valid": 19,
+      "korean": 19,
+      "unknown_fact_ids": 1,
+      "unknown_inline_citations": 0,
+      "empty_fact_ids": 0,
+      "truncated_sections": 0,
+      "writing_seconds": 19.446832899935544,
+      "calls": 19,
+      "changed_prompts_vs_original": [
+        "decision"
+      ],
+      "selector_seconds": 5.166938600130379,
+      "selector_load_seconds": 113.71946950000711,
+      "order_agreement": 3,
+      "order_pairs": 4,
+      "ui_check": "PASS"
+    }
+  ],
+  "legacy_selection_match": 8,
+  "selection_requests": 8,
+  "four_vs_nine_changed_selections": 2,
+  "environment_caveat": "Original writer mixed CPU and GPU segments; all fresh arms use its final GPU configuration on GPU0. Historical wall time is not directly comparable. Legacy selector runtime differs from 4B/9B; only 4B versus 9B is a controlled selector runtime comparison.",
+  "interpretation": {
+    "order_agreement": "4B 1/4, 9B 3/4, one date; not evidence of financial accuracy",
+    "same_prompt_generation_variability": "12 of 18 unchanged-prompt sections have different fresh outputs; prose differences and citation counts cannot be attributed solely to selector version",
+    "remaining_quality_issue": "one unknown fact ID in each 4B and 9B report; no silent post-generation correction",
+    "timing_scope": "single warm writer invocation, 19 sections and two concurrent jobs; selector loading excluded from selector_seconds",
+    "renderer_recovery": "missing copied RAG inventory repaired; completed same-run 19 legacy drafts retained; no old-report prose reused"
+  },
+  "artifact_checks_pass": true,
+  "same_prompt_variability": {
+    "identical_prompt_sections": 18,
+    "identical_outputs_on_identical_prompts": 6,
+    "different_prompt_sections": [
+      "decision"
+    ],
+    "output_reused": false
+  },
+  "private_payloads_included": false
+}

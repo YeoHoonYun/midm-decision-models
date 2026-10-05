@@ -1,8 +1,8 @@
 # MiDM: Minimal Decision Models, and an audit of CLM-8B
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23084584.svg)](https://doi.org/10.5281/zenodo.23084584)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23162744.svg)](https://doi.org/10.5281/zenodo.23162744)
 
-Code, results and write-up for a controlled study of small (≤8B) typed-decision models on two consumer GPUs
+Code, results and write-up for a controlled study of small (up to 9B) typed-decision models on two consumer GPUs
 (RTX 3090 + RTX 2080 Ti, Windows, no vLLM).
 
 - **MiDM (Minimal Decision Model).** A causal LM reads the state, the question and every option line in one
@@ -15,9 +15,13 @@ Code, results and write-up for a controlled study of small (≤8B) typed-decisio
   changed by the selector. On those tasks the result is 10/13 against a random expectation of 7.0, which
   gives an exact one-sided **p = 0.062**. The base head before task fine-tuning is below random.
 
-## v0.2.0: MiDM 9B
+## v0.2.0: MiDM 9B and completed evaluations
 
-[Model](https://huggingface.co/yunicro/MiDM-9B-q35-e1-bx) ? [Release evaluation and limitations](docs/releases/v0.2.0/README.md). Typed Decisions holdout: 83.17% ? 85.50%; JevBench hard: 45.05% ? 54.05%. SQL/code results below remain 4B results. The Zenodo badge above archives v0.1.0, not this update.
+[9B model](https://huggingface.co/yunicro/MiDM-9B-q35-e1-bx) · [Release notes](docs/releases/v0.2.0/README.md) · [Full evaluation report](docs/evaluations/20261005/README.md).
+
+Matched NF4/BF16 4B → 9B: Typed Decisions test **78.85% → 79.30%**, Kev transfer test **79.84% → 82.59%**, public JevBench hard **45.95% → 54.05%**. These are retrospective argmax accuracies, not official JevBench composite scores. SQL/Python selection does not improve consistently; the learned router remains below reasoning alone. Long-input two-process serving was slower despite fitting in VRAM.
+
+[Same-date report integration audit](docs/evaluations/20261005/REPORT_INTEGRATION.md) provides aggregate operational checks only, with no private inputs, generated prose or investment-performance claim. The existing 4B model and historical results below remain available.
 
 ## Historical v0.1.0 headline results (each evaluation suite read once; `113_clm_reproduction_20260928/results/`)
 
@@ -115,7 +119,7 @@ How to read this:
    then `pointer_lora.py eval ... --save-probs`.
 
 Datasets and model weights are not redistributed here. Datasets keep their own licences. The adapters are
-released separately on Hugging Face: https://huggingface.co/yunicro/MiDM-4B-q35-e1-bx (Zenodo DOI 10.5281/zenodo.23084584)
+released separately on Hugging Face: https://huggingface.co/yunicro/MiDM-4B-q35-e1-bx (Zenodo DOI 10.5281/zenodo.23162744)
 
 ## Citation (archived v0.1.0)
 
@@ -127,12 +131,16 @@ Authors: YeoHoon Yoon and Kyung-Sung Kim (Graduate School of AI, aSSIST Universi
   author    = {Yoon, YeoHoon and Kim, Kyung-Sung},
   title     = {MiDM: Minimal Decision Models and an audit of CLM-8B},
   year      = {2026},
-  version   = {0.1.0},
+  version   = {0.2.0},
   publisher = {Zenodo},
-  doi       = {10.5281/zenodo.23084584},
+  doi       = {10.5281/zenodo.23162744},
   url       = {https://github.com/YeoHoonYun/midm-decision-models}
 }
 ```
-See `CITATION.cff`. Archived on Zenodo: https://doi.org/10.5281/zenodo.23084584 (all versions: https://doi.org/10.5281/zenodo.23084583)
+See `CITATION.cff`. Archived on Zenodo: https://doi.org/10.5281/zenodo.23162744 (all versions: https://doi.org/10.5281/zenodo.23084583)
 ## License
 Apache-2.0 (`LICENSE`); third-party notices are in `NOTICE`.
+
+## Evaluation update — 2026-10-05
+
+[Completed CLM/MiDM verification](docs/evaluations/20261005/README.md): matched primary BF16 and supplementary FP16 results, CLM DeepSWE replay, SQL/Python selection, routing and concurrency pilots. MiDM DeepSWE and local Terminal-Bench remain unmeasured because matching raw evaluation assets are unavailable.

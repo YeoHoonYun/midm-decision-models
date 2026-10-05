@@ -2,7 +2,6 @@
   "version": "0.2.0",
   "new_model": "MiDM-9B-q35-e1-bx",
   "baseline": "MiDM-4B-q35-e1-bx",
-  "scope": "development; full suites; not the 200-item Solar subset",
   "eval_9b": {
     "kev_dev": {
       "n": 1468,
@@ -90,5 +89,85 @@
       "brier": 0.7191541260328597,
       "sec": 30.1
     }
-  }
+  },
+  "historical_development_scope": "development; full suites; not the 200-item Solar subset",
+  "matched_bf16_20261005": {
+    "4b": {
+      "td_test": {
+        "n": 2000,
+        "acc": 0.7885,
+        "brier": 0.33440118592916407,
+        "sec": 173.2
+      },
+      "kevT_dev": {
+        "n": 764,
+        "acc": 0.7905759162303665,
+        "brier": 0.2968507554904294,
+        "sec": 35.6
+      },
+      "kevT_test": {
+        "n": 764,
+        "acc": 0.7984293193717278,
+        "brier": 0.2761821086025005,
+        "sec": 36.1
+      },
+      "jb_original": {
+        "n": 72,
+        "acc": 0.9166666666666666,
+        "brier": 0.13217198369289285,
+        "sec": 2.1
+      },
+      "jb_easy": {
+        "n": 48,
+        "acc": 1.0,
+        "brier": 0.00032269151732357976,
+        "sec": 1.6
+      },
+      "jb_hard": {
+        "n": 111,
+        "acc": 0.4594594594594595,
+        "brier": 0.692855496251083,
+        "sec": 58.0
+      }
+    },
+    "9b": {
+      "td_test": {
+        "n": 2000,
+        "acc": 0.793,
+        "brier": 0.335939321228092,
+        "sec": 261.3
+      },
+      "kevT_dev": {
+        "n": 764,
+        "acc": 0.7905759162303665,
+        "brier": 0.2873895383885948,
+        "sec": 55.5
+      },
+      "kevT_test": {
+        "n": 764,
+        "acc": 0.8259162303664922,
+        "brier": 0.25159397468731,
+        "sec": 53.2
+      },
+      "jb_original": {
+        "n": 72,
+        "acc": 0.9722222222222222,
+        "brier": 0.05652686709487398,
+        "sec": 2.9
+      },
+      "jb_easy": {
+        "n": 48,
+        "acc": 1.0,
+        "brier": 4.887540420794744e-06,
+        "sec": 2.1
+      },
+      "jb_hard": {
+        "n": 111,
+        "acc": 0.5405405405405406,
+        "brier": 0.6040495320680542,
+        "sec": 71.6
+      }
+    }
+  },
+  "additional_results": "See VERIFICATION.md; SQL/Python and routing do not consistently improve."
 }

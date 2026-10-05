@@ -1,35 +1,42 @@
-# MiDM v0.2.0 ? 9B typed-decision checkpoint
+# MiDM v0.2.0 — 9B checkpoint and completed evaluation results
 
-Adds **MiDM-9B-q35-e1-bx**, a LoRA adapter plus a pointer head for `Qwen/Qwen3.5-9B-Base`. The existing 4B release remains available. This is a direct option-scoring model, not a chain-of-thought generator.
+Adds the Qwen3.5-9B-Base LoRA adapter and learned pointer head, self-contained loader and verified 4096-token inference configuration. The original 4B release remains available. This model scores supplied options; it does not generate SQL, Python or report prose. The report writer remains Qwen3 8B.
 
-## Matched development evaluation
+## Matched primary evaluation
 
-| Suite | Items | Previous 4B bx | New 9B bx | Change (pp) |
-|---|---:|---:|---:|---:|
-| kev_dev | 1468 | 85.56% | 86.92% | +1.36 |
-| kevT_dev | 764 | 78.93% | 79.06% | +0.13 |
-| kevT9_dev | 1264 | 70.33% | 71.20% | +0.87 |
-| td_holdout | 600 | 83.17% | 85.50% | +2.33 |
-| jb_original | 72 | 91.67% | 97.22% | +5.56 |
-| jb_easy | 48 | 100.00% | 100.00% | +0.00 |
-| jb_hard | 111 | 45.05% | 54.05% | +9.01 |
+NF4/BF16 on RTX 3090, max input 4096, batch token budget 4096, TTA=1; same items and ordering.
 
-These are the experiment-116 full-suite evaluations of the named checkpoints (one evaluation configuration, TTA=1). Typed Decisions holdout is 600 questions from 10% of training-source row groups held out for model selection, not the separate public test split. These results are development evidence, not a new independent test or statistical significance claim. Earlier 200-item Solar comparisons use a different subset. The 9B training-time holdout score was 85.17%; this separate evaluation was 85.50%, so precision/batching differences should not be mistaken for training improvement.
+|Suite|N|4B|9B|
+|---|---:|---:|---:|
+|Typed Decisions test|2000|78.85%|79.30%|
+|Kev transfer test|764|79.84%|82.59%|
+|JevBench original|72|91.67%|97.22%|
+|JevBench easy|48|100.00%|100.00%|
+|JevBench hard|111|45.95%|54.05%|
 
-## Scope and limitations
+These are retrospective hard-label accuracies, not official JevBench full/sealed composite scores. The separate 600-question Typed Decisions holdout is a development/model-selection split; it is not the public 2000-question test. Earlier development results used their recorded configurations and must not be mixed into this matched table.
 
-- SQL/Python best-of-N selection results in v0.1.0 belong to the 4B model. The 9B checkpoint has not been evaluated on those candidate pools.
-- No new 9B `td_test` or `kevT_test` result is claimed. Historical test results stay attributed to their original models.
-- No financial states, financial predictions, reports, per-item answers, or private datasets are included.
-- Training recipe: QLoRA NF4, rank16, one epoch, seed0, learning rate2e-4, max input1024; `td_train`, `kev_train`, `breadth_v1`, `pp6_new`. Dataset terms remain separate from the Apache-2.0 adapter/code license.
-- Base weights are downloaded separately. A 24GB GPU is the deployment verification target; minimum serving memory has not been benchmarked.
-- This release does not include the queued Qwen3-4B completion-marker or longer-reasoning experiments.
+## Additional completed tests and limitations
 
-## Model and versioning
+- CLM released DeepSWE verifier replay: 31/38 (81.58%) reproduced. The 13 mixed-outcome tasks give exact one-sided p=0.062 against random selection. Numerical reproduction succeeded; significance at 5% was not established.
+- MiDM DeepSWE and local Terminal-Bench remain unmeasured: matching raw candidate traces/evaluation artifacts were not found. No official benchmark score is substituted.
+- SQL/Python best-of-N: 4B → 9B Spider 78.34% → 77.27%, SQL holdout 81.66% → 81.77%, Python hard80 28.75% → 25.00%. Stored pools, dev-selected blend weights; no consistent gain.
+- Learned routing: JevBench public 231 accuracy 77.06% MiDM, 79.65% router, 81.82% local Qwen3-4B reasoning alone. Router not promoted; no non-inferiority or latency-saving claim.
+- Concurrency: two short-input 4B processes nearly doubled throughput; 2048-token 4B and 4096-token 9B lost throughput. Small synthetic single-trial pilots, not endurance or minimum-memory certification.
+- Same-date report integration: 4B/9B candidate-order agreement 1/4 versus 3/4, 19/19 schema-valid sections each, one unknown fact ID each. No semantic-quality or financial-outcome superiority established; only aggregate diagnostics are released.
 
-Model: https://huggingface.co/yunicro/MiDM-9B-q35-e1-bx (tag `v0.2.0`).
-Code: https://github.com/YeoHoonYun/midm-decision-models/releases/tag/v0.2.0 .
-The previous model remains https://huggingface.co/yunicro/MiDM-4B-q35-e1-bx .
-The existing Zenodo v0.1.0 DOI does not archive v0.2.0. A follow-up deposit must use the existing record's **new-version** action to preserve concept DOI `10.5281/zenodo.23084583`; no new DOI is claimed here.
+Training: QLoRA NF4, rank16/alpha32, one epoch, seed0, learning rate2e-4, training context1024; td_train, kev_train, breadth_v1, pp6_new. Inference context4096 matches evaluation. The earlier 1024-token release candidate was not published; package verification uses the final loader. Base weights are separate and retain their own license, as do training datasets. No raw questions, answers, financial data, reports or credentials are included.
 
-Package correction: evaluation/inference context4096 matches the source evaluation; training context1024. Previous1024 package scored509/600 and was not published. Revalidation required.
+Model: https://huggingface.co/yunicro/MiDM-9B-q35-e1-bx/tree/v0.2.0
+
+Code and full evidence: https://github.com/YeoHoonYun/midm-decision-models/releases/tag/v0.2.0
+
+Zenodo versioning retains concept DOI https://doi.org/10.5281/zenodo.23084583 . The v0.1.0 version DOI does not archive this new release.
+
+Version DOI: https://doi.org/10.5281/zenodo.23162744
+
+## Packaged-model verification
+
+The final package reproduces the original development evaluation exactly: **513/600 (85.50%)**, identical choices on 600/600 questions and maximum absolute probability difference 0.0. The original protocol uses NF4/BF16, 4096-token context, 4096 padded tokens per batch, attention masks and TTA=1. Adapter weights, pointer head and encoded inputs match the source exactly. This is package reproducibility, not a new independent test.
+
+A separate single-question, unmasked check gave **509/600 (84.83%)** and failed its original tolerance gate. It is retained rather than hidden. That verification bypassed the public API batching/mask path. The matched check changes batching and mask together, so their individual effects were not isolated. Do not assume identical predictions across serving configurations.

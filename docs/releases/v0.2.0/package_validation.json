@@ -1,0 +1,18 @@
+{
+  "version": "0.2.0",
+  "suite": "td_holdout",
+  "n": 600,
+  "acc": 0.855,
+  "expect": 0.855,
+  "match": true,
+  "protocol": "NF4 BF16, original 4096 padded-token batches, 4096 context, attention mask supplied, TTA=1",
+  "encoding_exact": true,
+  "adapter_exact": true,
+  "pointer_head_exact": true,
+  "choice_agreement_with_reference": 600,
+  "max_abs_probability_delta": 0.0,
+  "seconds": 82.02361249993555,
+  "single_item_unmasked_accuracy": 0.8483333333333334,
+  "single_item_validation_failed": true,
+  "note": "Matched-protocol check does not erase the separately recorded single-item result."
+}
