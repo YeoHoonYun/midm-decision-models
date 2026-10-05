@@ -1,0 +1,66 @@
+{
+  "protocol": {
+    "dtype": "torch.bfloat16",
+    "max_len": 4096,
+    "batch_budget": 4096,
+    "tta": 1
+  },
+  "scores": {
+    "4b": {
+      "typed_decisions_test": {
+        "n": 2000,
+        "correct": 1577,
+        "accuracy": 0.7885
+      },
+      "jevbench_public": {
+        "n": 231,
+        "correct": 165,
+        "accuracy": 0.7142857142857143
+      },
+      "jevbench_hard": {
+        "n": 111,
+        "correct": 51,
+        "accuracy": 0.4594594594594595
+      }
+    },
+    "9b": {
+      "typed_decisions_test": {
+        "n": 2000,
+        "correct": 1586,
+        "accuracy": 0.793
+      },
+      "jevbench_public": {
+        "n": 231,
+        "correct": 178,
+        "accuracy": 0.7705627705627706
+      },
+      "jevbench_hard": {
+        "n": 111,
+        "correct": 60,
+        "accuracy": 0.5405405405405406
+      }
+    }
+  },
+  "deepswe": {
+    "CLM": {
+      "n": 38,
+      "correct": 31,
+      "accuracy": 0.8157894736842105,
+      "source": "completed GPU replay"
+    },
+    "MiDM": null,
+    "missing": "raw candidate state/action text"
+  },
+  "terminal_bench": {
+    "CLM": null,
+    "MiDM": null,
+    "missing": "matching 30-task candidate traces, head and scorer specification; reported 87.6% is not a local measurement"
+  },
+  "jevbench_official_composite": null,
+  "composite_missing": "full/version-matched private/sealed items, calibration and controlled latency/cost measurements",
+  "metric": "argmax accuracy against stored hard labels; not the official JevBench composite or necessarily identical to typed-decisions distribution scoring",
+  "prediction_sha256": {
+    "4b": "49294cc0980f901fdcdfcb75a0c02b9fe17db2a9262948fdfcc9a7c842156a6f",
+    "9b": "bffec0cd0ca9d52fd242025942028721a2d0f555821b9f23812ddfeb3ee4c2ba"
+  }
+}
