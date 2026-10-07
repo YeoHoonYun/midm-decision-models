@@ -155,3 +155,7 @@ Apache-2.0 (`LICENSE`); third-party notices are in `NOTICE`.
 ## Internal-only multi-asset application
 
 [12 live reports](https://yeohoonyun.github.io/midm-decision-models/) cover KOSPI, S&P 500 and five representative companies per market selected using internal market-cap records. All generation inputs and MiDM inference remain local; zero external data/model API calls during generation. Cached data originated from prior providers, not necessarily proprietary collection. Source dates and ranking limitations are shown. Generation, scheduling and publishing scripts are local-only; updates here contain model documentation and reviewed reports. Historical commits are not rewritten.
+
+## Application case: fixed-time internal financial reports
+
+[ScenarioView application case](docs/applications/scenarioview.md) describes the 12-asset local MiDM workflow, fixed 18:30/09:00 KST editions, and no repeated data polling. Generators remain local; model weights are unchanged.
