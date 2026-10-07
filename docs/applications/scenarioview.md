@@ -2,6 +2,22 @@
 
 [Open the 12-asset report collection](https://yeohoonyun.github.io/midm-decision-models/) · [MiDM model](https://huggingface.co/yunicro/MiDM-9B-q35-e1-bx) · [Architecture and experimental limitations](https://github.com/YeoHoonYun/midm-decision-models/tree/main/docs/architecture/financial-residual)
 
+## Report languages / 보고서 언어
+
+The same 12 assets are available in Korean and English. Use the language links at the top of each report to switch without changing the asset. Both editions retain identical dates, observed numbers, scenario counts and MiDM selections. Localization uses local editorial templates, without an external translation API or new model inference. The linked research archive remains in Korean.
+
+동일한 12개 자산 보고서를 한글·영문으로 제공합니다. 보고서 상단에서 언어를 전환할 수 있으며, 관측 수치·자료 기준일·시나리오 집계·MiDM 선택 결과는 같습니다. 일일 생성에도 두 언어를 적용합니다.
+
+| Example | 한국어 | English |
+|---|---|---|
+| All 12 assets / 전체 | [한글](https://yeohoonyun.github.io/midm-decision-models/index.ko.html) | [English](https://yeohoonyun.github.io/midm-decision-models/index.en.html) |
+| KOSPI | [한글](https://yeohoonyun.github.io/midm-decision-models/KOSPI.ko.html) | [English](https://yeohoonyun.github.io/midm-decision-models/KOSPI.en.html) |
+| S&P 500 | [한글](https://yeohoonyun.github.io/midm-decision-models/SP500.ko.html) | [English](https://yeohoonyun.github.io/midm-decision-models/SP500.en.html) |
+| Samsung Electronics / 삼성전자 | [한글](https://yeohoonyun.github.io/midm-decision-models/005930.ko.html) | [English](https://yeohoonyun.github.io/midm-decision-models/005930.en.html) |
+| NVIDIA | [한글](https://yeohoonyun.github.io/midm-decision-models/NVDA.ko.html) | [English](https://yeohoonyun.github.io/midm-decision-models/NVDA.en.html) |
+
+GitHub report files: `docs/scenarioview/*.ko.html` and `*.en.html`. Hugging Face report files: `reports/latest/*.ko.html` and `*.en.html`. Existing unqualified URLs remain Korean-compatible. Korean-market reports retain teal accents; US-market reports retain navy accents in both languages.
+
 ## Implemented application
 
 ScenarioView combines locally stored financial inputs with MiDM 9B option scoring to produce reports for KOSPI, S&P 500, and five company representatives per market selected from internal market-cap records. The recorded run completed **48 real local decisions**: 12 assets × 5/20-day horizons × flat/held hypothetical positions.
