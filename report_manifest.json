@@ -8,7 +8,9 @@
       "kind": "index",
       "data_as_of": "2026-09-04",
       "report": "KOSPI.html",
-      "b3_applied": true
+      "b3_applied": true,
+      "report_ko": "KOSPI.ko.html",
+      "report_en": "KOSPI.en.html"
     },
     {
       "id": "SP500",
@@ -17,7 +19,9 @@
       "kind": "index",
       "data_as_of": "2026-10-06",
       "report": "SP500.html",
-      "b3_applied": false
+      "b3_applied": false,
+      "report_ko": "SP500.ko.html",
+      "report_en": "SP500.en.html"
     },
     {
       "id": "005930",
@@ -26,7 +30,9 @@
       "kind": "stock",
       "data_as_of": "2026-09-21",
       "report": "005930.html",
-      "b3_applied": false
+      "b3_applied": false,
+      "report_ko": "005930.ko.html",
+      "report_en": "005930.en.html"
     },
     {
       "id": "000660",
@@ -35,7 +41,9 @@
       "kind": "stock",
       "data_as_of": "2026-09-21",
       "report": "000660.html",
-      "b3_applied": false
+      "b3_applied": false,
+      "report_ko": "000660.ko.html",
+      "report_en": "000660.en.html"
     },
     {
       "id": "402340",
@@ -44,7 +52,9 @@
       "kind": "stock",
       "data_as_of": "2026-09-21",
       "report": "402340.html",
-      "b3_applied": false
+      "b3_applied": false,
+      "report_ko": "402340.ko.html",
+      "report_en": "402340.en.html"
     },
     {
       "id": "009150",
@@ -53,7 +63,9 @@
       "kind": "stock",
       "data_as_of": "2026-09-21",
       "report": "009150.html",
-      "b3_applied": false
+      "b3_applied": false,
+      "report_ko": "009150.ko.html",
+      "report_en": "009150.en.html"
     },
     {
       "id": "373220",
@@ -62,7 +74,9 @@
       "kind": "stock",
       "data_as_of": "2026-09-21",
       "report": "373220.html",
-      "b3_applied": false
+      "b3_applied": false,
+      "report_ko": "373220.ko.html",
+      "report_en": "373220.en.html"
     },
     {
       "id": "NVDA",
@@ -71,7 +85,9 @@
       "kind": "stock",
       "data_as_of": "2026-10-06",
       "report": "NVDA.html",
-      "b3_applied": false
+      "b3_applied": false,
+      "report_ko": "NVDA.ko.html",
+      "report_en": "NVDA.en.html"
     },
     {
       "id": "AAPL",
@@ -80,7 +96,9 @@
       "kind": "stock",
       "data_as_of": "2026-10-06",
       "report": "AAPL.html",
-      "b3_applied": false
+      "b3_applied": false,
+      "report_ko": "AAPL.ko.html",
+      "report_en": "AAPL.en.html"
     },
     {
       "id": "GOOGL",
@@ -89,7 +107,9 @@
       "kind": "stock",
       "data_as_of": "2026-10-06",
       "report": "GOOGL.html",
-      "b3_applied": false
+      "b3_applied": false,
+      "report_ko": "GOOGL.ko.html",
+      "report_en": "GOOGL.en.html"
     },
     {
       "id": "MSFT",
@@ -98,7 +118,9 @@
       "kind": "stock",
       "data_as_of": "2026-10-06",
       "report": "MSFT.html",
-      "b3_applied": false
+      "b3_applied": false,
+      "report_ko": "MSFT.ko.html",
+      "report_en": "MSFT.en.html"
     },
     {
       "id": "AMZN",
@@ -107,7 +129,9 @@
       "kind": "stock",
       "data_as_of": "2026-10-06",
       "report": "AMZN.html",
-      "b3_applied": false
+      "b3_applied": false,
+      "report_ko": "AMZN.ko.html",
+      "report_en": "AMZN.en.html"
     }
   ],
   "external_data_calls": 0,
@@ -118,5 +142,14 @@
   "public_upload_is_separate": true,
   "generator_code_published": false,
   "editorial_focus": "asset/day scenario analysis; model performance in bottom appendix",
-  "inference_rerun_for_layout_change": false
+  "inference_rerun_for_layout_change": false,
+  "languages": [
+    "ko",
+    "en"
+  ],
+  "language_indexes": {
+    "ko": "index.ko.html",
+    "en": "index.en.html"
+  },
+  "localization": "Local editorial templates; same observations and model selections; no additional inference or external translation API calls. Research archive remains in Korean."
 }
