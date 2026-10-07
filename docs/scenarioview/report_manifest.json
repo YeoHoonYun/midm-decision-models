@@ -84,7 +84,7 @@
     },
     {
       "id": "GOOGL",
-      "name": "Alphabet (GOOGL)",
+      "name": "Alphabet",
       "market": "US",
       "kind": "stock",
       "data_as_of": "2026-10-06",
@@ -116,5 +116,7 @@
   "decisions": 48,
   "source_origin": "previously collected provider data stored locally",
   "public_upload_is_separate": true,
-  "generator_code_published": false
+  "generator_code_published": false,
+  "editorial_focus": "asset/day scenario analysis; model performance in bottom appendix",
+  "inference_rerun_for_layout_change": false
 }
