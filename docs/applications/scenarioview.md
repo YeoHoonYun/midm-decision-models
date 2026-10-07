@@ -16,7 +16,19 @@ The same 12 assets are available in Korean and English. Use the language links a
 | Samsung Electronics / 삼성전자 | [한글](https://yeohoonyun.github.io/midm-decision-models/005930.ko.html) | [English](https://yeohoonyun.github.io/midm-decision-models/005930.en.html) |
 | NVIDIA | [한글](https://yeohoonyun.github.io/midm-decision-models/NVDA.ko.html) | [English](https://yeohoonyun.github.io/midm-decision-models/NVDA.en.html) |
 
-GitHub report files: `docs/scenarioview/*.ko.html` and `*.en.html`. Hugging Face report files: `reports/latest/*.ko.html` and `*.en.html`. Existing unqualified URLs remain Korean-compatible. Korean-market reports retain teal accents; US-market reports retain navy accents in both languages.
+GitHub report files: `docs/scenarioview/*.ko.html` and `*.en.html`. Hugging Face report files: `reports/latest/*.ko.html` and `*.en.html`. Neutral URLs now select the edition by IP country (KR → Korean; elsewhere → English). Explicit `.ko.html` / `.en.html` links keep their specified language. Korean-market reports retain teal accents; US-market reports retain navy accents in both languages.
+
+## Country routing and historical validation (2026-10-07)
+
+[Automatic regional entry](https://yeohoonyun.github.io/midm-decision-models/) · [Historical validation including B3](https://yeohoonyun.github.io/midm-decision-models/validation.html)
+
+Neutral report URLs request the visitor country from [Country.is](https://country.is/). This browser-side request exposes the visitor's public IP to the country service, but sends no financial inputs, report body, cookies or referrer. It is distinct from report generation, which still makes zero external data/model calls. A manual language choice takes priority; otherwise KR selects Korean and other countries select English. Failure or a 1.8-second timeout falls back to the browser's primary language. Only the country code is cached for one hour in session storage; IP addresses are not stored by this application. VPNs can change the country estimate. The “Auto by country” control clears the manual choice and cache. Explicit language URLs do not automatically redirect or call the country API.
+
+과거 검증 화면에는 S&P 500 B3-1 전체 Top-2 및 RT별 재현율, B3-2 조건부 결과, B3-3 탐지 및 미채택 조합, 2026-07-27~31 재구성 보고서의 일자별 판정과 매매 시뮬레이션, 코스피 별도 학습 B3 계열의 매매 검증을 담았습니다. 현재 보고서의 미래 성과나 개별 종목 검증으로 해석하지 않습니다.
+
+Historical evidence is generated from nine local aggregate result files, with source identifiers and SHA-256 hashes in `validation_summary.json`. B3-1 improves on B2 but does not dominate every comparator; conditional specialist scores are not all-date accuracy. The five historical reports used local Qwen3-8B prose, not current MiDM 9B. Their narrative forecasts and trading results are shown alongside failures. The KOSPI model is a separately trained 10-feature B3-style network, not unchanged US B3 weights. Neither retrospective results nor language routing constitute a model-weight upgrade. Market-specific reference panels appear in each report, and individual-stock pages label index results as reference only.
+
+Both language editions and validation links are integrated into the daily local renderer. No training, report-generation or publication scripts are uploaded; the small browser language-routing code is part of the published report UI.
 
 ## Implemented application
 

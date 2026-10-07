@@ -151,5 +151,24 @@
     "ko": "index.ko.html",
     "en": "index.en.html"
   },
-  "localization": "Local editorial templates; same observations and model selections; no additional inference or external translation API calls. Research archive remains in Korean."
+  "localization": "Local editorial templates; same observations and model selections; no additional inference or external translation API calls. Research archive remains in Korean.",
+  "country_routing": {
+    "neutral_urls": "IP country KR → ko; other countries → en",
+    "provider": "https://api.country.is/",
+    "manual_choice": "localStorage, highest priority",
+    "fallback": "browser primary language after 1800ms or error",
+    "country_cache": "sessionStorage country code only, 1 hour",
+    "report_content_sent": false,
+    "referrer_sent": false,
+    "credentials_sent": false,
+    "generation_external_calls": 0,
+    "visitor_country_lookup_external_call": true
+  },
+  "historical_validation": {
+    "ko": "validation.ko.html",
+    "en": "validation.en.html",
+    "summary": "validation_summary.json",
+    "retrospective": true,
+    "source_count": 9
+  }
 }
