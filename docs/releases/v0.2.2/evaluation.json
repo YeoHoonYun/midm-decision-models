@@ -1,0 +1,132 @@
+{
+  "documentation_version": "0.2.2",
+  "weights_version": "0.2.0",
+  "report_date": "2026-10-07",
+  "market": "KOSPI",
+  "evaluation_period": [
+    "2024-01-02",
+    "2026-08-20"
+  ],
+  "unique_dates": 129,
+  "hypothetical_decisions": 756,
+  "robust_heads": {
+    "raw_MiDM": {
+      "n": 756,
+      "accuracy": 0.5436507936507936,
+      "balanced_accuracy": 0.4923740904551291,
+      "utility_regret_bp": 202.6737499060071,
+      "long_fraction": 0.8716931216931217
+    },
+    "always_long": {
+      "n": 756,
+      "accuracy": 0.5687830687830688,
+      "balanced_accuracy": 0.5,
+      "utility_regret_bp": 200.93760231754584,
+      "long_fraction": 1.0
+    },
+    "numeric_residual": {
+      "n": 756,
+      "accuracy": 0.4880952380952381,
+      "balanced_accuracy": 0.4828577543158796,
+      "utility_regret_bp": 254.72531339383275,
+      "long_fraction": 0.5357142857142857
+    },
+    "horizon_residual": {
+      "n": 756,
+      "accuracy": 0.4748677248677249,
+      "balanced_accuracy": 0.47753602511057214,
+      "utility_regret_bp": 264.7359928251329,
+      "long_fraction": 0.4775132275132275
+    },
+    "latent_residual": {
+      "n": 756,
+      "accuracy": 0.5052910052910053,
+      "balanced_accuracy": 0.4998287915537167,
+      "utility_regret_bp": 246.82435842755385,
+      "long_fraction": 0.5396825396825397
+    },
+    "random_features": {
+      "n": 756,
+      "accuracy": 0.48412698412698413,
+      "balanced_accuracy": 0.5172064488514767,
+      "utility_regret_bp": 237.01935194499768,
+      "long_fraction": 0.2619047619047619
+    }
+  },
+  "fusion": {
+    "raw_MiDM": {
+      "n": 756,
+      "accuracy": 0.5436507936507936,
+      "balanced_accuracy": 0.4923740904551291,
+      "long_fraction": 0.8716931216931217,
+      "utility_regret_bp": 202.6737499060071
+    },
+    "B3_logistic": {
+      "n": 756,
+      "accuracy": 0.5066137566137566,
+      "balanced_accuracy": 0.4972820659152518,
+      "long_fraction": 0.5674603174603174,
+      "utility_regret_bp": 263.8134549025119
+    },
+    "MiDM_calibrated": {
+      "n": 756,
+      "accuracy": 0.548941798941799,
+      "balanced_accuracy": 0.4951704950777571,
+      "long_fraction": 0.8902116402116402,
+      "utility_regret_bp": 201.03404296303668
+    },
+    "stacked": {
+      "n": 756,
+      "accuracy": 0.5092592592592593,
+      "balanced_accuracy": 0.5010914538450564,
+      "long_fraction": 0.5595238095238095,
+      "utility_regret_bp": 260.755558602786
+    },
+    "mix_0": {
+      "n": 756,
+      "accuracy": 0.5066137566137566,
+      "balanced_accuracy": 0.4972820659152518,
+      "long_fraction": 0.5674603174603174,
+      "utility_regret_bp": 263.8134549025119
+    },
+    "mix_0.25": {
+      "n": 756,
+      "accuracy": 0.5079365079365079,
+      "balanced_accuracy": 0.49844485661292626,
+      "long_fraction": 0.5687830687830688,
+      "utility_regret_bp": 263.4556812103133
+    },
+    "mix_0.5": {
+      "n": 756,
+      "accuracy": 0.5079365079365079,
+      "balanced_accuracy": 0.49844485661292626,
+      "long_fraction": 0.5687830687830688,
+      "utility_regret_bp": 263.4556812103133
+    },
+    "mix_0.75": {
+      "n": 756,
+      "accuracy": 0.5092592592592593,
+      "balanced_accuracy": 0.4984947924097589,
+      "long_fraction": 0.578042328042328,
+      "utility_regret_bp": 263.84772576633515
+    },
+    "mix_1": {
+      "n": 756,
+      "accuracy": 0.548941798941799,
+      "balanced_accuracy": 0.4951704950777571,
+      "long_fraction": 0.8902116402116402,
+      "utility_regret_bp": 201.03404296303668
+    },
+    "always_long": {
+      "n": 756,
+      "accuracy": 0.5687830687830688,
+      "balanced_accuracy": 0.5,
+      "long_fraction": 1.0,
+      "utility_regret_bp": 200.93760231754584
+    }
+  },
+  "promotion": false,
+  "private_rows_included": false,
+  "scope": "Retrospective action decisions, not RT case accuracy or portfolio returns",
+  "prompt_enrichment_inference": "not run"
+}

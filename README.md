@@ -1,5 +1,9 @@
 # MiDM: Minimal Decision Models, and an audit of CLM-8B
 
+## v0.2.2: ScenarioView report and financial validation
+
+**Report/documentation update; no improved model weights.** [Open the report](https://yeohoonyun.github.io/midm-decision-models/) · [Release notes](docs/releases/v0.2.2/README.md). Existing MiDM remains active; financial residual candidates did not improve retrospective action performance. Current report issue date and source observation dates are displayed separately.
+
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23164651.svg)](https://doi.org/10.5281/zenodo.23164651)
 
 Code, results and write-up for a controlled study of small (up to 9B) typed-decision models on two consumer GPUs
