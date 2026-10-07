@@ -151,3 +151,7 @@ Apache-2.0 (`LICENSE`); third-party notices are in `NOTICE`.
 ## Evaluation update — 2026-10-05
 
 [Completed CLM/MiDM verification](docs/evaluations/20261005/README.md): matched primary BF16 and supplementary FP16 results, CLM DeepSWE replay, SQL/Python selection, routing and concurrency pilots. MiDM DeepSWE and local Terminal-Bench remain unmeasured because matching raw evaluation assets are unavailable.
+
+## Financial architecture and daily report operations
+
+[Implemented experimental heads and application results](docs/architecture/financial-residual/README.md) · [Daily scripts and Windows batch](automation/scenarioview/README.md) · [Live report](https://yeohoonyun.github.io/midm-decision-models/). Active weights remain unchanged; daily refresh currently covers public macro data, not new B3/MiDM inference.
