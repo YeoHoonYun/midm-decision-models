@@ -1,0 +1,21 @@
+{
+  "checked_at": "2026-10-07T12:47:09.483225+09:00",
+  "series": [
+    {
+      "series": "KORLOLITOAASTSAM",
+      "observation_date": "2026-08-01",
+      "value": 102.86938722082
+    },
+    {
+      "series": "KORPRMNTO01GYSAM",
+      "observation_date": "2026-07-01",
+      "value": 5.8671268334771
+    },
+    {
+      "series": "LRHUTTTTKRM156S",
+      "observation_date": "2026-07-01",
+      "value": 2.8
+    }
+  ],
+  "source": "OECD via FRED; revised, not historical-vintage aligned"
+}
