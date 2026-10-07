@@ -152,6 +152,6 @@ Apache-2.0 (`LICENSE`); third-party notices are in `NOTICE`.
 
 [Completed CLM/MiDM verification](docs/evaluations/20261005/README.md): matched primary BF16 and supplementary FP16 results, CLM DeepSWE replay, SQL/Python selection, routing and concurrency pilots. MiDM DeepSWE and local Terminal-Bench remain unmeasured because matching raw evaluation assets are unavailable.
 
-## Financial architecture and daily report operations
+## Internal-only multi-asset application
 
-[Implemented experimental heads and application results](docs/architecture/financial-residual/README.md) · [Daily scripts and Windows batch](automation/scenarioview/README.md) · [Live report](https://yeohoonyun.github.io/midm-decision-models/). Active weights remain unchanged; daily refresh currently covers public macro data, not new B3/MiDM inference.
+[12 live reports](https://yeohoonyun.github.io/midm-decision-models/) cover KOSPI, S&P 500 and five representative companies per market selected using internal market-cap records. All generation inputs and MiDM inference remain local; zero external data/model API calls during generation. Cached data originated from prior providers, not necessarily proprietary collection. Source dates and ranking limitations are shown. Generation, scheduling and publishing scripts are local-only; updates here contain model documentation and reviewed reports. Historical commits are not rewritten.

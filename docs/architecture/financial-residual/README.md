@@ -1,6 +1,6 @@
 # MiDM financial architecture and application
 
-[Live ScenarioView report](https://yeohoonyun.github.io/midm-decision-models/) · [Daily refresh scripts](../../../automation/scenarioview/README.md)
+[Live ScenarioView report](https://yeohoonyun.github.io/midm-decision-models/)
 
 ## Active architecture versus experiments
 
@@ -45,4 +45,8 @@ KOSPI action choice, 5/20-day horizons, 756 hypothetical states across 129 dates
 | Latent residual | 50.53% | 49.98% |
 | Random-feature comparator | 48.41% | 51.72% |
 
-No financial candidate was promoted. This is implementation and negative-result documentation, not an improved-weight release. No fresh daily market inference is configured in the public-site refresh. Prepared uncertainty/context prompts have not yet been inference-tested. The static report shows public macro references, case definitions, aggregate evidence and provenance; it does not disclose private per-date scores.
+No financial candidate was promoted. This is implementation and negative-result documentation, not an improved-weight release. The current multi-asset application now executes MiDM locally for each asset and both horizons; stale source dates remain explicitly labeled. Prepared uncertainty/context prompts have not yet been inference-tested. The static report shows public macro references, case definitions, aggregate evidence and provenance; it does not disclose private per-date scores.
+
+## Current application
+
+The [report collection](https://yeohoonyun.github.io/midm-decision-models/) uses new local MiDM inference for 12 assets and 48 hypothetical action states (5/20-day, flat/held). Asset-matched B3 is used only for KOSPI; the other assets use causal price features and historical-analogue counts, explicitly not neural B3 probabilities. Financial transfer quality is not validated separately for each asset. Generation scripts and private financial weights/data are not published.
