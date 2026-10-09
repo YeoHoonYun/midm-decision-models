@@ -134,7 +134,7 @@
       "report_en": "AMZN.en.html"
     }
   ],
-  "external_data_calls": 18,
+  "external_data_calls": 13,
   "external_model_calls": 0,
   "local_model": "MiDM",
   "decisions": 48,
