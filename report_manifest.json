@@ -1,5 +1,5 @@
 {
-  "issue_date": "2026-10-08",
+  "issue_date": "2026-10-09",
   "assets": [
     {
       "id": "KOSPI",
@@ -17,7 +17,7 @@
       "name": "S&P 500",
       "market": "US",
       "kind": "index",
-      "data_as_of": "2026-10-07",
+      "data_as_of": "2026-10-08",
       "report": "SP500.html",
       "b3_applied": true,
       "report_ko": "SP500.ko.html",
@@ -83,7 +83,7 @@
       "name": "NVIDIA",
       "market": "US",
       "kind": "stock",
-      "data_as_of": "2026-10-07",
+      "data_as_of": "2026-10-08",
       "report": "NVDA.html",
       "b3_applied": false,
       "report_ko": "NVDA.ko.html",
@@ -94,7 +94,7 @@
       "name": "Apple",
       "market": "US",
       "kind": "stock",
-      "data_as_of": "2026-10-07",
+      "data_as_of": "2026-10-08",
       "report": "AAPL.html",
       "b3_applied": false,
       "report_ko": "AAPL.ko.html",
@@ -105,7 +105,7 @@
       "name": "Alphabet",
       "market": "US",
       "kind": "stock",
-      "data_as_of": "2026-10-07",
+      "data_as_of": "2026-10-08",
       "report": "GOOGL.html",
       "b3_applied": false,
       "report_ko": "GOOGL.ko.html",
@@ -116,7 +116,7 @@
       "name": "Microsoft",
       "market": "US",
       "kind": "stock",
-      "data_as_of": "2026-10-07",
+      "data_as_of": "2026-10-08",
       "report": "MSFT.html",
       "b3_applied": false,
       "report_ko": "MSFT.ko.html",
@@ -127,14 +127,14 @@
       "name": "Amazon",
       "market": "US",
       "kind": "stock",
-      "data_as_of": "2026-10-07",
+      "data_as_of": "2026-10-08",
       "report": "AMZN.html",
       "b3_applied": false,
       "report_ko": "AMZN.ko.html",
       "report_en": "AMZN.en.html"
     }
   ],
-  "external_data_calls": 13,
+  "external_data_calls": 18,
   "external_model_calls": 0,
   "local_model": "MiDM",
   "decisions": 48,
@@ -147,7 +147,7 @@
   "acquisition_phase": "public prices only; no private model inputs sent",
   "expected_close": {
     "KR": "2026-10-08",
-    "US": "2026-10-07"
+    "US": "2026-10-08"
   },
   "price_basis": "Provider Close price paths; not dividend-reinvested total returns",
   "languages": [
