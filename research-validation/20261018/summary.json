@@ -1,0 +1,164 @@
+{
+  "release_date": "2026-10-18",
+  "manuscript": "Coincident, Not Leading",
+  "scope": "Separate Phase34 tabular-model sensitivity study, not MiDM generic decision benchmarks or per-RT scenario hit rates",
+  "status": "Computational audit complete; manuscript integration and paper-level certification pending",
+  "publication_ready": false,
+  "table8": {
+    "cohort": "US57, original Phase34 excluded",
+    "source_sha256": "cf032608c2005832352808e4602a8a0bc68cf494398f26a62708581e7247e3c3",
+    "definition": "median across 57 model-specific dominance_margin values per signal version and target role; near-band max abs correlation minus outer-band max abs correlation",
+    "cells": [
+      {
+        "signal_version": "raw_original",
+        "target_role": "market_return",
+        "models": 57,
+        "median_dominance_margin": 0.0173863350418078
+      },
+      {
+        "signal_version": "raw_original",
+        "target_role": "down_magnitude",
+        "models": 57,
+        "median_dominance_margin": 0.0302960157549964
+      },
+      {
+        "signal_version": "raw_original",
+        "target_role": "up_magnitude",
+        "models": 57,
+        "median_dominance_margin": -0.0085057690830043
+      },
+      {
+        "signal_version": "factor_residual",
+        "target_role": "market_return",
+        "models": 57,
+        "median_dominance_margin": 0.0130772367057845
+      },
+      {
+        "signal_version": "factor_residual",
+        "target_role": "down_magnitude",
+        "models": 57,
+        "median_dominance_margin": 0.0279228953200101
+      },
+      {
+        "signal_version": "factor_residual",
+        "target_role": "up_magnitude",
+        "models": 57,
+        "median_dominance_margin": -0.0385328820728805
+      }
+    ],
+    "rechecked_from_stored_rows": true,
+    "new_correlations_or_p_values": false
+  },
+  "phase34": {
+    "arm": "FROZEN_X_LOCAL_PRICE_LABEL_PURGED",
+    "training_completed_at": "2026-10-17T13:21:55+09:00",
+    "statistics": {
+      "models": 30,
+      "positive_open_EV_models": 30,
+      "mean_model_open_EV": 0.007944179013965538,
+      "median_model_open_EV": 0.008809389362365406,
+      "mean_model_close_EV": 0.009213658775246629,
+      "median_test_auc": 0.9318057374832753,
+      "selected_trades": 34200,
+      "nonexecutable": 5
+    },
+    "splits": [
+      {
+        "split": "train",
+        "source_rows": 1425172,
+        "kept_rows": 1422692,
+        "purged_or_missing": 2480,
+        "label_changes_on_retained": 3181,
+        "start": "20120103",
+        "end": "20231221"
+      },
+      {
+        "split": "valid",
+        "source_rows": 125379,
+        "kept_rows": 122889,
+        "purged_or_missing": 2490,
+        "label_changes_on_retained": 605,
+        "start": "20240102",
+        "end": "20241223"
+      },
+      {
+        "split": "test",
+        "source_rows": 189767,
+        "kept_rows": 189766,
+        "purged_or_missing": 1,
+        "label_changes_on_retained": 829,
+        "start": "20250102",
+        "end": "20260710"
+      }
+    ],
+    "validation_selected_model": {
+      "index": 6,
+      "model_id": "34-3-US_base_plus_kr_market_mlp__mlp",
+      "model_type": "mlp",
+      "feature_count": 342,
+      "selected_epoch": 9,
+      "validation_selection_score": 0.012892125790123195,
+      "selected": 1140,
+      "executable": 1140,
+      "test_days": 380,
+      "signal_start": "20250102",
+      "signal_end": "20260710",
+      "entry_start": "20250103",
+      "exit_end": "20260717",
+      "close_net_ev": 0.006467696476498219,
+      "open_net_ev": 0.004782062059146604,
+      "overnight_mean": 0.0016667111187417608,
+      "close_open_difference": 0.0016856344173516143,
+      "overnight_open_covariance": 5.95284924913472e-06,
+      "test_positive_rate": 0.043854009360075,
+      "test_metrics": {
+        "accuracy": 0.8901014934182098,
+        "precision": 0.24506732842439283,
+        "recall": 0.7238644556596971,
+        "f1": 0.36616721879463876,
+        "roc_auc": 0.9318767225064057
+      },
+      "return_identity_max_abs_error": 3.0747973611688906e-16
+    },
+    "selected_model_uncertainty": {
+      "method": "date-clustered circular block bootstrap, trade-weighted ratio estimand",
+      "block_sessions": 5,
+      "replicates": 10000,
+      "seed": 20261018,
+      "percentile_95_intervals": {
+        "close_net_ev": [
+          -0.003207677099223471,
+          0.01590651673901702
+        ],
+        "open_net_ev": [
+          -0.004215312893209802,
+          0.013454967744795926
+        ],
+        "close_open_difference": [
+          -0.00030907513597203476,
+          0.0036110663459277565
+        ],
+        "overnight_mean": [
+          -0.0002696461023654241,
+          0.0035409572246882463
+        ],
+        "overnight_open_covariance": [
+          -0.0001590898092114451,
+          0.00016492804214067344
+        ]
+      },
+      "p_values_calculated": false
+    },
+    "limitations": [
+      "Frozen historical features and eligibility were not repaired or certified point-in-time.",
+      "Local provider prices and corporate actions were not independently certified as a single vintage.",
+      "Original-label models were not retrained on identical purged rows: no pure causal label-effect comparison.",
+      "Trade EV is not portfolio NAV, annualized return, or benchmark alpha.",
+      "Models are dependent; positive counts are descriptive, not independent significance tests.",
+      "Runtime equality to historical runs is not certified.",
+      "This arm does not replace the original 114-model census or the US57 Table8 exclusion cohort."
+    ]
+  },
+  "public_content": "Aggregate metrics and audit outcomes only. No raw prices, item predictions, private checkpoints, feature matrices or execution/generation scripts.",
+  "private_results_sha256": "379a6c27b2f5f7b95e269a9aa142a6ef8658ba021bf9c173ef3a5f411618af6e"
+}

@@ -1,0 +1,18 @@
+{
+  "release_date": "2026-10-18",
+  "manuscript": "Coincident, Not Leading",
+  "files": {
+    "audit_checks.json": "58e3e32295ebaaddf857a0ecb1ac255399276ba08f73afd927990f9340f709a8",
+    "index.html": "807e17dbc484eddb73705d948623d34055ae5c7d1076a0d5d70448c9232c2e2b",
+    "index.ko.html": "74540487f88f04375855e36db0fd6f89b974290bac4fe7e231dc621a5178c434",
+    "phase34_model_results.csv": "7b9784e9c0f6ac33576452bb10f7d81b585000beff2c61b59281d0ba1dddd466",
+    "README.md": "9e6b894dbfa1542117d905cd4853ec4d4680680983f8e4dd2413b466a95dd624",
+    "RESULTS.txt": "9e6b894dbfa1542117d905cd4853ec4d4680680983f8e4dd2413b466a95dd624",
+    "summary.json": "8ea8ad53f43e8bb9487e1929a773faa3965c985d69671926f440421b1abf710d",
+    "table8_us57.csv": "230d8391089454df88031ffb70ea9f94d2c8c6334c7f422e61f899abc6ad56e1"
+  },
+  "private_raw_data": false,
+  "private_weights": false,
+  "source_scripts": false,
+  "model_weights_changed": false
+}

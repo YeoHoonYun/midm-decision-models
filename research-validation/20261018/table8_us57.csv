@@ -1,0 +1,7 @@
+signal_version,target_role,models,median_dominance_margin
+raw_original,market_return,57,0.0173863350418078
+raw_original,down_magnitude,57,0.0302960157549964
+raw_original,up_magnitude,57,-0.0085057690830043
+factor_residual,market_return,57,0.0130772367057845
+factor_residual,down_magnitude,57,0.0279228953200101
+factor_residual,up_magnitude,57,-0.0385328820728805

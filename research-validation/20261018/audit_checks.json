@@ -1,0 +1,16 @@
+{
+  "checked_at": "2026-10-18T12:20:38.629597+09:00",
+  "models": 30,
+  "held_out_prediction_rows": 5692980,
+  "classification_metrics_recomputed": true,
+  "top3_selection_reproduced": true,
+  "trade_EV_recomputed_from_prices": true,
+  "maximum_return_identity_error": 3.0964814046186007e-16,
+  "checkpoint_metric_ledger_snapshot_SHA256_verified": true,
+  "table8_us57_reaggregation_rechecked_at": "2026-10-18T17:09:53.286967",
+  "table8_groups": 6,
+  "models_per_table8_group": 57,
+  "new_table8_correlations_or_p_values": false,
+  "publication_readiness": false,
+  "source_scope": "Private underlying files are retained locally; this public aggregate release alone does not reproduce item-level inference."
+}
