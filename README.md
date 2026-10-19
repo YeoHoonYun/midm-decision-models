@@ -163,3 +163,7 @@ Apache-2.0 (`LICENSE`); third-party notices are in `NOTICE`.
 ## Internal-only multi-asset application
 
 [Auto by country](https://yeohoonyun.github.io/midm-decision-models/) · [Historical validation including B3](https://yeohoonyun.github.io/midm-decision-models/validation.html) · [한국어 reports](https://yeohoonyun.github.io/midm-decision-models/index.ko.html) · [English reports](https://yeohoonyun.github.io/midm-decision-models/index.en.html) cover KOSPI, S&P 500 and five representative companies per market selected using internal market-cap records. All generation inputs and MiDM inference remain local; zero external data/model API calls during generation. Cached data originated from prior providers, not necessarily proprietary collection. Source dates and ranking limitations are shown. Generation, scheduling and publishing scripts are local-only; updates here contain model documentation and reviewed reports. Historical commits are not rewritten.
+
+## Daily model dashboard
+
+[Open dashboard](https://yeohoonyun.github.io/midm-decision-models/model-analysis/index.html). This standalone browser UI reads reviewed, static model-level aggregates. Period/sector returns and simulated recommendation entry/exit counts are separate from personal account orders. Local exporters/schedulers, financial inputs, raw market data, broker credentials, quantities, prices and prediction scores are not published. User-authorized symbol/action details are in a collapsible lower panel. Daily data is supplied by the existing PC; no broker request is made by this page.
