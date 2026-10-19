@@ -156,10 +156,10 @@ Apache-2.0 (`LICENSE`); third-party notices are in `NOTICE`.
 
 [ScenarioView application case](docs/applications/scenarioview.md) describes the 12-asset local MiDM workflow, fixed 18:30/09:00 KST editions, and no repeated data polling. Generators remain local; model weights are unchanged.
 
-## Internal-only multi-asset application
-
-[Auto by country](https://yeohoonyun.github.io/midm-decision-models/) · [Historical validation including B3](https://yeohoonyun.github.io/midm-decision-models/validation.html) · [한국어 reports](https://yeohoonyun.github.io/midm-decision-models/index.ko.html) · [English reports](https://yeohoonyun.github.io/midm-decision-models/index.en.html) cover KOSPI, S&P 500 and five representative companies per market selected using internal market-cap records. All generation inputs and MiDM inference remain local; zero external data/model API calls during generation. Cached data originated from prior providers, not necessarily proprietary collection. Source dates and ranking limitations are shown. Generation, scheduling and publishing scripts are local-only; updates here contain model documentation and reviewed reports. Historical commits are not rewritten.
-
 ## Separate financial research revalidation (2026-10-18)
 
 [Aggregate results](docs/research/coincident-not-leading/revalidation-20261018/README.md) · [Public appendix](https://yeohoonyun.github.io/midm-decision-models/research-validation/20261018/) · [한국어](https://yeohoonyun.github.io/midm-decision-models/research-validation/20261018/index.ko.html). Includes the six US57 Table 8 margins and all 30 Phase34 computational rechecks for *Coincident, Not Leading*. This separate financial study does not change MiDM generic benchmark scores or model weights. The validation-selected model interval includes zero; manuscript integration and paper-level certification remain pending. Only aggregate outcomes are released.
+
+## Internal-only multi-asset application
+
+[Auto by country](https://yeohoonyun.github.io/midm-decision-models/) · [Historical validation including B3](https://yeohoonyun.github.io/midm-decision-models/validation.html) · [한국어 reports](https://yeohoonyun.github.io/midm-decision-models/index.ko.html) · [English reports](https://yeohoonyun.github.io/midm-decision-models/index.en.html) cover KOSPI, S&P 500 and five representative companies per market selected using internal market-cap records. All generation inputs and MiDM inference remain local; zero external data/model API calls during generation. Cached data originated from prior providers, not necessarily proprietary collection. Source dates and ranking limitations are shown. Generation, scheduling and publishing scripts are local-only; updates here contain model documentation and reviewed reports. Historical commits are not rewritten.
