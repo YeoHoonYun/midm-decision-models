@@ -1,0 +1,1464 @@
+{
+  "schemaVersion": 1,
+  "publicationDate": "20261019",
+  "generatedAt": "2026-10-19T07:43:24.249Z",
+  "contentHash": "741b6454059d610750037621fc03bf51e603718fc275754cb77e9e0c61c13ab8",
+  "marketStatus": [
+    {
+      "market": "KR",
+      "edition": "20261019",
+      "latestSignal": "20261016",
+      "available": true
+    },
+    {
+      "market": "US",
+      "edition": "20261019",
+      "latestSignal": "20261016",
+      "available": true
+    }
+  ],
+  "models": [
+    {
+      "id": "14-23_nav.csv",
+      "name": "14-23",
+      "sector": null,
+      "to": "20261014",
+      "cumulativeReturnPct": -3.839078,
+      "deltaPp": -0.661285,
+      "periods": {
+        "1": {
+          "from": "20261013",
+          "to": "20261014",
+          "returnPct": -0.682989
+        },
+        "5": {
+          "from": "20261006",
+          "to": "20261014",
+          "returnPct": -11.789315
+        },
+        "10": {
+          "from": "20260928",
+          "to": "20261014",
+          "returnPct": -5.887909
+        },
+        "20": {
+          "from": "20260910",
+          "to": "20261014",
+          "returnPct": -2.654732
+        },
+        "60": {
+          "from": "20260714",
+          "to": "20261014",
+          "returnPct": 7.401263
+        },
+        "120": {
+          "from": "20260415",
+          "to": "20261014",
+          "returnPct": -3.839078
+        }
+      }
+    },
+    {
+      "id": "18-12(검증페이퍼)_nav.csv",
+      "name": "18-12(검증페이퍼)",
+      "sector": null,
+      "to": "20261016",
+      "cumulativeReturnPct": -42.689436,
+      "deltaPp": 0.662832,
+      "periods": {
+        "1": {
+          "from": "20261015",
+          "to": "20261016",
+          "returnPct": 1.170095
+        },
+        "5": {
+          "from": "20261008",
+          "to": "20261016",
+          "returnPct": -21.199028
+        },
+        "10": {
+          "from": "20260930",
+          "to": "20261016",
+          "returnPct": -24.398159
+        },
+        "20": {
+          "from": "20260914",
+          "to": "20261016",
+          "returnPct": -19.776647
+        },
+        "60": {
+          "from": "20260716",
+          "to": "20261016",
+          "returnPct": -28.679532
+        },
+        "120": {
+          "from": "20260417",
+          "to": "20261016",
+          "returnPct": -42.689436
+        }
+      }
+    },
+    {
+      "id": "22-14_nav.csv",
+      "name": "22-14",
+      "sector": null,
+      "to": "20260629",
+      "cumulativeReturnPct": 4.634467,
+      "deltaPp": 1.726639,
+      "periods": {
+        "1": {
+          "from": "20260626",
+          "to": "20260629",
+          "returnPct": 1.67785
+        },
+        "5": {
+          "from": "20260622",
+          "to": "20260629",
+          "returnPct": -1.27559
+        },
+        "10": {
+          "from": "20260615",
+          "to": "20260629",
+          "returnPct": -3.913168
+        },
+        "20": {
+          "from": "20260529",
+          "to": "20260629",
+          "returnPct": 4.253438
+        },
+        "60": {
+          "from": "20260331",
+          "to": "20260629",
+          "returnPct": 4.634467
+        },
+        "120": {
+          "from": "20251229",
+          "to": "20260629",
+          "returnPct": 4.634467
+        }
+      }
+    },
+    {
+      "id": "23-18(검증페이퍼)_nav.csv",
+      "name": "23-18(검증페이퍼)",
+      "sector": null,
+      "to": "20261016",
+      "cumulativeReturnPct": 0.047817,
+      "deltaPp": 4.090977,
+      "periods": {
+        "1": {
+          "from": "20261015",
+          "to": "20261016",
+          "returnPct": 4.263351
+        },
+        "5": {
+          "from": "20261008",
+          "to": "20261016",
+          "returnPct": -6.01502
+        },
+        "10": {
+          "from": "20260930",
+          "to": "20261016",
+          "returnPct": -2.739255
+        },
+        "20": {
+          "from": "20260914",
+          "to": "20261016",
+          "returnPct": -2.010448
+        },
+        "60": {
+          "from": "20260716",
+          "to": "20261016",
+          "returnPct": -2.010872
+        },
+        "120": {
+          "from": "20260417",
+          "to": "20261016",
+          "returnPct": 0.047817
+        }
+      }
+    },
+    {
+      "id": "26-11-D(검증페이퍼·한국장 상위)_nav.csv",
+      "name": "26-11-D(검증페이퍼·한국장 상위)",
+      "sector": null,
+      "to": "20261016",
+      "cumulativeReturnPct": -21.649333,
+      "deltaPp": 0.853212,
+      "periods": {
+        "1": {
+          "from": "20261015",
+          "to": "20261016",
+          "returnPct": 1.100955
+        },
+        "5": {
+          "from": "20261008",
+          "to": "20261016",
+          "returnPct": -9.199835
+        },
+        "10": {
+          "from": "20260930",
+          "to": "20261016",
+          "returnPct": -12.767932
+        },
+        "20": {
+          "from": "20260914",
+          "to": "20261016",
+          "returnPct": -11.896939
+        },
+        "60": {
+          "from": "20260716",
+          "to": "20261016",
+          "returnPct": -14.797732
+        },
+        "120": {
+          "from": "20260417",
+          "to": "20261016",
+          "returnPct": -21.649333
+        }
+      }
+    },
+    {
+      "id": "26-2-B(검증페이퍼)_nav.csv",
+      "name": "26-2-B(검증페이퍼)",
+      "sector": null,
+      "to": "20261016",
+      "cumulativeReturnPct": -19.877789,
+      "deltaPp": 3.062393,
+      "periods": {
+        "1": {
+          "from": "20261015",
+          "to": "20261016",
+          "returnPct": 3.974046
+        },
+        "5": {
+          "from": "20261008",
+          "to": "20261016",
+          "returnPct": -7.029488
+        },
+        "10": {
+          "from": "20260930",
+          "to": "20261016",
+          "returnPct": -7.792893
+        },
+        "20": {
+          "from": "20260914",
+          "to": "20261016",
+          "returnPct": -6.234085
+        },
+        "60": {
+          "from": "20260716",
+          "to": "20261016",
+          "returnPct": -5.856186
+        },
+        "120": {
+          "from": "20260417",
+          "to": "20261016",
+          "returnPct": -19.877789
+        }
+      }
+    },
+    {
+      "id": "26-8-C(검증페이퍼)_nav.csv",
+      "name": "26-8-C(검증페이퍼)",
+      "sector": null,
+      "to": "20261016",
+      "cumulativeReturnPct": -9.68507,
+      "deltaPp": 2.506414,
+      "periods": {
+        "1": {
+          "from": "20261015",
+          "to": "20261016",
+          "returnPct": 2.854409
+        },
+        "5": {
+          "from": "20261008",
+          "to": "20261016",
+          "returnPct": -2.615994
+        },
+        "10": {
+          "from": "20260930",
+          "to": "20261016",
+          "returnPct": -4.065423
+        },
+        "20": {
+          "from": "20260914",
+          "to": "20261016",
+          "returnPct": -4.448116
+        },
+        "60": {
+          "from": "20260716",
+          "to": "20261016",
+          "returnPct": 3.846338
+        },
+        "120": {
+          "from": "20260417",
+          "to": "20261016",
+          "returnPct": -9.68507
+        }
+      }
+    },
+    {
+      "id": "6차_nav.csv",
+      "name": "6차",
+      "sector": null,
+      "to": "20260625",
+      "cumulativeReturnPct": -6.5612,
+      "deltaPp": -0.7675,
+      "periods": {
+        "1": {
+          "from": "20260624",
+          "to": "20260625",
+          "returnPct": -0.814701
+        },
+        "5": {
+          "from": "20260618",
+          "to": "20260625",
+          "returnPct": -5.625191
+        },
+        "10": {
+          "from": "20260611",
+          "to": "20260625",
+          "returnPct": -6.5612
+        },
+        "20": {
+          "from": "20260527",
+          "to": "20260625",
+          "returnPct": -6.5612
+        },
+        "60": {
+          "from": "20260327",
+          "to": "20260625",
+          "returnPct": -6.5612
+        },
+        "120": {
+          "from": "20251224",
+          "to": "20260625",
+          "returnPct": -6.5612
+        }
+      }
+    },
+    {
+      "id": "7차(모델)_nav.csv",
+      "name": "7차(모델)",
+      "sector": null,
+      "to": "20261019",
+      "cumulativeReturnPct": -9.840119,
+      "deltaPp": -0.116665,
+      "periods": {
+        "1": {
+          "from": "20261016",
+          "to": "20261019",
+          "returnPct": -0.129231
+        },
+        "5": {
+          "from": "20261012",
+          "to": "20261019",
+          "returnPct": -3.278719
+        },
+        "10": {
+          "from": "20261001",
+          "to": "20261019",
+          "returnPct": -6.801336
+        },
+        "20": {
+          "from": "20260915",
+          "to": "20261019",
+          "returnPct": -5.735106
+        },
+        "60": {
+          "from": "20260720",
+          "to": "20261019",
+          "returnPct": -1.954201
+        },
+        "120": {
+          "from": "20260420",
+          "to": "20261019",
+          "returnPct": -9.840119
+        }
+      }
+    },
+    {
+      "id": "산업별_금융_32-10_resnet(탈락)_nav.csv",
+      "name": "산업별_금융_32-10_resnet(탈락)",
+      "sector": "금융",
+      "to": "20261016",
+      "cumulativeReturnPct": -4.566232,
+      "deltaPp": 1.7076,
+      "periods": {
+        "1": {
+          "from": "20261015",
+          "to": "20261016",
+          "returnPct": 1.821903
+        },
+        "5": {
+          "from": "20261008",
+          "to": "20261016",
+          "returnPct": -5.298453
+        },
+        "10": {
+          "from": "20260930",
+          "to": "20261016",
+          "returnPct": -5.292088
+        },
+        "20": {
+          "from": "20260914",
+          "to": "20261016",
+          "returnPct": -5.545912
+        },
+        "60": {
+          "from": "20260716",
+          "to": "20261016",
+          "returnPct": 5.693432
+        },
+        "120": {
+          "from": "20260417",
+          "to": "20261016",
+          "returnPct": -4.566232
+        }
+      }
+    },
+    {
+      "id": "산업별_기계장비_32-8_ft(관찰)_nav.csv",
+      "name": "산업별_기계장비_32-8_ft(관찰)",
+      "sector": "기계장비",
+      "to": "20261016",
+      "cumulativeReturnPct": 9.294103,
+      "deltaPp": 1.714121,
+      "periods": {
+        "1": {
+          "from": "20261015",
+          "to": "20261016",
+          "returnPct": 1.593346
+        },
+        "5": {
+          "from": "20261008",
+          "to": "20261016",
+          "returnPct": -1.191631
+        },
+        "10": {
+          "from": "20260930",
+          "to": "20261016",
+          "returnPct": -1.191631
+        },
+        "20": {
+          "from": "20260914",
+          "to": "20261016",
+          "returnPct": -1.191631
+        },
+        "60": {
+          "from": "20260716",
+          "to": "20261016",
+          "returnPct": 3.290864
+        },
+        "120": {
+          "from": "20260417",
+          "to": "20261016",
+          "returnPct": 9.294103
+        }
+      }
+    },
+    {
+      "id": "산업별_일반서비스_32-10_resnet(관찰)_nav.csv",
+      "name": "산업별_일반서비스_32-10_resnet(관찰)",
+      "sector": "일반서비스",
+      "to": "20261016",
+      "cumulativeReturnPct": -2.634084,
+      "deltaPp": 4.0553,
+      "periods": {
+        "1": {
+          "from": "20261015",
+          "to": "20261016",
+          "returnPct": 4.346022
+        },
+        "5": {
+          "from": "20261008",
+          "to": "20261016",
+          "returnPct": 1.293705
+        },
+        "10": {
+          "from": "20260930",
+          "to": "20261016",
+          "returnPct": 1.293705
+        },
+        "20": {
+          "from": "20260914",
+          "to": "20261016",
+          "returnPct": 1.293705
+        },
+        "60": {
+          "from": "20260716",
+          "to": "20261016",
+          "returnPct": 3.623034
+        },
+        "120": {
+          "from": "20260417",
+          "to": "20261016",
+          "returnPct": -2.634084
+        }
+      }
+    },
+    {
+      "id": "산업별_제약_32-10_resnet(경제성)_nav.csv",
+      "name": "산업별_제약_32-10_resnet(경제성)",
+      "sector": "제약",
+      "to": "20261015",
+      "cumulativeReturnPct": -17.27232,
+      "deltaPp": -4.432585,
+      "periods": {
+        "1": {
+          "from": "20261014",
+          "to": "20261015",
+          "returnPct": -5.085557
+        },
+        "5": {
+          "from": "20261007",
+          "to": "20261015",
+          "returnPct": -11.702304
+        },
+        "10": {
+          "from": "20260929",
+          "to": "20261015",
+          "returnPct": -14.446259
+        },
+        "20": {
+          "from": "20260911",
+          "to": "20261015",
+          "returnPct": -21.6616
+        },
+        "60": {
+          "from": "20260715",
+          "to": "20261015",
+          "returnPct": -13.229732
+        },
+        "120": {
+          "from": "20260416",
+          "to": "20261015",
+          "returnPct": -17.27232
+        }
+      }
+    },
+    {
+      "id": "산업별_화학_32-8_ft(실전)_nav.csv",
+      "name": "산업별_화학_32-8_ft(실전)",
+      "sector": "화학",
+      "to": "20261016",
+      "cumulativeReturnPct": 8.686077,
+      "deltaPp": 1.66668,
+      "periods": {
+        "1": {
+          "from": "20261015",
+          "to": "20261016",
+          "returnPct": 1.557363
+        },
+        "5": {
+          "from": "20261008",
+          "to": "20261016",
+          "returnPct": -0.983422
+        },
+        "10": {
+          "from": "20260930",
+          "to": "20261016",
+          "returnPct": -0.983422
+        },
+        "20": {
+          "from": "20260914",
+          "to": "20261016",
+          "returnPct": -0.983422
+        },
+        "60": {
+          "from": "20260716",
+          "to": "20261016",
+          "returnPct": 14.762416
+        },
+        "120": {
+          "from": "20260417",
+          "to": "20261016",
+          "returnPct": 8.686077
+        }
+      }
+    },
+    {
+      "id": "COMBO검증_nav.csv",
+      "name": "COMBO검증",
+      "sector": null,
+      "to": "20261014",
+      "cumulativeReturnPct": -11.910794,
+      "deltaPp": -0.553625,
+      "periods": {
+        "1": {
+          "from": "20261013",
+          "to": "20261014",
+          "returnPct": -0.624557
+        },
+        "5": {
+          "from": "20261006",
+          "to": "20261014",
+          "returnPct": -11.879142
+        },
+        "10": {
+          "from": "20260928",
+          "to": "20261014",
+          "returnPct": -6.357685
+        },
+        "20": {
+          "from": "20260910",
+          "to": "20261014",
+          "returnPct": -6.995436
+        },
+        "60": {
+          "from": "20260714",
+          "to": "20261014",
+          "returnPct": 0.898562
+        },
+        "120": {
+          "from": "20260415",
+          "to": "20261014",
+          "returnPct": -11.910794
+        }
+      }
+    }
+  ],
+  "activity": [
+    {
+      "model": "KR_COMBO__P14_14-26_X_14-23__regime_10d_thr10",
+      "market": "KR",
+      "horizon": 1,
+      "date": "20261016",
+      "recommendations": 3,
+      "buys": 3,
+      "sells": 3,
+      "quarantined": 0
+    },
+    {
+      "model": "KR_COMBO__P14_14-26_X_14-23__regime_10d_thr10",
+      "market": "KR",
+      "horizon": 5,
+      "date": "20261016",
+      "recommendations": 3,
+      "buys": 3,
+      "sells": 0,
+      "quarantined": 0
+    },
+    {
+      "model": "KR_COMBO__P14_14-26_X_14-23__regime_10d_thr10",
+      "market": "KR",
+      "horizon": 10,
+      "date": "20261016",
+      "recommendations": 3,
+      "buys": 3,
+      "sells": 3,
+      "quarantined": 0
+    },
+    {
+      "model": "KR_COMBO__P14_14-26_X_14-23__regime_10d_thr10",
+      "market": "KR",
+      "horizon": 20,
+      "date": "20261016",
+      "recommendations": 3,
+      "buys": 3,
+      "sells": 2,
+      "quarantined": 0
+    },
+    {
+      "model": "KR_COMBO__P14_14-26_X_14-23__regime_10d_thr10",
+      "market": "KR",
+      "horizon": 60,
+      "date": "20261016",
+      "recommendations": 3,
+      "buys": 3,
+      "sells": 0,
+      "quarantined": 0
+    },
+    {
+      "model": "KR_COMBO__P14_14-26_X_14-23__regime_10d_thr10",
+      "market": "KR",
+      "horizon": 120,
+      "date": "20261016",
+      "recommendations": 3,
+      "buys": 3,
+      "sells": 0,
+      "quarantined": 0
+    },
+    {
+      "model": "P14__14-23_nonft_heavy_prf_wide_resnet_nonft2080ti_e60__regime_10d_thr10",
+      "market": "KR",
+      "horizon": 1,
+      "date": "20261016",
+      "recommendations": 5,
+      "buys": 5,
+      "sells": 5,
+      "quarantined": 0
+    },
+    {
+      "model": "P14__14-23_nonft_heavy_prf_wide_resnet_nonft2080ti_e60__regime_10d_thr10",
+      "market": "KR",
+      "horizon": 5,
+      "date": "20261016",
+      "recommendations": 5,
+      "buys": 5,
+      "sells": 5,
+      "quarantined": 0
+    },
+    {
+      "model": "P14__14-23_nonft_heavy_prf_wide_resnet_nonft2080ti_e60__regime_10d_thr10",
+      "market": "KR",
+      "horizon": 10,
+      "date": "20261016",
+      "recommendations": 5,
+      "buys": 5,
+      "sells": 5,
+      "quarantined": 0
+    },
+    {
+      "model": "P14__14-23_nonft_heavy_prf_wide_resnet_nonft2080ti_e60__regime_10d_thr10",
+      "market": "KR",
+      "horizon": 20,
+      "date": "20261016",
+      "recommendations": 5,
+      "buys": 5,
+      "sells": 5,
+      "quarantined": 0
+    },
+    {
+      "model": "P14__14-23_nonft_heavy_prf_wide_resnet_nonft2080ti_e60__regime_10d_thr10",
+      "market": "KR",
+      "horizon": 60,
+      "date": "20261016",
+      "recommendations": 5,
+      "buys": 5,
+      "sells": 0,
+      "quarantined": 0
+    },
+    {
+      "model": "P14__14-23_nonft_heavy_prf_wide_resnet_nonft2080ti_e60__regime_10d_thr10",
+      "market": "KR",
+      "horizon": 120,
+      "date": "20261016",
+      "recommendations": 5,
+      "buys": 5,
+      "sells": 0,
+      "quarantined": 0
+    },
+    {
+      "model": "P14__14-26_nonft_heavy_balacc_large_nonft2080ti_e60__regime_10d_thr10",
+      "market": "KR",
+      "horizon": 1,
+      "date": "20261016",
+      "recommendations": 5,
+      "buys": 5,
+      "sells": 5,
+      "quarantined": 0
+    },
+    {
+      "model": "P14__14-26_nonft_heavy_balacc_large_nonft2080ti_e60__regime_10d_thr10",
+      "market": "KR",
+      "horizon": 5,
+      "date": "20261016",
+      "recommendations": 5,
+      "buys": 5,
+      "sells": 5,
+      "quarantined": 0
+    },
+    {
+      "model": "P14__14-26_nonft_heavy_balacc_large_nonft2080ti_e60__regime_10d_thr10",
+      "market": "KR",
+      "horizon": 10,
+      "date": "20261016",
+      "recommendations": 5,
+      "buys": 5,
+      "sells": 5,
+      "quarantined": 0
+    },
+    {
+      "model": "P14__14-26_nonft_heavy_balacc_large_nonft2080ti_e60__regime_10d_thr10",
+      "market": "KR",
+      "horizon": 20,
+      "date": "20261016",
+      "recommendations": 5,
+      "buys": 5,
+      "sells": 5,
+      "quarantined": 0
+    },
+    {
+      "model": "P14__14-26_nonft_heavy_balacc_large_nonft2080ti_e60__regime_10d_thr10",
+      "market": "KR",
+      "horizon": 60,
+      "date": "20261016",
+      "recommendations": 5,
+      "buys": 5,
+      "sells": 0,
+      "quarantined": 0
+    },
+    {
+      "model": "P14__14-26_nonft_heavy_balacc_large_nonft2080ti_e60__regime_10d_thr10",
+      "market": "KR",
+      "horizon": 120,
+      "date": "20261016",
+      "recommendations": 5,
+      "buys": 5,
+      "sells": 0,
+      "quarantined": 0
+    },
+    {
+      "model": "P7__all_market_bcdef_v7__regime_10d_thr10",
+      "market": "KR",
+      "horizon": 1,
+      "date": "20261016",
+      "recommendations": 12,
+      "buys": 12,
+      "sells": 12,
+      "quarantined": 0
+    },
+    {
+      "model": "P7__all_market_bcdef_v7__regime_10d_thr10",
+      "market": "KR",
+      "horizon": 5,
+      "date": "20261016",
+      "recommendations": 12,
+      "buys": 12,
+      "sells": 9,
+      "quarantined": 0
+    },
+    {
+      "model": "P7__all_market_bcdef_v7__regime_10d_thr10",
+      "market": "KR",
+      "horizon": 10,
+      "date": "20261016",
+      "recommendations": 12,
+      "buys": 12,
+      "sells": 12,
+      "quarantined": 0
+    },
+    {
+      "model": "P7__all_market_bcdef_v7__regime_10d_thr10",
+      "market": "KR",
+      "horizon": 20,
+      "date": "20261016",
+      "recommendations": 12,
+      "buys": 12,
+      "sells": 12,
+      "quarantined": 0
+    },
+    {
+      "model": "P7__all_market_bcdef_v7__regime_10d_thr10",
+      "market": "KR",
+      "horizon": 60,
+      "date": "20261016",
+      "recommendations": 12,
+      "buys": 12,
+      "sells": 12,
+      "quarantined": 0
+    },
+    {
+      "model": "P7__all_market_bcdef_v7__regime_10d_thr10",
+      "market": "KR",
+      "horizon": 120,
+      "date": "20261016",
+      "recommendations": 12,
+      "buys": 12,
+      "sells": 9,
+      "quarantined": 0
+    },
+    {
+      "model": "29-1-ft_transformer_down_reversal_full__ft_transformer",
+      "market": "US",
+      "horizon": 1,
+      "date": "20261016",
+      "recommendations": 4,
+      "buys": 3,
+      "sells": 3,
+      "quarantined": 0
+    },
+    {
+      "model": "29-1-ft_transformer_down_reversal_full__ft_transformer",
+      "market": "US",
+      "horizon": 5,
+      "date": "20261016",
+      "recommendations": 4,
+      "buys": 3,
+      "sells": 3,
+      "quarantined": 0
+    },
+    {
+      "model": "29-1-ft_transformer_down_reversal_full__ft_transformer",
+      "market": "US",
+      "horizon": 10,
+      "date": "20261016",
+      "recommendations": 4,
+      "buys": 3,
+      "sells": 3,
+      "quarantined": 0
+    },
+    {
+      "model": "29-1-ft_transformer_down_reversal_full__ft_transformer",
+      "market": "US",
+      "horizon": 20,
+      "date": "20261016",
+      "recommendations": 4,
+      "buys": 3,
+      "sells": 3,
+      "quarantined": 0
+    },
+    {
+      "model": "29-1-ft_transformer_down_reversal_full__ft_transformer",
+      "market": "US",
+      "horizon": 60,
+      "date": "20261016",
+      "recommendations": 4,
+      "buys": 3,
+      "sells": 0,
+      "quarantined": 0
+    },
+    {
+      "model": "29-1-ft_transformer_down_reversal_full__ft_transformer",
+      "market": "US",
+      "horizon": 120,
+      "date": "20261016",
+      "recommendations": 4,
+      "buys": 3,
+      "sells": 0,
+      "quarantined": 0
+    },
+    {
+      "model": "29-1-resnet_down_reversal_full__resnet",
+      "market": "US",
+      "horizon": 1,
+      "date": "20261016",
+      "recommendations": 5,
+      "buys": 5,
+      "sells": 5,
+      "quarantined": 0
+    },
+    {
+      "model": "29-1-resnet_down_reversal_full__resnet",
+      "market": "US",
+      "horizon": 5,
+      "date": "20261016",
+      "recommendations": 5,
+      "buys": 5,
+      "sells": 5,
+      "quarantined": 0
+    },
+    {
+      "model": "29-1-resnet_down_reversal_full__resnet",
+      "market": "US",
+      "horizon": 10,
+      "date": "20261016",
+      "recommendations": 5,
+      "buys": 5,
+      "sells": 5,
+      "quarantined": 0
+    },
+    {
+      "model": "29-1-resnet_down_reversal_full__resnet",
+      "market": "US",
+      "horizon": 20,
+      "date": "20261016",
+      "recommendations": 5,
+      "buys": 5,
+      "sells": 5,
+      "quarantined": 0
+    },
+    {
+      "model": "29-1-resnet_down_reversal_full__resnet",
+      "market": "US",
+      "horizon": 60,
+      "date": "20261016",
+      "recommendations": 5,
+      "buys": 5,
+      "sells": 0,
+      "quarantined": 0
+    },
+    {
+      "model": "29-1-resnet_down_reversal_full__resnet",
+      "market": "US",
+      "horizon": 120,
+      "date": "20261016",
+      "recommendations": 5,
+      "buys": 5,
+      "sells": 0,
+      "quarantined": 0
+    },
+    {
+      "model": "29-13-lightgbm_balanced_balanced_updown_core__lightgbm_balanced",
+      "market": "US",
+      "horizon": 1,
+      "date": "20261016",
+      "recommendations": 3,
+      "buys": 3,
+      "sells": 3,
+      "quarantined": 0
+    },
+    {
+      "model": "29-13-lightgbm_balanced_balanced_updown_core__lightgbm_balanced",
+      "market": "US",
+      "horizon": 5,
+      "date": "20261016",
+      "recommendations": 3,
+      "buys": 3,
+      "sells": 3,
+      "quarantined": 0
+    },
+    {
+      "model": "29-13-lightgbm_balanced_balanced_updown_core__lightgbm_balanced",
+      "market": "US",
+      "horizon": 10,
+      "date": "20261016",
+      "recommendations": 3,
+      "buys": 3,
+      "sells": 3,
+      "quarantined": 0
+    },
+    {
+      "model": "29-13-lightgbm_balanced_balanced_updown_core__lightgbm_balanced",
+      "market": "US",
+      "horizon": 20,
+      "date": "20261016",
+      "recommendations": 3,
+      "buys": 3,
+      "sells": 3,
+      "quarantined": 0
+    },
+    {
+      "model": "29-13-lightgbm_balanced_balanced_updown_core__lightgbm_balanced",
+      "market": "US",
+      "horizon": 60,
+      "date": "20261016",
+      "recommendations": 3,
+      "buys": 3,
+      "sells": 0,
+      "quarantined": 0
+    },
+    {
+      "model": "29-13-lightgbm_balanced_balanced_updown_core__lightgbm_balanced",
+      "market": "US",
+      "horizon": 120,
+      "date": "20261016",
+      "recommendations": 3,
+      "buys": 3,
+      "sells": 0,
+      "quarantined": 0
+    },
+    {
+      "model": "29-13-mlp_deep_balanced_updown_core__mlp_deep",
+      "market": "US",
+      "horizon": 1,
+      "date": "20261016",
+      "recommendations": 6,
+      "buys": 5,
+      "sells": 5,
+      "quarantined": 0
+    },
+    {
+      "model": "29-13-mlp_deep_balanced_updown_core__mlp_deep",
+      "market": "US",
+      "horizon": 5,
+      "date": "20261016",
+      "recommendations": 6,
+      "buys": 5,
+      "sells": 0,
+      "quarantined": 0
+    },
+    {
+      "model": "29-13-mlp_deep_balanced_updown_core__mlp_deep",
+      "market": "US",
+      "horizon": 10,
+      "date": "20261016",
+      "recommendations": 6,
+      "buys": 5,
+      "sells": 0,
+      "quarantined": 0
+    },
+    {
+      "model": "29-13-mlp_deep_balanced_updown_core__mlp_deep",
+      "market": "US",
+      "horizon": 20,
+      "date": "20261016",
+      "recommendations": 6,
+      "buys": 5,
+      "sells": 0,
+      "quarantined": 0
+    },
+    {
+      "model": "29-13-mlp_deep_balanced_updown_core__mlp_deep",
+      "market": "US",
+      "horizon": 60,
+      "date": "20261016",
+      "recommendations": 6,
+      "buys": 5,
+      "sells": 0,
+      "quarantined": 0
+    },
+    {
+      "model": "29-13-mlp_deep_balanced_updown_core__mlp_deep",
+      "market": "US",
+      "horizon": 120,
+      "date": "20261016",
+      "recommendations": 6,
+      "buys": 5,
+      "sells": 0,
+      "quarantined": 0
+    },
+    {
+      "model": "29-14-resnet_balanced_updown_rank__resnet",
+      "market": "US",
+      "horizon": 1,
+      "date": "20261016",
+      "recommendations": 4,
+      "buys": 3,
+      "sells": 3,
+      "quarantined": 0
+    },
+    {
+      "model": "29-14-resnet_balanced_updown_rank__resnet",
+      "market": "US",
+      "horizon": 5,
+      "date": "20261016",
+      "recommendations": 4,
+      "buys": 3,
+      "sells": 0,
+      "quarantined": 0
+    },
+    {
+      "model": "29-14-resnet_balanced_updown_rank__resnet",
+      "market": "US",
+      "horizon": 10,
+      "date": "20261016",
+      "recommendations": 4,
+      "buys": 3,
+      "sells": 0,
+      "quarantined": 0
+    },
+    {
+      "model": "29-14-resnet_balanced_updown_rank__resnet",
+      "market": "US",
+      "horizon": 20,
+      "date": "20261016",
+      "recommendations": 4,
+      "buys": 3,
+      "sells": 0,
+      "quarantined": 0
+    },
+    {
+      "model": "29-14-resnet_balanced_updown_rank__resnet",
+      "market": "US",
+      "horizon": 60,
+      "date": "20261016",
+      "recommendations": 4,
+      "buys": 3,
+      "sells": 0,
+      "quarantined": 0
+    },
+    {
+      "model": "29-14-resnet_balanced_updown_rank__resnet",
+      "market": "US",
+      "horizon": 120,
+      "date": "20261016",
+      "recommendations": 4,
+      "buys": 3,
+      "sells": 0,
+      "quarantined": 0
+    },
+    {
+      "model": "29-4-ft_transformer_down_reversal_abs_full__ft_transformer",
+      "market": "US",
+      "horizon": 1,
+      "date": "20261016",
+      "recommendations": 4,
+      "buys": 3,
+      "sells": 3,
+      "quarantined": 0
+    },
+    {
+      "model": "29-4-ft_transformer_down_reversal_abs_full__ft_transformer",
+      "market": "US",
+      "horizon": 5,
+      "date": "20261016",
+      "recommendations": 4,
+      "buys": 3,
+      "sells": 0,
+      "quarantined": 0
+    },
+    {
+      "model": "29-4-ft_transformer_down_reversal_abs_full__ft_transformer",
+      "market": "US",
+      "horizon": 10,
+      "date": "20261016",
+      "recommendations": 4,
+      "buys": 3,
+      "sells": 0,
+      "quarantined": 0
+    },
+    {
+      "model": "29-4-ft_transformer_down_reversal_abs_full__ft_transformer",
+      "market": "US",
+      "horizon": 20,
+      "date": "20261016",
+      "recommendations": 4,
+      "buys": 3,
+      "sells": 0,
+      "quarantined": 0
+    },
+    {
+      "model": "29-4-ft_transformer_down_reversal_abs_full__ft_transformer",
+      "market": "US",
+      "horizon": 60,
+      "date": "20261016",
+      "recommendations": 4,
+      "buys": 3,
+      "sells": 0,
+      "quarantined": 0
+    },
+    {
+      "model": "29-4-ft_transformer_down_reversal_abs_full__ft_transformer",
+      "market": "US",
+      "horizon": 120,
+      "date": "20261016",
+      "recommendations": 4,
+      "buys": 3,
+      "sells": 0,
+      "quarantined": 0
+    },
+    {
+      "model": "29-4-mlp_deep_down_reversal_abs_full__mlp_deep",
+      "market": "US",
+      "horizon": 1,
+      "date": "20261016",
+      "recommendations": 6,
+      "buys": 5,
+      "sells": 5,
+      "quarantined": 0
+    },
+    {
+      "model": "29-4-mlp_deep_down_reversal_abs_full__mlp_deep",
+      "market": "US",
+      "horizon": 5,
+      "date": "20261016",
+      "recommendations": 6,
+      "buys": 5,
+      "sells": 0,
+      "quarantined": 0
+    },
+    {
+      "model": "29-4-mlp_deep_down_reversal_abs_full__mlp_deep",
+      "market": "US",
+      "horizon": 10,
+      "date": "20261016",
+      "recommendations": 6,
+      "buys": 5,
+      "sells": 0,
+      "quarantined": 0
+    },
+    {
+      "model": "29-4-mlp_deep_down_reversal_abs_full__mlp_deep",
+      "market": "US",
+      "horizon": 20,
+      "date": "20261016",
+      "recommendations": 6,
+      "buys": 5,
+      "sells": 0,
+      "quarantined": 0
+    },
+    {
+      "model": "29-4-mlp_deep_down_reversal_abs_full__mlp_deep",
+      "market": "US",
+      "horizon": 60,
+      "date": "20261016",
+      "recommendations": 6,
+      "buys": 5,
+      "sells": 0,
+      "quarantined": 0
+    },
+    {
+      "model": "29-4-mlp_deep_down_reversal_abs_full__mlp_deep",
+      "market": "US",
+      "horizon": 120,
+      "date": "20261016",
+      "recommendations": 6,
+      "buys": 5,
+      "sells": 0,
+      "quarantined": 0
+    },
+    {
+      "model": "29-5-mlp_deep_down_reversal_abs_liq__mlp_deep",
+      "market": "US",
+      "horizon": 1,
+      "date": "20261016",
+      "recommendations": 4,
+      "buys": 3,
+      "sells": 3,
+      "quarantined": 0
+    },
+    {
+      "model": "29-5-mlp_deep_down_reversal_abs_liq__mlp_deep",
+      "market": "US",
+      "horizon": 5,
+      "date": "20261016",
+      "recommendations": 4,
+      "buys": 3,
+      "sells": 3,
+      "quarantined": 0
+    },
+    {
+      "model": "29-5-mlp_deep_down_reversal_abs_liq__mlp_deep",
+      "market": "US",
+      "horizon": 10,
+      "date": "20261016",
+      "recommendations": 4,
+      "buys": 3,
+      "sells": 3,
+      "quarantined": 0
+    },
+    {
+      "model": "29-5-mlp_deep_down_reversal_abs_liq__mlp_deep",
+      "market": "US",
+      "horizon": 20,
+      "date": "20261016",
+      "recommendations": 4,
+      "buys": 3,
+      "sells": 3,
+      "quarantined": 0
+    },
+    {
+      "model": "29-5-mlp_deep_down_reversal_abs_liq__mlp_deep",
+      "market": "US",
+      "horizon": 60,
+      "date": "20261016",
+      "recommendations": 4,
+      "buys": 3,
+      "sells": 0,
+      "quarantined": 0
+    },
+    {
+      "model": "29-5-mlp_deep_down_reversal_abs_liq__mlp_deep",
+      "market": "US",
+      "horizon": 120,
+      "date": "20261016",
+      "recommendations": 4,
+      "buys": 3,
+      "sells": 0,
+      "quarantined": 0
+    },
+    {
+      "model": "29-5-resnet_down_reversal_abs_liq__resnet",
+      "market": "US",
+      "horizon": 1,
+      "date": "20261016",
+      "recommendations": 4,
+      "buys": 3,
+      "sells": 3,
+      "quarantined": 0
+    },
+    {
+      "model": "29-5-resnet_down_reversal_abs_liq__resnet",
+      "market": "US",
+      "horizon": 5,
+      "date": "20261016",
+      "recommendations": 4,
+      "buys": 3,
+      "sells": 3,
+      "quarantined": 0
+    },
+    {
+      "model": "29-5-resnet_down_reversal_abs_liq__resnet",
+      "market": "US",
+      "horizon": 10,
+      "date": "20261016",
+      "recommendations": 4,
+      "buys": 3,
+      "sells": 5,
+      "quarantined": 0
+    },
+    {
+      "model": "29-5-resnet_down_reversal_abs_liq__resnet",
+      "market": "US",
+      "horizon": 20,
+      "date": "20261016",
+      "recommendations": 4,
+      "buys": 3,
+      "sells": 5,
+      "quarantined": 0
+    },
+    {
+      "model": "29-5-resnet_down_reversal_abs_liq__resnet",
+      "market": "US",
+      "horizon": 60,
+      "date": "20261016",
+      "recommendations": 4,
+      "buys": 3,
+      "sells": 0,
+      "quarantined": 0
+    },
+    {
+      "model": "29-5-resnet_down_reversal_abs_liq__resnet",
+      "market": "US",
+      "horizon": 120,
+      "date": "20261016",
+      "recommendations": 4,
+      "buys": 3,
+      "sells": 0,
+      "quarantined": 0
+    },
+    {
+      "model": "29-5-xgboost_down_reversal_abs_liq__xgboost",
+      "market": "US",
+      "horizon": 1,
+      "date": "20261016",
+      "recommendations": 5,
+      "buys": 5,
+      "sells": 5,
+      "quarantined": 0
+    },
+    {
+      "model": "29-5-xgboost_down_reversal_abs_liq__xgboost",
+      "market": "US",
+      "horizon": 5,
+      "date": "20261016",
+      "recommendations": 5,
+      "buys": 5,
+      "sells": 0,
+      "quarantined": 0
+    },
+    {
+      "model": "29-5-xgboost_down_reversal_abs_liq__xgboost",
+      "market": "US",
+      "horizon": 10,
+      "date": "20261016",
+      "recommendations": 5,
+      "buys": 5,
+      "sells": 0,
+      "quarantined": 0
+    },
+    {
+      "model": "29-5-xgboost_down_reversal_abs_liq__xgboost",
+      "market": "US",
+      "horizon": 20,
+      "date": "20261016",
+      "recommendations": 5,
+      "buys": 5,
+      "sells": 0,
+      "quarantined": 0
+    },
+    {
+      "model": "29-5-xgboost_down_reversal_abs_liq__xgboost",
+      "market": "US",
+      "horizon": 60,
+      "date": "20261016",
+      "recommendations": 5,
+      "buys": 5,
+      "sells": 0,
+      "quarantined": 0
+    },
+    {
+      "model": "29-5-xgboost_down_reversal_abs_liq__xgboost",
+      "market": "US",
+      "horizon": 120,
+      "date": "20261016",
+      "recommendations": 5,
+      "buys": 5,
+      "sells": 0,
+      "quarantined": 0
+    }
+  ]
+}
