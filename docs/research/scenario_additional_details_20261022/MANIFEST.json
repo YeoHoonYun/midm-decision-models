@@ -1,0 +1,62 @@
+[
+    {
+        "path":  "README.md",
+        "bytes":  2375,
+        "sha256":  "CE475816F4C97DB5CA732C8DB0C7CD59E36305C43EF34A61E314AE3EBCE45E32"
+    },
+    {
+        "path":  "SUPPLEMENT_KO.md",
+        "bytes":  10335,
+        "sha256":  "8A65D2D5F07764E1762BBF1B67CA462BB20264603CEC8CA6CD4F67E29019A73F"
+    },
+    {
+        "path":  "A01/REPORT.md",
+        "bytes":  478,
+        "sha256":  "833BA23624F5114F1541FB2CB90CEC0A27BF9C89FC00A84CBF2CBEE4C8300C47"
+    },
+    {
+        "path":  "A02/REPORT.md",
+        "bytes":  883,
+        "sha256":  "41EE34D740420B21120F3C1583C53E3EDBEDC8F8FED1C39FF6C446FA66C03DDA"
+    },
+    {
+        "path":  "A03/REPORT.md",
+        "bytes":  2428,
+        "sha256":  "BDFCCD3B4D8563A8F6ABAC53400F57CAC64AB37F2973941360CBE9C813D9F0E2"
+    },
+    {
+        "path":  "A04/REPORT.md",
+        "bytes":  1858,
+        "sha256":  "57B36B21B09D5F31D572A673D26367A098F6E950E7E91F5D790BFC761D2D05F4"
+    },
+    {
+        "path":  "A05/AGGREGATE_RESULTS.json",
+        "bytes":  26518,
+        "sha256":  "26BCE537BB65929E536E133D2609429E005E87F9834FF0112F3CAEFDCD20FAA6"
+    },
+    {
+        "path":  "A05/PROTOCOL.json",
+        "bytes":  702,
+        "sha256":  "EDB3595FF6E68BA53D25D62728BE109E11C3C139F8237C136EA7D228D335379D"
+    },
+    {
+        "path":  "A05/REPORT.md",
+        "bytes":  2816,
+        "sha256":  "C4ABBBF2D23D2F5C17EBEA227A5480E55575BE68BCC6E717264E8653C73E688D"
+    },
+    {
+        "path":  "A10/AGGREGATE_RESULTS.json",
+        "bytes":  99482,
+        "sha256":  "E19DCF172905ACA1980B0D2342B0EC7CEB57D0AB45EB82D8BE3FF004B4E08B20"
+    },
+    {
+        "path":  "A10/REPORT.md",
+        "bytes":  2830,
+        "sha256":  "59C350A89858EDDD475F1654413F274C7D4FF76C03AD7E8384E65D77E150770A"
+    },
+    {
+        "path":  "manuscript_review/REVIEW_KO.md",
+        "bytes":  8312,
+        "sha256":  "255A7EDA73A0D8A921C30773A77860E2B3FE87A51F603E5192C8772EE54DA7F7"
+    }
+]

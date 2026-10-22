@@ -1,5 +1,11 @@
 # MiDM: Minimal Decision Models, and an audit of CLM-8B
 
+## Scenario research evidence — 2026-10-22
+
+[Measured results and limits](docs/research/scenario_additional_results_20261022.md) · [Feedback and improvements](docs/research/scenario_feedback_improvements_20261022.md) · [Detailed supplementary tables and review notes](docs/research/scenario_additional_details_20261022/README.md).
+
+This is a research-documentation update, not a new manuscript or model release. Masking does not establish absence of look-ahead contamination; full-trial DSR and PBO remain incomplete. GitHub publication was authorized on 2026-10-22. This documentation update does not update Zenodo, Hugging Face weights or report-generation scripts.
+
 ## Local research update — 2026-10-22
 
 [Additional scenario experiment results and limits](docs/research/scenario_additional_results_20261022.md) · [Feedback and improvement tracking](docs/research/scenario_feedback_improvements_20261022.md).

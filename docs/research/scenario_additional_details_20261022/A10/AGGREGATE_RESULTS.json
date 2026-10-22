@@ -1,0 +1,2016 @@
+{
+    "status":  "complete",
+    "rows":  [
+                 {
+                     "h":  5,
+                     "model":  "B3_probabilities",
+                     "method":  "ordinary_reused_calibration",
+                     "nominal":  0.5,
+                     "q":  0.8315628170967102,
+                     "all_classes":  false,
+                     "calibration_units":  240,
+                     "n":  677,
+                     "empirical_coverage":  0.5598227474150664,
+                     "coverage_ci80":  [
+                                           0.5140324963072378,
+                                           0.604135893648449
+                                       ],
+                     "mean_size":  2.2673559822747413,
+                     "median_size":  2.0,
+                     "size_distribution":  [
+                                               0,
+                                               114,
+                                               270,
+                                               291,
+                                               2,
+                                               0,
+                                               0,
+                                               0
+                                           ],
+                     "empty_fraction":  0.0,
+                     "all7_fraction":  0.0,
+                     "delta_vs_B3_pair_top2":  0.05169867060561295,
+                     "paired_delta_ci80":  [
+                                               0.0103397341211226,
+                                               0.09453471196454949
+                                           ],
+                     "per_class":  [
+                                       {
+                                           "rt":  1,
+                                           "n":  194,
+                                           "coverage":  0.9690721649484536
+                                       },
+                                       {
+                                           "rt":  2,
+                                           "n":  86,
+                                           "coverage":  0.05813953488372093
+                                       },
+                                       {
+                                           "rt":  3,
+                                           "n":  59,
+                                           "coverage":  0.01694915254237288
+                                       },
+                                       {
+                                           "rt":  4,
+                                           "n":  45,
+                                           "coverage":  0.0
+                                       },
+                                       {
+                                           "rt":  5,
+                                           "n":  112,
+                                           "coverage":  0.6785714285714286
+                                       },
+                                       {
+                                           "rt":  6,
+                                           "n":  60,
+                                           "coverage":  0.11666666666666667
+                                       },
+                                       {
+                                           "rt":  7,
+                                           "n":  121,
+                                           "coverage":  0.8429752066115702
+                                       }
+                                   ]
+                 },
+                 {
+                     "h":  5,
+                     "model":  "B3_probabilities",
+                     "method":  "ordinary_reused_calibration",
+                     "nominal":  0.8,
+                     "q":  0.9071493148803711,
+                     "all_classes":  false,
+                     "calibration_units":  240,
+                     "n":  677,
+                     "empirical_coverage":  0.8227474150664698,
+                     "coverage_ci80":  [
+                                           0.7769571639586411,
+                                           0.8655834564254062
+                                       ],
+                     "mean_size":  4.211225997045791,
+                     "median_size":  4.0,
+                     "size_distribution":  [
+                                               0,
+                                               0,
+                                               2,
+                                               131,
+                                               313,
+                                               184,
+                                               47,
+                                               0
+                                           ],
+                     "empty_fraction":  0.0,
+                     "all7_fraction":  0.0,
+                     "delta_vs_B3_pair_top2":  0.31462333825701627,
+                     "paired_delta_ci80":  [
+                                               0.27326440177252587,
+                                               0.35745937961595275
+                                           ],
+                     "per_class":  [
+                                       {
+                                           "rt":  1,
+                                           "n":  194,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  2,
+                                           "n":  86,
+                                           "coverage":  0.4069767441860465
+                                       },
+                                       {
+                                           "rt":  3,
+                                           "n":  59,
+                                           "coverage":  0.7457627118644068
+                                       },
+                                       {
+                                           "rt":  4,
+                                           "n":  45,
+                                           "coverage":  0.4222222222222222
+                                       },
+                                       {
+                                           "rt":  5,
+                                           "n":  112,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  6,
+                                           "n":  60,
+                                           "coverage":  0.6
+                                       },
+                                       {
+                                           "rt":  7,
+                                           "n":  121,
+                                           "coverage":  0.9669421487603306
+                                       }
+                                   ]
+                 },
+                 {
+                     "h":  5,
+                     "model":  "B3_probabilities",
+                     "method":  "ordinary_reused_calibration",
+                     "nominal":  0.9,
+                     "q":  0.9366205930709839,
+                     "all_classes":  false,
+                     "calibration_units":  240,
+                     "n":  677,
+                     "empirical_coverage":  0.9261447562776958,
+                     "coverage_ci80":  [
+                                           0.9084194977843427,
+                                           0.9453471196454948
+                                       ],
+                     "mean_size":  5.283604135893649,
+                     "median_size":  5.0,
+                     "size_distribution":  [
+                                               0,
+                                               0,
+                                               0,
+                                               1,
+                                               85,
+                                               359,
+                                               185,
+                                               47
+                                           ],
+                     "empty_fraction":  0.0,
+                     "all7_fraction":  0.06942392909896603,
+                     "delta_vs_B3_pair_top2":  0.4180206794682423,
+                     "paired_delta_ci80":  [
+                                               0.37370753323485967,
+                                               0.4638109305760709
+                                           ],
+                     "per_class":  [
+                                       {
+                                           "rt":  1,
+                                           "n":  194,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  2,
+                                           "n":  86,
+                                           "coverage":  0.8953488372093024
+                                       },
+                                       {
+                                           "rt":  3,
+                                           "n":  59,
+                                           "coverage":  0.864406779661017
+                                       },
+                                       {
+                                           "rt":  4,
+                                           "n":  45,
+                                           "coverage":  0.6444444444444445
+                                       },
+                                       {
+                                           "rt":  5,
+                                           "n":  112,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  6,
+                                           "n":  60,
+                                           "coverage":  0.7666666666666667
+                                       },
+                                       {
+                                           "rt":  7,
+                                           "n":  121,
+                                           "coverage":  0.9752066115702479
+                                       }
+                                   ]
+                 },
+                 {
+                     "h":  5,
+                     "model":  "B3_probabilities",
+                     "method":  "block80_max",
+                     "nominal":  0.5,
+                     "q":  0.9672247171401978,
+                     "all_classes":  false,
+                     "calibration_units":  3,
+                     "n":  677,
+                     "empirical_coverage":  0.9852289512555391,
+                     "coverage_ci80":  [
+                                           0.9734121122599705,
+                                           0.9955686853766618
+                                       ],
+                     "mean_size":  6.4785819793205315,
+                     "median_size":  7.0,
+                     "size_distribution":  [
+                                               0,
+                                               0,
+                                               0,
+                                               0,
+                                               0,
+                                               140,
+                                               73,
+                                               464
+                                           ],
+                     "empty_fraction":  0.0,
+                     "all7_fraction":  0.6853766617429837,
+                     "delta_vs_B3_pair_top2":  0.4771048744460856,
+                     "paired_delta_ci80":  [
+                                               0.4342688330871492,
+                                               0.5214180206794683
+                                           ],
+                     "per_class":  [
+                                       {
+                                           "rt":  1,
+                                           "n":  194,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  2,
+                                           "n":  86,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  3,
+                                           "n":  59,
+                                           "coverage":  0.9830508474576272
+                                       },
+                                       {
+                                           "rt":  4,
+                                           "n":  45,
+                                           "coverage":  0.9111111111111111
+                                       },
+                                       {
+                                           "rt":  5,
+                                           "n":  112,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  6,
+                                           "n":  60,
+                                           "coverage":  0.9166666666666666
+                                       },
+                                       {
+                                           "rt":  7,
+                                           "n":  121,
+                                           "coverage":  1.0
+                                       }
+                                   ]
+                 },
+                 {
+                     "h":  5,
+                     "model":  "B3_probabilities",
+                     "method":  "block80_max",
+                     "nominal":  0.8,
+                     "q":  null,
+                     "all_classes":  true,
+                     "calibration_units":  3,
+                     "n":  677,
+                     "empirical_coverage":  1.0,
+                     "coverage_ci80":  [
+                                           1.0,
+                                           1.0
+                                       ],
+                     "mean_size":  7.0,
+                     "median_size":  7.0,
+                     "size_distribution":  [
+                                               0,
+                                               0,
+                                               0,
+                                               0,
+                                               0,
+                                               0,
+                                               0,
+                                               677
+                                           ],
+                     "empty_fraction":  0.0,
+                     "all7_fraction":  1.0,
+                     "delta_vs_B3_pair_top2":  0.4918759231905465,
+                     "paired_delta_ci80":  [
+                                               0.44903988183161003,
+                                               0.5376661742983752
+                                           ],
+                     "per_class":  [
+                                       {
+                                           "rt":  1,
+                                           "n":  194,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  2,
+                                           "n":  86,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  3,
+                                           "n":  59,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  4,
+                                           "n":  45,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  5,
+                                           "n":  112,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  6,
+                                           "n":  60,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  7,
+                                           "n":  121,
+                                           "coverage":  1.0
+                                       }
+                                   ]
+                 },
+                 {
+                     "h":  5,
+                     "model":  "B3_probabilities",
+                     "method":  "block80_max",
+                     "nominal":  0.9,
+                     "q":  null,
+                     "all_classes":  true,
+                     "calibration_units":  3,
+                     "n":  677,
+                     "empirical_coverage":  1.0,
+                     "coverage_ci80":  [
+                                           1.0,
+                                           1.0
+                                       ],
+                     "mean_size":  7.0,
+                     "median_size":  7.0,
+                     "size_distribution":  [
+                                               0,
+                                               0,
+                                               0,
+                                               0,
+                                               0,
+                                               0,
+                                               0,
+                                               677
+                                           ],
+                     "empty_fraction":  0.0,
+                     "all7_fraction":  1.0,
+                     "delta_vs_B3_pair_top2":  0.4918759231905465,
+                     "paired_delta_ci80":  [
+                                               0.44903988183161003,
+                                               0.5376661742983752
+                                           ],
+                     "per_class":  [
+                                       {
+                                           "rt":  1,
+                                           "n":  194,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  2,
+                                           "n":  86,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  3,
+                                           "n":  59,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  4,
+                                           "n":  45,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  5,
+                                           "n":  112,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  6,
+                                           "n":  60,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  7,
+                                           "n":  121,
+                                           "coverage":  1.0
+                                       }
+                                   ]
+                 },
+                 {
+                     "h":  5,
+                     "model":  "B3_probabilities",
+                     "method":  "calibration_size_budget2",
+                     "nominal":  null,
+                     "q":  0.8301054239273071,
+                     "all_classes":  false,
+                     "calibration_units":  240,
+                     "calibration_mean_size":  2.0,
+                     "n":  677,
+                     "empirical_coverage":  0.5539143279172821,
+                     "coverage_ci80":  [
+                                           0.5066469719350074,
+                                           0.5997045790251108
+                                       ],
+                     "mean_size":  2.2392909896602657,
+                     "median_size":  2.0,
+                     "size_distribution":  [
+                                               0,
+                                               116,
+                                               284,
+                                               276,
+                                               1,
+                                               0,
+                                               0,
+                                               0
+                                           ],
+                     "empty_fraction":  0.0,
+                     "all7_fraction":  0.0,
+                     "delta_vs_B3_pair_top2":  0.04579025110782864,
+                     "paired_delta_ci80":  [
+                                               0.0029542097488921715,
+                                               0.09010339734121123
+                                           ],
+                     "per_class":  [
+                                       {
+                                           "rt":  1,
+                                           "n":  194,
+                                           "coverage":  0.9690721649484536
+                                       },
+                                       {
+                                           "rt":  2,
+                                           "n":  86,
+                                           "coverage":  0.046511627906976744
+                                       },
+                                       {
+                                           "rt":  3,
+                                           "n":  59,
+                                           "coverage":  0.01694915254237288
+                                       },
+                                       {
+                                           "rt":  4,
+                                           "n":  45,
+                                           "coverage":  0.0
+                                       },
+                                       {
+                                           "rt":  5,
+                                           "n":  112,
+                                           "coverage":  0.6517857142857143
+                                       },
+                                       {
+                                           "rt":  6,
+                                           "n":  60,
+                                           "coverage":  0.11666666666666667
+                                       },
+                                       {
+                                           "rt":  7,
+                                           "n":  121,
+                                           "coverage":  0.8429752066115702
+                                       }
+                                   ]
+                 },
+                 {
+                     "h":  5,
+                     "model":  "training_frequency",
+                     "method":  "ordinary_reused_calibration",
+                     "nominal":  0.5,
+                     "q":  0.8186995728523968,
+                     "all_classes":  false,
+                     "calibration_units":  240,
+                     "n":  677,
+                     "empirical_coverage":  0.6307237813884786,
+                     "coverage_ci80":  [
+                                           0.5849335302806499,
+                                           0.6794682422451994
+                                       ],
+                     "mean_size":  3.0,
+                     "median_size":  3.0,
+                     "size_distribution":  [
+                                               0,
+                                               0,
+                                               0,
+                                               677,
+                                               0,
+                                               0,
+                                               0,
+                                               0
+                                           ],
+                     "empty_fraction":  0.0,
+                     "all7_fraction":  0.0,
+                     "delta_vs_B3_pair_top2":  0.12259970457902514,
+                     "paired_delta_ci80":  [
+                                               0.07976366322008863,
+                                               0.1684268833087144
+                                           ],
+                     "per_class":  [
+                                       {
+                                           "rt":  1,
+                                           "n":  194,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  2,
+                                           "n":  86,
+                                           "coverage":  0.0
+                                       },
+                                       {
+                                           "rt":  3,
+                                           "n":  59,
+                                           "coverage":  0.0
+                                       },
+                                       {
+                                           "rt":  4,
+                                           "n":  45,
+                                           "coverage":  0.0
+                                       },
+                                       {
+                                           "rt":  5,
+                                           "n":  112,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  6,
+                                           "n":  60,
+                                           "coverage":  0.0
+                                       },
+                                       {
+                                           "rt":  7,
+                                           "n":  121,
+                                           "coverage":  1.0
+                                       }
+                                   ]
+                 },
+                 {
+                     "h":  5,
+                     "model":  "training_frequency",
+                     "method":  "ordinary_reused_calibration",
+                     "nominal":  0.8,
+                     "q":  0.9041290934978643,
+                     "all_classes":  false,
+                     "calibration_units":  240,
+                     "n":  677,
+                     "empirical_coverage":  0.9335302806499262,
+                     "coverage_ci80":  [
+                                           0.9158050221565731,
+                                           0.9497784342688331
+                                       ],
+                     "mean_size":  6.0,
+                     "median_size":  6.0,
+                     "size_distribution":  [
+                                               0,
+                                               0,
+                                               0,
+                                               0,
+                                               0,
+                                               0,
+                                               677,
+                                               0
+                                           ],
+                     "empty_fraction":  0.0,
+                     "all7_fraction":  0.0,
+                     "delta_vs_B3_pair_top2":  0.4254062038404727,
+                     "paired_delta_ci80":  [
+                                               0.38404726735598227,
+                                               0.46971935007385524
+                                           ],
+                     "per_class":  [
+                                       {
+                                           "rt":  1,
+                                           "n":  194,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  2,
+                                           "n":  86,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  3,
+                                           "n":  59,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  4,
+                                           "n":  45,
+                                           "coverage":  0.0
+                                       },
+                                       {
+                                           "rt":  5,
+                                           "n":  112,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  6,
+                                           "n":  60,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  7,
+                                           "n":  121,
+                                           "coverage":  1.0
+                                       }
+                                   ]
+                 },
+                 {
+                     "h":  5,
+                     "model":  "training_frequency",
+                     "method":  "ordinary_reused_calibration",
+                     "nominal":  0.9,
+                     "q":  0.9041290934978643,
+                     "all_classes":  false,
+                     "calibration_units":  240,
+                     "n":  677,
+                     "empirical_coverage":  0.9335302806499262,
+                     "coverage_ci80":  [
+                                           0.9158050221565731,
+                                           0.9497784342688331
+                                       ],
+                     "mean_size":  6.0,
+                     "median_size":  6.0,
+                     "size_distribution":  [
+                                               0,
+                                               0,
+                                               0,
+                                               0,
+                                               0,
+                                               0,
+                                               677,
+                                               0
+                                           ],
+                     "empty_fraction":  0.0,
+                     "all7_fraction":  0.0,
+                     "delta_vs_B3_pair_top2":  0.4254062038404727,
+                     "paired_delta_ci80":  [
+                                               0.38404726735598227,
+                                               0.46971935007385524
+                                           ],
+                     "per_class":  [
+                                       {
+                                           "rt":  1,
+                                           "n":  194,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  2,
+                                           "n":  86,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  3,
+                                           "n":  59,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  4,
+                                           "n":  45,
+                                           "coverage":  0.0
+                                       },
+                                       {
+                                           "rt":  5,
+                                           "n":  112,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  6,
+                                           "n":  60,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  7,
+                                           "n":  121,
+                                           "coverage":  1.0
+                                       }
+                                   ]
+                 },
+                 {
+                     "h":  5,
+                     "model":  "training_frequency",
+                     "method":  "block80_max",
+                     "nominal":  0.5,
+                     "q":  0.9439962031324157,
+                     "all_classes":  false,
+                     "calibration_units":  3,
+                     "n":  677,
+                     "empirical_coverage":  1.0,
+                     "coverage_ci80":  [
+                                           1.0,
+                                           1.0
+                                       ],
+                     "mean_size":  7.0,
+                     "median_size":  7.0,
+                     "size_distribution":  [
+                                               0,
+                                               0,
+                                               0,
+                                               0,
+                                               0,
+                                               0,
+                                               0,
+                                               677
+                                           ],
+                     "empty_fraction":  0.0,
+                     "all7_fraction":  1.0,
+                     "delta_vs_B3_pair_top2":  0.4918759231905465,
+                     "paired_delta_ci80":  [
+                                               0.44903988183161003,
+                                               0.5376661742983752
+                                           ],
+                     "per_class":  [
+                                       {
+                                           "rt":  1,
+                                           "n":  194,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  2,
+                                           "n":  86,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  3,
+                                           "n":  59,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  4,
+                                           "n":  45,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  5,
+                                           "n":  112,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  6,
+                                           "n":  60,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  7,
+                                           "n":  121,
+                                           "coverage":  1.0
+                                       }
+                                   ]
+                 },
+                 {
+                     "h":  5,
+                     "model":  "training_frequency",
+                     "method":  "block80_max",
+                     "nominal":  0.8,
+                     "q":  null,
+                     "all_classes":  true,
+                     "calibration_units":  3,
+                     "n":  677,
+                     "empirical_coverage":  1.0,
+                     "coverage_ci80":  [
+                                           1.0,
+                                           1.0
+                                       ],
+                     "mean_size":  7.0,
+                     "median_size":  7.0,
+                     "size_distribution":  [
+                                               0,
+                                               0,
+                                               0,
+                                               0,
+                                               0,
+                                               0,
+                                               0,
+                                               677
+                                           ],
+                     "empty_fraction":  0.0,
+                     "all7_fraction":  1.0,
+                     "delta_vs_B3_pair_top2":  0.4918759231905465,
+                     "paired_delta_ci80":  [
+                                               0.44903988183161003,
+                                               0.5376661742983752
+                                           ],
+                     "per_class":  [
+                                       {
+                                           "rt":  1,
+                                           "n":  194,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  2,
+                                           "n":  86,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  3,
+                                           "n":  59,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  4,
+                                           "n":  45,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  5,
+                                           "n":  112,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  6,
+                                           "n":  60,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  7,
+                                           "n":  121,
+                                           "coverage":  1.0
+                                       }
+                                   ]
+                 },
+                 {
+                     "h":  5,
+                     "model":  "training_frequency",
+                     "method":  "block80_max",
+                     "nominal":  0.9,
+                     "q":  null,
+                     "all_classes":  true,
+                     "calibration_units":  3,
+                     "n":  677,
+                     "empirical_coverage":  1.0,
+                     "coverage_ci80":  [
+                                           1.0,
+                                           1.0
+                                       ],
+                     "mean_size":  7.0,
+                     "median_size":  7.0,
+                     "size_distribution":  [
+                                               0,
+                                               0,
+                                               0,
+                                               0,
+                                               0,
+                                               0,
+                                               0,
+                                               677
+                                           ],
+                     "empty_fraction":  0.0,
+                     "all7_fraction":  1.0,
+                     "delta_vs_B3_pair_top2":  0.4918759231905465,
+                     "paired_delta_ci80":  [
+                                               0.44903988183161003,
+                                               0.5376661742983752
+                                           ],
+                     "per_class":  [
+                                       {
+                                           "rt":  1,
+                                           "n":  194,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  2,
+                                           "n":  86,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  3,
+                                           "n":  59,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  4,
+                                           "n":  45,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  5,
+                                           "n":  112,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  6,
+                                           "n":  60,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  7,
+                                           "n":  121,
+                                           "coverage":  1.0
+                                       }
+                                   ]
+                 },
+                 {
+                     "h":  5,
+                     "model":  "training_frequency",
+                     "method":  "calibration_size_budget2",
+                     "nominal":  null,
+                     "q":  0.8035121025154248,
+                     "all_classes":  false,
+                     "calibration_units":  240,
+                     "calibration_mean_size":  2.0,
+                     "n":  677,
+                     "empirical_coverage":  0.465288035450517,
+                     "coverage_ci80":  [
+                                           0.3988183161004431,
+                                           0.5228951255539144
+                                       ],
+                     "mean_size":  2.0,
+                     "median_size":  2.0,
+                     "size_distribution":  [
+                                               0,
+                                               0,
+                                               677,
+                                               0,
+                                               0,
+                                               0,
+                                               0,
+                                               0
+                                           ],
+                     "empty_fraction":  0.0,
+                     "all7_fraction":  0.0,
+                     "delta_vs_B3_pair_top2":  -0.04283604135893648,
+                     "paired_delta_ci80":  [
+                                               -0.10635155096011817,
+                                               0.01624815361890694
+                                           ],
+                     "per_class":  [
+                                       {
+                                           "rt":  1,
+                                           "n":  194,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  2,
+                                           "n":  86,
+                                           "coverage":  0.0
+                                       },
+                                       {
+                                           "rt":  3,
+                                           "n":  59,
+                                           "coverage":  0.0
+                                       },
+                                       {
+                                           "rt":  4,
+                                           "n":  45,
+                                           "coverage":  0.0
+                                       },
+                                       {
+                                           "rt":  5,
+                                           "n":  112,
+                                           "coverage":  0.0
+                                       },
+                                       {
+                                           "rt":  6,
+                                           "n":  60,
+                                           "coverage":  0.0
+                                       },
+                                       {
+                                           "rt":  7,
+                                           "n":  121,
+                                           "coverage":  1.0
+                                       }
+                                   ]
+                 },
+                 {
+                     "h":  5,
+                     "model":  "B3_pair_Top2",
+                     "method":  "fixed2",
+                     "nominal":  null,
+                     "n":  677,
+                     "empirical_coverage":  0.5081240768094535,
+                     "mean_size":  2.0
+                 },
+                 {
+                     "h":  20,
+                     "model":  "B3_probabilities",
+                     "method":  "ordinary_reused_calibration",
+                     "nominal":  0.5,
+                     "q":  0.8207579851150513,
+                     "all_classes":  false,
+                     "calibration_units":  210,
+                     "n":  647,
+                     "empirical_coverage":  0.4652241112828439,
+                     "coverage_ci80":  [
+                                           0.38176197836166925,
+                                           0.5548686244204019
+                                       ],
+                     "mean_size":  1.5641421947449767,
+                     "median_size":  2.0,
+                     "size_distribution":  [
+                                               0,
+                                               308,
+                                               313,
+                                               26,
+                                               0,
+                                               0,
+                                               0,
+                                               0
+                                           ],
+                     "empty_fraction":  0.0,
+                     "all7_fraction":  0.0,
+                     "delta_vs_B3_pair_top2":  -0.09428129829984544,
+                     "paired_delta_ci80":  [
+                                               -0.13446676970633695,
+                                               -0.055602782071097936
+                                           ],
+                     "per_class":  [
+                                       {
+                                           "rt":  1,
+                                           "n":  223,
+                                           "coverage":  0.6547085201793722
+                                       },
+                                       {
+                                           "rt":  2,
+                                           "n":  74,
+                                           "coverage":  0.04054054054054054
+                                       },
+                                       {
+                                           "rt":  3,
+                                           "n":  23,
+                                           "coverage":  0.0
+                                       },
+                                       {
+                                           "rt":  4,
+                                           "n":  38,
+                                           "coverage":  0.0
+                                       },
+                                       {
+                                           "rt":  5,
+                                           "n":  59,
+                                           "coverage":  0.01694915254237288
+                                       },
+                                       {
+                                           "rt":  6,
+                                           "n":  151,
+                                           "coverage":  0.7549668874172185
+                                       },
+                                       {
+                                           "rt":  7,
+                                           "n":  79,
+                                           "coverage":  0.46835443037974683
+                                       }
+                                   ]
+                 },
+                 {
+                     "h":  20,
+                     "model":  "B3_probabilities",
+                     "method":  "ordinary_reused_calibration",
+                     "nominal":  0.8,
+                     "q":  0.9005331993103027,
+                     "all_classes":  false,
+                     "calibration_units":  210,
+                     "n":  647,
+                     "empirical_coverage":  0.8176197836166924,
+                     "coverage_ci80":  [
+                                           0.7604327666151468,
+                                           0.8732612055641422
+                                       ],
+                     "mean_size":  3.8160741885625966,
+                     "median_size":  4.0,
+                     "size_distribution":  [
+                                               0,
+                                               25,
+                                               75,
+                                               112,
+                                               264,
+                                               124,
+                                               47,
+                                               0
+                                           ],
+                     "empty_fraction":  0.0,
+                     "all7_fraction":  0.0,
+                     "delta_vs_B3_pair_top2":  0.25811437403400306,
+                     "paired_delta_ci80":  [
+                                               0.1777434312210201,
+                                               0.3369397217928903
+                                           ],
+                     "per_class":  [
+                                       {
+                                           "rt":  1,
+                                           "n":  223,
+                                           "coverage":  0.968609865470852
+                                       },
+                                       {
+                                           "rt":  2,
+                                           "n":  74,
+                                           "coverage":  0.5540540540540541
+                                       },
+                                       {
+                                           "rt":  3,
+                                           "n":  23,
+                                           "coverage":  0.17391304347826086
+                                       },
+                                       {
+                                           "rt":  4,
+                                           "n":  38,
+                                           "coverage":  0.2631578947368421
+                                       },
+                                       {
+                                           "rt":  5,
+                                           "n":  59,
+                                           "coverage":  0.8983050847457628
+                                       },
+                                       {
+                                           "rt":  6,
+                                           "n":  151,
+                                           "coverage":  0.9536423841059603
+                                       },
+                                       {
+                                           "rt":  7,
+                                           "n":  79,
+                                           "coverage":  0.7721518987341772
+                                       }
+                                   ]
+                 },
+                 {
+                     "h":  20,
+                     "model":  "B3_probabilities",
+                     "method":  "ordinary_reused_calibration",
+                     "nominal":  0.9,
+                     "q":  0.9353976249694824,
+                     "all_classes":  false,
+                     "calibration_units":  210,
+                     "n":  647,
+                     "empirical_coverage":  0.9690880989180835,
+                     "coverage_ci80":  [
+                                           0.9505409582689336,
+                                           0.9860896445131375
+                                       ],
+                     "mean_size":  5.93353941267388,
+                     "median_size":  6.0,
+                     "size_distribution":  [
+                                               0,
+                                               0,
+                                               1,
+                                               0,
+                                               28,
+                                               201,
+                                               199,
+                                               218
+                                           ],
+                     "empty_fraction":  0.0,
+                     "all7_fraction":  0.3369397217928903,
+                     "delta_vs_B3_pair_top2":  0.4095826893353941,
+                     "paired_delta_ci80":  [
+                                               0.3369397217928903,
+                                               0.4760432766615147
+                                           ],
+                     "per_class":  [
+                                       {
+                                           "rt":  1,
+                                           "n":  223,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  2,
+                                           "n":  74,
+                                           "coverage":  0.9459459459459459
+                                       },
+                                       {
+                                           "rt":  3,
+                                           "n":  23,
+                                           "coverage":  0.6956521739130435
+                                       },
+                                       {
+                                           "rt":  4,
+                                           "n":  38,
+                                           "coverage":  0.9473684210526315
+                                       },
+                                       {
+                                           "rt":  5,
+                                           "n":  59,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  6,
+                                           "n":  151,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  7,
+                                           "n":  79,
+                                           "coverage":  0.9113924050632911
+                                       }
+                                   ]
+                 },
+                 {
+                     "h":  20,
+                     "model":  "B3_probabilities",
+                     "method":  "block80_max",
+                     "nominal":  0.5,
+                     "q":  0.9575653076171875,
+                     "all_classes":  false,
+                     "calibration_units":  2,
+                     "n":  647,
+                     "empirical_coverage":  1.0,
+                     "coverage_ci80":  [
+                                           1.0,
+                                           1.0
+                                       ],
+                     "mean_size":  7.0,
+                     "median_size":  7.0,
+                     "size_distribution":  [
+                                               0,
+                                               0,
+                                               0,
+                                               0,
+                                               0,
+                                               0,
+                                               0,
+                                               647
+                                           ],
+                     "empty_fraction":  0.0,
+                     "all7_fraction":  1.0,
+                     "delta_vs_B3_pair_top2":  0.44049459041731065,
+                     "paired_delta_ci80":  [
+                                               0.3616692426584235,
+                                               0.5100463678516228
+                                           ],
+                     "per_class":  [
+                                       {
+                                           "rt":  1,
+                                           "n":  223,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  2,
+                                           "n":  74,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  3,
+                                           "n":  23,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  4,
+                                           "n":  38,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  5,
+                                           "n":  59,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  6,
+                                           "n":  151,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  7,
+                                           "n":  79,
+                                           "coverage":  1.0
+                                       }
+                                   ]
+                 },
+                 {
+                     "h":  20,
+                     "model":  "B3_probabilities",
+                     "method":  "block80_max",
+                     "nominal":  0.8,
+                     "q":  null,
+                     "all_classes":  true,
+                     "calibration_units":  2,
+                     "n":  647,
+                     "empirical_coverage":  1.0,
+                     "coverage_ci80":  [
+                                           1.0,
+                                           1.0
+                                       ],
+                     "mean_size":  7.0,
+                     "median_size":  7.0,
+                     "size_distribution":  [
+                                               0,
+                                               0,
+                                               0,
+                                               0,
+                                               0,
+                                               0,
+                                               0,
+                                               647
+                                           ],
+                     "empty_fraction":  0.0,
+                     "all7_fraction":  1.0,
+                     "delta_vs_B3_pair_top2":  0.44049459041731065,
+                     "paired_delta_ci80":  [
+                                               0.3616692426584235,
+                                               0.5100463678516228
+                                           ],
+                     "per_class":  [
+                                       {
+                                           "rt":  1,
+                                           "n":  223,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  2,
+                                           "n":  74,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  3,
+                                           "n":  23,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  4,
+                                           "n":  38,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  5,
+                                           "n":  59,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  6,
+                                           "n":  151,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  7,
+                                           "n":  79,
+                                           "coverage":  1.0
+                                       }
+                                   ]
+                 },
+                 {
+                     "h":  20,
+                     "model":  "B3_probabilities",
+                     "method":  "block80_max",
+                     "nominal":  0.9,
+                     "q":  null,
+                     "all_classes":  true,
+                     "calibration_units":  2,
+                     "n":  647,
+                     "empirical_coverage":  1.0,
+                     "coverage_ci80":  [
+                                           1.0,
+                                           1.0
+                                       ],
+                     "mean_size":  7.0,
+                     "median_size":  7.0,
+                     "size_distribution":  [
+                                               0,
+                                               0,
+                                               0,
+                                               0,
+                                               0,
+                                               0,
+                                               0,
+                                               647
+                                           ],
+                     "empty_fraction":  0.0,
+                     "all7_fraction":  1.0,
+                     "delta_vs_B3_pair_top2":  0.44049459041731065,
+                     "paired_delta_ci80":  [
+                                               0.3616692426584235,
+                                               0.5100463678516228
+                                           ],
+                     "per_class":  [
+                                       {
+                                           "rt":  1,
+                                           "n":  223,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  2,
+                                           "n":  74,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  3,
+                                           "n":  23,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  4,
+                                           "n":  38,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  5,
+                                           "n":  59,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  6,
+                                           "n":  151,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  7,
+                                           "n":  79,
+                                           "coverage":  1.0
+                                       }
+                                   ]
+                 },
+                 {
+                     "h":  20,
+                     "model":  "B3_probabilities",
+                     "method":  "calibration_size_budget2",
+                     "nominal":  null,
+                     "q":  0.8225919604301453,
+                     "all_classes":  false,
+                     "calibration_units":  210,
+                     "calibration_mean_size":  2.0,
+                     "n":  647,
+                     "empirical_coverage":  0.46986089644513135,
+                     "coverage_ci80":  [
+                                           0.38639876352395675,
+                                           0.5579598145285936
+                                       ],
+                     "mean_size":  1.5795981452859351,
+                     "median_size":  2.0,
+                     "size_distribution":  [
+                                               0,
+                                               300,
+                                               319,
+                                               28,
+                                               0,
+                                               0,
+                                               0,
+                                               0
+                                           ],
+                     "empty_fraction":  0.0,
+                     "all7_fraction":  0.0,
+                     "delta_vs_B3_pair_top2":  -0.089644513137558,
+                     "paired_delta_ci80":  [
+                                               -0.13137557959814528,
+                                               -0.04945904173106646
+                                           ],
+                     "per_class":  [
+                                       {
+                                           "rt":  1,
+                                           "n":  223,
+                                           "coverage":  0.6591928251121076
+                                       },
+                                       {
+                                           "rt":  2,
+                                           "n":  74,
+                                           "coverage":  0.05405405405405406
+                                       },
+                                       {
+                                           "rt":  3,
+                                           "n":  23,
+                                           "coverage":  0.0
+                                       },
+                                       {
+                                           "rt":  4,
+                                           "n":  38,
+                                           "coverage":  0.0
+                                       },
+                                       {
+                                           "rt":  5,
+                                           "n":  59,
+                                           "coverage":  0.03389830508474576
+                                       },
+                                       {
+                                           "rt":  6,
+                                           "n":  151,
+                                           "coverage":  0.7549668874172185
+                                       },
+                                       {
+                                           "rt":  7,
+                                           "n":  79,
+                                           "coverage":  0.46835443037974683
+                                       }
+                                   ]
+                 },
+                 {
+                     "h":  20,
+                     "model":  "training_frequency",
+                     "method":  "ordinary_reused_calibration",
+                     "nominal":  0.5,
+                     "q":  0.7558979297063072,
+                     "all_classes":  false,
+                     "calibration_units":  210,
+                     "n":  647,
+                     "empirical_coverage":  0.5780525502318392,
+                     "coverage_ci80":  [
+                                           0.4435857805255023,
+                                           0.7063369397217929
+                                       ],
+                     "mean_size":  2.0,
+                     "median_size":  2.0,
+                     "size_distribution":  [
+                                               0,
+                                               0,
+                                               647,
+                                               0,
+                                               0,
+                                               0,
+                                               0,
+                                               0
+                                           ],
+                     "empty_fraction":  0.0,
+                     "all7_fraction":  0.0,
+                     "delta_vs_B3_pair_top2":  0.018547140649149862,
+                     "paired_delta_ci80":  [
+                                               -0.080370942812983,
+                                               0.125193199381762
+                                           ],
+                     "per_class":  [
+                                       {
+                                           "rt":  1,
+                                           "n":  223,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  2,
+                                           "n":  74,
+                                           "coverage":  0.0
+                                       },
+                                       {
+                                           "rt":  3,
+                                           "n":  23,
+                                           "coverage":  0.0
+                                       },
+                                       {
+                                           "rt":  4,
+                                           "n":  38,
+                                           "coverage":  0.0
+                                       },
+                                       {
+                                           "rt":  5,
+                                           "n":  59,
+                                           "coverage":  0.0
+                                       },
+                                       {
+                                           "rt":  6,
+                                           "n":  151,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  7,
+                                           "n":  79,
+                                           "coverage":  0.0
+                                       }
+                                   ]
+                 },
+                 {
+                     "h":  20,
+                     "model":  "training_frequency",
+                     "method":  "ordinary_reused_calibration",
+                     "nominal":  0.8,
+                     "q":  0.8801155512758787,
+                     "all_classes":  false,
+                     "calibration_units":  210,
+                     "n":  647,
+                     "empirical_coverage":  0.9057187017001546,
+                     "coverage_ci80":  [
+                                           0.874806800618238,
+                                           0.9366306027820711
+                                       ],
+                     "mean_size":  5.0,
+                     "median_size":  5.0,
+                     "size_distribution":  [
+                                               0,
+                                               0,
+                                               0,
+                                               0,
+                                               0,
+                                               647,
+                                               0,
+                                               0
+                                           ],
+                     "empty_fraction":  0.0,
+                     "all7_fraction":  0.0,
+                     "delta_vs_B3_pair_top2":  0.3462132921174652,
+                     "paired_delta_ci80":  [
+                                               0.2581143740340031,
+                                               0.4265842349304482
+                                           ],
+                     "per_class":  [
+                                       {
+                                           "rt":  1,
+                                           "n":  223,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  2,
+                                           "n":  74,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  3,
+                                           "n":  23,
+                                           "coverage":  0.0
+                                       },
+                                       {
+                                           "rt":  4,
+                                           "n":  38,
+                                           "coverage":  0.0
+                                       },
+                                       {
+                                           "rt":  5,
+                                           "n":  59,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  6,
+                                           "n":  151,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  7,
+                                           "n":  79,
+                                           "coverage":  1.0
+                                       }
+                                   ]
+                 },
+                 {
+                     "h":  20,
+                     "model":  "training_frequency",
+                     "method":  "ordinary_reused_calibration",
+                     "nominal":  0.9,
+                     "q":  0.8801155512758787,
+                     "all_classes":  false,
+                     "calibration_units":  210,
+                     "n":  647,
+                     "empirical_coverage":  0.9057187017001546,
+                     "coverage_ci80":  [
+                                           0.874806800618238,
+                                           0.9366306027820711
+                                       ],
+                     "mean_size":  5.0,
+                     "median_size":  5.0,
+                     "size_distribution":  [
+                                               0,
+                                               0,
+                                               0,
+                                               0,
+                                               0,
+                                               647,
+                                               0,
+                                               0
+                                           ],
+                     "empty_fraction":  0.0,
+                     "all7_fraction":  0.0,
+                     "delta_vs_B3_pair_top2":  0.3462132921174652,
+                     "paired_delta_ci80":  [
+                                               0.2581143740340031,
+                                               0.4265842349304482
+                                           ],
+                     "per_class":  [
+                                       {
+                                           "rt":  1,
+                                           "n":  223,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  2,
+                                           "n":  74,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  3,
+                                           "n":  23,
+                                           "coverage":  0.0
+                                       },
+                                       {
+                                           "rt":  4,
+                                           "n":  38,
+                                           "coverage":  0.0
+                                       },
+                                       {
+                                           "rt":  5,
+                                           "n":  59,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  6,
+                                           "n":  151,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  7,
+                                           "n":  79,
+                                           "coverage":  1.0
+                                       }
+                                   ]
+                 },
+                 {
+                     "h":  20,
+                     "model":  "training_frequency",
+                     "method":  "block80_max",
+                     "nominal":  0.5,
+                     "q":  0.9643716899374097,
+                     "all_classes":  false,
+                     "calibration_units":  2,
+                     "n":  647,
+                     "empirical_coverage":  1.0,
+                     "coverage_ci80":  [
+                                           1.0,
+                                           1.0
+                                       ],
+                     "mean_size":  7.0,
+                     "median_size":  7.0,
+                     "size_distribution":  [
+                                               0,
+                                               0,
+                                               0,
+                                               0,
+                                               0,
+                                               0,
+                                               0,
+                                               647
+                                           ],
+                     "empty_fraction":  0.0,
+                     "all7_fraction":  1.0,
+                     "delta_vs_B3_pair_top2":  0.44049459041731065,
+                     "paired_delta_ci80":  [
+                                               0.3616692426584235,
+                                               0.5100463678516228
+                                           ],
+                     "per_class":  [
+                                       {
+                                           "rt":  1,
+                                           "n":  223,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  2,
+                                           "n":  74,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  3,
+                                           "n":  23,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  4,
+                                           "n":  38,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  5,
+                                           "n":  59,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  6,
+                                           "n":  151,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  7,
+                                           "n":  79,
+                                           "coverage":  1.0
+                                       }
+                                   ]
+                 },
+                 {
+                     "h":  20,
+                     "model":  "training_frequency",
+                     "method":  "block80_max",
+                     "nominal":  0.8,
+                     "q":  null,
+                     "all_classes":  true,
+                     "calibration_units":  2,
+                     "n":  647,
+                     "empirical_coverage":  1.0,
+                     "coverage_ci80":  [
+                                           1.0,
+                                           1.0
+                                       ],
+                     "mean_size":  7.0,
+                     "median_size":  7.0,
+                     "size_distribution":  [
+                                               0,
+                                               0,
+                                               0,
+                                               0,
+                                               0,
+                                               0,
+                                               0,
+                                               647
+                                           ],
+                     "empty_fraction":  0.0,
+                     "all7_fraction":  1.0,
+                     "delta_vs_B3_pair_top2":  0.44049459041731065,
+                     "paired_delta_ci80":  [
+                                               0.3616692426584235,
+                                               0.5100463678516228
+                                           ],
+                     "per_class":  [
+                                       {
+                                           "rt":  1,
+                                           "n":  223,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  2,
+                                           "n":  74,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  3,
+                                           "n":  23,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  4,
+                                           "n":  38,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  5,
+                                           "n":  59,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  6,
+                                           "n":  151,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  7,
+                                           "n":  79,
+                                           "coverage":  1.0
+                                       }
+                                   ]
+                 },
+                 {
+                     "h":  20,
+                     "model":  "training_frequency",
+                     "method":  "block80_max",
+                     "nominal":  0.9,
+                     "q":  null,
+                     "all_classes":  true,
+                     "calibration_units":  2,
+                     "n":  647,
+                     "empirical_coverage":  1.0,
+                     "coverage_ci80":  [
+                                           1.0,
+                                           1.0
+                                       ],
+                     "mean_size":  7.0,
+                     "median_size":  7.0,
+                     "size_distribution":  [
+                                               0,
+                                               0,
+                                               0,
+                                               0,
+                                               0,
+                                               0,
+                                               0,
+                                               647
+                                           ],
+                     "empty_fraction":  0.0,
+                     "all7_fraction":  1.0,
+                     "delta_vs_B3_pair_top2":  0.44049459041731065,
+                     "paired_delta_ci80":  [
+                                               0.3616692426584235,
+                                               0.5100463678516228
+                                           ],
+                     "per_class":  [
+                                       {
+                                           "rt":  1,
+                                           "n":  223,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  2,
+                                           "n":  74,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  3,
+                                           "n":  23,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  4,
+                                           "n":  38,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  5,
+                                           "n":  59,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  6,
+                                           "n":  151,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  7,
+                                           "n":  79,
+                                           "coverage":  1.0
+                                       }
+                                   ]
+                 },
+                 {
+                     "h":  20,
+                     "model":  "training_frequency",
+                     "method":  "calibration_size_budget2",
+                     "nominal":  null,
+                     "q":  0.7558979297063072,
+                     "all_classes":  false,
+                     "calibration_units":  210,
+                     "calibration_mean_size":  2.0,
+                     "n":  647,
+                     "empirical_coverage":  0.5780525502318392,
+                     "coverage_ci80":  [
+                                           0.4435857805255023,
+                                           0.7063369397217929
+                                       ],
+                     "mean_size":  2.0,
+                     "median_size":  2.0,
+                     "size_distribution":  [
+                                               0,
+                                               0,
+                                               647,
+                                               0,
+                                               0,
+                                               0,
+                                               0,
+                                               0
+                                           ],
+                     "empty_fraction":  0.0,
+                     "all7_fraction":  0.0,
+                     "delta_vs_B3_pair_top2":  0.018547140649149862,
+                     "paired_delta_ci80":  [
+                                               -0.080370942812983,
+                                               0.125193199381762
+                                           ],
+                     "per_class":  [
+                                       {
+                                           "rt":  1,
+                                           "n":  223,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  2,
+                                           "n":  74,
+                                           "coverage":  0.0
+                                       },
+                                       {
+                                           "rt":  3,
+                                           "n":  23,
+                                           "coverage":  0.0
+                                       },
+                                       {
+                                           "rt":  4,
+                                           "n":  38,
+                                           "coverage":  0.0
+                                       },
+                                       {
+                                           "rt":  5,
+                                           "n":  59,
+                                           "coverage":  0.0
+                                       },
+                                       {
+                                           "rt":  6,
+                                           "n":  151,
+                                           "coverage":  1.0
+                                       },
+                                       {
+                                           "rt":  7,
+                                           "n":  79,
+                                           "coverage":  0.0
+                                       }
+                                   ]
+                 },
+                 {
+                     "h":  20,
+                     "model":  "B3_pair_Top2",
+                     "method":  "fixed2",
+                     "nominal":  null,
+                     "n":  647,
+                     "empirical_coverage":  0.5595054095826894,
+                     "mean_size":  2.0
+                 }
+             ],
+    "note":  "Retrospective calibration diagnostic; 80 in ci80 keys denotes block length, not confidence level. Quantiles .025/.975 give nominal95% intervals."
+}

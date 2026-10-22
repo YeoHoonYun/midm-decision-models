@@ -1,0 +1,755 @@
+{
+  "status": "complete_with_explicit_limits",
+  "results": {
+    "SP500_h5": {
+      "B3-1": {
+        "n": 681,
+        "annualized_Sharpe": 0.6091000337892811,
+        "DSR_sensitivity": {
+          "50": {
+            "DSR": 0.6113809878956745,
+            "one_minus_DSR": 0.3886190121043255,
+            "benchmark_daily_Sharpe": 0.02778687128646362
+          },
+          "412": {
+            "DSR": 0.5194429977356028,
+            "one_minus_DSR": 0.48055700226439724,
+            "benchmark_daily_Sharpe": 0.03654595585146153
+          }
+        },
+        "trial_variance_proxy": 0.0001490112718456219,
+        "proxy_policy_count": 8,
+        "paired_stationary_test": {
+          "delta_annualized_Sharpe": -0.26461724387739893,
+          "p_two_sided": 0.28523825391536156,
+          "studentized_ci95": [
+            -0.8364440961109076,
+            0.18542651576991825
+          ],
+          "valid_resamples": 3000,
+          "degenerate_resamples": 0,
+          "reference": "scheduled_long",
+          "inference_status": "calculated_under_stationarity_assumptions"
+        }
+      },
+      "B3-1_fixed_exit": {
+        "n": 681,
+        "annualized_Sharpe": 0.771184476897625,
+        "DSR_sensitivity": {
+          "50": {
+            "DSR": 0.711947195971703,
+            "one_minus_DSR": 0.288052804028297,
+            "benchmark_daily_Sharpe": 0.02778687128646362
+          },
+          "412": {
+            "DSR": 0.6268682090343782,
+            "one_minus_DSR": 0.37313179096562177,
+            "benchmark_daily_Sharpe": 0.03654595585146153
+          }
+        },
+        "trial_variance_proxy": 0.0001490112718456219,
+        "proxy_policy_count": 8,
+        "paired_stationary_test": {
+          "delta_annualized_Sharpe": -0.10253280076905504,
+          "p_two_sided": 0.6401199600133289,
+          "studentized_ci95": [
+            -0.5533895642123088,
+            0.28763756797020157
+          ],
+          "valid_resamples": 3000,
+          "degenerate_resamples": 0,
+          "reference": "scheduled_long",
+          "inference_status": "calculated_under_stationarity_assumptions"
+        }
+      },
+      "B3-2": {
+        "n": 681,
+        "annualized_Sharpe": 0.8008013457935897,
+        "DSR_sensitivity": {
+          "50": {
+            "DSR": 0.717485191570125,
+            "one_minus_DSR": 0.282514808429875,
+            "benchmark_daily_Sharpe": 0.02778687128646362
+          },
+          "412": {
+            "DSR": 0.6379421262578895,
+            "one_minus_DSR": 0.3620578737421105,
+            "benchmark_daily_Sharpe": 0.03654595585146153
+          }
+        },
+        "trial_variance_proxy": 0.0001490112718456219,
+        "proxy_policy_count": 8,
+        "paired_stationary_test": {
+          "delta_annualized_Sharpe": -0.07291593187309038,
+          "p_two_sided": 0.8450516494501833,
+          "studentized_ci95": [
+            -0.8237861381110252,
+            0.6546211754507858
+          ],
+          "valid_resamples": 3000,
+          "degenerate_resamples": 0,
+          "reference": "scheduled_long",
+          "inference_status": "calculated_under_stationarity_assumptions"
+        }
+      },
+      "B3-2_fixed_exit": {
+        "n": 681,
+        "annualized_Sharpe": 0.8886561619624489,
+        "DSR_sensitivity": {
+          "50": {
+            "DSR": 0.7656714497794009,
+            "one_minus_DSR": 0.23432855022059906,
+            "benchmark_daily_Sharpe": 0.02778687128646362
+          },
+          "412": {
+            "DSR": 0.6912955988329598,
+            "one_minus_DSR": 0.30870440116704023,
+            "benchmark_daily_Sharpe": 0.03654595585146153
+          }
+        },
+        "trial_variance_proxy": 0.0001490112718456219,
+        "proxy_policy_count": 8,
+        "paired_stationary_test": {
+          "delta_annualized_Sharpe": 0.014938884295768742,
+          "p_two_sided": 0.9496834388537154,
+          "studentized_ci95": [
+            -0.37192071759751066,
+            0.54734910986936
+          ],
+          "valid_resamples": 3000,
+          "degenerate_resamples": 0,
+          "reference": "scheduled_long",
+          "inference_status": "calculated_under_stationarity_assumptions"
+        }
+      },
+      "B3-3": {
+        "n": 681,
+        "annualized_Sharpe": 0.8039954047657643,
+        "DSR_sensitivity": {
+          "50": {
+            "DSR": 0.7084822146268706,
+            "one_minus_DSR": 0.29151778537312945,
+            "benchmark_daily_Sharpe": 0.02778687128646362
+          },
+          "412": {
+            "DSR": 0.6325511198326893,
+            "one_minus_DSR": 0.3674488801673107,
+            "benchmark_daily_Sharpe": 0.03654595585146153
+          }
+        },
+        "trial_variance_proxy": 0.0001490112718456219,
+        "proxy_policy_count": 8,
+        "paired_stationary_test": {
+          "delta_annualized_Sharpe": -0.06972187290091583,
+          "p_two_sided": 0.8770409863378874,
+          "studentized_ci95": [
+            -1.3112203256457982,
+            0.6997216993253014
+          ],
+          "valid_resamples": 3000,
+          "degenerate_resamples": 0,
+          "reference": "scheduled_long",
+          "inference_status": "calculated_under_stationarity_assumptions"
+        }
+      },
+      "B3-3_fixed_exit": {
+        "n": 681,
+        "annualized_Sharpe": 0.8039954047657643,
+        "DSR_sensitivity": {
+          "50": {
+            "DSR": 0.7084822146268706,
+            "one_minus_DSR": 0.29151778537312945,
+            "benchmark_daily_Sharpe": 0.02778687128646362
+          },
+          "412": {
+            "DSR": 0.6325511198326893,
+            "one_minus_DSR": 0.3674488801673107,
+            "benchmark_daily_Sharpe": 0.03654595585146153
+          }
+        },
+        "trial_variance_proxy": 0.0001490112718456219,
+        "proxy_policy_count": 8,
+        "paired_stationary_test": {
+          "delta_annualized_Sharpe": -0.06972187290091583,
+          "p_two_sided": 0.8770409863378874,
+          "studentized_ci95": [
+            -1.3112203256457982,
+            0.6997216993253014
+          ],
+          "valid_resamples": 3000,
+          "degenerate_resamples": 0,
+          "reference": "scheduled_long",
+          "inference_status": "calculated_under_stationarity_assumptions"
+        }
+      },
+      "scheduled_long": {
+        "n": 681,
+        "annualized_Sharpe": 0.8737172776666801,
+        "DSR_sensitivity": {
+          "50": {
+            "DSR": 0.7650098247055821,
+            "one_minus_DSR": 0.2349901752944179,
+            "benchmark_daily_Sharpe": 0.02778687128646362
+          },
+          "412": {
+            "DSR": 0.6880354614640846,
+            "one_minus_DSR": 0.31196453853591544,
+            "benchmark_daily_Sharpe": 0.03654595585146153
+          }
+        },
+        "trial_variance_proxy": 0.0001490112718456219,
+        "proxy_policy_count": 8
+      },
+      "buy_hold": {
+        "n": 681,
+        "annualized_Sharpe": 1.285977227076259,
+        "DSR_sensitivity": {
+          "50": {
+            "DSR": 0.9193004647192995,
+            "one_minus_DSR": 0.08069953528070051,
+            "benchmark_daily_Sharpe": 0.02778687128646362
+          },
+          "412": {
+            "DSR": 0.8789818512772325,
+            "one_minus_DSR": 0.1210181487227675,
+            "benchmark_daily_Sharpe": 0.03654595585146153
+          }
+        },
+        "trial_variance_proxy": 0.0001490112718456219,
+        "proxy_policy_count": 8,
+        "paired_stationary_test": {
+          "delta_annualized_Sharpe": 0.41225994940957894,
+          "p_two_sided": 0.0003332222592469177,
+          "studentized_ci95": [
+            0.20997056258678626,
+            0.5566901277440262
+          ],
+          "valid_resamples": 3000,
+          "degenerate_resamples": 0,
+          "reference": "scheduled_long",
+          "inference_status": "calculated_under_stationarity_assumptions"
+        }
+      }
+    },
+    "SP500_h20": {
+      "B3-1": {
+        "n": 666,
+        "annualized_Sharpe": 1.0666772477698276,
+        "DSR_sensitivity": {
+          "50": {
+            "DSR": 0.39751088877787844,
+            "one_minus_DSR": 0.6024891112221216,
+            "benchmark_daily_Sharpe": 0.07741242780994494
+          },
+          "412": {
+            "DSR": 0.18936911116469213,
+            "one_minus_DSR": 0.8106308888353079,
+            "benchmark_daily_Sharpe": 0.10181467139392922
+          }
+        },
+        "trial_variance_proxy": 0.0011565414408017398,
+        "proxy_policy_count": 8,
+        "paired_stationary_test": {
+          "delta_annualized_Sharpe": -0.17021401244305978,
+          "p_two_sided": 0.7257580806397868,
+          "studentized_ci95": [
+            -1.1138038633097398,
+            1.1965656115416183
+          ],
+          "valid_resamples": 3000,
+          "degenerate_resamples": 0,
+          "reference": "scheduled_long",
+          "inference_status": "calculated_under_stationarity_assumptions"
+        }
+      },
+      "B3-1_fixed_exit": {
+        "n": 666,
+        "annualized_Sharpe": 1.2390359433942573,
+        "DSR_sensitivity": {
+          "50": {
+            "DSR": 0.5064426209106441,
+            "one_minus_DSR": 0.49355737908935593,
+            "benchmark_daily_Sharpe": 0.07741242780994494
+          },
+          "412": {
+            "DSR": 0.2742180763214843,
+            "one_minus_DSR": 0.7257819236785157,
+            "benchmark_daily_Sharpe": 0.10181467139392922
+          }
+        },
+        "trial_variance_proxy": 0.0011565414408017398,
+        "proxy_policy_count": 8,
+        "paired_stationary_test": {
+          "delta_annualized_Sharpe": 0.002144683181369978,
+          "p_two_sided": 0.9936687770743086,
+          "studentized_ci95": [
+            -0.6782532610245382,
+            0.8698754283208866
+          ],
+          "valid_resamples": 3000,
+          "degenerate_resamples": 0,
+          "reference": "scheduled_long",
+          "inference_status": "calculated_under_stationarity_assumptions"
+        }
+      },
+      "B3-2": {
+        "n": 666,
+        "annualized_Sharpe": 0.4695275910284329,
+        "DSR_sensitivity": {
+          "50": {
+            "DSR": 0.11758925845257828,
+            "one_minus_DSR": 0.8824107415474217,
+            "benchmark_daily_Sharpe": 0.07741242780994494
+          },
+          "412": {
+            "DSR": 0.036509089910955715,
+            "one_minus_DSR": 0.9634909100890443,
+            "benchmark_daily_Sharpe": 0.10181467139392922
+          }
+        },
+        "trial_variance_proxy": 0.0011565414408017398,
+        "proxy_policy_count": 8,
+        "paired_stationary_test": {
+          "delta_annualized_Sharpe": -0.7673636691844544,
+          "p_two_sided": 0.24125291569476842,
+          "studentized_ci95": [
+            -1.983104579220584,
+            0.7573866461732949
+          ],
+          "valid_resamples": 3000,
+          "degenerate_resamples": 0,
+          "reference": "scheduled_long",
+          "inference_status": "calculated_under_stationarity_assumptions"
+        }
+      },
+      "B3-2_fixed_exit": {
+        "n": 666,
+        "annualized_Sharpe": 0.848862409704654,
+        "DSR_sensitivity": {
+          "50": {
+            "DSR": 0.2741350348921706,
+            "one_minus_DSR": 0.7258649651078294,
+            "benchmark_daily_Sharpe": 0.07741242780994494
+          },
+          "412": {
+            "DSR": 0.11269435540945277,
+            "one_minus_DSR": 0.8873056445905472,
+            "benchmark_daily_Sharpe": 0.10181467139392922
+          }
+        },
+        "trial_variance_proxy": 0.0011565414408017398,
+        "proxy_policy_count": 8,
+        "paired_stationary_test": {
+          "delta_annualized_Sharpe": -0.3880288505082333,
+          "p_two_sided": 0.47184271909363545,
+          "studentized_ci95": [
+            -1.4340985984077899,
+            0.823299692696376
+          ],
+          "valid_resamples": 3000,
+          "degenerate_resamples": 0,
+          "reference": "scheduled_long",
+          "inference_status": "calculated_under_stationarity_assumptions"
+        }
+      },
+      "B3-3": {
+        "n": 666,
+        "annualized_Sharpe": 0.012820353992685303,
+        "DSR_sensitivity": {
+          "50": {
+            "DSR": 0.024187751358564585,
+            "one_minus_DSR": 0.9758122486414355,
+            "benchmark_daily_Sharpe": 0.07741242780994494
+          },
+          "412": {
+            "DSR": 0.0046221567432841205,
+            "one_minus_DSR": 0.9953778432567159,
+            "benchmark_daily_Sharpe": 0.10181467139392922
+          }
+        },
+        "trial_variance_proxy": 0.0011565414408017398,
+        "proxy_policy_count": 8,
+        "paired_stationary_test": {
+          "delta_annualized_Sharpe": -1.224070906220202,
+          "p_two_sided": 0.007676902536715621,
+          "studentized_ci95": [
+            -2.1317428209693046,
+            -0.44206222834297426
+          ],
+          "valid_resamples": 2995,
+          "degenerate_resamples": 5,
+          "reference": "scheduled_long",
+          "inference_status": "descriptive_finite_resamples_only"
+        }
+      },
+      "B3-3_fixed_exit": {
+        "n": 666,
+        "annualized_Sharpe": 0.012820353992685303,
+        "DSR_sensitivity": {
+          "50": {
+            "DSR": 0.024187751358564585,
+            "one_minus_DSR": 0.9758122486414355,
+            "benchmark_daily_Sharpe": 0.07741242780994494
+          },
+          "412": {
+            "DSR": 0.0046221567432841205,
+            "one_minus_DSR": 0.9953778432567159,
+            "benchmark_daily_Sharpe": 0.10181467139392922
+          }
+        },
+        "trial_variance_proxy": 0.0011565414408017398,
+        "proxy_policy_count": 8,
+        "paired_stationary_test": {
+          "delta_annualized_Sharpe": -1.224070906220202,
+          "p_two_sided": 0.007676902536715621,
+          "studentized_ci95": [
+            -2.1317428209693046,
+            -0.44206222834297426
+          ],
+          "valid_resamples": 2995,
+          "degenerate_resamples": 5,
+          "reference": "scheduled_long",
+          "inference_status": "descriptive_finite_resamples_only"
+        }
+      },
+      "scheduled_long": {
+        "n": 666,
+        "annualized_Sharpe": 1.2368912602128874,
+        "DSR_sensitivity": {
+          "50": {
+            "DSR": 0.5052570861386905,
+            "one_minus_DSR": 0.49474291386130953,
+            "benchmark_daily_Sharpe": 0.07741242780994494
+          },
+          "412": {
+            "DSR": 0.26619647051709927,
+            "one_minus_DSR": 0.7338035294829007,
+            "benchmark_daily_Sharpe": 0.10181467139392922
+          }
+        },
+        "trial_variance_proxy": 0.0011565414408017398,
+        "proxy_policy_count": 8
+      },
+      "buy_hold": {
+        "n": 666,
+        "annualized_Sharpe": 1.290607076535123,
+        "DSR_sensitivity": {
+          "50": {
+            "DSR": 0.5402852492026866,
+            "one_minus_DSR": 0.4597147507973134,
+            "benchmark_daily_Sharpe": 0.07741242780994494
+          },
+          "412": {
+            "DSR": 0.2967810448367071,
+            "one_minus_DSR": 0.7032189551632929,
+            "benchmark_daily_Sharpe": 0.10181467139392922
+          }
+        },
+        "trial_variance_proxy": 0.0011565414408017398,
+        "proxy_policy_count": 8,
+        "paired_stationary_test": {
+          "delta_annualized_Sharpe": 0.053715816322235654,
+          "p_two_sided": 0.21992669110296567,
+          "studentized_ci95": [
+            -0.025993911181293773,
+            0.15005690107478561
+          ],
+          "valid_resamples": 3000,
+          "degenerate_resamples": 0,
+          "reference": "scheduled_long",
+          "inference_status": "calculated_under_stationarity_assumptions"
+        }
+      }
+    },
+    "KOSPI_h5": {
+      "SMA200": {
+        "n": 646,
+        "annualized_Sharpe": 1.0711102923345919,
+        "DSR_sensitivity": {
+          "50": {
+            "DSR": 0.9183920867910538,
+            "one_minus_DSR": 0.08160791320894623,
+            "benchmark_daily_Sharpe": 0.010938723237591264
+          },
+          "412": {
+            "DSR": 0.9047826820102537,
+            "one_minus_DSR": 0.09521731798974631,
+            "benchmark_daily_Sharpe": 0.014386869697961022
+          }
+        },
+        "trial_variance_proxy": 2.309261374537839e-05,
+        "proxy_policy_count": 5,
+        "paired_stationary_test": {
+          "delta_annualized_Sharpe": -0.18138834397836834,
+          "p_two_sided": 0.3865378207264245,
+          "studentized_ci95": [
+            -0.5783779793986004,
+            0.24274418436758677
+          ],
+          "valid_resamples": 3000,
+          "degenerate_resamples": 0,
+          "reference": "always_long_guard",
+          "inference_status": "calculated_under_stationarity_assumptions"
+        }
+      },
+      "MOM12_1": {
+        "n": 646,
+        "annualized_Sharpe": 1.0874259016613623,
+        "DSR_sensitivity": {
+          "50": {
+            "DSR": 0.9231106002198561,
+            "one_minus_DSR": 0.07688939978014386,
+            "benchmark_daily_Sharpe": 0.010938723237591264
+          },
+          "412": {
+            "DSR": 0.9100187912438632,
+            "one_minus_DSR": 0.0899812087561368,
+            "benchmark_daily_Sharpe": 0.014386869697961022
+          }
+        },
+        "trial_variance_proxy": 2.309261374537839e-05,
+        "proxy_policy_count": 5,
+        "paired_stationary_test": {
+          "delta_annualized_Sharpe": -0.16507273465159783,
+          "p_two_sided": 0.5631456181272909,
+          "studentized_ci95": [
+            -2.0727987094882288,
+            0.22845954190907275
+          ],
+          "valid_resamples": 3000,
+          "degenerate_resamples": 0,
+          "reference": "always_long_guard",
+          "inference_status": "calculated_under_stationarity_assumptions"
+        }
+      },
+      "VOL15": {
+        "n": 646,
+        "annualized_Sharpe": 1.1815440829077966,
+        "DSR_sensitivity": {
+          "50": {
+            "DSR": 0.9372757640709158,
+            "one_minus_DSR": 0.06272423592908416,
+            "benchmark_daily_Sharpe": 0.010938723237591264
+          },
+          "412": {
+            "DSR": 0.9263427311271577,
+            "one_minus_DSR": 0.0736572688728423,
+            "benchmark_daily_Sharpe": 0.014386869697961022
+          }
+        },
+        "trial_variance_proxy": 2.309261374537839e-05,
+        "proxy_policy_count": 5,
+        "paired_stationary_test": {
+          "delta_annualized_Sharpe": -0.07095455340516356,
+          "p_two_sided": 0.8077307564145285,
+          "studentized_ci95": [
+            -0.6930194852339072,
+            0.47305882657595016
+          ],
+          "valid_resamples": 3000,
+          "degenerate_resamples": 0,
+          "reference": "always_long_guard",
+          "inference_status": "calculated_under_stationarity_assumptions"
+        }
+      },
+      "always_long_guard": {
+        "n": 646,
+        "annualized_Sharpe": 1.2524986363129602,
+        "DSR_sensitivity": {
+          "50": {
+            "DSR": 0.9531437104482414,
+            "one_minus_DSR": 0.04685628955175858,
+            "benchmark_daily_Sharpe": 0.010938723237591264
+          },
+          "412": {
+            "DSR": 0.9442052315728556,
+            "one_minus_DSR": 0.05579476842714437,
+            "benchmark_daily_Sharpe": 0.014386869697961022
+          }
+        },
+        "trial_variance_proxy": 2.309261374537839e-05,
+        "proxy_policy_count": 5
+      },
+      "MiDM_archived": {
+        "n": 646,
+        "annualized_Sharpe": 1.1935735107095153,
+        "DSR_sensitivity": {
+          "50": {
+            "DSR": 0.9431623306212953,
+            "one_minus_DSR": 0.056837669378704714,
+            "benchmark_daily_Sharpe": 0.010938723237591264
+          },
+          "412": {
+            "DSR": 0.932802082728547,
+            "one_minus_DSR": 0.06719791727145297,
+            "benchmark_daily_Sharpe": 0.014386869697961022
+          }
+        },
+        "trial_variance_proxy": 2.309261374537839e-05,
+        "proxy_policy_count": 5,
+        "paired_stationary_test": {
+          "delta_annualized_Sharpe": -0.05892512560344476,
+          "p_two_sided": 0.1622792402532489,
+          "studentized_ci95": [
+            -0.2031245192780106,
+            0.009398535608103133
+          ],
+          "valid_resamples": 3000,
+          "degenerate_resamples": 0,
+          "reference": "always_long_guard",
+          "inference_status": "calculated_under_stationarity_assumptions"
+        }
+      }
+    },
+    "KOSPI_h20": {
+      "SMA200": {
+        "n": 631,
+        "annualized_Sharpe": 1.4186336443467271,
+        "DSR_sensitivity": {
+          "50": {
+            "DSR": 0.9398190647604076,
+            "one_minus_DSR": 0.06018093523959245,
+            "benchmark_daily_Sharpe": 0.02458202031830382
+          },
+          "412": {
+            "DSR": 0.9142608965693764,
+            "one_minus_DSR": 0.08573910343062363,
+            "benchmark_daily_Sharpe": 0.032330859420294095
+          }
+        },
+        "trial_variance_proxy": 0.00011662051889225104,
+        "proxy_policy_count": 5,
+        "paired_stationary_test": {
+          "delta_annualized_Sharpe": 0.11722681232178003,
+          "p_two_sided": 0.49050316561146284,
+          "studentized_ci95": [
+            -0.1331923433999589,
+            0.7458766683663443
+          ],
+          "valid_resamples": 3000,
+          "degenerate_resamples": 0,
+          "reference": "always_long_guard",
+          "inference_status": "calculated_under_stationarity_assumptions"
+        }
+      },
+      "MOM12_1": {
+        "n": 631,
+        "annualized_Sharpe": 0.9875376263895371,
+        "DSR_sensitivity": {
+          "50": {
+            "DSR": 0.8226746007729717,
+            "one_minus_DSR": 0.17732539922702828,
+            "benchmark_daily_Sharpe": 0.02458202031830382
+          },
+          "412": {
+            "DSR": 0.7688266849899923,
+            "one_minus_DSR": 0.2311733150100077,
+            "benchmark_daily_Sharpe": 0.032330859420294095
+          }
+        },
+        "trial_variance_proxy": 0.00011662051889225104,
+        "proxy_policy_count": 5,
+        "paired_stationary_test": {
+          "delta_annualized_Sharpe": -0.3138692056354099,
+          "p_two_sided": 0.44551816061312893,
+          "studentized_ci95": [
+            -3.1722871543976594,
+            0.24575015072945805
+          ],
+          "valid_resamples": 3000,
+          "degenerate_resamples": 0,
+          "reference": "always_long_guard",
+          "inference_status": "calculated_under_stationarity_assumptions"
+        }
+      },
+      "VOL15": {
+        "n": 631,
+        "annualized_Sharpe": 1.3915787422519321,
+        "DSR_sensitivity": {
+          "50": {
+            "DSR": 0.9289861229595491,
+            "one_minus_DSR": 0.07101387704045092,
+            "benchmark_daily_Sharpe": 0.02458202031830382
+          },
+          "412": {
+            "DSR": 0.9011119518077018,
+            "one_minus_DSR": 0.09888804819229824,
+            "benchmark_daily_Sharpe": 0.032330859420294095
+          }
+        },
+        "trial_variance_proxy": 0.00011662051889225104,
+        "proxy_policy_count": 5,
+        "paired_stationary_test": {
+          "delta_annualized_Sharpe": 0.09017191022698516,
+          "p_two_sided": 0.6624458513828724,
+          "studentized_ci95": [
+            -0.46640232730247105,
+            0.4870786100170439
+          ],
+          "valid_resamples": 3000,
+          "degenerate_resamples": 0,
+          "reference": "always_long_guard",
+          "inference_status": "calculated_under_stationarity_assumptions"
+        }
+      },
+      "always_long_guard": {
+        "n": 631,
+        "annualized_Sharpe": 1.301406832024947,
+        "DSR_sensitivity": {
+          "50": {
+            "DSR": 0.918068030038206,
+            "one_minus_DSR": 0.08193196996179397,
+            "benchmark_daily_Sharpe": 0.02458202031830382
+          },
+          "412": {
+            "DSR": 0.8857529998400433,
+            "one_minus_DSR": 0.1142470001599567,
+            "benchmark_daily_Sharpe": 0.032330859420294095
+          }
+        },
+        "trial_variance_proxy": 0.00011662051889225104,
+        "proxy_policy_count": 5
+      },
+      "MiDM_archived": {
+        "n": 631,
+        "annualized_Sharpe": 1.2740011612450404,
+        "DSR_sensitivity": {
+          "50": {
+            "DSR": 0.9117724848957269,
+            "one_minus_DSR": 0.08822751510427307,
+            "benchmark_daily_Sharpe": 0.02458202031830382
+          },
+          "412": {
+            "DSR": 0.8777081272961162,
+            "one_minus_DSR": 0.12229187270388375,
+            "benchmark_daily_Sharpe": 0.032330859420294095
+          }
+        },
+        "trial_variance_proxy": 0.00011662051889225104,
+        "proxy_policy_count": 5,
+        "paired_stationary_test": {
+          "delta_annualized_Sharpe": -0.027405670779906736,
+          "p_two_sided": 0.692102632455848,
+          "studentized_ci95": [
+            -0.2604695662572032,
+            0.07194113336176457
+          ],
+          "valid_resamples": 3000,
+          "degenerate_resamples": 0,
+          "reference": "always_long_guard",
+          "inference_status": "calculated_under_stationarity_assumptions"
+        }
+      }
+    }
+  },
+  "PBO": {
+    "status": "not_computable_from_available_candidate_predictions",
+    "reason": "Only selected B3 test prediction archives retained here; no aligned72candidate time-performance matrix. Do not infer CSCV-PBO from2aggregate scores."
+  },
+  "limitations": [
+    "DSR is a sensitivity using available policy variance proxy, not a certified correction of412 selection trials.",
+    "N50 is less conservative than N412 under identical inputs.",
+    "Stationary bootstrap assumes adequate stability; reused retrospective period and multiplicity remain.",
+    "No independent-trial interpretation of correlated model fits."
+  ]
+}

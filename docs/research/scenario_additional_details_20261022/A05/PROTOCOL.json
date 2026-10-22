@@ -1,0 +1,8 @@
+{
+  "created": "2026-10-21T16:24:04.680707",
+  "Sharpe": "daily excess over zero cash; sqrt252",
+  "DSR": "N50/412 sensitivity using observed policy-family daily Sharpe variance proxy; NOT complete412trial correction",
+  "bootstrap": "3000 studentized paired stationary resamples; expected block80; Bartlett HAC lag80 of Sharpe influence-function difference. Null centered at observed difference. Robust time-series bootstrap implementation, not official Ledoit-Wolf code reproduction.",
+  "PBO": "Require aligned time-by-candidate score/return matrix; aggregate validation/test scores alone insufficient",
+  "script_sha256": "b4ea63fdcebe2bb6668670d796d5c52552ccd48ab9c2f96e9818d8921f7a74bc"
+}
