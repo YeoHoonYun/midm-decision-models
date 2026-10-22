@@ -1,5 +1,10 @@
 # MiDM: Minimal Decision Models, and an audit of CLM-8B
 
+## Local research update — 2026-10-22
+
+[Additional scenario experiment results and limits](docs/research/scenario_additional_results_20261022.md) · [Feedback and improvement tracking](docs/research/scenario_feedback_improvements_20261022.md).
+These are research records, not a manuscript or a new model release. Manuscript drafting has been discontinued at the user's request. This update is prepared locally only; no push or deployment has been performed.
+
 ## v0.2.2: ScenarioView report and financial validation
 
 **Report/documentation update; no improved model weights.** [Open the report](https://yeohoonyun.github.io/midm-decision-models/) · [Release notes](docs/releases/v0.2.2/README.md). Existing MiDM remains active; financial residual candidates did not improve retrospective action performance. Current report issue date and source observation dates are displayed separately.
