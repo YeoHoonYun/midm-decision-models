@@ -1,0 +1,1082 @@
+{
+  "report": "36-R14",
+  "title": "SER-M 한국 대형주10 시나리오 분석",
+  "asof": "2026-10-26T15:04:04.713407+09:00",
+  "status": "reviewed",
+  "scope": "Top 10 ordinary-share companies by ordinary-share market capitalization, KOSPI+KOSDAQ. Preferred shares excluded; total company value including preferred shares is not used.",
+  "horizon_trading_days": [
+    5,
+    10,
+    20
+  ],
+  "barrier_fraction": 0.05,
+  "forecast_probabilities": null,
+  "outcome_evaluation": false,
+  "macro": [
+    {
+      "name": "S&P 500",
+      "date": "20261023",
+      "close": 7623.68017578125,
+      "change_pct": -0.5186972294159098,
+      "source": "Yahoo Finance collected archive",
+      "url": "https://finance.yahoo.com/quote/%5EGSPC/"
+    },
+    {
+      "name": "NASDAQ",
+      "date": "20261023",
+      "close": 25955.33984375,
+      "change_pct": -0.2057742343804736,
+      "source": "Yahoo Finance collected archive",
+      "url": "https://finance.yahoo.com/quote/%5EIXIC/"
+    },
+    {
+      "name": "VIX",
+      "date": "20261023",
+      "close": 19.450000762939453,
+      "change_pct": 2.20704183467888,
+      "source": "Yahoo Finance collected archive",
+      "url": "https://finance.yahoo.com/quote/%5EVIX/"
+    },
+    {
+      "name": "USD/KRW",
+      "date": "20261022",
+      "close": 1325.989990234375,
+      "change_pct": 0.030177085250859825,
+      "source": "Yahoo Finance collected archive",
+      "url": "https://finance.yahoo.com/quote/KRW=X/"
+    }
+  ],
+  "execution": {
+    "attempts": 50,
+    "valid_roles": 50,
+    "companies": 10,
+    "CPU_only": true,
+    "model": "qwen3:4b-instruct",
+    "outcome_evaluation": false
+  },
+  "semantic_exclusions": 39,
+  "companies": [
+    {
+      "rank": 1,
+      "code": "005930",
+      "name": "삼성전자",
+      "market": "KOSPI",
+      "cap_krw": 1245257343504000,
+      "price": 213000.0,
+      "quote_at": "2026-10-26T15:04:00+09:00",
+      "quote_url": "https://stock.naver.com/domestic/stock/005930",
+      "previous_close_quote": 215500.0,
+      "flow": [
+        {
+          "date": "20261023",
+          "close": 213500.0,
+          "foreign": -868997.0,
+          "institution": 627670.0,
+          "individual": -61043.0,
+          "volume": 16145972.0
+        },
+        {
+          "date": "20261022",
+          "close": 214500.0,
+          "foreign": -585787.0,
+          "institution": -400833.0,
+          "individual": 977352.0,
+          "volume": 11469322.0
+        },
+        {
+          "date": "20261021",
+          "close": 223500.0,
+          "foreign": 2055241.0,
+          "institution": 313027.0,
+          "individual": -2324529.0,
+          "volume": 17268762.0
+        },
+        {
+          "date": "20261020",
+          "close": 209000.0,
+          "foreign": 1801659.0,
+          "institution": -2760235.0,
+          "individual": 903908.0,
+          "volume": 16561224.0
+        },
+        {
+          "date": "20261019",
+          "close": 223500.0,
+          "foreign": 1241581.0,
+          "institution": -42900.0,
+          "individual": -880224.0,
+          "volume": 17617415.0
+        }
+      ],
+      "financial": {
+        "receipt": "20260814003699",
+        "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003699",
+        "period": "제 58 기 반기말",
+        "basis": "OFS (separate financial statements; collector fs_div=OFS)",
+        "currency": "KRW",
+        "fetch_date": "20260815",
+        "assets": 465862647000000.0,
+        "liabilities": 107511848000000.0,
+        "cash": 15762232000000.0
+      },
+      "warnings": [
+        "quote_previous_close_vs_flow_close_mismatch"
+      ],
+      "official_sources": [
+        {
+          "id": "samsung_guidance",
+          "date": "2026-10-08",
+          "title": "삼성전자 3분기 잠정실적",
+          "url": "https://news.samsung.com/kr/삼성전자-2026년-3분기-잠정실적-발표",
+          "fact": "2026년 3분기 연결 잠정 매출 195조원, 영업이익 107.4조원. 확정 실적이 아닌 회사 잠정치다."
+        },
+        {
+          "id": "samsung_event",
+          "date": "2026-10-08",
+          "title": "삼성전자 공식 IR 일정",
+          "url": "https://www.samsung.com/global/ir/reports-disclosures/notices/",
+          "fact": "3분기 실적 설명회는 10월 29일 오전 10시(KST) 예정."
+        }
+      ],
+      "interpretation": {
+        "sector": "반도체",
+        "theme": "실적 규모보다 다음 분기의 지속성",
+        "stance": "실적 설명회 확인 우선",
+        "summary": "잠정 실적은 이미 공개됐다. 추가 상승의 조건은 큰 이익 숫자의 반복보다 향후 수요·공급·투자·환원에 대한 설명이 기존 기대를 지지하는지다. 외국인과 기관의 반대 수급은 방향 확신을 낮춘다.",
+        "subject": "외국인·기관의 실제 순매매와 경영진의 10월 29일 설명을 분리한다. 순매도만으로 실적 불신이나 차익실현 동기를 단정할 수 없다.",
+        "environment": "미국 기술주와 위험 선호 변화가 단기 평가에 영향을 줄 수 있다. 10월 23일 미국 지표를 오늘 한국 주가의 원인으로 확정하지 않는다.",
+        "resource": "반기 별도 재무는 모회사 자원 배경이다. 3분기 잠정 연결 손익과 범위·시점이 달라 직접 나누어 현금전환율을 만들지 않는다.",
+        "mechanism": "수요·공급 전망 → 미래 이익의 지속성 판단 → 투자·환원 여력 평가 → 자금 유입 또는 기대 조정",
+        "up": "10월 29일 설명에서 수요와 수익성의 지속 근거가 보강되고, 이후 외국인·기관 수급이 같은 방향으로 개선될 때 상승 유지 가설을 강화한다.",
+        "down": "이익 지속성 설명이 약하거나 투자 부담이 커지고, 두 주체의 순매도가 겹치면 하방 경로를 우선 검토한다.",
+        "reversal": "설명회 기대에 상승한 뒤 전망이 기대에 못 미치면 상승→하락, 선행 조정 뒤 지속성이 확인되면 하락→상승이 가능하다.",
+        "trigger": "10월 29일 10:00 KST 실적 설명회 자료와 이후 2개 거래일의 확정 수급을 재조회한다.",
+        "invalidate": "부문별 확정 실적·수요·투자 계획이 확인되기 전에는 잠정 이익 증가를 주가 상승 보장으로 해석하지 않는다.",
+        "missing": "고객별 수요, 신규 수주·출하, 부문별 3분기 확정 손익과 향후 투자 계획.",
+        "priority": "일정 확인형",
+        "review": [
+          "실적 지속성",
+          "투자·환원",
+          "수급 합치"
+        ]
+      },
+      "independent_flow_available": false,
+      "upper_barrier": 223650.0,
+      "lower_barrier": 202350.0
+    },
+    {
+      "rank": 2,
+      "code": "000660",
+      "name": "SK하이닉스",
+      "market": "KOSPI",
+      "cap_krw": 934299734835000,
+      "price": 1279000.0,
+      "quote_at": "2026-10-26T15:04:00+09:00",
+      "quote_url": "https://stock.naver.com/domestic/stock/000660",
+      "previous_close_quote": 1277000.0,
+      "flow": [
+        {
+          "date": "20261023",
+          "close": 1263000.0,
+          "foreign": -470048.0,
+          "institution": 483193.0,
+          "individual": 1428.0,
+          "volume": 3941446.0
+        },
+        {
+          "date": "20261022",
+          "close": 1234000.0,
+          "foreign": 25304.0,
+          "institution": -210451.0,
+          "individual": 160607.0,
+          "volume": 2841149.0
+        },
+        {
+          "date": "20261021",
+          "close": 1288000.0,
+          "foreign": 150127.0,
+          "institution": -16885.0,
+          "individual": -569645.0,
+          "volume": 4228927.0
+        },
+        {
+          "date": "20261020",
+          "close": 1190000.0,
+          "foreign": -288990.0,
+          "institution": -126084.0,
+          "individual": -83997.0,
+          "volume": 3464412.0
+        },
+        {
+          "date": "20261019",
+          "close": 1304000.0,
+          "foreign": -140774.0,
+          "institution": -197986.0,
+          "individual": -151204.0,
+          "volume": 3737172.0
+        }
+      ],
+      "financial": {
+        "receipt": "20260814003509",
+        "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003509",
+        "period": "제 79 기 반기말",
+        "basis": "OFS (separate financial statements; collector fs_div=OFS)",
+        "currency": "KRW",
+        "fetch_date": "20260816",
+        "assets": 332416772000000.0,
+        "liabilities": 80343593000000.0,
+        "cash": 4537067000000.0
+      },
+      "warnings": [
+        "quote_previous_close_vs_flow_close_mismatch"
+      ],
+      "official_sources": [
+        {
+          "id": "hynix_event",
+          "date": "2026-10-21",
+          "title": "SK하이닉스 3분기 실적발표 초청장",
+          "url": "https://news.skhynix.com/en/q3-2026-earnings-conference-call-invitation/",
+          "fact": "10월 28일 오전 9시 전 실적 공개, 같은 날 오전 9시 설명회 예정."
+        }
+      ],
+      "interpretation": {
+        "sector": "반도체",
+        "theme": "실적 발표 전후 기대의 재평가",
+        "stance": "10월 28일 이벤트 점검",
+        "summary": "기준시점에는 3분기 실적이 아직 공개되지 않았다. 증권사 제목이나 시장 기대를 확정 실적으로 옮겨 쓰지 않고, 발표 전후에 어떤 정보가 바뀌는지 추적하는 구성이 적절하다.",
+        "subject": "최근 외국인·기관 거래를 관찰하되, 경영진의 발표 내용과 투자자의 주문 동기를 같은 증거로 취급하지 않는다.",
+        "environment": "미국 기술주 조정과 변동성 상승은 배경 위험이다. 회사의 수요·가격·공급 설명이 함께 확인돼야 업황 판단으로 이어질 수 있다.",
+        "resource": "반기 별도 현금은 연결 그룹의 전체 유동성이나 미래 주주환원 재원이 아니다. 신규 발표의 현금흐름과 투자 계획을 확인한다.",
+        "mechanism": "실적·수요 전망 공개 → 기존 기대와 차이 인식 → 투자·환원 기대 조정 → 수급과 주가 경로 변화",
+        "up": "실적 발표에서 다음 분기 수요·수익성·현금 활용의 근거가 보강되고, 발표 후 거래에서 매수 확산이 확인될 때 상승 경로를 강화한다.",
+        "down": "양호한 과거 실적에도 전망이나 현금 활용 설명이 기대를 충족하지 못하고 순매도가 확대되면 하방 경로가 유효하다.",
+        "reversal": "발표 전 조정 후 전망 확인은 하락→상승, 기대 선반영 뒤 실망은 상승→하락 경로를 만든다는 조건부 가설이다.",
+        "trigger": "10월 28일 오전 9시 전 실적 자료와 오전 9시 설명회, 이후 확정 수급을 확인한다.",
+        "invalidate": "미공개 3분기 이익·특별배당을 확정 수치로 전제하지 않는다. 발표가 연기되면 이벤트 경로를 보류한다.",
+        "missing": "3분기 확정 손익, 연결 현금흐름, 향후 수요 및 투자·환원 계획.",
+        "priority": "일정 확인형",
+        "review": [
+          "발표 전후 정보",
+          "현금흐름",
+          "기대 선반영"
+        ]
+      },
+      "independent_flow_available": false,
+      "upper_barrier": 1342950.0,
+      "lower_barrier": 1215050.0
+    },
+    {
+      "rank": 3,
+      "code": "402340",
+      "name": "SK스퀘어",
+      "market": "KOSPI",
+      "cap_krw": 102373022448000,
+      "price": 776000.0,
+      "quote_at": "2026-10-26T15:03:21+09:00",
+      "quote_url": "https://stock.naver.com/domestic/stock/402340",
+      "previous_close_quote": 775000.0,
+      "flow": [
+        {
+          "date": "20261023",
+          "close": 764000.0,
+          "foreign": -134276.0,
+          "institution": 94915.0,
+          "individual": 36979.0,
+          "volume": 618557.0
+        },
+        {
+          "date": "20261022",
+          "close": 749000.0,
+          "foreign": 15375.0,
+          "institution": -4903.0,
+          "individual": -11213.0,
+          "volume": 473106.0
+        },
+        {
+          "date": "20261021",
+          "close": 773000.0,
+          "foreign": -608.0,
+          "institution": 18244.0,
+          "individual": -17195.0,
+          "volume": 671271.0
+        },
+        {
+          "date": "20261020",
+          "close": 724000.0,
+          "foreign": 60132.0,
+          "institution": -76422.0,
+          "individual": 16339.0,
+          "volume": 480660.0
+        },
+        {
+          "date": "20261019",
+          "close": 802000.0,
+          "foreign": 56432.0,
+          "institution": -96530.0,
+          "individual": 40635.0,
+          "volume": 503738.0
+        }
+      ],
+      "financial": {
+        "receipt": "20260814002363",
+        "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002363",
+        "period": "제 6 기 반기말",
+        "basis": "OFS (separate financial statements; collector fs_div=OFS)",
+        "currency": "KRW",
+        "fetch_date": "20260816",
+        "assets": 6467747000000.0,
+        "liabilities": 315318000000.0,
+        "cash": 735660000000.0
+      },
+      "warnings": [
+        "quote_previous_close_vs_flow_close_mismatch"
+      ],
+      "official_sources": [
+        {
+          "id": "square_nav",
+          "date": "2026-10-23",
+          "title": "SK스퀘어 공식 NAV 공시",
+          "url": "https://www.sksquare.com/kor/ir/nav.do",
+          "fact": "10월 23일 회사 제시 NAV 191.4조원, 주당 NAV 1,450,707원, 할인율 46.6%. NAV 구성 중 SK하이닉스 186.57조원. 비상장 자산은 과거 거래가격 등이 반영된다."
+        }
+      ],
+      "interpretation": {
+        "sector": "투자·지주",
+        "theme": "하이닉스 가치와 할인율의 이중 경로",
+        "stance": "NAV·할인율 분리 관찰",
+        "summary": "회사 제시 NAV 대부분이 SK하이닉스 지분에서 나온다. SK하이닉스와 SK스퀘어를 동시에 보유하면 서로 독립적인 두 개의 반도체 시나리오가 생기는 것은 아니다. 할인율 변화가 별도의 경로다.",
+        "subject": "보유 지분의 가치 변화와 경영진의 자본 배분·환원 실행을 구분한다. 투자자 수급은 그 판단의 결과일 수 있지만 동기는 관찰되지 않는다.",
+        "environment": "SK하이닉스 실적 일정이 간접 이벤트다. 보유 지분 가치 상승과 지주회사 할인율 축소가 항상 함께 발생하지는 않는다.",
+        "resource": "공식 NAV는 시장가격과 비상장 평가액을 조합한 값이며 목표가가 아니다. 과거 거래가격 기반 비상장 평가와 반기 별도 장부자산도 구분한다.",
+        "mechanism": "보유 지분가치 변화 × 시장이 적용하는 할인율 → 주당 평가 변화; 환원 실행은 할인율 경로의 추가 조건",
+        "up": "SK하이닉스 가치가 유지·개선되고 환원 실행 등으로 할인율이 축소될 때 두 요인이 상승을 함께 지지할 수 있다.",
+        "down": "하이닉스 가치 하락 또는 할인율 확대 중 하나만 발생해도 가격에 부담이 된다. 두 요인이 겹치면 중첩 위험을 검토한다.",
+        "reversal": "기초 지분가치 상승을 따라 오른 뒤 할인율이 다시 확대되면 상승→하락, 할인율 확대로 먼저 조정받은 뒤 환원이 확인되면 반대 경로를 검토한다.",
+        "trigger": "같은 날짜의 NAV·주가로 할인율을 다시 계산하고 하이닉스 실적 발표 및 환원 공시를 함께 조회한다.",
+        "invalidate": "10월 23일 NAV에 10월 26일 가격을 넣어 현재 공식 할인율이라고 제시하지 않는다.",
+        "missing": "기준일이 일치하는 최신 NAV와 할인율, 비상장 자산 평가 갱신, 환원 실행 공시.",
+        "priority": "중첩 위험형",
+        "review": [
+          "지분가치",
+          "할인율",
+          "환원 실행"
+        ]
+      },
+      "independent_flow_available": true,
+      "upper_barrier": 814800.0,
+      "lower_barrier": 737200.0
+    },
+    {
+      "rank": 4,
+      "code": "373220",
+      "name": "LG에너지솔루션",
+      "market": "KOSPI",
+      "cap_krw": 88569000000000,
+      "price": 378500.0,
+      "quote_at": "2026-10-26T15:03:19+09:00",
+      "quote_url": "https://stock.naver.com/domestic/stock/373220",
+      "previous_close_quote": 383000.0,
+      "flow": [
+        {
+          "date": "20261023",
+          "close": 381500.0,
+          "foreign": 19978.0,
+          "institution": -15507.0,
+          "individual": -3952.0,
+          "volume": 354664.0
+        },
+        {
+          "date": "20261022",
+          "close": 391500.0,
+          "foreign": 34875.0,
+          "institution": -38391.0,
+          "individual": 4173.0,
+          "volume": 388504.0
+        },
+        {
+          "date": "20261021",
+          "close": 412500.0,
+          "foreign": 17577.0,
+          "institution": -24566.0,
+          "individual": 6305.0,
+          "volume": 332435.0
+        },
+        {
+          "date": "20261020",
+          "close": 411500.0,
+          "foreign": -4794.0,
+          "institution": 7695.0,
+          "individual": -5822.0,
+          "volume": 412043.0
+        },
+        {
+          "date": "20261019",
+          "close": 428500.0,
+          "foreign": -141002.0,
+          "institution": 309604.0,
+          "individual": -165466.0,
+          "volume": 767385.0
+        }
+      ],
+      "financial": {
+        "receipt": "20260813000255",
+        "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260813000255",
+        "period": "제 7 기 반기말",
+        "basis": "OFS (separate financial statements; collector fs_div=OFS)",
+        "currency": "KRW",
+        "fetch_date": "20260814",
+        "assets": 34309264000000.0,
+        "liabilities": 19714907000000.0,
+        "cash": 1823433000000.0
+      },
+      "warnings": [
+        "quote_previous_close_vs_flow_close_mismatch"
+      ],
+      "official_sources": [
+        {
+          "id": "lges_guidance",
+          "date": "2026-10-08",
+          "title": "LG에너지솔루션 3분기 잠정실적",
+          "url": "https://inside.lgensol.com/2026/10/lg에너지솔루션-2026년-3분기-잠정실적-발표/",
+          "fact": "3분기 잠정 매출 및 기타수익 9조6,434억원, 영업이익 7,560억원. 북미 생산 보조금 효과 제외 영업이익은 3,391억원. 2026년부터 보조금 회계 표시 방식이 변경됐다."
+        }
+      ],
+      "interpretation": {
+        "sector": "배터리",
+        "theme": "보조금 효과와 사업 수익성의 구분",
+        "stance": "이익 구성 확인 우선",
+        "summary": "잠정 영업이익 7,560억원 중 북미 생산 보조금 효과를 제외하면 3,391억원이다. 보조금을 제외한 이익도 곧바로 반복 가능한 이익이라고 할 수는 없다. 매출 구성·가동률·일회성 항목을 함께 확인해야 한다.",
+        "subject": "경영진의 생산·투자 결정과 고객 주문이 중요하다. 외국인·기관의 반대 매매는 주문 증가를 직접 입증하지 않는다.",
+        "environment": "북미 정책과 고객의 EV·ESS 투자 수요가 서로 다른 채널로 작동한다. 현재 정책 변경이 발생했다고 가정하지 않는다.",
+        "resource": "반기 별도 재무는 현금·투자의 배경으로만 쓴다. 글로벌 생산능력·가동률·연결 현금흐름은 별도 확인이 필요하다.",
+        "mechanism": "수주·가동률과 보조금 조건 → 이익 구성·현금흐름 → 추가 투자 부담과 가치평가 변화",
+        "up": "보조금 제외 이익 개선이 일회성 보상보다 물량·가동률에서 나온 것으로 확인되고 현금흐름이 뒷받침될 때 상승 가설을 강화한다.",
+        "down": "이익 개선이 반복하기 어려운 항목에 집중되거나 신규 투자·운전자본 부담이 늘면 표면적 호실적에도 하방 경로가 가능하다.",
+        "reversal": "잠정 이익 기대에 오른 뒤 구성 확인 과정에서 조정되면 상승→하락, 구성 불확실성으로 조정 후 반복성이 입증되면 하락→상승을 검토한다.",
+        "trigger": "확정 실적 자료에서 보조금·보상금·본업 이익과 연결 현금흐름을 분해하고 신규 고객 공시를 확인한다.",
+        "invalidate": "보조금 제외 이익을 정상화 이익으로 단정하거나 2026년 표시 변경 전후 매출을 무조정 비교하지 않는다.",
+        "missing": "잠정 이익의 일회성 항목, EV·ESS별 가동률·마진, 연결 투자·현금흐름.",
+        "priority": "이익 구성형",
+        "review": [
+          "보조금 제외 이익",
+          "반복성",
+          "투자 회수"
+        ]
+      },
+      "independent_flow_available": true,
+      "upper_barrier": 397425.0,
+      "lower_barrier": 359575.0
+    },
+    {
+      "rank": 5,
+      "code": "009150",
+      "name": "삼성전기",
+      "market": "KOSPI",
+      "cap_krw": 83806326912000,
+      "price": 1122000.0,
+      "quote_at": "2026-10-26T15:03:23+09:00",
+      "quote_url": "https://stock.naver.com/domestic/stock/009150",
+      "previous_close_quote": 1122000.0,
+      "flow": [
+        {
+          "date": "20261023",
+          "close": 1111000.0,
+          "foreign": -124462.0,
+          "institution": 30170.0,
+          "individual": 90170.0,
+          "volume": 761075.0
+        },
+        {
+          "date": "20261022",
+          "close": 1146000.0,
+          "foreign": -24865.0,
+          "institution": -41943.0,
+          "individual": 69593.0,
+          "volume": 827483.0
+        },
+        {
+          "date": "20261021",
+          "close": 1184000.0,
+          "foreign": -47149.0,
+          "institution": -8967.0,
+          "individual": 58916.0,
+          "volume": 614026.0
+        },
+        {
+          "date": "20261020",
+          "close": 1125000.0,
+          "foreign": -59589.0,
+          "institution": 9726.0,
+          "individual": 48914.0,
+          "volume": 720965.0
+        },
+        {
+          "date": "20261019",
+          "close": 1220000.0,
+          "foreign": 27445.0,
+          "institution": -67876.0,
+          "individual": 37696.0,
+          "volume": 856321.0
+        }
+      ],
+      "financial": {
+        "receipt": "20260814003805",
+        "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003805",
+        "period": "제 54 기 반기말",
+        "basis": "OFS (separate financial statements; collector fs_div=OFS)",
+        "currency": "KRW",
+        "fetch_date": "20260815",
+        "assets": 11292561084271.0,
+        "liabilities": 4314132982080.0,
+        "cash": 3037433705528.0
+      },
+      "warnings": [
+        "quote_previous_close_vs_flow_close_mismatch"
+      ],
+      "official_sources": [
+        {
+          "id": "sem_q2",
+          "date": "2026-07-30",
+          "title": "삼성전기 2분기 경영실적",
+          "url": "https://www.samsungsem.com/kr/newsroom/news/view.do?id=10461",
+          "fact": "2분기 연결 매출 3조4,572억원, 영업이익 4,404억원. 회사는 10여 고객사 MLCC 장기공급계약과 AI용 기판 공급 확대를 설명했다. 3분기 확정 실적을 뜻하지 않는다."
+        }
+      ],
+      "interpretation": {
+        "sector": "전자부품",
+        "theme": "AI 수요가 실제 이익으로 전환되는가",
+        "stance": "수주→매출 전환 확인",
+        "summary": "공식 2분기 자료는 MLCC 장기공급계약과 AI용 기판 확대를 설명한다. 최근 증권사 보고서 제목은 확인했지만 원문을 읽지 않았으므로 특정 고객 계약을 확정 사실로 추가하지 않았다.",
+        "subject": "고객의 장기 구매와 회사의 증설·양산 실행이 핵심 주체 행동이다. 증권사 제목과 확정 계약·납품 실적을 구분한다.",
+        "environment": "AI·데이터센터 투자와 전장 수요가 영향을 줄 수 있다. 전체 기술주 움직임을 회사의 신규 매출로 치환하지 않는다.",
+        "resource": "생산능력과 수율·가동률이 주문을 이익으로 바꾸는 자원이다. 반기 별도 현금만으로 증설의 수익성을 평가하지 않는다.",
+        "mechanism": "고객 주문·장기계약 → 생산능력·수율·제품 구성 → 매출·이익 전환 → 기대 재평가",
+        "up": "공식 공시와 실적에서 고부가 부품의 매출 전환·수익성 개선이 확인되고 매수 수급이 확산될 때 상승 경로를 강화한다.",
+        "down": "증설비용이나 수율·납기 제약으로 주문의 이익 전환이 지연되면 수요 기대와 실제 실적 사이의 차이가 하방 압력이 될 수 있다.",
+        "reversal": "계약 기대에 먼저 오른 뒤 이익 전환 지연이 확인되면 상승→하락, 비용 우려 이후 양산 성과가 확인되면 하락→상승을 검토한다.",
+        "trigger": "최신 공급계약 공시 원문과 다음 실적의 패키지·컴포넌트 매출 및 마진을 추가 확보한다.",
+        "invalidate": "증권사 제목에 등장한 특정 고객·공급 지위를 원문 확인 없이 확정 계약으로 쓰지 않는다.",
+        "missing": "최근 계약 원문, 3분기 부문별 수익성, 증설 투자·가동률·수율.",
+        "priority": "실행 확인형",
+        "review": [
+          "계약 원문",
+          "양산 전환",
+          "수익성"
+        ]
+      },
+      "independent_flow_available": false,
+      "upper_barrier": 1178100.0,
+      "lower_barrier": 1065900.0
+    },
+    {
+      "rank": 6,
+      "code": "207940",
+      "name": "삼성바이오로직스",
+      "market": "KOSPI",
+      "cap_krw": 67075587999000,
+      "price": 1449000.0,
+      "quote_at": "2026-10-26T15:03:24+09:00",
+      "quote_url": "https://stock.naver.com/domestic/stock/207940",
+      "previous_close_quote": 1466000.0,
+      "flow": [
+        {
+          "date": "20261023",
+          "close": 1460000.0,
+          "foreign": -2977.0,
+          "institution": 38852.0,
+          "individual": -35019.0,
+          "volume": 115666.0
+        },
+        {
+          "date": "20261022",
+          "close": 1361000.0,
+          "foreign": -1949.0,
+          "institution": 2818.0,
+          "individual": -933.0,
+          "volume": 75632.0
+        },
+        {
+          "date": "20261021",
+          "close": 1412000.0,
+          "foreign": -6170.0,
+          "institution": 17578.0,
+          "individual": -11458.0,
+          "volume": 116940.0
+        },
+        {
+          "date": "20261020",
+          "close": 1385000.0,
+          "foreign": -4804.0,
+          "institution": 11981.0,
+          "individual": -7227.0,
+          "volume": 92961.0
+        },
+        {
+          "date": "20261019",
+          "close": 1386000.0,
+          "foreign": -16284.0,
+          "institution": 72665.0,
+          "individual": -55202.0,
+          "volume": 151200.0
+        }
+      ],
+      "financial": {
+        "receipt": "20260814003375",
+        "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003375",
+        "period": "제 16 기 반기말",
+        "basis": "OFS (separate financial statements; collector fs_div=OFS)",
+        "currency": "KRW",
+        "fetch_date": "20260815",
+        "assets": 12213457284866.0,
+        "liabilities": 3868826474908.0,
+        "cash": 268313147943.0
+      },
+      "warnings": [
+        "quote_previous_close_vs_flow_close_mismatch"
+      ],
+      "official_sources": [
+        {
+          "id": "bio_q3",
+          "date": "2026-10-21",
+          "title": "삼성바이오로직스 3분기 실적 및 증자 계획",
+          "url": "https://samsungbiologics.com/media/company-news/samsung-biologics-reports-third-quarter-2026-financial-results",
+          "fact": "3분기 매출 1조4,903억원, 영업이익 6,401억원. 회사는 연간 매출 성장 가이던스를 20%로 높이고, PolyPeptide 인수·설비투자 등을 위한 3조원 유상증자와 11월 기존 주주 청약 계획을 설명했다."
+        }
+      ],
+      "interpretation": {
+        "sector": "바이오 CDMO",
+        "theme": "성장 가이던스와 자본 조달의 동시 평가",
+        "stance": "성장·희석 함께 관찰",
+        "summary": "회사 공식 발표에서 매출 성장 가이던스 상향과 3조원 유상증자 계획을 동시에 확인했다. 매출 성장의 방향과 기존 주주의 주당 가치 변화는 같은 지표가 아니다.",
+        "subject": "고객 수주와 회사의 인수·증자 결정, 기존 주주의 청약 선택을 구분한다. 개인별 청약 의사는 관찰되지 않았다.",
+        "environment": "글로벌 위탁개발생산 수요와 신규 거점 운영 조건이 사업 환경이다. 성장 발표만으로 밸류에이션 부담이 해소됐다고 보지 않는다.",
+        "resource": "생산능력·인수 자산은 성장 자원이며 조달 조건은 주당 가치에 영향을 줄 수 있다. 반기 별도 현금은 10월의 실제 조달 완료 잔액이 아니다.",
+        "mechanism": "설비·인수 투자 → 생산·수주 실행 → 미래 현금흐름 증가 가능성; 증자 주식수·가격 → 기존 주주의 경제적 효과",
+        "up": "가동률·수주·마진이 성장 전망을 지지하고 투자 회수와 증자 조건이 수용 가능한 것으로 평가될 때 상승 가설을 강화한다.",
+        "down": "투자 회수 불확실성이나 자본 조달 부담이 성장 기대를 넘어서면 실적 증가에도 하방 경로가 가능하다.",
+        "reversal": "실적 호조 반영 후 증자 조건에 대한 재평가로 상승→하락, 조달 우려 조정 뒤 실행 성과 확인으로 하락→상승이 가능하다.",
+        "trigger": "11월 예정 기존 주주 청약의 확정 조건·권리일정과 인수 진행·수주 공시를 재조회한다.",
+        "invalidate": "증자 발행가·신주 수·권리락 조건을 확보하기 전에는 희석률이나 권리조정 수익률을 계산하지 않는다.",
+        "missing": "확정 발행가·신주 수·권리일정, 인수 완료 조건, 투자 회수 근거. 권리락이 있으면 경계가격을 재설정해야 한다.",
+        "priority": "자본 조달형",
+        "review": [
+          "성장 지속성",
+          "증자 조건",
+          "주당 가치"
+        ]
+      },
+      "independent_flow_available": true,
+      "upper_barrier": 1521450.0,
+      "lower_barrier": 1376550.0
+    },
+    {
+      "rank": 7,
+      "code": "005380",
+      "name": "현대차",
+      "market": "KOSPI",
+      "cap_krw": 58598349696000,
+      "price": 288000.0,
+      "quote_at": "2026-10-26T15:03:59+09:00",
+      "quote_url": "https://stock.naver.com/domestic/stock/005380",
+      "previous_close_quote": 295500.0,
+      "flow": [
+        {
+          "date": "20261023",
+          "close": 293000.0,
+          "foreign": -5449.0,
+          "institution": -33158.0,
+          "individual": 38898.0,
+          "volume": 531721.0
+        },
+        {
+          "date": "20261022",
+          "close": 300500.0,
+          "foreign": 72354.0,
+          "institution": -81329.0,
+          "individual": 8721.0,
+          "volume": 349114.0
+        },
+        {
+          "date": "20261021",
+          "close": 310000.0,
+          "foreign": 70277.0,
+          "institution": -111271.0,
+          "individual": 41797.0,
+          "volume": 380018.0
+        },
+        {
+          "date": "20261020",
+          "close": 305500.0,
+          "foreign": -17254.0,
+          "institution": -17336.0,
+          "individual": 32956.0,
+          "volume": 477899.0
+        },
+        {
+          "date": "20261019",
+          "close": 324500.0,
+          "foreign": -31974.0,
+          "institution": 127828.0,
+          "individual": -95598.0,
+          "volume": 554076.0
+        }
+      ],
+      "financial": {
+        "receipt": "20260814003521",
+        "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003521",
+        "period": "제 59 기 반기말",
+        "basis": "OFS (separate financial statements; collector fs_div=OFS)",
+        "currency": "KRW",
+        "fetch_date": "20260815",
+        "assets": 100707830000000.0,
+        "liabilities": 27684425000000.0,
+        "cash": 4555515000000.0
+      },
+      "warnings": [
+        "quote_previous_close_vs_flow_close_mismatch"
+      ],
+      "official_sources": [
+        {
+          "id": "hyundai_news",
+          "date": "2026-10-02 / 2026-10-14",
+          "title": "현대차 공식 뉴스룸: 신차·인도 공장",
+          "url": "https://www.hyundai.com/worldwide/en/newsroom",
+          "fact": "공식 뉴스룸에 10월 2일 신형 투싼 공개, 10월 14일 인도 푸네 공장 개소가 게시됐다. 이 발표만으로 4분기 판매량·이익 증가가 확인된 것은 아니다."
+        }
+      ],
+      "interpretation": {
+        "sector": "자동차",
+        "theme": "신차·생산 투자가 판매와 마진으로 이어지는가",
+        "stance": "판매·환율·마진 분리",
+        "summary": "공식 신차·공장 발표는 실행의 출발점이다. 판매량·가격·인센티브·환율이 어떻게 이익으로 연결되는지 확인해야 한다. 단기 수급과 장기 로봇·수소 테마를 같은 시간축에 놓지 않는다.",
+        "subject": "고객의 구매와 회사의 생산 배분, 노사 합의가 서로 다른 행동이다. 수집 뉴스 제목만으로 생산량·합의 효과를 확정하지 않는다.",
+        "environment": "환율·지역별 경쟁과 수요가 판매 이익에 조건을 부여한다. 입력의 원/달러는 10월 22일 자료라 현재 환율 효과의 크기를 계산하지 않는다.",
+        "resource": "신규 생산거점과 제품 라인업은 자원이다. 투자 규모가 곧바로 같은 분기의 이익 증가를 뜻하지 않는다.",
+        "mechanism": "신차·생산능력 → 판매량·제품 구성 → 인센티브·환율을 반영한 마진 → 현금흐름·평가 변화",
+        "up": "신차가 판매·제품 구성 개선으로 이어지고 인센티브·환율 부담을 상쇄하는 마진이 확인될 때 상승 경로를 강화한다.",
+        "down": "판매 회복이 지연되거나 경쟁비용·환율·생산 제약이 마진을 훼손하면 신차 발표에도 하방 경로가 가능하다.",
+        "reversal": "신차 기대 선반영 후 판매 확인이 약하면 상승→하락, 우려 선반영 후 실제 판매가 개선되면 하락→상승을 검토한다.",
+        "trigger": "다음 월별 판매 공시와 실적에서 지역별 물량·인센티브·자동차 부문 마진을 확인한다.",
+        "invalidate": "신차 공개나 로봇·수소 뉴스만으로 5~20거래일 이익 효과를 숫자로 제시하지 않는다.",
+        "missing": "최신 지역별 판매·인센티브, 실시간 환율과 환헤지, 다음 분기 생산 계획.",
+        "priority": "판매 확인형",
+        "review": [
+          "판매량·믹스",
+          "인센티브",
+          "환율·마진"
+        ]
+      },
+      "independent_flow_available": false,
+      "upper_barrier": 302400.0,
+      "lower_barrier": 273600.0
+    },
+    {
+      "rank": 8,
+      "code": "105560",
+      "name": "KB금융",
+      "market": "KOSPI",
+      "cap_krw": 52476050245300,
+      "price": 147950.0,
+      "quote_at": "2026-10-26T15:03:21+09:00",
+      "quote_url": "https://stock.naver.com/domestic/stock/105560",
+      "previous_close_quote": 153000.0,
+      "flow": [
+        {
+          "date": "20261023",
+          "close": 153000.0,
+          "foreign": -203378.0,
+          "institution": 158911.0,
+          "individual": 43293.0,
+          "volume": 916950.0
+        },
+        {
+          "date": "20261022",
+          "close": 157900.0,
+          "foreign": -19109.0,
+          "institution": -1789.0,
+          "individual": 20672.0,
+          "volume": 575377.0
+        },
+        {
+          "date": "20261021",
+          "close": 160600.0,
+          "foreign": 43687.0,
+          "institution": -42754.0,
+          "individual": 14872.0,
+          "volume": 776421.0
+        },
+        {
+          "date": "20261020",
+          "close": 161400.0,
+          "foreign": -108345.0,
+          "institution": 116197.0,
+          "individual": -9154.0,
+          "volume": 914539.0
+        },
+        {
+          "date": "20261019",
+          "close": 160700.0,
+          "foreign": -91362.0,
+          "institution": 108875.0,
+          "individual": -13047.0,
+          "volume": 678165.0
+        }
+      ],
+      "financial": {
+        "receipt": "20260814004200",
+        "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814004200",
+        "period": "제 19 기 반기말",
+        "basis": "OFS (separate financial statements; collector fs_div=OFS)",
+        "currency": "KRW",
+        "fetch_date": "20260815",
+        "assets": 30604872000000.0,
+        "liabilities": 6426966000000.0,
+        "cash": null
+      },
+      "warnings": [],
+      "official_sources": [
+        {
+          "id": "kb_official_pdf",
+          "date": "2026-07-23",
+          "title": "KB금융 2026년 상반기 실적 PDF · PDF 14쪽(자료 9쪽)",
+          "url": "https://www.kbfg.com/common/jsp/fileDownUtil.jsp?filepath=%2Fdata%2Fir_presentation%2F2026_1HPT_KOR.pdf#page=14",
+          "fact": "공식 상반기 자료의 6월 말 CET1은 13.74%(E 표기), 3월 말 13.64% 대비 +0.10%p다. 2025년 말 13.82%보다는 낮다. 같은 자료의 2분기 그룹 NIM은 1.94%, 은행 NIM은 1.74%다."
+        }
+      ],
+      "interpretation": {
+        "sector": "금융",
+        "theme": "이익보다 자본·신용비용과 환원 여력",
+        "stance": "반기 자본 확인 · 다음 실적 대조",
+        "summary": "추가 조회한 공식 PDF에서 6월 말 CET1 13.74%(회사 E 표기)를 확인했다. 전분기보다 10bp 높지만 전년 말보다 8bp 낮다. 자본과 이익 지표의 기준기간을 맞추어 다음 실적에서 환원 여력이 유지되는지 살펴본다.",
+        "subject": "대출자의 상환, 금융그룹의 위험·자본 배분, 이사회 환원 결정을 구분한다. 외국인·기관 거래로 신용위험의 실제 변화를 식별할 수 없다.",
+        "environment": "금리·경기·신용환경은 순이자마진과 신용비용에 서로 다른 방향으로 작용할 수 있다. 금리 변화가 무조건 호재라고 가정하지 않는다.",
+        "resource": "후속 조회로 확보한 6월 말 CET1 13.74%는 연결 그룹의 규제자본 지표다. 별도 장부자산을 대용치로 쓸 필요가 줄었지만, 이 수치를 현재 자본비율로 연장하지 않는다.",
+        "mechanism": "금리·신용환경 → NIM·대손비용·위험가중자산 → CET1·가용자본 → 환원 실행 가능성",
+        "up": "연결 CET1과 신용비용이 안정적이고 환원 실행이 확인될 때 이익의 주주 가치 전환 가설을 강화한다.",
+        "down": "신용비용 상승이나 자본 여력 축소가 환원 기대를 제한하면 과거 이익이 양호해도 하방 경로가 가능하다.",
+        "reversal": "환원 기대 상승 뒤 자본·충당금 부담이 드러나면 상승→하락, 우려 조정 뒤 자본 안정이 확인되면 하락→상승을 검토한다.",
+        "trigger": "다음 공식 실적에서 CET1을 6월 말 13.74%(E)와, 그룹·은행 NIM을 2분기 1.94%·1.74%와 같은 기준으로 대조한다. 신용비용과 환원 실행도 함께 조회한다.",
+        "invalidate": "6월 말 규제자본을 10월 현재 값으로 쓰거나 그룹·은행의 NIM을 같은 계열로 연결하지 않는다.",
+        "missing": "3분기 연결 자본·NIM·신용비용, 최신 위험가중자산과 환원 실행. 반기 값은 추가 확보해 보완했다.",
+        "priority": "자본 추적형",
+        "review": [
+          "CET1",
+          "신용비용",
+          "환원 실행"
+        ]
+      },
+      "independent_flow_available": true,
+      "upper_barrier": 155347.5,
+      "lower_barrier": 140552.5
+    },
+    {
+      "rank": 9,
+      "code": "032830",
+      "name": "삼성생명",
+      "market": "KOSPI",
+      "cap_krw": 49500000000000,
+      "price": 247500.0,
+      "quote_at": "2026-10-26T15:03:23+09:00",
+      "quote_url": "https://stock.naver.com/domestic/stock/032830",
+      "previous_close_quote": 245000.0,
+      "flow": [
+        {
+          "date": "20261023",
+          "close": 243000.0,
+          "foreign": -5950.0,
+          "institution": 16078.0,
+          "individual": -9651.0,
+          "volume": 191821.0
+        },
+        {
+          "date": "20261022",
+          "close": 240500.0,
+          "foreign": -9918.0,
+          "institution": 44136.0,
+          "individual": -33437.0,
+          "volume": 192334.0
+        },
+        {
+          "date": "20261021",
+          "close": 242000.0,
+          "foreign": -8890.0,
+          "institution": 9275.0,
+          "individual": 26.0,
+          "volume": 212100.0
+        },
+        {
+          "date": "20261020",
+          "close": 234500.0,
+          "foreign": -16806.0,
+          "institution": 21262.0,
+          "individual": -3846.0,
+          "volume": 226234.0
+        },
+        {
+          "date": "20261019",
+          "close": 243500.0,
+          "foreign": -35249.0,
+          "institution": 66707.0,
+          "individual": -29717.0,
+          "volume": 297371.0
+        }
+      ],
+      "financial": {
+        "receipt": "20260814003263",
+        "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003263",
+        "period": "제 71 기 반기말",
+        "basis": "OFS (separate financial statements; collector fs_div=OFS)",
+        "currency": "KRW",
+        "fetch_date": "20260816",
+        "assets": 415317491000000.0,
+        "liabilities": 277455876000000.0,
+        "cash": 2806514000000.0
+      },
+      "warnings": [
+        "quote_previous_close_vs_flow_close_mismatch"
+      ],
+      "official_sources": [
+        {
+          "id": "life_official_pdf",
+          "date": "2026-08-13",
+          "title": "삼성생명 2026년 상반기 실적 PDF · PDF 4·18쪽",
+          "url": "https://irsvc.teletogether.com/samsunglife/pdf/samsunglife2026Q2_kor.pdf#page=18",
+          "fact": "공식 상반기 자료의 6월 말 총자본 K-ICS는 208%, 기본자본 K-ICS는 177%다. 3월 말 각각 210%·170% 대비 변화 방향이 다르다. 상반기 신계약 CSM은 1조7,175억원, 6월 말 CSM 잔액은 13.7조원이다."
+        }
+      ],
+      "interpretation": {
+        "sector": "보험",
+        "theme": "보유자산 상승과 배당 여력은 같은가",
+        "stance": "총자본·기본자본 지표 분리",
+        "summary": "공식 PDF를 추가 확보하니 6월 말 총자본 K-ICS는 208%로 전분기보다 2%p 낮고, 기본자본 K-ICS는 177%로 7%p 높았다. 같은 회사의 건전성 지표도 방향이 달라 “자산 상승=모든 자본비율 개선”으로 요약할 수 없다.",
+        "subject": "계약자 행동, 보험사의 자산·부채 관리, 주주환원 결정을 나누어 해석한다. 투자자 순매매로 해약이나 배당 결정을 추정하지 않는다.",
+        "environment": "금리와 주식시장 변화가 자산·보험부채·요구자본에 함께 영향을 줄 수 있다. 자산 가격 상승만으로 지급여력 개선을 단정하지 않는다.",
+        "resource": "후속 조회에서 총자본·기본자본 K-ICS와 CSM을 확보했다. 6월 말 관측이며 10월 현재 지급여력을 뜻하지 않는다. 현금 비중만으로 보험사의 유동성 위기를 판정하지 않는다.",
+        "mechanism": "금리·투자자산과 보험계약 변화 → 보험손익·자본 변동 → 지급여력·배당가능이익 → 환원 기대",
+        "up": "보험손익과 신계약 CSM이 유지·개선되고 규제자본·배당가능이익이 뒷받침될 때 상승 경로를 강화한다.",
+        "down": "투자자산 평가이익에도 보험손익 악화나 요구자본 부담으로 환원 여력이 줄면 하방 경로가 가능하다.",
+        "reversal": "자산가치 상승을 따라 오른 뒤 배당 전환 제약이 확인되면 상승→하락, 자본 우려 이후 본업·지급여력 개선이 확인되면 하락→상승을 검토한다.",
+        "trigger": "다음 공식 실적에서 총자본·기본자본 K-ICS를 각각 208%·177%와 대조하고, 신계약 CSM·보험손익·배당가능이익을 함께 확인한다.",
+        "invalidate": "총자본 K-ICS와 기본자본 K-ICS를 혼동하지 않는다. 반기 기준 자산·부채 민감도를 현재 주가·금리에 그대로 적용하지 않는다.",
+        "missing": "3분기 K-ICS·보험손익·배당가능이익, 현재 자산·부채 민감도와 적용 기준. 반기 K-ICS·CSM은 추가 확보했다.",
+        "priority": "자본 추적형",
+        "review": [
+          "K-ICS",
+          "보험 본업",
+          "배당 전환"
+        ]
+      },
+      "independent_flow_available": true,
+      "upper_barrier": 259875.0,
+      "lower_barrier": 235125.0
+    },
+    {
+      "rank": 10,
+      "code": "028260",
+      "name": "삼성물산",
+      "market": "KOSPI",
+      "cap_krw": 47596185023500,
+      "price": 293500.0,
+      "quote_at": "2026-10-26T15:03:21+09:00",
+      "quote_url": "https://stock.naver.com/domestic/stock/028260",
+      "previous_close_quote": 288000.0,
+      "flow": [
+        {
+          "date": "20261023",
+          "close": 286000.0,
+          "foreign": -68790.0,
+          "institution": 76149.0,
+          "individual": -6326.0,
+          "volume": 261404.0
+        },
+        {
+          "date": "20261022",
+          "close": 287500.0,
+          "foreign": -3975.0,
+          "institution": 36679.0,
+          "individual": -32757.0,
+          "volume": 484687.0
+        },
+        {
+          "date": "20261021",
+          "close": 288500.0,
+          "foreign": 42101.0,
+          "institution": -727.0,
+          "individual": -40913.0,
+          "volume": 352258.0
+        },
+        {
+          "date": "20261020",
+          "close": 272000.0,
+          "foreign": 21831.0,
+          "institution": -14493.0,
+          "individual": -7142.0,
+          "volume": 287074.0
+        },
+        {
+          "date": "20261019",
+          "close": 288500.0,
+          "foreign": -36480.0,
+          "institution": 26625.0,
+          "individual": 9156.0,
+          "volume": 283109.0
+        }
+      ],
+      "financial": {
+        "receipt": "20260814002969",
+        "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002969",
+        "period": "제 63 기 반기말",
+        "basis": "OFS (separate financial statements; collector fs_div=OFS)",
+        "currency": "KRW",
+        "fetch_date": "20260815",
+        "assets": 139109425955964.0,
+        "liabilities": 39988746450347.0,
+        "cash": 2130041280768.0
+      },
+      "warnings": [
+        "quote_previous_close_vs_flow_close_mismatch"
+      ],
+      "official_sources": [
+        {
+          "id": "cnt_q2",
+          "date": "2026-07-29",
+          "title": "삼성물산 2분기 실적 참고자료",
+          "url": "https://news.samsungcnt.com/ko/전체기사/전사공통/2026-07-삼성물산-2026년-2분기-실적-참고자료-2/",
+          "fact": "2분기 매출 11조9,950억원, 영업이익 1조320억원. 건설부문 영업이익 2,020억원, 상사 1,420억원. 회사는 하이테크·해외 플랜트 공정 진행과 산업재 트레이딩 성과를 설명했다."
+        }
+      ],
+      "interpretation": {
+        "sector": "복합사업",
+        "theme": "보유 지분과 자체 사업의 가치를 분해",
+        "stance": "건설·환원·지분 구분",
+        "summary": "2분기 공식 실적은 건설·상사 성과 개선을 보여준다. 이후의 사업 지속성과 보유 지분가치·환원 경로를 구별해야 하며, 그룹주 상승을 자체 영업현금흐름 증가로 간주하지 않는다.",
+        "subject": "발주처·사업부의 프로젝트 실행, 회사의 자본 배분, 투자자 거래가 다른 층위다. 관련사 뉴스가 모두 삼성물산의 직접 수주가 되는 것은 아니다.",
+        "environment": "하이테크·해외 플랜트 공정, 산업재 시장과 보유 지분 평가가 다른 경로로 영향을 준다. 그룹 내 경제적 노출의 중첩을 점검한다.",
+        "resource": "수주잔고·프로젝트 수행 능력·지분자산이 핵심 자원이다. 별도 장부자산과 그룹 시장가치, 연결 이익을 중복 합산하지 않는다.",
+        "mechanism": "공정·원가·트레이딩 성과 → 자체 사업 현금흐름; 보유 지분가치·환원 실행 → 할인율 변화",
+        "up": "건설·상사의 이익 개선이 현금 회수로 이어지고 환원 또는 할인율 개선의 근거가 추가되면 상승 경로를 강화한다.",
+        "down": "원가·공정 지연이나 보유 지분가치 하락, 할인율 확대가 겹치면 분기 실적이 양호해도 하방 경로가 가능하다.",
+        "reversal": "그룹주와 수주 기대에 오른 뒤 현금 회수가 지연되면 상승→하락, 사업 우려 조정 뒤 공정·원가 안정이 확인되면 하락→상승을 검토한다.",
+        "trigger": "다음 실적에서 건설 원가·공정·영업현금흐름을 확인하고, 최신 수주와 환원 공시를 분리 조회한다.",
+        "invalidate": "관계사 시가총액 증가를 삼성물산의 영업매출 증가로 기록하거나 지분가치를 중복 계산하지 않는다.",
+        "missing": "3분기 부문별 실적·현금흐름, 신규 수주의 원문·채산성, 최신 환원 실행.",
+        "priority": "복합 노출형",
+        "review": [
+          "건설 현금흐름",
+          "지분 중첩",
+          "할인율·환원"
+        ]
+      },
+      "independent_flow_available": true,
+      "upper_barrier": 308175.0,
+      "lower_barrier": 278825.0
+    }
+  ],
+  "t_stage": {
+    "historical_price_requeries": 9,
+    "historical_price_matches_flow": 9,
+    "supplemental_official_pdfs": 2,
+    "role_update_calls": 4,
+    "quote_snapshot_replaced": false
+  }
+}
