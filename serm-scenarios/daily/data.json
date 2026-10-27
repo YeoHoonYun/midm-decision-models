@@ -1,6 +1,6 @@
 {
   "method_version": "SER-M-CPT-WS-1.1",
-  "built_at": "2026-10-27T11:01:02.943921+09:00",
+  "built_at": "2026-10-27T17:42:17.942813+09:00",
   "reports": [
     {
       "method_version": "SER-M-CPT-WS-1.1",
@@ -7601,12 +7601,647 @@
   },
   "research_validation": {
     "study": "36-R27",
-    "at": "2026-10-27T02:00:42.052464+00:00",
-    "completed_units": 97,
+    "at": "2026-10-27T08:36:51.675270+00:00",
+    "completed_units": 360,
     "planned_units": 360,
-    "physical_calls": 247,
-    "state": "pending_full_audit",
+    "physical_calls": 876,
+    "state": "complete_audited",
     "shared_responses": true,
-    "scope": "Issuer-disjoint financial evidence-control task; not corporate CPT/WS strategic effectiveness"
+    "scope": "Issuer-disjoint financial evidence-control task; not corporate CPT/WS strategic effectiveness",
+    "records": 1080,
+    "difference": 0.46111111111111114,
+    "arm_totals": [
+      {
+        "arm": "generic_adaptive",
+        "units": 360,
+        "joint_success": 194,
+        "logical_calls": 710,
+        "logical_tokens": 481531,
+        "source_reads": 518
+      },
+      {
+        "arm": "generic_rules",
+        "units": 360,
+        "joint_success": 360,
+        "logical_calls": 684,
+        "logical_tokens": 420236,
+        "source_reads": 684
+      },
+      {
+        "arm": "serm_full",
+        "units": 360,
+        "joint_success": 360,
+        "logical_calls": 684,
+        "logical_tokens": 420236,
+        "source_reads": 684
+      }
+    ],
+    "market_intervals": [
+      {
+        "market": "KR",
+        "issuers": 20,
+        "paired_units": 180,
+        "difference": 0.8055555555555556,
+        "ci95": [
+          0.7666666666666667,
+          0.8444444444444444
+        ],
+        "bootstrap_seed": 362710
+      },
+      {
+        "market": "US",
+        "issuers": 20,
+        "paired_units": 180,
+        "difference": 0.11666666666666665,
+        "ci95": [
+          0.0611111111111111,
+          0.17777777777777776
+        ],
+        "bootstrap_seed": 362711
+      }
+    ],
+    "issuer_results": [
+      {
+        "market": "KR",
+        "issuer": "000810",
+        "paired_units": 9,
+        "generic_adaptive": 2,
+        "generic_rules": 9,
+        "serm_full": 9,
+        "difference": 0.7777777777777778
+      },
+      {
+        "market": "KR",
+        "issuer": "003670",
+        "paired_units": 9,
+        "generic_adaptive": 2,
+        "generic_rules": 9,
+        "serm_full": 9,
+        "difference": 0.7777777777777778
+      },
+      {
+        "market": "KR",
+        "issuer": "006400",
+        "paired_units": 9,
+        "generic_adaptive": 2,
+        "generic_rules": 9,
+        "serm_full": 9,
+        "difference": 0.7777777777777778
+      },
+      {
+        "market": "KR",
+        "issuer": "009540",
+        "paired_units": 9,
+        "generic_adaptive": 2,
+        "generic_rules": 9,
+        "serm_full": 9,
+        "difference": 0.7777777777777778
+      },
+      {
+        "market": "KR",
+        "issuer": "010130",
+        "paired_units": 9,
+        "generic_adaptive": 1,
+        "generic_rules": 9,
+        "serm_full": 9,
+        "difference": 0.8888888888888888
+      },
+      {
+        "market": "KR",
+        "issuer": "010140",
+        "paired_units": 9,
+        "generic_adaptive": 1,
+        "generic_rules": 9,
+        "serm_full": 9,
+        "difference": 0.8888888888888888
+      },
+      {
+        "market": "KR",
+        "issuer": "012450",
+        "paired_units": 9,
+        "generic_adaptive": 2,
+        "generic_rules": 9,
+        "serm_full": 9,
+        "difference": 0.7777777777777778
+      },
+      {
+        "market": "KR",
+        "issuer": "015760",
+        "paired_units": 9,
+        "generic_adaptive": 2,
+        "generic_rules": 9,
+        "serm_full": 9,
+        "difference": 0.7777777777777778
+      },
+      {
+        "market": "KR",
+        "issuer": "017670",
+        "paired_units": 9,
+        "generic_adaptive": 0,
+        "generic_rules": 9,
+        "serm_full": 9,
+        "difference": 1.0
+      },
+      {
+        "market": "KR",
+        "issuer": "018260",
+        "paired_units": 9,
+        "generic_adaptive": 1,
+        "generic_rules": 9,
+        "serm_full": 9,
+        "difference": 0.8888888888888888
+      },
+      {
+        "market": "KR",
+        "issuer": "024110",
+        "paired_units": 9,
+        "generic_adaptive": 1,
+        "generic_rules": 9,
+        "serm_full": 9,
+        "difference": 0.8888888888888888
+      },
+      {
+        "market": "KR",
+        "issuer": "030200",
+        "paired_units": 9,
+        "generic_adaptive": 2,
+        "generic_rules": 9,
+        "serm_full": 9,
+        "difference": 0.7777777777777778
+      },
+      {
+        "market": "KR",
+        "issuer": "033780",
+        "paired_units": 9,
+        "generic_adaptive": 2,
+        "generic_rules": 9,
+        "serm_full": 9,
+        "difference": 0.7777777777777778
+      },
+      {
+        "market": "KR",
+        "issuer": "034020",
+        "paired_units": 9,
+        "generic_adaptive": 2,
+        "generic_rules": 9,
+        "serm_full": 9,
+        "difference": 0.7777777777777778
+      },
+      {
+        "market": "KR",
+        "issuer": "051910",
+        "paired_units": 9,
+        "generic_adaptive": 2,
+        "generic_rules": 9,
+        "serm_full": 9,
+        "difference": 0.7777777777777778
+      },
+      {
+        "market": "KR",
+        "issuer": "066570",
+        "paired_units": 9,
+        "generic_adaptive": 2,
+        "generic_rules": 9,
+        "serm_full": 9,
+        "difference": 0.7777777777777778
+      },
+      {
+        "market": "KR",
+        "issuer": "068270",
+        "paired_units": 9,
+        "generic_adaptive": 1,
+        "generic_rules": 9,
+        "serm_full": 9,
+        "difference": 0.8888888888888888
+      },
+      {
+        "market": "KR",
+        "issuer": "090430",
+        "paired_units": 9,
+        "generic_adaptive": 2,
+        "generic_rules": 9,
+        "serm_full": 9,
+        "difference": 0.7777777777777778
+      },
+      {
+        "market": "KR",
+        "issuer": "096770",
+        "paired_units": 9,
+        "generic_adaptive": 4,
+        "generic_rules": 9,
+        "serm_full": 9,
+        "difference": 0.5555555555555556
+      },
+      {
+        "market": "KR",
+        "issuer": "329180",
+        "paired_units": 9,
+        "generic_adaptive": 2,
+        "generic_rules": 9,
+        "serm_full": 9,
+        "difference": 0.7777777777777778
+      },
+      {
+        "market": "US",
+        "issuer": "ABBV",
+        "paired_units": 9,
+        "generic_adaptive": 9,
+        "generic_rules": 9,
+        "serm_full": 9,
+        "difference": 0.0
+      },
+      {
+        "market": "US",
+        "issuer": "BAC",
+        "paired_units": 9,
+        "generic_adaptive": 9,
+        "generic_rules": 9,
+        "serm_full": 9,
+        "difference": 0.0
+      },
+      {
+        "market": "US",
+        "issuer": "CAT",
+        "paired_units": 9,
+        "generic_adaptive": 8,
+        "generic_rules": 9,
+        "serm_full": 9,
+        "difference": 0.1111111111111111
+      },
+      {
+        "market": "US",
+        "issuer": "COST",
+        "paired_units": 9,
+        "generic_adaptive": 7,
+        "generic_rules": 9,
+        "serm_full": 9,
+        "difference": 0.2222222222222222
+      },
+      {
+        "market": "US",
+        "issuer": "CSCO",
+        "paired_units": 9,
+        "generic_adaptive": 9,
+        "generic_rules": 9,
+        "serm_full": 9,
+        "difference": 0.0
+      },
+      {
+        "market": "US",
+        "issuer": "CVX",
+        "paired_units": 9,
+        "generic_adaptive": 8,
+        "generic_rules": 9,
+        "serm_full": 9,
+        "difference": 0.1111111111111111
+      },
+      {
+        "market": "US",
+        "issuer": "GS",
+        "paired_units": 9,
+        "generic_adaptive": 9,
+        "generic_rules": 9,
+        "serm_full": 9,
+        "difference": 0.0
+      },
+      {
+        "market": "US",
+        "issuer": "HD",
+        "paired_units": 9,
+        "generic_adaptive": 8,
+        "generic_rules": 9,
+        "serm_full": 9,
+        "difference": 0.1111111111111111
+      },
+      {
+        "market": "US",
+        "issuer": "IBM",
+        "paired_units": 9,
+        "generic_adaptive": 8,
+        "generic_rules": 9,
+        "serm_full": 9,
+        "difference": 0.1111111111111111
+      },
+      {
+        "market": "US",
+        "issuer": "JNJ",
+        "paired_units": 9,
+        "generic_adaptive": 8,
+        "generic_rules": 9,
+        "serm_full": 9,
+        "difference": 0.1111111111111111
+      },
+      {
+        "market": "US",
+        "issuer": "KO",
+        "paired_units": 9,
+        "generic_adaptive": 9,
+        "generic_rules": 9,
+        "serm_full": 9,
+        "difference": 0.0
+      },
+      {
+        "market": "US",
+        "issuer": "MA",
+        "paired_units": 9,
+        "generic_adaptive": 6,
+        "generic_rules": 9,
+        "serm_full": 9,
+        "difference": 0.3333333333333333
+      },
+      {
+        "market": "US",
+        "issuer": "MRK",
+        "paired_units": 9,
+        "generic_adaptive": 9,
+        "generic_rules": 9,
+        "serm_full": 9,
+        "difference": 0.0
+      },
+      {
+        "market": "US",
+        "issuer": "ORCL",
+        "paired_units": 9,
+        "generic_adaptive": 9,
+        "generic_rules": 9,
+        "serm_full": 9,
+        "difference": 0.0
+      },
+      {
+        "market": "US",
+        "issuer": "PEP",
+        "paired_units": 9,
+        "generic_adaptive": 9,
+        "generic_rules": 9,
+        "serm_full": 9,
+        "difference": 0.0
+      },
+      {
+        "market": "US",
+        "issuer": "PG",
+        "paired_units": 9,
+        "generic_adaptive": 7,
+        "generic_rules": 9,
+        "serm_full": 9,
+        "difference": 0.2222222222222222
+      },
+      {
+        "market": "US",
+        "issuer": "UNH",
+        "paired_units": 9,
+        "generic_adaptive": 5,
+        "generic_rules": 9,
+        "serm_full": 9,
+        "difference": 0.4444444444444444
+      },
+      {
+        "market": "US",
+        "issuer": "V",
+        "paired_units": 9,
+        "generic_adaptive": 7,
+        "generic_rules": 9,
+        "serm_full": 9,
+        "difference": 0.2222222222222222
+      },
+      {
+        "market": "US",
+        "issuer": "WFC",
+        "paired_units": 9,
+        "generic_adaptive": 6,
+        "generic_rules": 9,
+        "serm_full": 9,
+        "difference": 0.3333333333333333
+      },
+      {
+        "market": "US",
+        "issuer": "XOM",
+        "paired_units": 9,
+        "generic_adaptive": 9,
+        "generic_rules": 9,
+        "serm_full": 9,
+        "difference": 0.0
+      }
+    ],
+    "ci95": [
+      0.4277777777777778,
+      0.49722222222222223
+    ],
+    "resampling": "10,000 market-stratified issuer-cluster draws; documents and seeds retained together",
+    "same_success_as_generic_rules": true,
+    "transport_errors": 0,
+    "invalid_calls": 0,
+    "audit_at": "2026-10-27T08:37:05.346688+00:00",
+    "breakdowns": [
+      {
+        "field": "market",
+        "value": "KR",
+        "arm": "generic_adaptive",
+        "units": 180,
+        "successes": 35,
+        "logical_calls": 369,
+        "logical_tokens": 268547,
+        "source_reads": 215
+      },
+      {
+        "field": "market",
+        "value": "KR",
+        "arm": "generic_rules",
+        "units": 180,
+        "successes": 180,
+        "logical_calls": 360,
+        "logical_tokens": 225561,
+        "source_reads": 360
+      },
+      {
+        "field": "market",
+        "value": "KR",
+        "arm": "serm_full",
+        "units": 180,
+        "successes": 180,
+        "logical_calls": 360,
+        "logical_tokens": 225561,
+        "source_reads": 360
+      },
+      {
+        "field": "market",
+        "value": "US",
+        "arm": "generic_adaptive",
+        "units": 180,
+        "successes": 159,
+        "logical_calls": 341,
+        "logical_tokens": 212984,
+        "source_reads": 303
+      },
+      {
+        "field": "market",
+        "value": "US",
+        "arm": "generic_rules",
+        "units": 180,
+        "successes": 180,
+        "logical_calls": 324,
+        "logical_tokens": 194675,
+        "source_reads": 324
+      },
+      {
+        "field": "market",
+        "value": "US",
+        "arm": "serm_full",
+        "units": 180,
+        "successes": 180,
+        "logical_calls": 324,
+        "logical_tokens": 194675,
+        "source_reads": 324
+      },
+      {
+        "field": "seed",
+        "value": 362701,
+        "arm": "generic_adaptive",
+        "units": 120,
+        "successes": 68,
+        "logical_calls": 245,
+        "logical_tokens": 166266,
+        "source_reads": 176
+      },
+      {
+        "field": "seed",
+        "value": 362701,
+        "arm": "generic_rules",
+        "units": 120,
+        "successes": 120,
+        "logical_calls": 228,
+        "logical_tokens": 140154,
+        "source_reads": 228
+      },
+      {
+        "field": "seed",
+        "value": 362701,
+        "arm": "serm_full",
+        "units": 120,
+        "successes": 120,
+        "logical_calls": 228,
+        "logical_tokens": 140154,
+        "source_reads": 228
+      },
+      {
+        "field": "seed",
+        "value": 362702,
+        "arm": "generic_adaptive",
+        "units": 120,
+        "successes": 62,
+        "logical_calls": 234,
+        "logical_tokens": 159041,
+        "source_reads": 170
+      },
+      {
+        "field": "seed",
+        "value": 362702,
+        "arm": "generic_rules",
+        "units": 120,
+        "successes": 120,
+        "logical_calls": 228,
+        "logical_tokens": 140009,
+        "source_reads": 228
+      },
+      {
+        "field": "seed",
+        "value": 362702,
+        "arm": "serm_full",
+        "units": 120,
+        "successes": 120,
+        "logical_calls": 228,
+        "logical_tokens": 140009,
+        "source_reads": 228
+      },
+      {
+        "field": "seed",
+        "value": 362703,
+        "arm": "generic_adaptive",
+        "units": 120,
+        "successes": 64,
+        "logical_calls": 231,
+        "logical_tokens": 156224,
+        "source_reads": 172
+      },
+      {
+        "field": "seed",
+        "value": 362703,
+        "arm": "generic_rules",
+        "units": 120,
+        "successes": 120,
+        "logical_calls": 228,
+        "logical_tokens": 140073,
+        "source_reads": 228
+      },
+      {
+        "field": "seed",
+        "value": 362703,
+        "arm": "serm_full",
+        "units": 120,
+        "successes": 120,
+        "logical_calls": 228,
+        "logical_tokens": 140073,
+        "source_reads": 228
+      },
+      {
+        "field": "answerable",
+        "value": false,
+        "arm": "generic_adaptive",
+        "units": 36,
+        "successes": 36,
+        "logical_calls": 36,
+        "logical_tokens": 19614,
+        "source_reads": 36
+      },
+      {
+        "field": "answerable",
+        "value": false,
+        "arm": "generic_rules",
+        "units": 36,
+        "successes": 36,
+        "logical_calls": 36,
+        "logical_tokens": 19614,
+        "source_reads": 36
+      },
+      {
+        "field": "answerable",
+        "value": false,
+        "arm": "serm_full",
+        "units": 36,
+        "successes": 36,
+        "logical_calls": 36,
+        "logical_tokens": 19614,
+        "source_reads": 36
+      },
+      {
+        "field": "answerable",
+        "value": true,
+        "arm": "generic_adaptive",
+        "units": 324,
+        "successes": 158,
+        "logical_calls": 674,
+        "logical_tokens": 461917,
+        "source_reads": 482
+      },
+      {
+        "field": "answerable",
+        "value": true,
+        "arm": "generic_rules",
+        "units": 324,
+        "successes": 324,
+        "logical_calls": 648,
+        "logical_tokens": 400622,
+        "source_reads": 648
+      },
+      {
+        "field": "answerable",
+        "value": true,
+        "arm": "serm_full",
+        "units": 324,
+        "successes": 324,
+        "logical_calls": 648,
+        "logical_tokens": 400622,
+        "source_reads": 648
+      }
+    ]
   }
 }
