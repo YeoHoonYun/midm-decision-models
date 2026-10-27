@@ -1,0 +1,3856 @@
+{
+  "method_version": "SER-M-CPT-WS-1.1",
+  "market": "US",
+  "asof": "2026-10-26",
+  "created_at": "2026-10-27T01:54:47.978455+00:00",
+  "run_id": "20261027T015447Z_US_method11",
+  "index": {
+    "name": "S&P 500",
+    "date": "2026-10-26",
+    "return_5": -0.0018151672172800337,
+    "return_20": -0.0009005987914361135,
+    "volatility_20": 0.09900498036098758,
+    "source": {
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?range=6mo&interval=1d",
+      "retrieved_at": "2026-10-27T00:21:56.400906+00:00",
+      "sha256": "4b9c0480719d39372d7d3977bd4df7b4d070ca0eba10524f3b20fc94eca68860",
+      "bytes": 14048
+    },
+    "basis": "provider Close, descriptive price change; not dividend-reinvested return"
+  },
+  "companies": [
+    {
+      "code": "NVDA",
+      "name": "NVIDIA",
+      "market": "US",
+      "industry": "반도체",
+      "objective": "AI 플랫폼 전환의 공급 실행과 회수의 조건과 실패 경로를 비교하는 분석자 설정 목적",
+      "asof": "2026-10-26",
+      "price": {
+        "date": "2026-10-26",
+        "return_5": -0.0050209422648572755,
+        "return_20": -0.0561915606748884,
+        "volatility_20": 0.30055662013288226,
+        "source": {
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/NVDA?range=6mo&interval=1d",
+          "retrieved_at": "2026-10-27T00:21:56.772967+00:00",
+          "sha256": "6f6f0d9aed368622d6e1d50394a2f0d8e25e1bd75cb8d042c2c0afd277ac76e1",
+          "bytes": 15128,
+          "completed_close_fallback": {
+            "url": "https://api.stock.naver.com/stock/NVDA.O/price",
+            "retrieved_at": "2026-10-27T00:21:56.815964+00:00",
+            "sha256": "3f04dad581cd6db178bcd7bd37557d48052285ae2f1ad45681488eeae92e3a3a",
+            "bytes": 11414
+          },
+          "overlap_check": {
+            "sessions": [
+              "2026-10-21",
+              "2026-10-22",
+              "2026-10-23"
+            ],
+            "max_relative_difference": 3.1825309054767104e-08
+          }
+        },
+        "basis": "provider Close, descriptive price change; not dividend-reinvested return"
+      },
+      "resources": {
+        "status": "unavailable",
+        "reason": "HTTPError",
+        "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001045810.json",
+        "interpretation": "표준 재무 원문 확인 실패 또는 대응 태그 공백. 자원 전체 부재를 뜻하지 않음."
+      },
+      "news": {
+        "status": "title_metadata_only",
+        "count": 20,
+        "items": [
+          {
+            "title": "Why Range Resources Stock Surged Today",
+            "url": "https://www.fool.com/investing/2026/10/26/why-range-resources-stock-surged-today/?.tsrc=rss",
+            "published_at": "2026-10-26T22:47:50+00:00",
+            "body_read": false
+          },
+          {
+            "title": "Intel vs. Nvidia: Flat Trends vs. Rapid Expansion in Revenue",
+            "url": "https://www.fool.com/coverage/charts/2026/10/26/intel-vs-nvidia-flat-trends-vs-rapid-expansion-in-revenue/?.tsrc=rss",
+            "published_at": "2026-10-26T22:20:01+00:00",
+            "body_read": false
+          },
+          {
+            "title": "Anthropic Just Filed to Go Public. Should You Buy the Stock?",
+            "url": "https://www.fool.com/investing/2026/10/26/anthropic-just-filed-to-go-public-should-you-buy-the-stock/?.tsrc=rss",
+            "published_at": "2026-10-26T22:55:01+00:00",
+            "body_read": false
+          }
+        ],
+        "source": {
+          "url": "https://feeds.finance.yahoo.com/rss/2.0/headline?s=NVDA&region=US&lang=en-US",
+          "retrieved_at": "2026-10-27T00:21:57.659332+00:00",
+          "sha256": "0654272c3e1bd8eb56b6179f40a5a13e8f274cc14265f47d8201f35dc46bb892",
+          "bytes": 14067
+        }
+      },
+      "evidence": [
+        {
+          "id": "price",
+          "type": "market_observation",
+          "date": "2026-10-26",
+          "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/NVDA?range=6mo&interval=1d",
+          "claim": "종가 계열에서 계산한 변화·변동성"
+        },
+        {
+          "id": "subject_review_0",
+          "type": "explicit_strategy_or_capital_decision",
+          "date": "2026-08-26",
+          "source_url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027/",
+          "claim": "CEO는 AI 인프라 수요에 대응하는 플랫폼 방향을 설명했다. 수요·수익성에 관한 경영진 견해의 독립적 검증은 아니다.",
+          "reviewed_at": "2026-10-27T01:53:44.285909+00:00",
+          "source_sha256": "295c277d313c737dc2eb95e856e027422a0ace3bb49bb1a8eaa52b4eecc41599",
+          "review_method": "AI_assisted_original_body_check_not_independent_human_adjudication"
+        }
+      ],
+      "S": {
+        "actor": "NVIDIA CEO의 당시 공식 발언",
+        "strategic_decision": "AI 플랫폼 전환의 공급 실행과 회수",
+        "observed_statement": "CEO는 AI 인프라 수요에 대응하는 플랫폼 방향을 설명했다. 수요·수익성에 관한 경영진 견해의 독립적 검증은 아니다.",
+        "evidence_ids": [
+          "subject_review_0"
+        ],
+        "status": "explicit_statement_partial",
+        "unknown": "경영자의 실제 의지·비전의 변화와 조직 구성원의 동기·합의·실행 책임은 직접 자료로 추가 확인해야 합니다. 주가·수급·뉴스 제목에서 추정하지 않았습니다.",
+        "motivation_observed": false
+      },
+      "E": {
+        "focus": "고객 수요·수출규제·공급 경쟁",
+        "market_context": {
+          "name": "S&P 500",
+          "date": "2026-10-26",
+          "return_5": -0.0018151672172800337,
+          "return_20": -0.0009005987914361135,
+          "volatility_20": 0.09900498036098758,
+          "source": {
+            "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?range=6mo&interval=1d",
+            "retrieved_at": "2026-10-27T00:21:56.400906+00:00",
+            "sha256": "4b9c0480719d39372d7d3977bd4df7b4d070ca0eba10524f3b20fc94eca68860",
+            "bytes": 14048
+          },
+          "basis": "provider Close, descriptive price change; not dividend-reinvested return"
+        },
+        "missing": "가격 이외의 최신 정책·경쟁·실수요 원문은 별도 확인이 필요합니다."
+      },
+      "R": {
+        "focus": "설계·공정기술, 인력, 생산/패키징 능력과 자본",
+        "verified": {
+          "status": "unavailable",
+          "reason": "HTTPError",
+          "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001045810.json",
+          "interpretation": "표준 재무 원문 확인 실패 또는 대응 태그 공백. 자원 전체 부재를 뜻하지 않음."
+        },
+        "missing": "재무 금액은 인재·기술·조직 역량을 대체하지 않습니다."
+      },
+      "M": {
+        "hypothesis": "고객 컴퓨팅 수요·수출 조건과 칩·네트워크·공급 파트너 역량을 확인한 뒤 경영진이 실행 범위를 승인하면 제품 전환·납품·마진·현금에 연결될 수 있다는 분석 가설",
+        "identified_causal_effect": false,
+        "falsifier": "경영진 발표가 실제 투입으로 이어지지 않거나, 투입 뒤 고객/매출·마진·현금이 개선되지 않으면 연결 가설을 약화한다.",
+        "evidence_status": "conditional_unidentified"
+      },
+      "CPT": {
+        "C": {
+          "configuration": {
+            "S": "AI 플랫폼 전환의 공급 실행과 회수에 대한 의사결정",
+            "E": "고객 컴퓨팅 수요·수출 조건",
+            "R": "칩·네트워크·공급 파트너 역량"
+          },
+          "complementarity": "전략 선택이 환경의 수요·규제 제약과 자원 역량을 함께 충족해야 함",
+          "tradeoff": "투자 속도와 현금 유연성, 단기 실적과 장기 역량의 충돌을 비교",
+          "relative_emphasis_ref": "WS.W",
+          "alternatives": [
+            {
+              "id": "staged",
+              "name": "조건부 단계 확대",
+              "combination": "고객 컴퓨팅 수요·수출 조건 확인과 칩·네트워크·공급 파트너 역량 확보를 묶어 승인 단위로 확대",
+              "tradeoff": "기회 포착 속도와 손실 노출의 균형",
+              "gate": "환경과 자원 조건 모두 충족"
+            },
+            {
+              "id": "preserve",
+              "name": "자원 보전·기존 운영 우선",
+              "combination": "칩·네트워크·공급 파트너 역량을 보전하면서 고객 컴퓨팅 수요·수출 조건 확인 전 신규 투입 유보",
+              "tradeoff": "현금·역량 보전과 기회 상실 가능성",
+              "gate": "환경 또는 자원 조건 미충족"
+            }
+          ]
+        },
+        "P": {
+          "causal_hypotheses": [],
+          "alternatives": "환경이 성과와 경영진 선택에 함께 영향을 주는 공통요인 및 성과가 투자에 영향을 주는 역인과를 배제하지 못함",
+          "candidate_paths": [
+            {
+              "id": "demand_led",
+              "order": [
+                "E",
+                "S",
+                "R",
+                "성과"
+              ],
+              "activation": "고객 컴퓨팅 수요·수출 조건의 변화가 먼저 확인되는 경우",
+              "test": "외부 변화→계획 변경→실제 투입의 시점과 범위를 대조"
+            },
+            {
+              "id": "capability_led",
+              "order": [
+                "R",
+                "S",
+                "E",
+                "성과"
+              ],
+              "activation": "칩·네트워크·공급 파트너 역량의 변화가 먼저 확인되는 경우",
+              "test": "역량 변화→전략 선택→고객 채택의 시점을 대조"
+            },
+            {
+              "id": "commitment_led",
+              "order": [
+                "S",
+                "R",
+                "E",
+                "성과"
+              ],
+              "activation": "AI 플랫폼 전환의 공급 실행과 회수에 대한 명시적 전략 승인이 먼저 확인되는 경우",
+              "test": "승인→자원 투입→외부 반응의 시점을 대조"
+            }
+          ],
+          "selection_status": "unselected_pending_temporal_and_confounder_evidence",
+          "feedback": "성과·현금 회수 관측 → 자원 한도와 전략 재검토. 반복 관찰이며 피드백의 인과효과는 미식별."
+        },
+        "T": {
+          "activation": "고객 컴퓨팅 수요·수출 조건과 칩·네트워크·공급 파트너 역량 확인 및 경영 승인 뒤 단계 실행하는 조건부 제안",
+          "speed": "일괄 확대보다 검증 가능한 단위로 집행하고 성과 관찰 후 확장하는 제안",
+          "monitoring_sessions": {
+            "1": "2026-10-27",
+            "2": "2026-10-28",
+            "5": "2026-11-02",
+            "10": "2026-11-09",
+            "20": "2026-11-23"
+          },
+          "strategy_horizon": "다음 공식 실적·투자 계획의 실행과 중기 현금 회수에서 확인. 20거래일 내 성과 실현을 보장하지 않음",
+          "next_official_event_date": null,
+          "date_note": "관찰일은 재검토 일정이다. 실제 실행 시작일·속도·효과 시차는 기업별 원문과 관측이 확보될 때까지 미확정.",
+          "execution_start_date": null,
+          "execution_lag_estimate": null,
+          "events": []
+        }
+      },
+      "WS": {
+        "W": {
+          "purpose": "전략과 실행의 정합성 검토",
+          "values": {
+            "S": 0.4,
+            "E": 0.3,
+            "R": 0.3
+          },
+          "rule": "위 두 시장 조건에 해당하지 않음",
+          "version": "purpose_rule_v1_unvalidated",
+          "estimated": false,
+          "interpretation": "시장 문맥으로 고른 참고 정책값이다. 기업 목적·선호·제약을 확인해 선정한 집중 비중이 아니므로 실제 W 결정은 보류한다.",
+          "sensitivity": [
+            {
+              "varied": "S",
+              "delta_pp": -10.0,
+              "weights": {
+                "S": 0.3,
+                "E": 0.35,
+                "R": 0.35
+              },
+              "first_priority": "E"
+            },
+            {
+              "varied": "S",
+              "delta_pp": 10.0,
+              "weights": {
+                "S": 0.5,
+                "E": 0.25,
+                "R": 0.25
+              },
+              "first_priority": "S"
+            },
+            {
+              "varied": "E",
+              "delta_pp": -10.0,
+              "weights": {
+                "S": 0.45714286,
+                "E": 0.2,
+                "R": 0.34285714
+              },
+              "first_priority": "S"
+            },
+            {
+              "varied": "E",
+              "delta_pp": 10.0,
+              "weights": {
+                "S": 0.34285714,
+                "E": 0.4,
+                "R": 0.25714286
+              },
+              "first_priority": "E"
+            },
+            {
+              "varied": "R",
+              "delta_pp": -10.0,
+              "weights": {
+                "S": 0.45714286,
+                "E": 0.34285714,
+                "R": 0.2
+              },
+              "first_priority": "S"
+            },
+            {
+              "varied": "R",
+              "delta_pp": 10.0,
+              "weights": {
+                "S": 0.34285714,
+                "E": 0.25714286,
+                "R": 0.4
+              },
+              "first_priority": "R"
+            }
+          ],
+          "first_priority_changes": true,
+          "applies_to": "2026-10-26",
+          "decision_status": "unselected_reference",
+          "selection_requirements": [
+            "목적과 의사결정 주체 확인",
+            "S/E/R의 병목·대안·상충 검토",
+            "비중 변경의 의사결정 영향 평가"
+          ]
+        },
+        "S": {
+          "kind": "proposed_dependency_roadmap_not_observed_execution",
+          "ordering_basis": "prerequisites_before_weights",
+          "tasks": [
+            {
+              "id": "context",
+              "element": "E",
+              "weight": null,
+              "owner": "전략·리스크 조직",
+              "task": "고객 컴퓨팅 수요·수출 조건의 실행 허용 조건 확인",
+              "depends_on": [],
+              "review_due": "2026-10-28",
+              "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
+              "status": "proposed_not_executed"
+            },
+            {
+              "id": "capacity",
+              "element": "R",
+              "weight": null,
+              "owner": "재무·인사·기술 조직",
+              "task": "칩·네트워크·공급 파트너 역량의 가용성과 투입 한도 확인",
+              "depends_on": [],
+              "review_due": "2026-10-28",
+              "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
+              "status": "proposed_not_executed"
+            },
+            {
+              "id": "authorize",
+              "element": "S",
+              "weight": null,
+              "owner": "경영진·이사회",
+              "task": "AI 플랫폼 전환의 공급 실행과 회수의 목적·대안 조합·중단 기준 승인",
+              "depends_on": [
+                "context",
+                "capacity"
+              ],
+              "review_due": "2026-11-02",
+              "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
+              "status": "proposed_not_executed"
+            },
+            {
+              "id": "deploy",
+              "element": "R",
+              "weight": null,
+              "owner": "사업·운영 조직",
+              "task": "승인 범위 안에서 자원 단계 투입",
+              "depends_on": [
+                "authorize"
+              ],
+              "review_due": "2026-11-09",
+              "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
+              "status": "proposed_not_executed"
+            },
+            {
+              "id": "review",
+              "element": "S",
+              "weight": null,
+              "owner": "경영진·성과관리 조직",
+              "task": "제품 전환·납품·마진·현금을 대조해 지속·축소·중단 재검토",
+              "depends_on": [
+                "deploy"
+              ],
+              "review_due": "2026-11-23",
+              "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
+              "status": "proposed_not_executed"
+            }
+          ]
+        }
+      },
+      "scenarios": {
+        "support": "고객 컴퓨팅 수요·수출 조건과 칩·네트워크·공급 파트너 역량이 함께 충족되고 제품 전환·납품·마진·현금이 확인되는 조건",
+        "adverse": "고객 컴퓨팅 수요·수출 조건 또는 칩·네트워크·공급 파트너 역량 미충족으로 단계 확대가 보류·축소되는 조건",
+        "reversal": "계획 발표·가격 기대와 달리 제품 전환·납품·마진·현금이 실현되지 않아 투입 한도·전략을 재검토하는 조건"
+      },
+      "conclusion_status": "conditional_review_with_evidence_gaps",
+      "estimated_probabilities": null,
+      "new_local_model_calls": 0,
+      "method": "explicit_rule_based_structured_analysis",
+      "official_ir": "https://investor.nvidia.com/",
+      "confidence": {
+        "price": "completed_session_source_checked",
+        "strategy": "explicit_statement_partial",
+        "causality": "not_identified",
+        "prediction": "not_validated"
+      },
+      "objective_origin": "analyst_proposed_not_elicited_corporate_utility",
+      "method_version": "SER-M-CPT-WS-1.1"
+    },
+    {
+      "code": "AAPL",
+      "name": "Apple",
+      "market": "US",
+      "industry": "전자·플랫폼",
+      "objective": "제품·서비스 전환과 자본환원의 양립의 조건과 실패 경로를 비교하는 분석자 설정 목적",
+      "asof": "2026-10-26",
+      "price": {
+        "date": "2026-10-26",
+        "return_5": 0.0028284759773964385,
+        "return_20": 0.01628252424023735,
+        "volatility_20": 0.16660031684776208,
+        "source": {
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/AAPL?range=6mo&interval=1d",
+          "retrieved_at": "2026-10-27T00:21:56.965569+00:00",
+          "sha256": "bff816fb4fa9c0b178fb15c2569e00da67189a2b9b0fe81d845b7f3fc4d5a39e",
+          "bytes": 14743,
+          "completed_close_fallback": {
+            "url": "https://api.stock.naver.com/stock/AAPL.O/price",
+            "retrieved_at": "2026-10-27T00:21:57.004068+00:00",
+            "sha256": "b556d861bb21b406248a4f14b1cbb124999bc81c23c11f498cc9220c784d1d72",
+            "bytes": 11408
+          },
+          "overlap_check": {
+            "sessions": [
+              "2026-10-21",
+              "2026-10-22",
+              "2026-10-23"
+            ],
+            "max_relative_difference": 3.159442130140633e-08
+          }
+        },
+        "basis": "provider Close, descriptive price change; not dividend-reinvested return"
+      },
+      "resources": {
+        "status": "unavailable",
+        "reason": "HTTPError",
+        "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000320193.json",
+        "interpretation": "표준 재무 원문 확인 실패 또는 대응 태그 공백. 자원 전체 부재를 뜻하지 않음."
+      },
+      "news": {
+        "status": "title_metadata_only",
+        "count": 15,
+        "items": [
+          {
+            "title": "Mark Cuban puts Bitcoin and Apple in the same bucket",
+            "url": "https://www.thestreet.com/crypto/markets/mark-cuban-puts-bitcoin-and-apple-in-the-same-bucket?.tsrc=rss",
+            "published_at": "2026-10-26T22:05:25+00:00",
+            "body_read": false
+          },
+          {
+            "title": "Apple (AAPL) Stock Falls Amid Market Uptick: What Investors Need to Know",
+            "url": "https://finance.yahoo.com/markets/stocks/articles/apple-aapl-stock-falls-amid-204503686.html?.tsrc=rss",
+            "published_at": "2026-10-26T20:45:03+00:00",
+            "body_read": false
+          },
+          {
+            "title": "Billionaire predicts 'unhinged' future for iPhone Duo",
+            "url": "https://www.thestreet.com/crypto/innovation/billionaire-predicts-unhinged-future-for-iphone-duo?.tsrc=rss",
+            "published_at": "2026-10-26T20:07:19+00:00",
+            "body_read": false
+          }
+        ],
+        "source": {
+          "url": "https://feeds.finance.yahoo.com/rss/2.0/headline?s=AAPL&region=US&lang=en-US",
+          "retrieved_at": "2026-10-27T00:21:57.558336+00:00",
+          "sha256": "0ed2a8889a310a6b41a697cf0f7e5b1bdfcc5161d3455a6838960291a64c87e3",
+          "bytes": 10268
+        }
+      },
+      "evidence": [
+        {
+          "id": "price",
+          "type": "market_observation",
+          "date": "2026-10-26",
+          "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/AAPL?range=6mo&interval=1d",
+          "claim": "종가 계열에서 계산한 변화·변동성"
+        },
+        {
+          "id": "subject_review_0",
+          "type": "explicit_strategy_or_capital_decision",
+          "date": "2026-07-30",
+          "source_url": "https://www.apple.com/newsroom/2026/07/apple-reports-third-quarter-results/",
+          "claim": "이사회는 현금배당을 선언했다. 자본환원 의사결정의 근거이며 직원 동기나 전체 혁신 전략의 증거는 아니다.",
+          "reviewed_at": "2026-10-27T01:53:44.386823+00:00",
+          "source_sha256": "ee62b07da337bccae517b017a0b3592b328dee50d9d493382aade9d5b63960e8",
+          "review_method": "AI_assisted_original_body_check_not_independent_human_adjudication"
+        }
+      ],
+      "S": {
+        "actor": "Apple 이사회",
+        "strategic_decision": "제품·서비스 전환과 자본환원의 양립",
+        "observed_statement": "이사회는 현금배당을 선언했다. 자본환원 의사결정의 근거이며 직원 동기나 전체 혁신 전략의 증거는 아니다.",
+        "evidence_ids": [
+          "subject_review_0"
+        ],
+        "status": "explicit_statement_partial",
+        "unknown": "경영자의 실제 의지·비전의 변화와 조직 구성원의 동기·합의·실행 책임은 직접 자료로 추가 확인해야 합니다. 주가·수급·뉴스 제목에서 추정하지 않았습니다.",
+        "motivation_observed": false
+      },
+      "E": {
+        "focus": "기기 수요·경쟁·플랫폼 규제",
+        "market_context": {
+          "name": "S&P 500",
+          "date": "2026-10-26",
+          "return_5": -0.0018151672172800337,
+          "return_20": -0.0009005987914361135,
+          "volatility_20": 0.09900498036098758,
+          "source": {
+            "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?range=6mo&interval=1d",
+            "retrieved_at": "2026-10-27T00:21:56.400906+00:00",
+            "sha256": "4b9c0480719d39372d7d3977bd4df7b4d070ca0eba10524f3b20fc94eca68860",
+            "bytes": 14048
+          },
+          "basis": "provider Close, descriptive price change; not dividend-reinvested return"
+        },
+        "missing": "가격 이외의 최신 정책·경쟁·실수요 원문은 별도 확인이 필요합니다."
+      },
+      "R": {
+        "focus": "브랜드·설계·생태계·인력·현금",
+        "verified": {
+          "status": "unavailable",
+          "reason": "HTTPError",
+          "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000320193.json",
+          "interpretation": "표준 재무 원문 확인 실패 또는 대응 태그 공백. 자원 전체 부재를 뜻하지 않음."
+        },
+        "missing": "재무 금액은 인재·기술·조직 역량을 대체하지 않습니다."
+      },
+      "M": {
+        "hypothesis": "기기 교체·서비스 채택·규제과 설계·생태계·현금 여력을 확인한 뒤 경영진이 실행 범위를 승인하면 사용·서비스 유지·현금·환원에 연결될 수 있다는 분석 가설",
+        "identified_causal_effect": false,
+        "falsifier": "경영진 발표가 실제 투입으로 이어지지 않거나, 투입 뒤 고객/매출·마진·현금이 개선되지 않으면 연결 가설을 약화한다.",
+        "evidence_status": "conditional_unidentified"
+      },
+      "CPT": {
+        "C": {
+          "configuration": {
+            "S": "제품·서비스 전환과 자본환원의 양립에 대한 의사결정",
+            "E": "기기 교체·서비스 채택·규제",
+            "R": "설계·생태계·현금 여력"
+          },
+          "complementarity": "전략 선택이 환경의 수요·규제 제약과 자원 역량을 함께 충족해야 함",
+          "tradeoff": "투자 속도와 현금 유연성, 단기 실적과 장기 역량의 충돌을 비교",
+          "relative_emphasis_ref": "WS.W",
+          "alternatives": [
+            {
+              "id": "staged",
+              "name": "조건부 단계 확대",
+              "combination": "기기 교체·서비스 채택·규제 확인과 설계·생태계·현금 여력 확보를 묶어 승인 단위로 확대",
+              "tradeoff": "기회 포착 속도와 손실 노출의 균형",
+              "gate": "환경과 자원 조건 모두 충족"
+            },
+            {
+              "id": "preserve",
+              "name": "자원 보전·기존 운영 우선",
+              "combination": "설계·생태계·현금 여력을 보전하면서 기기 교체·서비스 채택·규제 확인 전 신규 투입 유보",
+              "tradeoff": "현금·역량 보전과 기회 상실 가능성",
+              "gate": "환경 또는 자원 조건 미충족"
+            }
+          ]
+        },
+        "P": {
+          "causal_hypotheses": [],
+          "alternatives": "환경이 성과와 경영진 선택에 함께 영향을 주는 공통요인 및 성과가 투자에 영향을 주는 역인과를 배제하지 못함",
+          "candidate_paths": [
+            {
+              "id": "demand_led",
+              "order": [
+                "E",
+                "S",
+                "R",
+                "성과"
+              ],
+              "activation": "기기 교체·서비스 채택·규제의 변화가 먼저 확인되는 경우",
+              "test": "외부 변화→계획 변경→실제 투입의 시점과 범위를 대조"
+            },
+            {
+              "id": "capability_led",
+              "order": [
+                "R",
+                "S",
+                "E",
+                "성과"
+              ],
+              "activation": "설계·생태계·현금 여력의 변화가 먼저 확인되는 경우",
+              "test": "역량 변화→전략 선택→고객 채택의 시점을 대조"
+            },
+            {
+              "id": "commitment_led",
+              "order": [
+                "S",
+                "R",
+                "E",
+                "성과"
+              ],
+              "activation": "제품·서비스 전환과 자본환원의 양립에 대한 명시적 전략 승인이 먼저 확인되는 경우",
+              "test": "승인→자원 투입→외부 반응의 시점을 대조"
+            }
+          ],
+          "selection_status": "unselected_pending_temporal_and_confounder_evidence",
+          "feedback": "성과·현금 회수 관측 → 자원 한도와 전략 재검토. 반복 관찰이며 피드백의 인과효과는 미식별."
+        },
+        "T": {
+          "activation": "기기 교체·서비스 채택·규제과 설계·생태계·현금 여력 확인 및 경영 승인 뒤 단계 실행하는 조건부 제안",
+          "speed": "일괄 확대보다 검증 가능한 단위로 집행하고 성과 관찰 후 확장하는 제안",
+          "monitoring_sessions": {
+            "1": "2026-10-27",
+            "2": "2026-10-28",
+            "5": "2026-11-02",
+            "10": "2026-11-09",
+            "20": "2026-11-23"
+          },
+          "strategy_horizon": "다음 공식 실적·투자 계획의 실행과 중기 현금 회수에서 확인. 20거래일 내 성과 실현을 보장하지 않음",
+          "next_official_event_date": null,
+          "date_note": "관찰일은 재검토 일정이다. 실제 실행 시작일·속도·효과 시차는 기업별 원문과 관측이 확보될 때까지 미확정.",
+          "execution_start_date": null,
+          "execution_lag_estimate": null,
+          "events": []
+        }
+      },
+      "WS": {
+        "W": {
+          "purpose": "전략과 실행의 정합성 검토",
+          "values": {
+            "S": 0.4,
+            "E": 0.3,
+            "R": 0.3
+          },
+          "rule": "위 두 시장 조건에 해당하지 않음",
+          "version": "purpose_rule_v1_unvalidated",
+          "estimated": false,
+          "interpretation": "시장 문맥으로 고른 참고 정책값이다. 기업 목적·선호·제약을 확인해 선정한 집중 비중이 아니므로 실제 W 결정은 보류한다.",
+          "sensitivity": [
+            {
+              "varied": "S",
+              "delta_pp": -10.0,
+              "weights": {
+                "S": 0.3,
+                "E": 0.35,
+                "R": 0.35
+              },
+              "first_priority": "E"
+            },
+            {
+              "varied": "S",
+              "delta_pp": 10.0,
+              "weights": {
+                "S": 0.5,
+                "E": 0.25,
+                "R": 0.25
+              },
+              "first_priority": "S"
+            },
+            {
+              "varied": "E",
+              "delta_pp": -10.0,
+              "weights": {
+                "S": 0.45714286,
+                "E": 0.2,
+                "R": 0.34285714
+              },
+              "first_priority": "S"
+            },
+            {
+              "varied": "E",
+              "delta_pp": 10.0,
+              "weights": {
+                "S": 0.34285714,
+                "E": 0.4,
+                "R": 0.25714286
+              },
+              "first_priority": "E"
+            },
+            {
+              "varied": "R",
+              "delta_pp": -10.0,
+              "weights": {
+                "S": 0.45714286,
+                "E": 0.34285714,
+                "R": 0.2
+              },
+              "first_priority": "S"
+            },
+            {
+              "varied": "R",
+              "delta_pp": 10.0,
+              "weights": {
+                "S": 0.34285714,
+                "E": 0.25714286,
+                "R": 0.4
+              },
+              "first_priority": "R"
+            }
+          ],
+          "first_priority_changes": true,
+          "applies_to": "2026-10-26",
+          "decision_status": "unselected_reference",
+          "selection_requirements": [
+            "목적과 의사결정 주체 확인",
+            "S/E/R의 병목·대안·상충 검토",
+            "비중 변경의 의사결정 영향 평가"
+          ]
+        },
+        "S": {
+          "kind": "proposed_dependency_roadmap_not_observed_execution",
+          "ordering_basis": "prerequisites_before_weights",
+          "tasks": [
+            {
+              "id": "context",
+              "element": "E",
+              "weight": null,
+              "owner": "전략·리스크 조직",
+              "task": "기기 교체·서비스 채택·규제의 실행 허용 조건 확인",
+              "depends_on": [],
+              "review_due": "2026-10-28",
+              "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
+              "status": "proposed_not_executed"
+            },
+            {
+              "id": "capacity",
+              "element": "R",
+              "weight": null,
+              "owner": "재무·인사·기술 조직",
+              "task": "설계·생태계·현금 여력의 가용성과 투입 한도 확인",
+              "depends_on": [],
+              "review_due": "2026-10-28",
+              "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
+              "status": "proposed_not_executed"
+            },
+            {
+              "id": "authorize",
+              "element": "S",
+              "weight": null,
+              "owner": "경영진·이사회",
+              "task": "제품·서비스 전환과 자본환원의 양립의 목적·대안 조합·중단 기준 승인",
+              "depends_on": [
+                "context",
+                "capacity"
+              ],
+              "review_due": "2026-11-02",
+              "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
+              "status": "proposed_not_executed"
+            },
+            {
+              "id": "deploy",
+              "element": "R",
+              "weight": null,
+              "owner": "사업·운영 조직",
+              "task": "승인 범위 안에서 자원 단계 투입",
+              "depends_on": [
+                "authorize"
+              ],
+              "review_due": "2026-11-09",
+              "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
+              "status": "proposed_not_executed"
+            },
+            {
+              "id": "review",
+              "element": "S",
+              "weight": null,
+              "owner": "경영진·성과관리 조직",
+              "task": "사용·서비스 유지·현금·환원을 대조해 지속·축소·중단 재검토",
+              "depends_on": [
+                "deploy"
+              ],
+              "review_due": "2026-11-23",
+              "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
+              "status": "proposed_not_executed"
+            }
+          ]
+        }
+      },
+      "scenarios": {
+        "support": "기기 교체·서비스 채택·규제과 설계·생태계·현금 여력이 함께 충족되고 사용·서비스 유지·현금·환원이 확인되는 조건",
+        "adverse": "기기 교체·서비스 채택·규제 또는 설계·생태계·현금 여력 미충족으로 단계 확대가 보류·축소되는 조건",
+        "reversal": "계획 발표·가격 기대와 달리 사용·서비스 유지·현금·환원이 실현되지 않아 투입 한도·전략을 재검토하는 조건"
+      },
+      "conclusion_status": "conditional_review_with_evidence_gaps",
+      "estimated_probabilities": null,
+      "new_local_model_calls": 0,
+      "method": "explicit_rule_based_structured_analysis",
+      "official_ir": "https://investor.apple.com/",
+      "confidence": {
+        "price": "completed_session_source_checked",
+        "strategy": "explicit_statement_partial",
+        "causality": "not_identified",
+        "prediction": "not_validated"
+      },
+      "objective_origin": "analyst_proposed_not_elicited_corporate_utility",
+      "method_version": "SER-M-CPT-WS-1.1"
+    },
+    {
+      "code": "MSFT",
+      "name": "Microsoft",
+      "market": "US",
+      "industry": "클라우드·소프트웨어",
+      "objective": "AI 인프라 투자와 유료 수요의 정합성의 조건과 실패 경로를 비교하는 분석자 설정 목적",
+      "asof": "2026-10-26",
+      "price": {
+        "date": "2026-10-26",
+        "return_5": -0.001724433006390802,
+        "return_20": 0.0459133551770361,
+        "volatility_20": 0.19572217008825757,
+        "source": {
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/MSFT?range=6mo&interval=1d",
+          "retrieved_at": "2026-10-27T00:21:56.811270+00:00",
+          "sha256": "489141a10d9744afd2316ef8450a12f57b13e3ac4870ec2afa8fee665f32776a",
+          "bytes": 14807,
+          "completed_close_fallback": {
+            "url": "https://api.stock.naver.com/stock/MSFT.O/price",
+            "retrieved_at": "2026-10-27T00:21:56.844053+00:00",
+            "sha256": "d77d8430ab5108a3daa1dc665b52e3e79ceb1ca446e0858c9f629500359ce9ee",
+            "bytes": 11405
+          },
+          "overlap_check": {
+            "sessions": [
+              "2026-10-21",
+              "2026-10-22",
+              "2026-10-23"
+            ],
+            "max_relative_difference": 3.2796967364134844e-08
+          }
+        },
+        "basis": "provider Close, descriptive price change; not dividend-reinvested return"
+      },
+      "resources": {
+        "status": "unavailable",
+        "reason": "HTTPError",
+        "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000789019.json",
+        "interpretation": "표준 재무 원문 확인 실패 또는 대응 태그 공백. 자원 전체 부재를 뜻하지 않음."
+      },
+      "news": {
+        "status": "title_metadata_only",
+        "count": 15,
+        "items": [
+          {
+            "title": "CORRECTING and REPLACING Waymo, Google and Microsoft Alums Raise $30M to Build the Data Layer for Physical AI",
+            "url": "https://finance.yahoo.com/technology/ai/articles/waymo-google-microsoft-alums-raise-160000050.html?.tsrc=rss",
+            "published_at": "2026-10-26T23:19:00+00:00",
+            "body_read": false
+          },
+          {
+            "title": "Dow Jones Futures: Elon Musk-Led Tesla Leads Market Higher; Amazon, Alphabet, Microsoft Earnings On Deck",
+            "url": "https://finance.yahoo.com/m/4f45ec30-6388-381f-b8f7-2aed6d460b6f/dow-jones-futures%3A-elon.html?.tsrc=rss",
+            "published_at": "2026-10-26T22:03:09+00:00",
+            "body_read": false
+          },
+          {
+            "title": "Microsoft offers buyouts to nearly 30% of workforce in ongoing AI shift",
+            "url": "https://finance.yahoo.com/technology/ai/articles/microsoft-offers-buyouts-nearly-30-212229529.html?.tsrc=rss",
+            "published_at": "2026-10-26T21:22:29+00:00",
+            "body_read": false
+          }
+        ],
+        "source": {
+          "url": "https://feeds.finance.yahoo.com/rss/2.0/headline?s=MSFT&region=US&lang=en-US",
+          "retrieved_at": "2026-10-27T00:21:57.555355+00:00",
+          "sha256": "6e3605d879ed473c416ad076eec62ffae79c8ab09fa341fe459508cdfc32d3c6",
+          "bytes": 11227
+        }
+      },
+      "evidence": [
+        {
+          "id": "price",
+          "type": "market_observation",
+          "date": "2026-10-26",
+          "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/MSFT?range=6mo&interval=1d",
+          "claim": "종가 계열에서 계산한 변화·변동성"
+        },
+        {
+          "id": "subject_review_0",
+          "type": "explicit_strategy_or_capital_decision",
+          "date": "2026-07-29",
+          "source_url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4",
+          "claim": "경영진은 AI 도입을 통한 고객 성과를 목표로 제시하고 수요 신호를 고려한 설비투자 확대 전망을 설명했다.",
+          "reviewed_at": "2026-10-27T01:53:43.653889+00:00",
+          "source_sha256": "4fc90dfcae4389ea1ffb761bcd12f12ab93bb732ca62167f846614dcfe55a35f",
+          "review_method": "AI_assisted_original_body_check_not_independent_human_adjudication"
+        }
+      ],
+      "S": {
+        "actor": "Microsoft CEO·CFO의 당시 공식 발언",
+        "strategic_decision": "AI 인프라 투자와 유료 수요의 정합성",
+        "observed_statement": "경영진은 AI 도입을 통한 고객 성과를 목표로 제시하고 수요 신호를 고려한 설비투자 확대 전망을 설명했다.",
+        "evidence_ids": [
+          "subject_review_0"
+        ],
+        "status": "explicit_statement_partial",
+        "unknown": "경영자의 실제 의지·비전의 변화와 조직 구성원의 동기·합의·실행 책임은 직접 자료로 추가 확인해야 합니다. 주가·수급·뉴스 제목에서 추정하지 않았습니다.",
+        "motivation_observed": false
+      },
+      "E": {
+        "focus": "클라우드 수요·AI 경쟁·보안 규제",
+        "market_context": {
+          "name": "S&P 500",
+          "date": "2026-10-26",
+          "return_5": -0.0018151672172800337,
+          "return_20": -0.0009005987914361135,
+          "volatility_20": 0.09900498036098758,
+          "source": {
+            "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?range=6mo&interval=1d",
+            "retrieved_at": "2026-10-27T00:21:56.400906+00:00",
+            "sha256": "4b9c0480719d39372d7d3977bd4df7b4d070ca0eba10524f3b20fc94eca68860",
+            "bytes": 14048
+          },
+          "basis": "provider Close, descriptive price change; not dividend-reinvested return"
+        },
+        "missing": "가격 이외의 최신 정책·경쟁·실수요 원문은 별도 확인이 필요합니다."
+      },
+      "R": {
+        "focus": "데이터센터·소프트웨어·인력·현금",
+        "verified": {
+          "status": "unavailable",
+          "reason": "HTTPError",
+          "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000789019.json",
+          "interpretation": "표준 재무 원문 확인 실패 또는 대응 태그 공백. 자원 전체 부재를 뜻하지 않음."
+        },
+        "missing": "재무 금액은 인재·기술·조직 역량을 대체하지 않습니다."
+      },
+      "M": {
+        "hypothesis": "클라우드 계약·유료 AI 수요과 전력·데이터센터·컴퓨팅 여력을 확인한 뒤 경영진이 실행 범위를 승인하면 가동·유료 사용·투자 회수에 연결될 수 있다는 분석 가설",
+        "identified_causal_effect": false,
+        "falsifier": "경영진 발표가 실제 투입으로 이어지지 않거나, 투입 뒤 고객/매출·마진·현금이 개선되지 않으면 연결 가설을 약화한다.",
+        "evidence_status": "conditional_unidentified"
+      },
+      "CPT": {
+        "C": {
+          "configuration": {
+            "S": "AI 인프라 투자와 유료 수요의 정합성에 대한 의사결정",
+            "E": "클라우드 계약·유료 AI 수요",
+            "R": "전력·데이터센터·컴퓨팅 여력"
+          },
+          "complementarity": "전략 선택이 환경의 수요·규제 제약과 자원 역량을 함께 충족해야 함",
+          "tradeoff": "투자 속도와 현금 유연성, 단기 실적과 장기 역량의 충돌을 비교",
+          "relative_emphasis_ref": "WS.W",
+          "alternatives": [
+            {
+              "id": "staged",
+              "name": "조건부 단계 확대",
+              "combination": "클라우드 계약·유료 AI 수요 확인과 전력·데이터센터·컴퓨팅 여력 확보를 묶어 승인 단위로 확대",
+              "tradeoff": "기회 포착 속도와 손실 노출의 균형",
+              "gate": "환경과 자원 조건 모두 충족"
+            },
+            {
+              "id": "preserve",
+              "name": "자원 보전·기존 운영 우선",
+              "combination": "전력·데이터센터·컴퓨팅 여력을 보전하면서 클라우드 계약·유료 AI 수요 확인 전 신규 투입 유보",
+              "tradeoff": "현금·역량 보전과 기회 상실 가능성",
+              "gate": "환경 또는 자원 조건 미충족"
+            }
+          ]
+        },
+        "P": {
+          "causal_hypotheses": [],
+          "alternatives": "환경이 성과와 경영진 선택에 함께 영향을 주는 공통요인 및 성과가 투자에 영향을 주는 역인과를 배제하지 못함",
+          "candidate_paths": [
+            {
+              "id": "demand_led",
+              "order": [
+                "E",
+                "S",
+                "R",
+                "성과"
+              ],
+              "activation": "클라우드 계약·유료 AI 수요의 변화가 먼저 확인되는 경우",
+              "test": "외부 변화→계획 변경→실제 투입의 시점과 범위를 대조"
+            },
+            {
+              "id": "capability_led",
+              "order": [
+                "R",
+                "S",
+                "E",
+                "성과"
+              ],
+              "activation": "전력·데이터센터·컴퓨팅 여력의 변화가 먼저 확인되는 경우",
+              "test": "역량 변화→전략 선택→고객 채택의 시점을 대조"
+            },
+            {
+              "id": "commitment_led",
+              "order": [
+                "S",
+                "R",
+                "E",
+                "성과"
+              ],
+              "activation": "AI 인프라 투자와 유료 수요의 정합성에 대한 명시적 전략 승인이 먼저 확인되는 경우",
+              "test": "승인→자원 투입→외부 반응의 시점을 대조"
+            }
+          ],
+          "selection_status": "unselected_pending_temporal_and_confounder_evidence",
+          "feedback": "성과·현금 회수 관측 → 자원 한도와 전략 재검토. 반복 관찰이며 피드백의 인과효과는 미식별."
+        },
+        "T": {
+          "activation": "클라우드 계약·유료 AI 수요과 전력·데이터센터·컴퓨팅 여력 확인 및 경영 승인 뒤 단계 실행하는 조건부 제안",
+          "speed": "일괄 확대보다 검증 가능한 단위로 집행하고 성과 관찰 후 확장하는 제안",
+          "monitoring_sessions": {
+            "1": "2026-10-27",
+            "2": "2026-10-28",
+            "5": "2026-11-02",
+            "10": "2026-11-09",
+            "20": "2026-11-23"
+          },
+          "strategy_horizon": "다음 공식 실적·투자 계획의 실행과 중기 현금 회수에서 확인. 20거래일 내 성과 실현을 보장하지 않음",
+          "next_official_event_date": null,
+          "date_note": "관찰일은 재검토 일정이다. 실제 실행 시작일·속도·효과 시차는 기업별 원문과 관측이 확보될 때까지 미확정.",
+          "execution_start_date": null,
+          "execution_lag_estimate": null,
+          "events": []
+        }
+      },
+      "WS": {
+        "W": {
+          "purpose": "전략과 실행의 정합성 검토",
+          "values": {
+            "S": 0.4,
+            "E": 0.3,
+            "R": 0.3
+          },
+          "rule": "위 두 시장 조건에 해당하지 않음",
+          "version": "purpose_rule_v1_unvalidated",
+          "estimated": false,
+          "interpretation": "시장 문맥으로 고른 참고 정책값이다. 기업 목적·선호·제약을 확인해 선정한 집중 비중이 아니므로 실제 W 결정은 보류한다.",
+          "sensitivity": [
+            {
+              "varied": "S",
+              "delta_pp": -10.0,
+              "weights": {
+                "S": 0.3,
+                "E": 0.35,
+                "R": 0.35
+              },
+              "first_priority": "E"
+            },
+            {
+              "varied": "S",
+              "delta_pp": 10.0,
+              "weights": {
+                "S": 0.5,
+                "E": 0.25,
+                "R": 0.25
+              },
+              "first_priority": "S"
+            },
+            {
+              "varied": "E",
+              "delta_pp": -10.0,
+              "weights": {
+                "S": 0.45714286,
+                "E": 0.2,
+                "R": 0.34285714
+              },
+              "first_priority": "S"
+            },
+            {
+              "varied": "E",
+              "delta_pp": 10.0,
+              "weights": {
+                "S": 0.34285714,
+                "E": 0.4,
+                "R": 0.25714286
+              },
+              "first_priority": "E"
+            },
+            {
+              "varied": "R",
+              "delta_pp": -10.0,
+              "weights": {
+                "S": 0.45714286,
+                "E": 0.34285714,
+                "R": 0.2
+              },
+              "first_priority": "S"
+            },
+            {
+              "varied": "R",
+              "delta_pp": 10.0,
+              "weights": {
+                "S": 0.34285714,
+                "E": 0.25714286,
+                "R": 0.4
+              },
+              "first_priority": "R"
+            }
+          ],
+          "first_priority_changes": true,
+          "applies_to": "2026-10-26",
+          "decision_status": "unselected_reference",
+          "selection_requirements": [
+            "목적과 의사결정 주체 확인",
+            "S/E/R의 병목·대안·상충 검토",
+            "비중 변경의 의사결정 영향 평가"
+          ]
+        },
+        "S": {
+          "kind": "proposed_dependency_roadmap_not_observed_execution",
+          "ordering_basis": "prerequisites_before_weights",
+          "tasks": [
+            {
+              "id": "context",
+              "element": "E",
+              "weight": null,
+              "owner": "전략·리스크 조직",
+              "task": "클라우드 계약·유료 AI 수요의 실행 허용 조건 확인",
+              "depends_on": [],
+              "review_due": "2026-10-28",
+              "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
+              "status": "proposed_not_executed"
+            },
+            {
+              "id": "capacity",
+              "element": "R",
+              "weight": null,
+              "owner": "재무·인사·기술 조직",
+              "task": "전력·데이터센터·컴퓨팅 여력의 가용성과 투입 한도 확인",
+              "depends_on": [],
+              "review_due": "2026-10-28",
+              "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
+              "status": "proposed_not_executed"
+            },
+            {
+              "id": "authorize",
+              "element": "S",
+              "weight": null,
+              "owner": "경영진·이사회",
+              "task": "AI 인프라 투자와 유료 수요의 정합성의 목적·대안 조합·중단 기준 승인",
+              "depends_on": [
+                "context",
+                "capacity"
+              ],
+              "review_due": "2026-11-02",
+              "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
+              "status": "proposed_not_executed"
+            },
+            {
+              "id": "deploy",
+              "element": "R",
+              "weight": null,
+              "owner": "사업·운영 조직",
+              "task": "승인 범위 안에서 자원 단계 투입",
+              "depends_on": [
+                "authorize"
+              ],
+              "review_due": "2026-11-09",
+              "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
+              "status": "proposed_not_executed"
+            },
+            {
+              "id": "review",
+              "element": "S",
+              "weight": null,
+              "owner": "경영진·성과관리 조직",
+              "task": "가동·유료 사용·투자 회수을 대조해 지속·축소·중단 재검토",
+              "depends_on": [
+                "deploy"
+              ],
+              "review_due": "2026-11-23",
+              "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
+              "status": "proposed_not_executed"
+            }
+          ]
+        }
+      },
+      "scenarios": {
+        "support": "클라우드 계약·유료 AI 수요과 전력·데이터센터·컴퓨팅 여력이 함께 충족되고 가동·유료 사용·투자 회수이 확인되는 조건",
+        "adverse": "클라우드 계약·유료 AI 수요 또는 전력·데이터센터·컴퓨팅 여력 미충족으로 단계 확대가 보류·축소되는 조건",
+        "reversal": "계획 발표·가격 기대와 달리 가동·유료 사용·투자 회수이 실현되지 않아 투입 한도·전략을 재검토하는 조건"
+      },
+      "conclusion_status": "conditional_review_with_evidence_gaps",
+      "estimated_probabilities": null,
+      "new_local_model_calls": 0,
+      "method": "explicit_rule_based_structured_analysis",
+      "official_ir": "https://www.microsoft.com/en-us/Investor/",
+      "confidence": {
+        "price": "completed_session_source_checked",
+        "strategy": "explicit_statement_partial",
+        "causality": "not_identified",
+        "prediction": "not_validated"
+      },
+      "objective_origin": "analyst_proposed_not_elicited_corporate_utility",
+      "method_version": "SER-M-CPT-WS-1.1"
+    },
+    {
+      "code": "GOOGL",
+      "name": "Alphabet",
+      "market": "US",
+      "industry": "광고·클라우드",
+      "objective": "광고·AI·클라우드 투자 배분의 조건과 실패 경로를 비교하는 분석자 설정 목적",
+      "asof": "2026-10-26",
+      "price": {
+        "date": "2026-10-26",
+        "return_5": -0.07955137793722156,
+        "return_20": -0.07571115973741793,
+        "volatility_20": 0.21065813671996544,
+        "source": {
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/GOOGL?range=6mo&interval=1d",
+          "retrieved_at": "2026-10-27T00:21:57.958363+00:00",
+          "sha256": "42b4fab100d2b0da8252b4fb24f31ffb9d96a4b3b88bf27c630816f32ca0ccd9",
+          "bytes": 14774,
+          "completed_close_fallback": {
+            "url": "https://api.stock.naver.com/stock/GOOGL.O/price",
+            "retrieved_at": "2026-10-27T00:21:57.997891+00:00",
+            "sha256": "9bb552c63369e0102242469eb625b73302e7b1b9d67f9629b6b0c81f47934647",
+            "bytes": 11412
+          },
+          "overlap_check": {
+            "sessions": [
+              "2026-10-21",
+              "2026-10-22",
+              "2026-10-23"
+            ],
+            "max_relative_difference": 2.9172018800593946e-08
+          }
+        },
+        "basis": "provider Close, descriptive price change; not dividend-reinvested return"
+      },
+      "resources": {
+        "status": "unavailable",
+        "reason": "HTTPError",
+        "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001652044.json",
+        "interpretation": "표준 재무 원문 확인 실패 또는 대응 태그 공백. 자원 전체 부재를 뜻하지 않음."
+      },
+      "news": {
+        "status": "title_metadata_only",
+        "count": 16,
+        "items": [
+          {
+            "title": "CORRECTING and REPLACING Waymo, Google and Microsoft Alums Raise $30M to Build the Data Layer for Physical AI",
+            "url": "https://finance.yahoo.com/technology/ai/articles/waymo-google-microsoft-alums-raise-160000050.html?.tsrc=rss",
+            "published_at": "2026-10-26T23:19:00+00:00",
+            "body_read": false
+          },
+          {
+            "title": "Will Alphabet Stock Surge After Oct. 28?",
+            "url": "https://www.fool.com/investing/2026/10/26/will-alphabet-stock-surge-after-oct-28/?.tsrc=rss",
+            "published_at": "2026-10-26T22:25:00+00:00",
+            "body_read": false
+          },
+          {
+            "title": "Mark Cuban puts Bitcoin and Apple in the same bucket",
+            "url": "https://www.thestreet.com/crypto/markets/mark-cuban-puts-bitcoin-and-apple-in-the-same-bucket?.tsrc=rss",
+            "published_at": "2026-10-26T22:05:25+00:00",
+            "body_read": false
+          }
+        ],
+        "source": {
+          "url": "https://feeds.finance.yahoo.com/rss/2.0/headline?s=GOOGL&region=US&lang=en-US",
+          "retrieved_at": "2026-10-27T00:21:58.522716+00:00",
+          "sha256": "82c29d0d90bbbec7275155bbca98c005bb1ab7b15e5fc2e7a7ab482a3d47cc30",
+          "bytes": 12191
+        }
+      },
+      "evidence": [
+        {
+          "id": "price",
+          "type": "market_observation",
+          "date": "2026-10-26",
+          "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/GOOGL?range=6mo&interval=1d",
+          "claim": "종가 계열에서 계산한 변화·변동성"
+        }
+      ],
+      "S": {
+        "actor": "담당 경영진·이사회·조직의 명시적 책임 확인 필요",
+        "strategic_decision": "광고·AI·클라우드 투자 배분",
+        "observed_statement": "주체의 명시적 전략 결정 원문 검토가 완료되지 않았습니다. 실적·주가를 의지나 동기의 근거로 전용하지 않습니다.",
+        "evidence_ids": [],
+        "status": "insufficient",
+        "unknown": "경영자의 실제 의지·비전의 변화와 조직 구성원의 동기·합의·실행 책임은 직접 자료로 추가 확인해야 합니다. 주가·수급·뉴스 제목에서 추정하지 않았습니다.",
+        "motivation_observed": false
+      },
+      "E": {
+        "focus": "광고·클라우드 수요·AI 경쟁·규제",
+        "market_context": {
+          "name": "S&P 500",
+          "date": "2026-10-26",
+          "return_5": -0.0018151672172800337,
+          "return_20": -0.0009005987914361135,
+          "volatility_20": 0.09900498036098758,
+          "source": {
+            "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?range=6mo&interval=1d",
+            "retrieved_at": "2026-10-27T00:21:56.400906+00:00",
+            "sha256": "4b9c0480719d39372d7d3977bd4df7b4d070ca0eba10524f3b20fc94eca68860",
+            "bytes": 14048
+          },
+          "basis": "provider Close, descriptive price change; not dividend-reinvested return"
+        },
+        "missing": "가격 이외의 최신 정책·경쟁·실수요 원문은 별도 확인이 필요합니다."
+      },
+      "R": {
+        "focus": "검색·동영상·클라우드·데이터센터·인력",
+        "verified": {
+          "status": "unavailable",
+          "reason": "HTTPError",
+          "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001652044.json",
+          "interpretation": "표준 재무 원문 확인 실패 또는 대응 태그 공백. 자원 전체 부재를 뜻하지 않음."
+        },
+        "missing": "재무 금액은 인재·기술·조직 역량을 대체하지 않습니다."
+      },
+      "M": {
+        "hypothesis": "광고 전환·클라우드 수요·규제과 컴퓨팅·인력·데이터 역량을 확인한 뒤 경영진이 실행 범위를 승인하면 검색/광고 수익성과 투자 회수에 연결될 수 있다는 분석 가설",
+        "identified_causal_effect": false,
+        "falsifier": "경영진 발표가 실제 투입으로 이어지지 않거나, 투입 뒤 고객/매출·마진·현금이 개선되지 않으면 연결 가설을 약화한다.",
+        "evidence_status": "conditional_unidentified"
+      },
+      "CPT": {
+        "C": {
+          "configuration": {
+            "S": "광고·AI·클라우드 투자 배분에 대한 의사결정",
+            "E": "광고 전환·클라우드 수요·규제",
+            "R": "컴퓨팅·인력·데이터 역량"
+          },
+          "complementarity": "전략 선택이 환경의 수요·규제 제약과 자원 역량을 함께 충족해야 함",
+          "tradeoff": "투자 속도와 현금 유연성, 단기 실적과 장기 역량의 충돌을 비교",
+          "relative_emphasis_ref": "WS.W",
+          "alternatives": [
+            {
+              "id": "staged",
+              "name": "조건부 단계 확대",
+              "combination": "광고 전환·클라우드 수요·규제 확인과 컴퓨팅·인력·데이터 역량 확보를 묶어 승인 단위로 확대",
+              "tradeoff": "기회 포착 속도와 손실 노출의 균형",
+              "gate": "환경과 자원 조건 모두 충족"
+            },
+            {
+              "id": "preserve",
+              "name": "자원 보전·기존 운영 우선",
+              "combination": "컴퓨팅·인력·데이터 역량을 보전하면서 광고 전환·클라우드 수요·규제 확인 전 신규 투입 유보",
+              "tradeoff": "현금·역량 보전과 기회 상실 가능성",
+              "gate": "환경 또는 자원 조건 미충족"
+            }
+          ]
+        },
+        "P": {
+          "causal_hypotheses": [],
+          "alternatives": "환경이 성과와 경영진 선택에 함께 영향을 주는 공통요인 및 성과가 투자에 영향을 주는 역인과를 배제하지 못함",
+          "candidate_paths": [
+            {
+              "id": "demand_led",
+              "order": [
+                "E",
+                "S",
+                "R",
+                "성과"
+              ],
+              "activation": "광고 전환·클라우드 수요·규제의 변화가 먼저 확인되는 경우",
+              "test": "외부 변화→계획 변경→실제 투입의 시점과 범위를 대조"
+            },
+            {
+              "id": "capability_led",
+              "order": [
+                "R",
+                "S",
+                "E",
+                "성과"
+              ],
+              "activation": "컴퓨팅·인력·데이터 역량의 변화가 먼저 확인되는 경우",
+              "test": "역량 변화→전략 선택→고객 채택의 시점을 대조"
+            },
+            {
+              "id": "commitment_led",
+              "order": [
+                "S",
+                "R",
+                "E",
+                "성과"
+              ],
+              "activation": "광고·AI·클라우드 투자 배분에 대한 명시적 전략 승인이 먼저 확인되는 경우",
+              "test": "승인→자원 투입→외부 반응의 시점을 대조"
+            }
+          ],
+          "selection_status": "unselected_pending_temporal_and_confounder_evidence",
+          "feedback": "성과·현금 회수 관측 → 자원 한도와 전략 재검토. 반복 관찰이며 피드백의 인과효과는 미식별."
+        },
+        "T": {
+          "activation": "광고 전환·클라우드 수요·규제과 컴퓨팅·인력·데이터 역량 확인 및 경영 승인 뒤 단계 실행하는 조건부 제안",
+          "speed": "일괄 확대보다 검증 가능한 단위로 집행하고 성과 관찰 후 확장하는 제안",
+          "monitoring_sessions": {
+            "1": "2026-10-27",
+            "2": "2026-10-28",
+            "5": "2026-11-02",
+            "10": "2026-11-09",
+            "20": "2026-11-23"
+          },
+          "strategy_horizon": "다음 공식 실적·투자 계획의 실행과 중기 현금 회수에서 확인. 20거래일 내 성과 실현을 보장하지 않음",
+          "next_official_event_date": null,
+          "date_note": "관찰일은 재검토 일정이다. 실제 실행 시작일·속도·효과 시차는 기업별 원문과 관측이 확보될 때까지 미확정.",
+          "execution_start_date": null,
+          "execution_lag_estimate": null,
+          "events": []
+        }
+      },
+      "WS": {
+        "W": {
+          "purpose": "전략과 실행의 정합성 검토",
+          "values": {
+            "S": 0.4,
+            "E": 0.3,
+            "R": 0.3
+          },
+          "rule": "위 두 시장 조건에 해당하지 않음",
+          "version": "purpose_rule_v1_unvalidated",
+          "estimated": false,
+          "interpretation": "시장 문맥으로 고른 참고 정책값이다. 기업 목적·선호·제약을 확인해 선정한 집중 비중이 아니므로 실제 W 결정은 보류한다.",
+          "sensitivity": [
+            {
+              "varied": "S",
+              "delta_pp": -10.0,
+              "weights": {
+                "S": 0.3,
+                "E": 0.35,
+                "R": 0.35
+              },
+              "first_priority": "E"
+            },
+            {
+              "varied": "S",
+              "delta_pp": 10.0,
+              "weights": {
+                "S": 0.5,
+                "E": 0.25,
+                "R": 0.25
+              },
+              "first_priority": "S"
+            },
+            {
+              "varied": "E",
+              "delta_pp": -10.0,
+              "weights": {
+                "S": 0.45714286,
+                "E": 0.2,
+                "R": 0.34285714
+              },
+              "first_priority": "S"
+            },
+            {
+              "varied": "E",
+              "delta_pp": 10.0,
+              "weights": {
+                "S": 0.34285714,
+                "E": 0.4,
+                "R": 0.25714286
+              },
+              "first_priority": "E"
+            },
+            {
+              "varied": "R",
+              "delta_pp": -10.0,
+              "weights": {
+                "S": 0.45714286,
+                "E": 0.34285714,
+                "R": 0.2
+              },
+              "first_priority": "S"
+            },
+            {
+              "varied": "R",
+              "delta_pp": 10.0,
+              "weights": {
+                "S": 0.34285714,
+                "E": 0.25714286,
+                "R": 0.4
+              },
+              "first_priority": "R"
+            }
+          ],
+          "first_priority_changes": true,
+          "applies_to": "2026-10-26",
+          "decision_status": "unselected_reference",
+          "selection_requirements": [
+            "목적과 의사결정 주체 확인",
+            "S/E/R의 병목·대안·상충 검토",
+            "비중 변경의 의사결정 영향 평가"
+          ]
+        },
+        "S": {
+          "kind": "proposed_dependency_roadmap_not_observed_execution",
+          "ordering_basis": "prerequisites_before_weights",
+          "tasks": [
+            {
+              "id": "context",
+              "element": "E",
+              "weight": null,
+              "owner": "전략·리스크 조직",
+              "task": "광고 전환·클라우드 수요·규제의 실행 허용 조건 확인",
+              "depends_on": [],
+              "review_due": "2026-10-28",
+              "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
+              "status": "proposed_not_executed"
+            },
+            {
+              "id": "capacity",
+              "element": "R",
+              "weight": null,
+              "owner": "재무·인사·기술 조직",
+              "task": "컴퓨팅·인력·데이터 역량의 가용성과 투입 한도 확인",
+              "depends_on": [],
+              "review_due": "2026-10-28",
+              "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
+              "status": "proposed_not_executed"
+            },
+            {
+              "id": "authorize",
+              "element": "S",
+              "weight": null,
+              "owner": "경영진·이사회",
+              "task": "광고·AI·클라우드 투자 배분의 목적·대안 조합·중단 기준 승인",
+              "depends_on": [
+                "context",
+                "capacity"
+              ],
+              "review_due": "2026-11-02",
+              "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
+              "status": "proposed_not_executed"
+            },
+            {
+              "id": "deploy",
+              "element": "R",
+              "weight": null,
+              "owner": "사업·운영 조직",
+              "task": "승인 범위 안에서 자원 단계 투입",
+              "depends_on": [
+                "authorize"
+              ],
+              "review_due": "2026-11-09",
+              "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
+              "status": "proposed_not_executed"
+            },
+            {
+              "id": "review",
+              "element": "S",
+              "weight": null,
+              "owner": "경영진·성과관리 조직",
+              "task": "검색/광고 수익성과 투자 회수을 대조해 지속·축소·중단 재검토",
+              "depends_on": [
+                "deploy"
+              ],
+              "review_due": "2026-11-23",
+              "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
+              "status": "proposed_not_executed"
+            }
+          ]
+        }
+      },
+      "scenarios": {
+        "support": "광고 전환·클라우드 수요·규제과 컴퓨팅·인력·데이터 역량이 함께 충족되고 검색/광고 수익성과 투자 회수이 확인되는 조건",
+        "adverse": "광고 전환·클라우드 수요·규제 또는 컴퓨팅·인력·데이터 역량 미충족으로 단계 확대가 보류·축소되는 조건",
+        "reversal": "계획 발표·가격 기대와 달리 검색/광고 수익성과 투자 회수이 실현되지 않아 투입 한도·전략을 재검토하는 조건"
+      },
+      "conclusion_status": "conditional_review_with_evidence_gaps",
+      "estimated_probabilities": null,
+      "new_local_model_calls": 0,
+      "method": "explicit_rule_based_structured_analysis",
+      "official_ir": "https://abc.xyz/investor/",
+      "confidence": {
+        "price": "completed_session_source_checked",
+        "strategy": "not_verified",
+        "causality": "not_identified",
+        "prediction": "not_validated"
+      },
+      "objective_origin": "analyst_proposed_not_elicited_corporate_utility",
+      "method_version": "SER-M-CPT-WS-1.1"
+    },
+    {
+      "code": "AMZN",
+      "name": "Amazon",
+      "market": "US",
+      "industry": "전자상거래·클라우드",
+      "objective": "물류 효율과 클라우드 투자의 균형의 조건과 실패 경로를 비교하는 분석자 설정 목적",
+      "asof": "2026-10-26",
+      "price": {
+        "date": "2026-10-26",
+        "return_5": -0.050904978417346536,
+        "return_20": 0.011943961716091023,
+        "volatility_20": 0.32429637149095414,
+        "source": {
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/AMZN?range=6mo&interval=1d",
+          "retrieved_at": "2026-10-27T00:21:57.933419+00:00",
+          "sha256": "e1167393ad937c9ecc092e1b35a4bf8bba436f16ef70e056cac7d9c2dc5e17f8",
+          "bytes": 14843,
+          "completed_close_fallback": {
+            "url": "https://api.stock.naver.com/stock/AMZN.O/price",
+            "retrieved_at": "2026-10-27T00:21:57.971695+00:00",
+            "sha256": "9f7a99cf20c78151ad5cb22af4f042b34f9dd08b283cdd873e194246922bd299",
+            "bytes": 11413
+          },
+          "overlap_check": {
+            "sessions": [
+              "2026-10-21",
+              "2026-10-22",
+              "2026-10-23"
+            ],
+            "max_relative_difference": 1.9501607662064657e-08
+          }
+        },
+        "basis": "provider Close, descriptive price change; not dividend-reinvested return"
+      },
+      "resources": {
+        "status": "unavailable",
+        "reason": "HTTPError",
+        "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001018724.json",
+        "interpretation": "표준 재무 원문 확인 실패 또는 대응 태그 공백. 자원 전체 부재를 뜻하지 않음."
+      },
+      "news": {
+        "status": "title_metadata_only",
+        "count": 17,
+        "items": [
+          {
+            "title": "Target has a problem that sends shoppers to Amazon",
+            "url": "https://www.thestreet.com/retail/target-has-a-problem-that-sends-shoppers-to-amazon?.tsrc=rss",
+            "published_at": "2026-10-26T23:17:00+00:00",
+            "body_read": false
+          },
+          {
+            "title": "Dow Jones Futures: Elon Musk-Led Tesla Leads Market Higher; Amazon, Alphabet, Microsoft Earnings On Deck",
+            "url": "https://finance.yahoo.com/m/4f45ec30-6388-381f-b8f7-2aed6d460b6f/dow-jones-futures%3A-elon.html?.tsrc=rss",
+            "published_at": "2026-10-26T22:03:09+00:00",
+            "body_read": false
+          },
+          {
+            "title": "Tech Earnings Are the Market’s Biggest Story This Week: Here’s Why Microsoft, Amazon, Intel, SanDisk, and Alphabet Will Drive the Stock Market’s Next Move",
+            "url": "https://247wallst.com/videos/tech-earnings-are-the-markets-biggest-story-this-week-heres-why-microsoft-amazon-intel-sandisk-and-alphabet-will-drive-the-stock-markets-next-move/?.tsrc=rss",
+            "published_at": "2026-10-26T21:15:14+00:00",
+            "body_read": false
+          }
+        ],
+        "source": {
+          "url": "https://feeds.finance.yahoo.com/rss/2.0/headline?s=AMZN&region=US&lang=en-US",
+          "retrieved_at": "2026-10-27T00:21:58.483409+00:00",
+          "sha256": "bea9f55d4f792bfa55ee1e5acbc2d1a4fb7e9375f6b4769b4e94430b247aed52",
+          "bytes": 12793
+        }
+      },
+      "evidence": [
+        {
+          "id": "price",
+          "type": "market_observation",
+          "date": "2026-10-26",
+          "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/AMZN?range=6mo&interval=1d",
+          "claim": "종가 계열에서 계산한 변화·변동성"
+        }
+      ],
+      "S": {
+        "actor": "담당 경영진·이사회·조직의 명시적 책임 확인 필요",
+        "strategic_decision": "물류 효율과 클라우드 투자의 균형",
+        "observed_statement": "주체의 명시적 전략 결정 원문 검토가 완료되지 않았습니다. 실적·주가를 의지나 동기의 근거로 전용하지 않습니다.",
+        "evidence_ids": [],
+        "status": "insufficient",
+        "unknown": "경영자의 실제 의지·비전의 변화와 조직 구성원의 동기·합의·실행 책임은 직접 자료로 추가 확인해야 합니다. 주가·수급·뉴스 제목에서 추정하지 않았습니다.",
+        "motivation_observed": false
+      },
+      "E": {
+        "focus": "소비·물류·클라우드 수요·경쟁",
+        "market_context": {
+          "name": "S&P 500",
+          "date": "2026-10-26",
+          "return_5": -0.0018151672172800337,
+          "return_20": -0.0009005987914361135,
+          "volatility_20": 0.09900498036098758,
+          "source": {
+            "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?range=6mo&interval=1d",
+            "retrieved_at": "2026-10-27T00:21:56.400906+00:00",
+            "sha256": "4b9c0480719d39372d7d3977bd4df7b4d070ca0eba10524f3b20fc94eca68860",
+            "bytes": 14048
+          },
+          "basis": "provider Close, descriptive price change; not dividend-reinvested return"
+        },
+        "missing": "가격 이외의 최신 정책·경쟁·실수요 원문은 별도 확인이 필요합니다."
+      },
+      "R": {
+        "focus": "물류망·클라우드·고객 기반·인력·현금",
+        "verified": {
+          "status": "unavailable",
+          "reason": "HTTPError",
+          "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001018724.json",
+          "interpretation": "표준 재무 원문 확인 실패 또는 대응 태그 공백. 자원 전체 부재를 뜻하지 않음."
+        },
+        "missing": "재무 금액은 인재·기술·조직 역량을 대체하지 않습니다."
+      },
+      "M": {
+        "hypothesis": "소비·배송·클라우드 수요과 물류망·컴퓨팅·현금을 확인한 뒤 경영진이 실행 범위를 승인하면 주문당 비용·AWS 수익·현금에 연결될 수 있다는 분석 가설",
+        "identified_causal_effect": false,
+        "falsifier": "경영진 발표가 실제 투입으로 이어지지 않거나, 투입 뒤 고객/매출·마진·현금이 개선되지 않으면 연결 가설을 약화한다.",
+        "evidence_status": "conditional_unidentified"
+      },
+      "CPT": {
+        "C": {
+          "configuration": {
+            "S": "물류 효율과 클라우드 투자의 균형에 대한 의사결정",
+            "E": "소비·배송·클라우드 수요",
+            "R": "물류망·컴퓨팅·현금"
+          },
+          "complementarity": "전략 선택이 환경의 수요·규제 제약과 자원 역량을 함께 충족해야 함",
+          "tradeoff": "투자 속도와 현금 유연성, 단기 실적과 장기 역량의 충돌을 비교",
+          "relative_emphasis_ref": "WS.W",
+          "alternatives": [
+            {
+              "id": "staged",
+              "name": "조건부 단계 확대",
+              "combination": "소비·배송·클라우드 수요 확인과 물류망·컴퓨팅·현금 확보를 묶어 승인 단위로 확대",
+              "tradeoff": "기회 포착 속도와 손실 노출의 균형",
+              "gate": "환경과 자원 조건 모두 충족"
+            },
+            {
+              "id": "preserve",
+              "name": "자원 보전·기존 운영 우선",
+              "combination": "물류망·컴퓨팅·현금을 보전하면서 소비·배송·클라우드 수요 확인 전 신규 투입 유보",
+              "tradeoff": "현금·역량 보전과 기회 상실 가능성",
+              "gate": "환경 또는 자원 조건 미충족"
+            }
+          ]
+        },
+        "P": {
+          "causal_hypotheses": [],
+          "alternatives": "환경이 성과와 경영진 선택에 함께 영향을 주는 공통요인 및 성과가 투자에 영향을 주는 역인과를 배제하지 못함",
+          "candidate_paths": [
+            {
+              "id": "demand_led",
+              "order": [
+                "E",
+                "S",
+                "R",
+                "성과"
+              ],
+              "activation": "소비·배송·클라우드 수요의 변화가 먼저 확인되는 경우",
+              "test": "외부 변화→계획 변경→실제 투입의 시점과 범위를 대조"
+            },
+            {
+              "id": "capability_led",
+              "order": [
+                "R",
+                "S",
+                "E",
+                "성과"
+              ],
+              "activation": "물류망·컴퓨팅·현금의 변화가 먼저 확인되는 경우",
+              "test": "역량 변화→전략 선택→고객 채택의 시점을 대조"
+            },
+            {
+              "id": "commitment_led",
+              "order": [
+                "S",
+                "R",
+                "E",
+                "성과"
+              ],
+              "activation": "물류 효율과 클라우드 투자의 균형에 대한 명시적 전략 승인이 먼저 확인되는 경우",
+              "test": "승인→자원 투입→외부 반응의 시점을 대조"
+            }
+          ],
+          "selection_status": "unselected_pending_temporal_and_confounder_evidence",
+          "feedback": "성과·현금 회수 관측 → 자원 한도와 전략 재검토. 반복 관찰이며 피드백의 인과효과는 미식별."
+        },
+        "T": {
+          "activation": "소비·배송·클라우드 수요과 물류망·컴퓨팅·현금 확인 및 경영 승인 뒤 단계 실행하는 조건부 제안",
+          "speed": "일괄 확대보다 검증 가능한 단위로 집행하고 성과 관찰 후 확장하는 제안",
+          "monitoring_sessions": {
+            "1": "2026-10-27",
+            "2": "2026-10-28",
+            "5": "2026-11-02",
+            "10": "2026-11-09",
+            "20": "2026-11-23"
+          },
+          "strategy_horizon": "다음 공식 실적·투자 계획의 실행과 중기 현금 회수에서 확인. 20거래일 내 성과 실현을 보장하지 않음",
+          "next_official_event_date": null,
+          "date_note": "관찰일은 재검토 일정이다. 실제 실행 시작일·속도·효과 시차는 기업별 원문과 관측이 확보될 때까지 미확정.",
+          "execution_start_date": null,
+          "execution_lag_estimate": null,
+          "events": []
+        }
+      },
+      "WS": {
+        "W": {
+          "purpose": "전략과 실행의 정합성 검토",
+          "values": {
+            "S": 0.4,
+            "E": 0.3,
+            "R": 0.3
+          },
+          "rule": "위 두 시장 조건에 해당하지 않음",
+          "version": "purpose_rule_v1_unvalidated",
+          "estimated": false,
+          "interpretation": "시장 문맥으로 고른 참고 정책값이다. 기업 목적·선호·제약을 확인해 선정한 집중 비중이 아니므로 실제 W 결정은 보류한다.",
+          "sensitivity": [
+            {
+              "varied": "S",
+              "delta_pp": -10.0,
+              "weights": {
+                "S": 0.3,
+                "E": 0.35,
+                "R": 0.35
+              },
+              "first_priority": "E"
+            },
+            {
+              "varied": "S",
+              "delta_pp": 10.0,
+              "weights": {
+                "S": 0.5,
+                "E": 0.25,
+                "R": 0.25
+              },
+              "first_priority": "S"
+            },
+            {
+              "varied": "E",
+              "delta_pp": -10.0,
+              "weights": {
+                "S": 0.45714286,
+                "E": 0.2,
+                "R": 0.34285714
+              },
+              "first_priority": "S"
+            },
+            {
+              "varied": "E",
+              "delta_pp": 10.0,
+              "weights": {
+                "S": 0.34285714,
+                "E": 0.4,
+                "R": 0.25714286
+              },
+              "first_priority": "E"
+            },
+            {
+              "varied": "R",
+              "delta_pp": -10.0,
+              "weights": {
+                "S": 0.45714286,
+                "E": 0.34285714,
+                "R": 0.2
+              },
+              "first_priority": "S"
+            },
+            {
+              "varied": "R",
+              "delta_pp": 10.0,
+              "weights": {
+                "S": 0.34285714,
+                "E": 0.25714286,
+                "R": 0.4
+              },
+              "first_priority": "R"
+            }
+          ],
+          "first_priority_changes": true,
+          "applies_to": "2026-10-26",
+          "decision_status": "unselected_reference",
+          "selection_requirements": [
+            "목적과 의사결정 주체 확인",
+            "S/E/R의 병목·대안·상충 검토",
+            "비중 변경의 의사결정 영향 평가"
+          ]
+        },
+        "S": {
+          "kind": "proposed_dependency_roadmap_not_observed_execution",
+          "ordering_basis": "prerequisites_before_weights",
+          "tasks": [
+            {
+              "id": "context",
+              "element": "E",
+              "weight": null,
+              "owner": "전략·리스크 조직",
+              "task": "소비·배송·클라우드 수요의 실행 허용 조건 확인",
+              "depends_on": [],
+              "review_due": "2026-10-28",
+              "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
+              "status": "proposed_not_executed"
+            },
+            {
+              "id": "capacity",
+              "element": "R",
+              "weight": null,
+              "owner": "재무·인사·기술 조직",
+              "task": "물류망·컴퓨팅·현금의 가용성과 투입 한도 확인",
+              "depends_on": [],
+              "review_due": "2026-10-28",
+              "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
+              "status": "proposed_not_executed"
+            },
+            {
+              "id": "authorize",
+              "element": "S",
+              "weight": null,
+              "owner": "경영진·이사회",
+              "task": "물류 효율과 클라우드 투자의 균형의 목적·대안 조합·중단 기준 승인",
+              "depends_on": [
+                "context",
+                "capacity"
+              ],
+              "review_due": "2026-11-02",
+              "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
+              "status": "proposed_not_executed"
+            },
+            {
+              "id": "deploy",
+              "element": "R",
+              "weight": null,
+              "owner": "사업·운영 조직",
+              "task": "승인 범위 안에서 자원 단계 투입",
+              "depends_on": [
+                "authorize"
+              ],
+              "review_due": "2026-11-09",
+              "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
+              "status": "proposed_not_executed"
+            },
+            {
+              "id": "review",
+              "element": "S",
+              "weight": null,
+              "owner": "경영진·성과관리 조직",
+              "task": "주문당 비용·AWS 수익·현금을 대조해 지속·축소·중단 재검토",
+              "depends_on": [
+                "deploy"
+              ],
+              "review_due": "2026-11-23",
+              "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
+              "status": "proposed_not_executed"
+            }
+          ]
+        }
+      },
+      "scenarios": {
+        "support": "소비·배송·클라우드 수요과 물류망·컴퓨팅·현금이 함께 충족되고 주문당 비용·AWS 수익·현금이 확인되는 조건",
+        "adverse": "소비·배송·클라우드 수요 또는 물류망·컴퓨팅·현금 미충족으로 단계 확대가 보류·축소되는 조건",
+        "reversal": "계획 발표·가격 기대와 달리 주문당 비용·AWS 수익·현금이 실현되지 않아 투입 한도·전략을 재검토하는 조건"
+      },
+      "conclusion_status": "conditional_review_with_evidence_gaps",
+      "estimated_probabilities": null,
+      "new_local_model_calls": 0,
+      "method": "explicit_rule_based_structured_analysis",
+      "official_ir": "https://ir.aboutamazon.com/",
+      "confidence": {
+        "price": "completed_session_source_checked",
+        "strategy": "not_verified",
+        "causality": "not_identified",
+        "prediction": "not_validated"
+      },
+      "objective_origin": "analyst_proposed_not_elicited_corporate_utility",
+      "method_version": "SER-M-CPT-WS-1.1"
+    },
+    {
+      "code": "META",
+      "name": "Meta Platforms",
+      "market": "US",
+      "industry": "광고·플랫폼",
+      "objective": "AI 투자와 광고 수익화의 연결의 조건과 실패 경로를 비교하는 분석자 설정 목적",
+      "asof": "2026-10-26",
+      "price": {
+        "date": "2026-10-26",
+        "return_5": -0.10614652157839011,
+        "return_20": -0.11886195983562253,
+        "volatility_20": 0.3910926730317778,
+        "source": {
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/META?range=6mo&interval=1d",
+          "retrieved_at": "2026-10-27T00:21:58.039956+00:00",
+          "sha256": "055c629418e00cf12878b580bbfeeb659c661593f481b1712993aad5716b73fc",
+          "bytes": 14182,
+          "completed_close_fallback": {
+            "url": "https://api.stock.naver.com/stock/META.O/price",
+            "retrieved_at": "2026-10-27T00:21:58.066246+00:00",
+            "sha256": "eb630e77d825ef296fa17357726715ebce2387cbcec8e6c012c22a0902d48b43",
+            "bytes": 11431
+          },
+          "overlap_check": {
+            "sessions": [
+              "2026-10-21",
+              "2026-10-22",
+              "2026-10-23"
+            ],
+            "max_relative_difference": 3.762666644924195e-08
+          }
+        },
+        "basis": "provider Close, descriptive price change; not dividend-reinvested return"
+      },
+      "resources": {
+        "status": "unavailable",
+        "reason": "HTTPError",
+        "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001326801.json",
+        "interpretation": "표준 재무 원문 확인 실패 또는 대응 태그 공백. 자원 전체 부재를 뜻하지 않음."
+      },
+      "news": {
+        "status": "title_metadata_only",
+        "count": 14,
+        "items": [
+          {
+            "title": "Stock Market Today, Oct. 26: AI Optimism Lifts Nasdaq as Tech Stocks Rebound",
+            "url": "https://www.fool.com/coverage/stock-market-today/2026/10/26/stock-market-today-oct-26-ai-optimism-lifts-nasdaq-as-tech-stocks-rebound/?.tsrc=rss",
+            "published_at": "2026-10-26T21:50:00+00:00",
+            "body_read": false
+          },
+          {
+            "title": "CleanSpark Stock Fell 39% in October. Its Landlord Bet Now Rides on Meta’s Credit",
+            "url": "https://www.tikr.com/blog/cleanspark-stock-fell-39-in-october-its-landlord-bet-now-rides-on-metas-credit?ref=yahoofinance&.tsrc=rss",
+            "published_at": "2026-10-26T21:02:57+00:00",
+            "body_read": false
+          },
+          {
+            "title": "Anthropic’s IPO Will “Suck a Massive Amount of Money” From AI Stocks, Cramer Warns",
+            "url": "https://www.tikr.com/blog/anthropics-ipo-will-suck-a-massive-amount-of-money-from-ai-stocks-cramer-warns?ref=yahoofinance&.tsrc=rss",
+            "published_at": "2026-10-26T20:13:14+00:00",
+            "body_read": false
+          }
+        ],
+        "source": {
+          "url": "https://feeds.finance.yahoo.com/rss/2.0/headline?s=META&region=US&lang=en-US",
+          "retrieved_at": "2026-10-27T00:21:58.569981+00:00",
+          "sha256": "9dd31b60472abb5bb86fbbe541dbf132454e3c998e0dee825745d5bb6f05cdcb",
+          "bytes": 10321
+        }
+      },
+      "evidence": [
+        {
+          "id": "price",
+          "type": "market_observation",
+          "date": "2026-10-26",
+          "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/META?range=6mo&interval=1d",
+          "claim": "종가 계열에서 계산한 변화·변동성"
+        }
+      ],
+      "S": {
+        "actor": "담당 경영진·이사회·조직의 명시적 책임 확인 필요",
+        "strategic_decision": "AI 투자와 광고 수익화의 연결",
+        "observed_statement": "주체의 명시적 전략 결정 원문 검토가 완료되지 않았습니다. 실적·주가를 의지나 동기의 근거로 전용하지 않습니다.",
+        "evidence_ids": [],
+        "status": "insufficient",
+        "unknown": "경영자의 실제 의지·비전의 변화와 조직 구성원의 동기·합의·실행 책임은 직접 자료로 추가 확인해야 합니다. 주가·수급·뉴스 제목에서 추정하지 않았습니다.",
+        "motivation_observed": false
+      },
+      "E": {
+        "focus": "광고 수요·플랫폼 경쟁·개인정보 규제",
+        "market_context": {
+          "name": "S&P 500",
+          "date": "2026-10-26",
+          "return_5": -0.0018151672172800337,
+          "return_20": -0.0009005987914361135,
+          "volatility_20": 0.09900498036098758,
+          "source": {
+            "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?range=6mo&interval=1d",
+            "retrieved_at": "2026-10-27T00:21:56.400906+00:00",
+            "sha256": "4b9c0480719d39372d7d3977bd4df7b4d070ca0eba10524f3b20fc94eca68860",
+            "bytes": 14048
+          },
+          "basis": "provider Close, descriptive price change; not dividend-reinvested return"
+        },
+        "missing": "가격 이외의 최신 정책·경쟁·실수요 원문은 별도 확인이 필요합니다."
+      },
+      "R": {
+        "focus": "광고 플랫폼·추천기술·데이터센터·인력",
+        "verified": {
+          "status": "unavailable",
+          "reason": "HTTPError",
+          "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001326801.json",
+          "interpretation": "표준 재무 원문 확인 실패 또는 대응 태그 공백. 자원 전체 부재를 뜻하지 않음."
+        },
+        "missing": "재무 금액은 인재·기술·조직 역량을 대체하지 않습니다."
+      },
+      "M": {
+        "hypothesis": "광고 전환·개인정보 규제과 추천기술·컴퓨팅·인력을 확인한 뒤 경영진이 실행 범위를 승인하면 광고 효율·유지율·현금 회수에 연결될 수 있다는 분석 가설",
+        "identified_causal_effect": false,
+        "falsifier": "경영진 발표가 실제 투입으로 이어지지 않거나, 투입 뒤 고객/매출·마진·현금이 개선되지 않으면 연결 가설을 약화한다.",
+        "evidence_status": "conditional_unidentified"
+      },
+      "CPT": {
+        "C": {
+          "configuration": {
+            "S": "AI 투자와 광고 수익화의 연결에 대한 의사결정",
+            "E": "광고 전환·개인정보 규제",
+            "R": "추천기술·컴퓨팅·인력"
+          },
+          "complementarity": "전략 선택이 환경의 수요·규제 제약과 자원 역량을 함께 충족해야 함",
+          "tradeoff": "투자 속도와 현금 유연성, 단기 실적과 장기 역량의 충돌을 비교",
+          "relative_emphasis_ref": "WS.W",
+          "alternatives": [
+            {
+              "id": "staged",
+              "name": "조건부 단계 확대",
+              "combination": "광고 전환·개인정보 규제 확인과 추천기술·컴퓨팅·인력 확보를 묶어 승인 단위로 확대",
+              "tradeoff": "기회 포착 속도와 손실 노출의 균형",
+              "gate": "환경과 자원 조건 모두 충족"
+            },
+            {
+              "id": "preserve",
+              "name": "자원 보전·기존 운영 우선",
+              "combination": "추천기술·컴퓨팅·인력을 보전하면서 광고 전환·개인정보 규제 확인 전 신규 투입 유보",
+              "tradeoff": "현금·역량 보전과 기회 상실 가능성",
+              "gate": "환경 또는 자원 조건 미충족"
+            }
+          ]
+        },
+        "P": {
+          "causal_hypotheses": [],
+          "alternatives": "환경이 성과와 경영진 선택에 함께 영향을 주는 공통요인 및 성과가 투자에 영향을 주는 역인과를 배제하지 못함",
+          "candidate_paths": [
+            {
+              "id": "demand_led",
+              "order": [
+                "E",
+                "S",
+                "R",
+                "성과"
+              ],
+              "activation": "광고 전환·개인정보 규제의 변화가 먼저 확인되는 경우",
+              "test": "외부 변화→계획 변경→실제 투입의 시점과 범위를 대조"
+            },
+            {
+              "id": "capability_led",
+              "order": [
+                "R",
+                "S",
+                "E",
+                "성과"
+              ],
+              "activation": "추천기술·컴퓨팅·인력의 변화가 먼저 확인되는 경우",
+              "test": "역량 변화→전략 선택→고객 채택의 시점을 대조"
+            },
+            {
+              "id": "commitment_led",
+              "order": [
+                "S",
+                "R",
+                "E",
+                "성과"
+              ],
+              "activation": "AI 투자와 광고 수익화의 연결에 대한 명시적 전략 승인이 먼저 확인되는 경우",
+              "test": "승인→자원 투입→외부 반응의 시점을 대조"
+            }
+          ],
+          "selection_status": "unselected_pending_temporal_and_confounder_evidence",
+          "feedback": "성과·현금 회수 관측 → 자원 한도와 전략 재검토. 반복 관찰이며 피드백의 인과효과는 미식별."
+        },
+        "T": {
+          "activation": "광고 전환·개인정보 규제과 추천기술·컴퓨팅·인력 확인 및 경영 승인 뒤 단계 실행하는 조건부 제안",
+          "speed": "일괄 확대보다 검증 가능한 단위로 집행하고 성과 관찰 후 확장하는 제안",
+          "monitoring_sessions": {
+            "1": "2026-10-27",
+            "2": "2026-10-28",
+            "5": "2026-11-02",
+            "10": "2026-11-09",
+            "20": "2026-11-23"
+          },
+          "strategy_horizon": "다음 공식 실적·투자 계획의 실행과 중기 현금 회수에서 확인. 20거래일 내 성과 실현을 보장하지 않음",
+          "next_official_event_date": null,
+          "date_note": "관찰일은 재검토 일정이다. 실제 실행 시작일·속도·효과 시차는 기업별 원문과 관측이 확보될 때까지 미확정.",
+          "execution_start_date": null,
+          "execution_lag_estimate": null,
+          "events": []
+        }
+      },
+      "WS": {
+        "W": {
+          "purpose": "전략과 실행의 정합성 검토",
+          "values": {
+            "S": 0.4,
+            "E": 0.3,
+            "R": 0.3
+          },
+          "rule": "위 두 시장 조건에 해당하지 않음",
+          "version": "purpose_rule_v1_unvalidated",
+          "estimated": false,
+          "interpretation": "시장 문맥으로 고른 참고 정책값이다. 기업 목적·선호·제약을 확인해 선정한 집중 비중이 아니므로 실제 W 결정은 보류한다.",
+          "sensitivity": [
+            {
+              "varied": "S",
+              "delta_pp": -10.0,
+              "weights": {
+                "S": 0.3,
+                "E": 0.35,
+                "R": 0.35
+              },
+              "first_priority": "E"
+            },
+            {
+              "varied": "S",
+              "delta_pp": 10.0,
+              "weights": {
+                "S": 0.5,
+                "E": 0.25,
+                "R": 0.25
+              },
+              "first_priority": "S"
+            },
+            {
+              "varied": "E",
+              "delta_pp": -10.0,
+              "weights": {
+                "S": 0.45714286,
+                "E": 0.2,
+                "R": 0.34285714
+              },
+              "first_priority": "S"
+            },
+            {
+              "varied": "E",
+              "delta_pp": 10.0,
+              "weights": {
+                "S": 0.34285714,
+                "E": 0.4,
+                "R": 0.25714286
+              },
+              "first_priority": "E"
+            },
+            {
+              "varied": "R",
+              "delta_pp": -10.0,
+              "weights": {
+                "S": 0.45714286,
+                "E": 0.34285714,
+                "R": 0.2
+              },
+              "first_priority": "S"
+            },
+            {
+              "varied": "R",
+              "delta_pp": 10.0,
+              "weights": {
+                "S": 0.34285714,
+                "E": 0.25714286,
+                "R": 0.4
+              },
+              "first_priority": "R"
+            }
+          ],
+          "first_priority_changes": true,
+          "applies_to": "2026-10-26",
+          "decision_status": "unselected_reference",
+          "selection_requirements": [
+            "목적과 의사결정 주체 확인",
+            "S/E/R의 병목·대안·상충 검토",
+            "비중 변경의 의사결정 영향 평가"
+          ]
+        },
+        "S": {
+          "kind": "proposed_dependency_roadmap_not_observed_execution",
+          "ordering_basis": "prerequisites_before_weights",
+          "tasks": [
+            {
+              "id": "context",
+              "element": "E",
+              "weight": null,
+              "owner": "전략·리스크 조직",
+              "task": "광고 전환·개인정보 규제의 실행 허용 조건 확인",
+              "depends_on": [],
+              "review_due": "2026-10-28",
+              "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
+              "status": "proposed_not_executed"
+            },
+            {
+              "id": "capacity",
+              "element": "R",
+              "weight": null,
+              "owner": "재무·인사·기술 조직",
+              "task": "추천기술·컴퓨팅·인력의 가용성과 투입 한도 확인",
+              "depends_on": [],
+              "review_due": "2026-10-28",
+              "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
+              "status": "proposed_not_executed"
+            },
+            {
+              "id": "authorize",
+              "element": "S",
+              "weight": null,
+              "owner": "경영진·이사회",
+              "task": "AI 투자와 광고 수익화의 연결의 목적·대안 조합·중단 기준 승인",
+              "depends_on": [
+                "context",
+                "capacity"
+              ],
+              "review_due": "2026-11-02",
+              "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
+              "status": "proposed_not_executed"
+            },
+            {
+              "id": "deploy",
+              "element": "R",
+              "weight": null,
+              "owner": "사업·운영 조직",
+              "task": "승인 범위 안에서 자원 단계 투입",
+              "depends_on": [
+                "authorize"
+              ],
+              "review_due": "2026-11-09",
+              "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
+              "status": "proposed_not_executed"
+            },
+            {
+              "id": "review",
+              "element": "S",
+              "weight": null,
+              "owner": "경영진·성과관리 조직",
+              "task": "광고 효율·유지율·현금 회수을 대조해 지속·축소·중단 재검토",
+              "depends_on": [
+                "deploy"
+              ],
+              "review_due": "2026-11-23",
+              "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
+              "status": "proposed_not_executed"
+            }
+          ]
+        }
+      },
+      "scenarios": {
+        "support": "광고 전환·개인정보 규제과 추천기술·컴퓨팅·인력이 함께 충족되고 광고 효율·유지율·현금 회수이 확인되는 조건",
+        "adverse": "광고 전환·개인정보 규제 또는 추천기술·컴퓨팅·인력 미충족으로 단계 확대가 보류·축소되는 조건",
+        "reversal": "계획 발표·가격 기대와 달리 광고 효율·유지율·현금 회수이 실현되지 않아 투입 한도·전략을 재검토하는 조건"
+      },
+      "conclusion_status": "conditional_review_with_evidence_gaps",
+      "estimated_probabilities": null,
+      "new_local_model_calls": 0,
+      "method": "explicit_rule_based_structured_analysis",
+      "official_ir": "https://investor.atmeta.com/",
+      "confidence": {
+        "price": "completed_session_source_checked",
+        "strategy": "not_verified",
+        "causality": "not_identified",
+        "prediction": "not_validated"
+      },
+      "objective_origin": "analyst_proposed_not_elicited_corporate_utility",
+      "method_version": "SER-M-CPT-WS-1.1"
+    },
+    {
+      "code": "AVGO",
+      "name": "Broadcom",
+      "market": "US",
+      "industry": "반도체",
+      "objective": "반도체와 소프트웨어의 자본배분의 조건과 실패 경로를 비교하는 분석자 설정 목적",
+      "asof": "2026-10-26",
+      "price": {
+        "date": "2026-10-26",
+        "return_5": -0.016198919266005585,
+        "return_20": -0.058357430262311216,
+        "volatility_20": 0.39529337995629305,
+        "source": {
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/AVGO?range=6mo&interval=1d",
+          "retrieved_at": "2026-10-27T00:21:58.855781+00:00",
+          "sha256": "694b170511ebbd1a6ca52ab5b8de9409f6f13a8a7cec4a2265b01c3b274f56b5",
+          "bytes": 14652,
+          "completed_close_fallback": {
+            "url": "https://api.stock.naver.com/stock/AVGO.O/price",
+            "retrieved_at": "2026-10-27T00:21:58.901887+00:00",
+            "sha256": "7682cf0b3a4d6470b58d8a150c04d9e56078e1c51e0d08e449aa6c8d736ea9f0",
+            "bytes": 11417
+          },
+          "overlap_check": {
+            "sessions": [
+              "2026-10-21",
+              "2026-10-22",
+              "2026-10-23"
+            ],
+            "max_relative_difference": 3.613685983783199e-08
+          }
+        },
+        "basis": "provider Close, descriptive price change; not dividend-reinvested return"
+      },
+      "resources": {
+        "status": "unavailable",
+        "reason": "HTTPError",
+        "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001730168.json",
+        "interpretation": "표준 재무 원문 확인 실패 또는 대응 태그 공백. 자원 전체 부재를 뜻하지 않음."
+      },
+      "news": {
+        "status": "title_metadata_only",
+        "count": 12,
+        "items": [
+          {
+            "title": "Broadcom Partners With Wall Street Bigwigs To Forge $63B Deal To Power Anthropic’s AI Hardware",
+            "url": "https://stocktwits.com/news-articles/markets/equity/broadcom-partners-with-wall-street-bigwigs-to-forge-63-b-deal-to-power-anthropic-s-ai-hardware/cZU3ie1RBzJ?.tsrc=rss",
+            "published_at": "2026-10-26T22:50:16+00:00",
+            "body_read": false
+          },
+          {
+            "title": "Broadcom secures $63 billion from banks to finance AI compute sales to Anthropic",
+            "url": "https://finance.yahoo.com/technology/ai/articles/broadcom-secures-63-billion-banks-205926176.html?.tsrc=rss",
+            "published_at": "2026-10-26T20:59:26+00:00",
+            "body_read": false
+          },
+          {
+            "title": "Broadcom Arranges $63 Billion Deal to Finance Anthropic’s Chips",
+            "url": "https://finance.yahoo.com/technology/ai/articles/broadcom-arranges-63-billion-deal-203614048.html?.tsrc=rss",
+            "published_at": "2026-10-26T20:36:14+00:00",
+            "body_read": false
+          }
+        ],
+        "source": {
+          "url": "https://feeds.finance.yahoo.com/rss/2.0/headline?s=AVGO&region=US&lang=en-US",
+          "retrieved_at": "2026-10-27T00:21:59.400359+00:00",
+          "sha256": "5b1cabe8e165ec321991e7824f7e848ff58485388bb0efd42a876aa26202053e",
+          "bytes": 9775
+        }
+      },
+      "evidence": [
+        {
+          "id": "price",
+          "type": "market_observation",
+          "date": "2026-10-26",
+          "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/AVGO?range=6mo&interval=1d",
+          "claim": "종가 계열에서 계산한 변화·변동성"
+        }
+      ],
+      "S": {
+        "actor": "담당 경영진·이사회·조직의 명시적 책임 확인 필요",
+        "strategic_decision": "반도체와 소프트웨어의 자본배분",
+        "observed_statement": "주체의 명시적 전략 결정 원문 검토가 완료되지 않았습니다. 실적·주가를 의지나 동기의 근거로 전용하지 않습니다.",
+        "evidence_ids": [],
+        "status": "insufficient",
+        "unknown": "경영자의 실제 의지·비전의 변화와 조직 구성원의 동기·합의·실행 책임은 직접 자료로 추가 확인해야 합니다. 주가·수급·뉴스 제목에서 추정하지 않았습니다.",
+        "motivation_observed": false
+      },
+      "E": {
+        "focus": "고객 수요·수출규제·공급 경쟁",
+        "market_context": {
+          "name": "S&P 500",
+          "date": "2026-10-26",
+          "return_5": -0.0018151672172800337,
+          "return_20": -0.0009005987914361135,
+          "volatility_20": 0.09900498036098758,
+          "source": {
+            "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?range=6mo&interval=1d",
+            "retrieved_at": "2026-10-27T00:21:56.400906+00:00",
+            "sha256": "4b9c0480719d39372d7d3977bd4df7b4d070ca0eba10524f3b20fc94eca68860",
+            "bytes": 14048
+          },
+          "basis": "provider Close, descriptive price change; not dividend-reinvested return"
+        },
+        "missing": "가격 이외의 최신 정책·경쟁·실수요 원문은 별도 확인이 필요합니다."
+      },
+      "R": {
+        "focus": "설계·공정기술, 인력, 생산/패키징 능력과 자본",
+        "verified": {
+          "status": "unavailable",
+          "reason": "HTTPError",
+          "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001730168.json",
+          "interpretation": "표준 재무 원문 확인 실패 또는 대응 태그 공백. 자원 전체 부재를 뜻하지 않음."
+        },
+        "missing": "재무 금액은 인재·기술·조직 역량을 대체하지 않습니다."
+      },
+      "M": {
+        "hypothesis": "AI 네트워크·소프트웨어 계약과 설계·공급 파트너·통합 역량을 확인한 뒤 경영진이 실행 범위를 승인하면 계약 실현·통합 비용·현금에 연결될 수 있다는 분석 가설",
+        "identified_causal_effect": false,
+        "falsifier": "경영진 발표가 실제 투입으로 이어지지 않거나, 투입 뒤 고객/매출·마진·현금이 개선되지 않으면 연결 가설을 약화한다.",
+        "evidence_status": "conditional_unidentified"
+      },
+      "CPT": {
+        "C": {
+          "configuration": {
+            "S": "반도체와 소프트웨어의 자본배분에 대한 의사결정",
+            "E": "AI 네트워크·소프트웨어 계약",
+            "R": "설계·공급 파트너·통합 역량"
+          },
+          "complementarity": "전략 선택이 환경의 수요·규제 제약과 자원 역량을 함께 충족해야 함",
+          "tradeoff": "투자 속도와 현금 유연성, 단기 실적과 장기 역량의 충돌을 비교",
+          "relative_emphasis_ref": "WS.W",
+          "alternatives": [
+            {
+              "id": "staged",
+              "name": "조건부 단계 확대",
+              "combination": "AI 네트워크·소프트웨어 계약 확인과 설계·공급 파트너·통합 역량 확보를 묶어 승인 단위로 확대",
+              "tradeoff": "기회 포착 속도와 손실 노출의 균형",
+              "gate": "환경과 자원 조건 모두 충족"
+            },
+            {
+              "id": "preserve",
+              "name": "자원 보전·기존 운영 우선",
+              "combination": "설계·공급 파트너·통합 역량을 보전하면서 AI 네트워크·소프트웨어 계약 확인 전 신규 투입 유보",
+              "tradeoff": "현금·역량 보전과 기회 상실 가능성",
+              "gate": "환경 또는 자원 조건 미충족"
+            }
+          ]
+        },
+        "P": {
+          "causal_hypotheses": [],
+          "alternatives": "환경이 성과와 경영진 선택에 함께 영향을 주는 공통요인 및 성과가 투자에 영향을 주는 역인과를 배제하지 못함",
+          "candidate_paths": [
+            {
+              "id": "demand_led",
+              "order": [
+                "E",
+                "S",
+                "R",
+                "성과"
+              ],
+              "activation": "AI 네트워크·소프트웨어 계약의 변화가 먼저 확인되는 경우",
+              "test": "외부 변화→계획 변경→실제 투입의 시점과 범위를 대조"
+            },
+            {
+              "id": "capability_led",
+              "order": [
+                "R",
+                "S",
+                "E",
+                "성과"
+              ],
+              "activation": "설계·공급 파트너·통합 역량의 변화가 먼저 확인되는 경우",
+              "test": "역량 변화→전략 선택→고객 채택의 시점을 대조"
+            },
+            {
+              "id": "commitment_led",
+              "order": [
+                "S",
+                "R",
+                "E",
+                "성과"
+              ],
+              "activation": "반도체와 소프트웨어의 자본배분에 대한 명시적 전략 승인이 먼저 확인되는 경우",
+              "test": "승인→자원 투입→외부 반응의 시점을 대조"
+            }
+          ],
+          "selection_status": "unselected_pending_temporal_and_confounder_evidence",
+          "feedback": "성과·현금 회수 관측 → 자원 한도와 전략 재검토. 반복 관찰이며 피드백의 인과효과는 미식별."
+        },
+        "T": {
+          "activation": "AI 네트워크·소프트웨어 계약과 설계·공급 파트너·통합 역량 확인 및 경영 승인 뒤 단계 실행하는 조건부 제안",
+          "speed": "일괄 확대보다 검증 가능한 단위로 집행하고 성과 관찰 후 확장하는 제안",
+          "monitoring_sessions": {
+            "1": "2026-10-27",
+            "2": "2026-10-28",
+            "5": "2026-11-02",
+            "10": "2026-11-09",
+            "20": "2026-11-23"
+          },
+          "strategy_horizon": "다음 공식 실적·투자 계획의 실행과 중기 현금 회수에서 확인. 20거래일 내 성과 실현을 보장하지 않음",
+          "next_official_event_date": null,
+          "date_note": "관찰일은 재검토 일정이다. 실제 실행 시작일·속도·효과 시차는 기업별 원문과 관측이 확보될 때까지 미확정.",
+          "execution_start_date": null,
+          "execution_lag_estimate": null,
+          "events": []
+        }
+      },
+      "WS": {
+        "W": {
+          "purpose": "전략과 실행의 정합성 검토",
+          "values": {
+            "S": 0.4,
+            "E": 0.3,
+            "R": 0.3
+          },
+          "rule": "위 두 시장 조건에 해당하지 않음",
+          "version": "purpose_rule_v1_unvalidated",
+          "estimated": false,
+          "interpretation": "시장 문맥으로 고른 참고 정책값이다. 기업 목적·선호·제약을 확인해 선정한 집중 비중이 아니므로 실제 W 결정은 보류한다.",
+          "sensitivity": [
+            {
+              "varied": "S",
+              "delta_pp": -10.0,
+              "weights": {
+                "S": 0.3,
+                "E": 0.35,
+                "R": 0.35
+              },
+              "first_priority": "E"
+            },
+            {
+              "varied": "S",
+              "delta_pp": 10.0,
+              "weights": {
+                "S": 0.5,
+                "E": 0.25,
+                "R": 0.25
+              },
+              "first_priority": "S"
+            },
+            {
+              "varied": "E",
+              "delta_pp": -10.0,
+              "weights": {
+                "S": 0.45714286,
+                "E": 0.2,
+                "R": 0.34285714
+              },
+              "first_priority": "S"
+            },
+            {
+              "varied": "E",
+              "delta_pp": 10.0,
+              "weights": {
+                "S": 0.34285714,
+                "E": 0.4,
+                "R": 0.25714286
+              },
+              "first_priority": "E"
+            },
+            {
+              "varied": "R",
+              "delta_pp": -10.0,
+              "weights": {
+                "S": 0.45714286,
+                "E": 0.34285714,
+                "R": 0.2
+              },
+              "first_priority": "S"
+            },
+            {
+              "varied": "R",
+              "delta_pp": 10.0,
+              "weights": {
+                "S": 0.34285714,
+                "E": 0.25714286,
+                "R": 0.4
+              },
+              "first_priority": "R"
+            }
+          ],
+          "first_priority_changes": true,
+          "applies_to": "2026-10-26",
+          "decision_status": "unselected_reference",
+          "selection_requirements": [
+            "목적과 의사결정 주체 확인",
+            "S/E/R의 병목·대안·상충 검토",
+            "비중 변경의 의사결정 영향 평가"
+          ]
+        },
+        "S": {
+          "kind": "proposed_dependency_roadmap_not_observed_execution",
+          "ordering_basis": "prerequisites_before_weights",
+          "tasks": [
+            {
+              "id": "context",
+              "element": "E",
+              "weight": null,
+              "owner": "전략·리스크 조직",
+              "task": "AI 네트워크·소프트웨어 계약의 실행 허용 조건 확인",
+              "depends_on": [],
+              "review_due": "2026-10-28",
+              "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
+              "status": "proposed_not_executed"
+            },
+            {
+              "id": "capacity",
+              "element": "R",
+              "weight": null,
+              "owner": "재무·인사·기술 조직",
+              "task": "설계·공급 파트너·통합 역량의 가용성과 투입 한도 확인",
+              "depends_on": [],
+              "review_due": "2026-10-28",
+              "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
+              "status": "proposed_not_executed"
+            },
+            {
+              "id": "authorize",
+              "element": "S",
+              "weight": null,
+              "owner": "경영진·이사회",
+              "task": "반도체와 소프트웨어의 자본배분의 목적·대안 조합·중단 기준 승인",
+              "depends_on": [
+                "context",
+                "capacity"
+              ],
+              "review_due": "2026-11-02",
+              "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
+              "status": "proposed_not_executed"
+            },
+            {
+              "id": "deploy",
+              "element": "R",
+              "weight": null,
+              "owner": "사업·운영 조직",
+              "task": "승인 범위 안에서 자원 단계 투입",
+              "depends_on": [
+                "authorize"
+              ],
+              "review_due": "2026-11-09",
+              "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
+              "status": "proposed_not_executed"
+            },
+            {
+              "id": "review",
+              "element": "S",
+              "weight": null,
+              "owner": "경영진·성과관리 조직",
+              "task": "계약 실현·통합 비용·현금을 대조해 지속·축소·중단 재검토",
+              "depends_on": [
+                "deploy"
+              ],
+              "review_due": "2026-11-23",
+              "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
+              "status": "proposed_not_executed"
+            }
+          ]
+        }
+      },
+      "scenarios": {
+        "support": "AI 네트워크·소프트웨어 계약과 설계·공급 파트너·통합 역량이 함께 충족되고 계약 실현·통합 비용·현금이 확인되는 조건",
+        "adverse": "AI 네트워크·소프트웨어 계약 또는 설계·공급 파트너·통합 역량 미충족으로 단계 확대가 보류·축소되는 조건",
+        "reversal": "계획 발표·가격 기대와 달리 계약 실현·통합 비용·현금이 실현되지 않아 투입 한도·전략을 재검토하는 조건"
+      },
+      "conclusion_status": "conditional_review_with_evidence_gaps",
+      "estimated_probabilities": null,
+      "new_local_model_calls": 0,
+      "method": "explicit_rule_based_structured_analysis",
+      "official_ir": "https://investors.broadcom.com/",
+      "confidence": {
+        "price": "completed_session_source_checked",
+        "strategy": "not_verified",
+        "causality": "not_identified",
+        "prediction": "not_validated"
+      },
+      "objective_origin": "analyst_proposed_not_elicited_corporate_utility",
+      "method_version": "SER-M-CPT-WS-1.1"
+    },
+    {
+      "code": "TSLA",
+      "name": "Tesla",
+      "market": "US",
+      "industry": "자동차",
+      "objective": "자동차와 신사업 투자의 회수 조건의 조건과 실패 경로를 비교하는 분석자 설정 목적",
+      "asof": "2026-10-26",
+      "price": {
+        "date": "2026-10-26",
+        "return_5": 0.06401130956279921,
+        "return_20": 0.09559375192629127,
+        "volatility_20": 0.37751169697496,
+        "source": {
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/TSLA?range=6mo&interval=1d",
+          "retrieved_at": "2026-10-27T00:21:58.884927+00:00",
+          "sha256": "f2ff09fe82bf1139dbaa6b9d83dfd74fb38dca407500e9346273d1cbc8892b81",
+          "bytes": 14706,
+          "completed_close_fallback": {
+            "url": "https://api.stock.naver.com/stock/TSLA.O/price",
+            "retrieved_at": "2026-10-27T00:21:58.910884+00:00",
+            "sha256": "4d1371715f561ae7f66cb37af129eb2092762ec46adc1e7be686e4cad99020ba",
+            "bytes": 11419
+          },
+          "overlap_check": {
+            "sessions": [
+              "2026-10-21",
+              "2026-10-22",
+              "2026-10-23"
+            ],
+            "max_relative_difference": 3.584744079354607e-08
+          }
+        },
+        "basis": "provider Close, descriptive price change; not dividend-reinvested return"
+      },
+      "resources": {
+        "status": "unavailable",
+        "reason": "HTTPError",
+        "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001318605.json",
+        "interpretation": "표준 재무 원문 확인 실패 또는 대응 태그 공백. 자원 전체 부재를 뜻하지 않음."
+      },
+      "news": {
+        "status": "title_metadata_only",
+        "count": 17,
+        "items": [
+          {
+            "title": "TSLA Analyst Ratings Hit Highest Since 2023; ARK Reiterates $4,400 Long-Term Price Target And 80% Robotaxi Thesis",
+            "url": "https://stocktwits.com/news-articles/markets/equity/tsla-analyst-ratings-hit-highest-since-2023-ark-reiterates-4-400-tesla-2031-target-and-80-robotaxi-thesis/cZU3KLWRBzB?.tsrc=rss",
+            "published_at": "2026-10-26T23:35:04+00:00",
+            "body_read": false
+          },
+          {
+            "title": "Dow Jones Futures: Elon Musk-Led Tesla Leads Market Higher; Amazon, Alphabet, Microsoft Earnings On Deck",
+            "url": "https://finance.yahoo.com/m/4f45ec30-6388-381f-b8f7-2aed6d460b6f/dow-jones-futures%3A-elon.html?.tsrc=rss",
+            "published_at": "2026-10-26T22:03:09+00:00",
+            "body_read": false
+          },
+          {
+            "title": "Tesla Isn’t a Hyperscaler. Why the AI Bears Are Misreading Its $5 Billion Capex Cut.",
+            "url": "https://www.fool.com/investing/2026/10/26/tesla-isnt-a-hyperscaler-why-the-ai-bears-are-misreading-its-5-billion-capex-cut/?.tsrc=rss",
+            "published_at": "2026-10-26T20:53:02+00:00",
+            "body_read": false
+          }
+        ],
+        "source": {
+          "url": "https://feeds.finance.yahoo.com/rss/2.0/headline?s=TSLA&region=US&lang=en-US",
+          "retrieved_at": "2026-10-27T00:21:59.421528+00:00",
+          "sha256": "b5d0b4a0ef24e0f33b9ded2165a63774b406ae6e6ca0c1db26fb5e4dd4bfeba4",
+          "bytes": 12144
+        }
+      },
+      "evidence": [
+        {
+          "id": "price",
+          "type": "market_observation",
+          "date": "2026-10-26",
+          "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/TSLA?range=6mo&interval=1d",
+          "claim": "종가 계열에서 계산한 변화·변동성"
+        }
+      ],
+      "S": {
+        "actor": "담당 경영진·이사회·조직의 명시적 책임 확인 필요",
+        "strategic_decision": "자동차와 신사업 투자의 회수 조건",
+        "observed_statement": "주체의 명시적 전략 결정 원문 검토가 완료되지 않았습니다. 실적·주가를 의지나 동기의 근거로 전용하지 않습니다.",
+        "evidence_ids": [],
+        "status": "insufficient",
+        "unknown": "경영자의 실제 의지·비전의 변화와 조직 구성원의 동기·합의·실행 책임은 직접 자료로 추가 확인해야 합니다. 주가·수급·뉴스 제목에서 추정하지 않았습니다.",
+        "motivation_observed": false
+      },
+      "E": {
+        "focus": "지역 수요·가격 경쟁·통상·정책",
+        "market_context": {
+          "name": "S&P 500",
+          "date": "2026-10-26",
+          "return_5": -0.0018151672172800337,
+          "return_20": -0.0009005987914361135,
+          "volatility_20": 0.09900498036098758,
+          "source": {
+            "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?range=6mo&interval=1d",
+            "retrieved_at": "2026-10-27T00:21:56.400906+00:00",
+            "sha256": "4b9c0480719d39372d7d3977bd4df7b4d070ca0eba10524f3b20fc94eca68860",
+            "bytes": 14048
+          },
+          "basis": "provider Close, descriptive price change; not dividend-reinvested return"
+        },
+        "missing": "가격 이외의 최신 정책·경쟁·실수요 원문은 별도 확인이 필요합니다."
+      },
+      "R": {
+        "focus": "공장·배터리·소프트웨어·공급망·인력",
+        "verified": {
+          "status": "unavailable",
+          "reason": "HTTPError",
+          "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001318605.json",
+          "interpretation": "표준 재무 원문 확인 실패 또는 대응 태그 공백. 자원 전체 부재를 뜻하지 않음."
+        },
+        "missing": "재무 금액은 인재·기술·조직 역량을 대체하지 않습니다."
+      },
+      "M": {
+        "hypothesis": "차량 수요·가격 경쟁·인허가과 제조·소프트웨어·현금을 확인한 뒤 경영진이 실행 범위를 승인하면 판매 마진·인허가·투자 회수에 연결될 수 있다는 분석 가설",
+        "identified_causal_effect": false,
+        "falsifier": "경영진 발표가 실제 투입으로 이어지지 않거나, 투입 뒤 고객/매출·마진·현금이 개선되지 않으면 연결 가설을 약화한다.",
+        "evidence_status": "conditional_unidentified"
+      },
+      "CPT": {
+        "C": {
+          "configuration": {
+            "S": "자동차와 신사업 투자의 회수 조건에 대한 의사결정",
+            "E": "차량 수요·가격 경쟁·인허가",
+            "R": "제조·소프트웨어·현금"
+          },
+          "complementarity": "전략 선택이 환경의 수요·규제 제약과 자원 역량을 함께 충족해야 함",
+          "tradeoff": "투자 속도와 현금 유연성, 단기 실적과 장기 역량의 충돌을 비교",
+          "relative_emphasis_ref": "WS.W",
+          "alternatives": [
+            {
+              "id": "staged",
+              "name": "조건부 단계 확대",
+              "combination": "차량 수요·가격 경쟁·인허가 확인과 제조·소프트웨어·현금 확보를 묶어 승인 단위로 확대",
+              "tradeoff": "기회 포착 속도와 손실 노출의 균형",
+              "gate": "환경과 자원 조건 모두 충족"
+            },
+            {
+              "id": "preserve",
+              "name": "자원 보전·기존 운영 우선",
+              "combination": "제조·소프트웨어·현금을 보전하면서 차량 수요·가격 경쟁·인허가 확인 전 신규 투입 유보",
+              "tradeoff": "현금·역량 보전과 기회 상실 가능성",
+              "gate": "환경 또는 자원 조건 미충족"
+            }
+          ]
+        },
+        "P": {
+          "causal_hypotheses": [],
+          "alternatives": "환경이 성과와 경영진 선택에 함께 영향을 주는 공통요인 및 성과가 투자에 영향을 주는 역인과를 배제하지 못함",
+          "candidate_paths": [
+            {
+              "id": "demand_led",
+              "order": [
+                "E",
+                "S",
+                "R",
+                "성과"
+              ],
+              "activation": "차량 수요·가격 경쟁·인허가의 변화가 먼저 확인되는 경우",
+              "test": "외부 변화→계획 변경→실제 투입의 시점과 범위를 대조"
+            },
+            {
+              "id": "capability_led",
+              "order": [
+                "R",
+                "S",
+                "E",
+                "성과"
+              ],
+              "activation": "제조·소프트웨어·현금의 변화가 먼저 확인되는 경우",
+              "test": "역량 변화→전략 선택→고객 채택의 시점을 대조"
+            },
+            {
+              "id": "commitment_led",
+              "order": [
+                "S",
+                "R",
+                "E",
+                "성과"
+              ],
+              "activation": "자동차와 신사업 투자의 회수 조건에 대한 명시적 전략 승인이 먼저 확인되는 경우",
+              "test": "승인→자원 투입→외부 반응의 시점을 대조"
+            }
+          ],
+          "selection_status": "unselected_pending_temporal_and_confounder_evidence",
+          "feedback": "성과·현금 회수 관측 → 자원 한도와 전략 재검토. 반복 관찰이며 피드백의 인과효과는 미식별."
+        },
+        "T": {
+          "activation": "차량 수요·가격 경쟁·인허가과 제조·소프트웨어·현금 확인 및 경영 승인 뒤 단계 실행하는 조건부 제안",
+          "speed": "일괄 확대보다 검증 가능한 단위로 집행하고 성과 관찰 후 확장하는 제안",
+          "monitoring_sessions": {
+            "1": "2026-10-27",
+            "2": "2026-10-28",
+            "5": "2026-11-02",
+            "10": "2026-11-09",
+            "20": "2026-11-23"
+          },
+          "strategy_horizon": "다음 공식 실적·투자 계획의 실행과 중기 현금 회수에서 확인. 20거래일 내 성과 실현을 보장하지 않음",
+          "next_official_event_date": null,
+          "date_note": "관찰일은 재검토 일정이다. 실제 실행 시작일·속도·효과 시차는 기업별 원문과 관측이 확보될 때까지 미확정.",
+          "execution_start_date": null,
+          "execution_lag_estimate": null,
+          "events": []
+        }
+      },
+      "WS": {
+        "W": {
+          "purpose": "전략과 실행의 정합성 검토",
+          "values": {
+            "S": 0.4,
+            "E": 0.3,
+            "R": 0.3
+          },
+          "rule": "위 두 시장 조건에 해당하지 않음",
+          "version": "purpose_rule_v1_unvalidated",
+          "estimated": false,
+          "interpretation": "시장 문맥으로 고른 참고 정책값이다. 기업 목적·선호·제약을 확인해 선정한 집중 비중이 아니므로 실제 W 결정은 보류한다.",
+          "sensitivity": [
+            {
+              "varied": "S",
+              "delta_pp": -10.0,
+              "weights": {
+                "S": 0.3,
+                "E": 0.35,
+                "R": 0.35
+              },
+              "first_priority": "E"
+            },
+            {
+              "varied": "S",
+              "delta_pp": 10.0,
+              "weights": {
+                "S": 0.5,
+                "E": 0.25,
+                "R": 0.25
+              },
+              "first_priority": "S"
+            },
+            {
+              "varied": "E",
+              "delta_pp": -10.0,
+              "weights": {
+                "S": 0.45714286,
+                "E": 0.2,
+                "R": 0.34285714
+              },
+              "first_priority": "S"
+            },
+            {
+              "varied": "E",
+              "delta_pp": 10.0,
+              "weights": {
+                "S": 0.34285714,
+                "E": 0.4,
+                "R": 0.25714286
+              },
+              "first_priority": "E"
+            },
+            {
+              "varied": "R",
+              "delta_pp": -10.0,
+              "weights": {
+                "S": 0.45714286,
+                "E": 0.34285714,
+                "R": 0.2
+              },
+              "first_priority": "S"
+            },
+            {
+              "varied": "R",
+              "delta_pp": 10.0,
+              "weights": {
+                "S": 0.34285714,
+                "E": 0.25714286,
+                "R": 0.4
+              },
+              "first_priority": "R"
+            }
+          ],
+          "first_priority_changes": true,
+          "applies_to": "2026-10-26",
+          "decision_status": "unselected_reference",
+          "selection_requirements": [
+            "목적과 의사결정 주체 확인",
+            "S/E/R의 병목·대안·상충 검토",
+            "비중 변경의 의사결정 영향 평가"
+          ]
+        },
+        "S": {
+          "kind": "proposed_dependency_roadmap_not_observed_execution",
+          "ordering_basis": "prerequisites_before_weights",
+          "tasks": [
+            {
+              "id": "context",
+              "element": "E",
+              "weight": null,
+              "owner": "전략·리스크 조직",
+              "task": "차량 수요·가격 경쟁·인허가의 실행 허용 조건 확인",
+              "depends_on": [],
+              "review_due": "2026-10-28",
+              "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
+              "status": "proposed_not_executed"
+            },
+            {
+              "id": "capacity",
+              "element": "R",
+              "weight": null,
+              "owner": "재무·인사·기술 조직",
+              "task": "제조·소프트웨어·현금의 가용성과 투입 한도 확인",
+              "depends_on": [],
+              "review_due": "2026-10-28",
+              "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
+              "status": "proposed_not_executed"
+            },
+            {
+              "id": "authorize",
+              "element": "S",
+              "weight": null,
+              "owner": "경영진·이사회",
+              "task": "자동차와 신사업 투자의 회수 조건의 목적·대안 조합·중단 기준 승인",
+              "depends_on": [
+                "context",
+                "capacity"
+              ],
+              "review_due": "2026-11-02",
+              "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
+              "status": "proposed_not_executed"
+            },
+            {
+              "id": "deploy",
+              "element": "R",
+              "weight": null,
+              "owner": "사업·운영 조직",
+              "task": "승인 범위 안에서 자원 단계 투입",
+              "depends_on": [
+                "authorize"
+              ],
+              "review_due": "2026-11-09",
+              "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
+              "status": "proposed_not_executed"
+            },
+            {
+              "id": "review",
+              "element": "S",
+              "weight": null,
+              "owner": "경영진·성과관리 조직",
+              "task": "판매 마진·인허가·투자 회수을 대조해 지속·축소·중단 재검토",
+              "depends_on": [
+                "deploy"
+              ],
+              "review_due": "2026-11-23",
+              "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
+              "status": "proposed_not_executed"
+            }
+          ]
+        }
+      },
+      "scenarios": {
+        "support": "차량 수요·가격 경쟁·인허가과 제조·소프트웨어·현금이 함께 충족되고 판매 마진·인허가·투자 회수이 확인되는 조건",
+        "adverse": "차량 수요·가격 경쟁·인허가 또는 제조·소프트웨어·현금 미충족으로 단계 확대가 보류·축소되는 조건",
+        "reversal": "계획 발표·가격 기대와 달리 판매 마진·인허가·투자 회수이 실현되지 않아 투입 한도·전략을 재검토하는 조건"
+      },
+      "conclusion_status": "conditional_review_with_evidence_gaps",
+      "estimated_probabilities": null,
+      "new_local_model_calls": 0,
+      "method": "explicit_rule_based_structured_analysis",
+      "official_ir": "https://ir.tesla.com/",
+      "confidence": {
+        "price": "completed_session_source_checked",
+        "strategy": "not_verified",
+        "causality": "not_identified",
+        "prediction": "not_validated"
+      },
+      "objective_origin": "analyst_proposed_not_elicited_corporate_utility",
+      "method_version": "SER-M-CPT-WS-1.1"
+    },
+    {
+      "code": "BRK-B",
+      "name": "Berkshire Hathaway",
+      "market": "US",
+      "industry": "지주·복합사업",
+      "objective": "보험과 사업 포트폴리오의 자본배분의 조건과 실패 경로를 비교하는 분석자 설정 목적",
+      "asof": "2026-10-26",
+      "price": {
+        "date": "2026-10-26",
+        "return_5": 0.030682261673548705,
+        "return_20": 0.09038145062135228,
+        "volatility_20": 0.1086089546435913,
+        "source": {
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/BRK-B?range=6mo&interval=1d",
+          "retrieved_at": "2026-10-27T00:21:58.948650+00:00",
+          "sha256": "4d984d51edce2fdb171d49318b868e87d35b0d38835165cdb91615ba3d7ab439",
+          "bytes": 14035,
+          "completed_close_fallback": {
+            "url": "https://api.stock.naver.com/stock/BRKb/price",
+            "retrieved_at": "2026-10-27T00:21:58.980545+00:00",
+            "sha256": "353d2c3cbffd504410f65840923d27167053092374d81842d093aac8cd032345",
+            "bytes": 11216
+          },
+          "overlap_check": {
+            "sessions": [
+              "2026-10-21",
+              "2026-10-22",
+              "2026-10-23"
+            ],
+            "max_relative_difference": 5.3562124069372885e-08
+          }
+        },
+        "basis": "provider Close, descriptive price change; not dividend-reinvested return"
+      },
+      "resources": {
+        "status": "unavailable",
+        "reason": "HTTPError",
+        "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001067983.json",
+        "interpretation": "표준 재무 원문 확인 실패 또는 대응 태그 공백. 자원 전체 부재를 뜻하지 않음."
+      },
+      "news": {
+        "status": "title_metadata_only",
+        "count": 17,
+        "items": [
+          {
+            "title": "Berkshire Hathaway: Is the Stock Still a Safe Buy Without Warren Buffett?",
+            "url": "https://www.fool.com/investing/2026/10/26/berkshire-hathaway-is-the-stock-still-a-safe-buy-without-warren-buffett/?.tsrc=rss",
+            "published_at": "2026-10-26T22:46:01+00:00",
+            "body_read": false
+          },
+          {
+            "title": "Warren Buffett's Successor, Greg Abel, Has 69% of Berkshire Hathaway's Portfolio Invested in Just 5 Stocks. Here's My Top Pick for October.",
+            "url": "https://www.fool.com/investing/2026/10/26/warren-buffetts-successor-greg-abel-has-69-of/?.tsrc=rss",
+            "published_at": "2026-10-26T15:20:00+00:00",
+            "body_read": false
+          },
+          {
+            "title": "Top 3 Undervalued Stocks To Watch In October 2026",
+            "url": "https://finance.yahoo.com/markets/stocks/articles/top-3-undervalued-stocks-watch-151018766.html?.tsrc=rss",
+            "published_at": "2026-10-26T15:10:18+00:00",
+            "body_read": false
+          }
+        ],
+        "source": {
+          "url": "https://feeds.finance.yahoo.com/rss/2.0/headline?s=BRK-B&region=US&lang=en-US",
+          "retrieved_at": "2026-10-27T00:21:59.444105+00:00",
+          "sha256": "2441effbb78c3f9ea66f7c741f58d97081baaf98d44134c532248b4851202634",
+          "bytes": 12091
+        }
+      },
+      "evidence": [
+        {
+          "id": "price",
+          "type": "market_observation",
+          "date": "2026-10-26",
+          "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/BRK-B?range=6mo&interval=1d",
+          "claim": "종가 계열에서 계산한 변화·변동성"
+        }
+      ],
+      "S": {
+        "actor": "담당 경영진·이사회·조직의 명시적 책임 확인 필요",
+        "strategic_decision": "보험과 사업 포트폴리오의 자본배분",
+        "observed_statement": "주체의 명시적 전략 결정 원문 검토가 완료되지 않았습니다. 실적·주가를 의지나 동기의 근거로 전용하지 않습니다.",
+        "evidence_ids": [],
+        "status": "insufficient",
+        "unknown": "경영자의 실제 의지·비전의 변화와 조직 구성원의 동기·합의·실행 책임은 직접 자료로 추가 확인해야 합니다. 주가·수급·뉴스 제목에서 추정하지 않았습니다.",
+        "motivation_observed": false
+      },
+      "E": {
+        "focus": "자회사 산업환경·평가 할인·금리",
+        "market_context": {
+          "name": "S&P 500",
+          "date": "2026-10-26",
+          "return_5": -0.0018151672172800337,
+          "return_20": -0.0009005987914361135,
+          "volatility_20": 0.09900498036098758,
+          "source": {
+            "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?range=6mo&interval=1d",
+            "retrieved_at": "2026-10-27T00:21:56.400906+00:00",
+            "sha256": "4b9c0480719d39372d7d3977bd4df7b4d070ca0eba10524f3b20fc94eca68860",
+            "bytes": 14048
+          },
+          "basis": "provider Close, descriptive price change; not dividend-reinvested return"
+        },
+        "missing": "가격 이외의 최신 정책·경쟁·실수요 원문은 별도 확인이 필요합니다."
+      },
+      "R": {
+        "focus": "지분자산·사업 현금흐름·인력·조달여력",
+        "verified": {
+          "status": "unavailable",
+          "reason": "HTTPError",
+          "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001067983.json",
+          "interpretation": "표준 재무 원문 확인 실패 또는 대응 태그 공백. 자원 전체 부재를 뜻하지 않음."
+        },
+        "missing": "재무 금액은 인재·기술·조직 역량을 대체하지 않습니다."
+      },
+      "M": {
+        "hypothesis": "보험 손해·매입 기회·금리과 유동성·보험 준비금·자회사 현금을 확인한 뒤 경영진이 실행 범위를 승인하면 보험 수익·사업 현금·자본배분에 연결될 수 있다는 분석 가설",
+        "identified_causal_effect": false,
+        "falsifier": "경영진 발표가 실제 투입으로 이어지지 않거나, 투입 뒤 고객/매출·마진·현금이 개선되지 않으면 연결 가설을 약화한다.",
+        "evidence_status": "conditional_unidentified"
+      },
+      "CPT": {
+        "C": {
+          "configuration": {
+            "S": "보험과 사업 포트폴리오의 자본배분에 대한 의사결정",
+            "E": "보험 손해·매입 기회·금리",
+            "R": "유동성·보험 준비금·자회사 현금"
+          },
+          "complementarity": "전략 선택이 환경의 수요·규제 제약과 자원 역량을 함께 충족해야 함",
+          "tradeoff": "투자 속도와 현금 유연성, 단기 실적과 장기 역량의 충돌을 비교",
+          "relative_emphasis_ref": "WS.W",
+          "alternatives": [
+            {
+              "id": "staged",
+              "name": "조건부 단계 확대",
+              "combination": "보험 손해·매입 기회·금리 확인과 유동성·보험 준비금·자회사 현금 확보를 묶어 승인 단위로 확대",
+              "tradeoff": "기회 포착 속도와 손실 노출의 균형",
+              "gate": "환경과 자원 조건 모두 충족"
+            },
+            {
+              "id": "preserve",
+              "name": "자원 보전·기존 운영 우선",
+              "combination": "유동성·보험 준비금·자회사 현금을 보전하면서 보험 손해·매입 기회·금리 확인 전 신규 투입 유보",
+              "tradeoff": "현금·역량 보전과 기회 상실 가능성",
+              "gate": "환경 또는 자원 조건 미충족"
+            }
+          ]
+        },
+        "P": {
+          "causal_hypotheses": [],
+          "alternatives": "환경이 성과와 경영진 선택에 함께 영향을 주는 공통요인 및 성과가 투자에 영향을 주는 역인과를 배제하지 못함",
+          "candidate_paths": [
+            {
+              "id": "demand_led",
+              "order": [
+                "E",
+                "S",
+                "R",
+                "성과"
+              ],
+              "activation": "보험 손해·매입 기회·금리의 변화가 먼저 확인되는 경우",
+              "test": "외부 변화→계획 변경→실제 투입의 시점과 범위를 대조"
+            },
+            {
+              "id": "capability_led",
+              "order": [
+                "R",
+                "S",
+                "E",
+                "성과"
+              ],
+              "activation": "유동성·보험 준비금·자회사 현금의 변화가 먼저 확인되는 경우",
+              "test": "역량 변화→전략 선택→고객 채택의 시점을 대조"
+            },
+            {
+              "id": "commitment_led",
+              "order": [
+                "S",
+                "R",
+                "E",
+                "성과"
+              ],
+              "activation": "보험과 사업 포트폴리오의 자본배분에 대한 명시적 전략 승인이 먼저 확인되는 경우",
+              "test": "승인→자원 투입→외부 반응의 시점을 대조"
+            }
+          ],
+          "selection_status": "unselected_pending_temporal_and_confounder_evidence",
+          "feedback": "성과·현금 회수 관측 → 자원 한도와 전략 재검토. 반복 관찰이며 피드백의 인과효과는 미식별."
+        },
+        "T": {
+          "activation": "보험 손해·매입 기회·금리과 유동성·보험 준비금·자회사 현금 확인 및 경영 승인 뒤 단계 실행하는 조건부 제안",
+          "speed": "일괄 확대보다 검증 가능한 단위로 집행하고 성과 관찰 후 확장하는 제안",
+          "monitoring_sessions": {
+            "1": "2026-10-27",
+            "2": "2026-10-28",
+            "5": "2026-11-02",
+            "10": "2026-11-09",
+            "20": "2026-11-23"
+          },
+          "strategy_horizon": "다음 공식 실적·투자 계획의 실행과 중기 현금 회수에서 확인. 20거래일 내 성과 실현을 보장하지 않음",
+          "next_official_event_date": null,
+          "date_note": "관찰일은 재검토 일정이다. 실제 실행 시작일·속도·효과 시차는 기업별 원문과 관측이 확보될 때까지 미확정.",
+          "execution_start_date": null,
+          "execution_lag_estimate": null,
+          "events": []
+        }
+      },
+      "WS": {
+        "W": {
+          "purpose": "전략과 실행의 정합성 검토",
+          "values": {
+            "S": 0.4,
+            "E": 0.3,
+            "R": 0.3
+          },
+          "rule": "위 두 시장 조건에 해당하지 않음",
+          "version": "purpose_rule_v1_unvalidated",
+          "estimated": false,
+          "interpretation": "시장 문맥으로 고른 참고 정책값이다. 기업 목적·선호·제약을 확인해 선정한 집중 비중이 아니므로 실제 W 결정은 보류한다.",
+          "sensitivity": [
+            {
+              "varied": "S",
+              "delta_pp": -10.0,
+              "weights": {
+                "S": 0.3,
+                "E": 0.35,
+                "R": 0.35
+              },
+              "first_priority": "E"
+            },
+            {
+              "varied": "S",
+              "delta_pp": 10.0,
+              "weights": {
+                "S": 0.5,
+                "E": 0.25,
+                "R": 0.25
+              },
+              "first_priority": "S"
+            },
+            {
+              "varied": "E",
+              "delta_pp": -10.0,
+              "weights": {
+                "S": 0.45714286,
+                "E": 0.2,
+                "R": 0.34285714
+              },
+              "first_priority": "S"
+            },
+            {
+              "varied": "E",
+              "delta_pp": 10.0,
+              "weights": {
+                "S": 0.34285714,
+                "E": 0.4,
+                "R": 0.25714286
+              },
+              "first_priority": "E"
+            },
+            {
+              "varied": "R",
+              "delta_pp": -10.0,
+              "weights": {
+                "S": 0.45714286,
+                "E": 0.34285714,
+                "R": 0.2
+              },
+              "first_priority": "S"
+            },
+            {
+              "varied": "R",
+              "delta_pp": 10.0,
+              "weights": {
+                "S": 0.34285714,
+                "E": 0.25714286,
+                "R": 0.4
+              },
+              "first_priority": "R"
+            }
+          ],
+          "first_priority_changes": true,
+          "applies_to": "2026-10-26",
+          "decision_status": "unselected_reference",
+          "selection_requirements": [
+            "목적과 의사결정 주체 확인",
+            "S/E/R의 병목·대안·상충 검토",
+            "비중 변경의 의사결정 영향 평가"
+          ]
+        },
+        "S": {
+          "kind": "proposed_dependency_roadmap_not_observed_execution",
+          "ordering_basis": "prerequisites_before_weights",
+          "tasks": [
+            {
+              "id": "context",
+              "element": "E",
+              "weight": null,
+              "owner": "전략·리스크 조직",
+              "task": "보험 손해·매입 기회·금리의 실행 허용 조건 확인",
+              "depends_on": [],
+              "review_due": "2026-10-28",
+              "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
+              "status": "proposed_not_executed"
+            },
+            {
+              "id": "capacity",
+              "element": "R",
+              "weight": null,
+              "owner": "재무·인사·기술 조직",
+              "task": "유동성·보험 준비금·자회사 현금의 가용성과 투입 한도 확인",
+              "depends_on": [],
+              "review_due": "2026-10-28",
+              "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
+              "status": "proposed_not_executed"
+            },
+            {
+              "id": "authorize",
+              "element": "S",
+              "weight": null,
+              "owner": "경영진·이사회",
+              "task": "보험과 사업 포트폴리오의 자본배분의 목적·대안 조합·중단 기준 승인",
+              "depends_on": [
+                "context",
+                "capacity"
+              ],
+              "review_due": "2026-11-02",
+              "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
+              "status": "proposed_not_executed"
+            },
+            {
+              "id": "deploy",
+              "element": "R",
+              "weight": null,
+              "owner": "사업·운영 조직",
+              "task": "승인 범위 안에서 자원 단계 투입",
+              "depends_on": [
+                "authorize"
+              ],
+              "review_due": "2026-11-09",
+              "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
+              "status": "proposed_not_executed"
+            },
+            {
+              "id": "review",
+              "element": "S",
+              "weight": null,
+              "owner": "경영진·성과관리 조직",
+              "task": "보험 수익·사업 현금·자본배분을 대조해 지속·축소·중단 재검토",
+              "depends_on": [
+                "deploy"
+              ],
+              "review_due": "2026-11-23",
+              "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
+              "status": "proposed_not_executed"
+            }
+          ]
+        }
+      },
+      "scenarios": {
+        "support": "보험 손해·매입 기회·금리과 유동성·보험 준비금·자회사 현금이 함께 충족되고 보험 수익·사업 현금·자본배분이 확인되는 조건",
+        "adverse": "보험 손해·매입 기회·금리 또는 유동성·보험 준비금·자회사 현금 미충족으로 단계 확대가 보류·축소되는 조건",
+        "reversal": "계획 발표·가격 기대와 달리 보험 수익·사업 현금·자본배분이 실현되지 않아 투입 한도·전략을 재검토하는 조건"
+      },
+      "conclusion_status": "conditional_review_with_evidence_gaps",
+      "estimated_probabilities": null,
+      "new_local_model_calls": 0,
+      "method": "explicit_rule_based_structured_analysis",
+      "official_ir": "https://www.berkshirehathaway.com/reports.html",
+      "confidence": {
+        "price": "completed_session_source_checked",
+        "strategy": "not_verified",
+        "causality": "not_identified",
+        "prediction": "not_validated"
+      },
+      "objective_origin": "analyst_proposed_not_elicited_corporate_utility",
+      "method_version": "SER-M-CPT-WS-1.1"
+    },
+    {
+      "code": "JPM",
+      "name": "JPMorgan Chase",
+      "market": "US",
+      "industry": "은행·금융지주",
+      "objective": "대출 성장·위험 관리·환원의 균형의 조건과 실패 경로를 비교하는 분석자 설정 목적",
+      "asof": "2026-10-26",
+      "price": {
+        "date": "2026-10-26",
+        "return_5": 0.0015291014978253692,
+        "return_20": -0.007575971851910723,
+        "volatility_20": 0.13376756114880028,
+        "source": {
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/JPM?range=6mo&interval=1d",
+          "retrieved_at": "2026-10-27T00:21:59.879443+00:00",
+          "sha256": "ebc19264bf1e5c352eb29d96eb3ca5c0e04fce888a6e45dc4fa3fb7c49ba21ba",
+          "bytes": 14408,
+          "completed_close_fallback": {
+            "url": "https://api.stock.naver.com/stock/JPM/price",
+            "retrieved_at": "2026-10-27T00:21:59.910154+00:00",
+            "sha256": "4fa6e136c6cc23bb354ed47d46f1eaf4544ef56d9728c4d508499851ee65de0c",
+            "bytes": 11228
+          },
+          "overlap_check": {
+            "sessions": [
+              "2026-10-21",
+              "2026-10-22",
+              "2026-10-23"
+            ],
+            "max_relative_difference": 4.049621316060126e-08
+          }
+        },
+        "basis": "provider Close, descriptive price change; not dividend-reinvested return"
+      },
+      "resources": {
+        "status": "unavailable",
+        "reason": "HTTPError",
+        "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000019617.json",
+        "interpretation": "표준 재무 원문 확인 실패 또는 대응 태그 공백. 자원 전체 부재를 뜻하지 않음."
+      },
+      "news": {
+        "status": "title_metadata_only",
+        "count": 17,
+        "items": [
+          {
+            "title": "Rockefeller Adds J.P. Morgan Team in Houston",
+            "url": "https://www.wealthmanagement.com/ria-news/rockefeller-adds-14b-jp-morgan-team-in-houston?.tsrc=rss",
+            "published_at": "2026-10-26T18:30:06+00:00",
+            "body_read": false
+          },
+          {
+            "title": "KBRA Assigns Preliminary Ratings to J.P. Morgan Mortgage Trust 2026-9 (JPMMT 2026-9)",
+            "url": "https://finance.yahoo.com/real-estate/articles/kbra-assigns-preliminary-ratings-j-161100388.html?.tsrc=rss",
+            "published_at": "2026-10-26T16:11:00+00:00",
+            "body_read": false
+          },
+          {
+            "title": "Will JPMorgan's Nigeria Expansion Bolster Its Growth Prospects?",
+            "url": "https://finance.yahoo.com/markets/stocks/articles/jpmorgans-nigeria-expansion-bolster-growth-144000060.html?.tsrc=rss",
+            "published_at": "2026-10-26T14:40:00+00:00",
+            "body_read": false
+          }
+        ],
+        "source": {
+          "url": "https://feeds.finance.yahoo.com/rss/2.0/headline?s=JPM&region=US&lang=en-US",
+          "retrieved_at": "2026-10-27T00:22:00.519976+00:00",
+          "sha256": "666d354031ac3bfbefe8c6c13dc053793eed592323095eb05414fe50ecbbfc9b",
+          "bytes": 13616
+        }
+      },
+      "evidence": [
+        {
+          "id": "price",
+          "type": "market_observation",
+          "date": "2026-10-26",
+          "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/JPM?range=6mo&interval=1d",
+          "claim": "종가 계열에서 계산한 변화·변동성"
+        }
+      ],
+      "S": {
+        "actor": "담당 경영진·이사회·조직의 명시적 책임 확인 필요",
+        "strategic_decision": "대출 성장·위험 관리·환원의 균형",
+        "observed_statement": "주체의 명시적 전략 결정 원문 검토가 완료되지 않았습니다. 실적·주가를 의지나 동기의 근거로 전용하지 않습니다.",
+        "evidence_ids": [],
+        "status": "insufficient",
+        "unknown": "경영자의 실제 의지·비전의 변화와 조직 구성원의 동기·합의·실행 책임은 직접 자료로 추가 확인해야 합니다. 주가·수급·뉴스 제목에서 추정하지 않았습니다.",
+        "motivation_observed": false
+      },
+      "E": {
+        "focus": "금리·신용환경·규제",
+        "market_context": {
+          "name": "S&P 500",
+          "date": "2026-10-26",
+          "return_5": -0.0018151672172800337,
+          "return_20": -0.0009005987914361135,
+          "volatility_20": 0.09900498036098758,
+          "source": {
+            "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?range=6mo&interval=1d",
+            "retrieved_at": "2026-10-27T00:21:56.400906+00:00",
+            "sha256": "4b9c0480719d39372d7d3977bd4df7b4d070ca0eba10524f3b20fc94eca68860",
+            "bytes": 14048
+          },
+          "basis": "provider Close, descriptive price change; not dividend-reinvested return"
+        },
+        "missing": "가격 이외의 최신 정책·경쟁·실수요 원문은 별도 확인이 필요합니다."
+      },
+      "R": {
+        "focus": "규제자본·유동성·신용심사·인력",
+        "verified": {
+          "status": "unavailable",
+          "reason": "HTTPError",
+          "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000019617.json",
+          "interpretation": "표준 재무 원문 확인 실패 또는 대응 태그 공백. 자원 전체 부재를 뜻하지 않음."
+        },
+        "missing": "재무 금액은 인재·기술·조직 역량을 대체하지 않습니다."
+      },
+      "M": {
+        "hypothesis": "차입 수요·신용·감독 조건과 규제자본·유동성·심사 역량을 확인한 뒤 경영진이 실행 범위를 승인하면 신용비용·자본비율·환원에 연결될 수 있다는 분석 가설",
+        "identified_causal_effect": false,
+        "falsifier": "경영진 발표가 실제 투입으로 이어지지 않거나, 투입 뒤 고객/매출·마진·현금이 개선되지 않으면 연결 가설을 약화한다.",
+        "evidence_status": "conditional_unidentified"
+      },
+      "CPT": {
+        "C": {
+          "configuration": {
+            "S": "대출 성장·위험 관리·환원의 균형에 대한 의사결정",
+            "E": "차입 수요·신용·감독 조건",
+            "R": "규제자본·유동성·심사 역량"
+          },
+          "complementarity": "전략 선택이 환경의 수요·규제 제약과 자원 역량을 함께 충족해야 함",
+          "tradeoff": "투자 속도와 현금 유연성, 단기 실적과 장기 역량의 충돌을 비교",
+          "relative_emphasis_ref": "WS.W",
+          "alternatives": [
+            {
+              "id": "staged",
+              "name": "조건부 단계 확대",
+              "combination": "차입 수요·신용·감독 조건 확인과 규제자본·유동성·심사 역량 확보를 묶어 승인 단위로 확대",
+              "tradeoff": "기회 포착 속도와 손실 노출의 균형",
+              "gate": "환경과 자원 조건 모두 충족"
+            },
+            {
+              "id": "preserve",
+              "name": "자원 보전·기존 운영 우선",
+              "combination": "규제자본·유동성·심사 역량을 보전하면서 차입 수요·신용·감독 조건 확인 전 신규 투입 유보",
+              "tradeoff": "현금·역량 보전과 기회 상실 가능성",
+              "gate": "환경 또는 자원 조건 미충족"
+            }
+          ]
+        },
+        "P": {
+          "causal_hypotheses": [],
+          "alternatives": "환경이 성과와 경영진 선택에 함께 영향을 주는 공통요인 및 성과가 투자에 영향을 주는 역인과를 배제하지 못함",
+          "candidate_paths": [
+            {
+              "id": "demand_led",
+              "order": [
+                "E",
+                "S",
+                "R",
+                "성과"
+              ],
+              "activation": "차입 수요·신용·감독 조건의 변화가 먼저 확인되는 경우",
+              "test": "외부 변화→계획 변경→실제 투입의 시점과 범위를 대조"
+            },
+            {
+              "id": "capability_led",
+              "order": [
+                "R",
+                "S",
+                "E",
+                "성과"
+              ],
+              "activation": "규제자본·유동성·심사 역량의 변화가 먼저 확인되는 경우",
+              "test": "역량 변화→전략 선택→고객 채택의 시점을 대조"
+            },
+            {
+              "id": "commitment_led",
+              "order": [
+                "S",
+                "R",
+                "E",
+                "성과"
+              ],
+              "activation": "대출 성장·위험 관리·환원의 균형에 대한 명시적 전략 승인이 먼저 확인되는 경우",
+              "test": "승인→자원 투입→외부 반응의 시점을 대조"
+            }
+          ],
+          "selection_status": "unselected_pending_temporal_and_confounder_evidence",
+          "feedback": "성과·현금 회수 관측 → 자원 한도와 전략 재검토. 반복 관찰이며 피드백의 인과효과는 미식별."
+        },
+        "T": {
+          "activation": "차입 수요·신용·감독 조건과 규제자본·유동성·심사 역량 확인 및 경영 승인 뒤 단계 실행하는 조건부 제안",
+          "speed": "일괄 확대보다 검증 가능한 단위로 집행하고 성과 관찰 후 확장하는 제안",
+          "monitoring_sessions": {
+            "1": "2026-10-27",
+            "2": "2026-10-28",
+            "5": "2026-11-02",
+            "10": "2026-11-09",
+            "20": "2026-11-23"
+          },
+          "strategy_horizon": "다음 공식 실적·투자 계획의 실행과 중기 현금 회수에서 확인. 20거래일 내 성과 실현을 보장하지 않음",
+          "next_official_event_date": null,
+          "date_note": "관찰일은 재검토 일정이다. 실제 실행 시작일·속도·효과 시차는 기업별 원문과 관측이 확보될 때까지 미확정.",
+          "execution_start_date": null,
+          "execution_lag_estimate": null,
+          "events": []
+        }
+      },
+      "WS": {
+        "W": {
+          "purpose": "전략과 실행의 정합성 검토",
+          "values": {
+            "S": 0.4,
+            "E": 0.3,
+            "R": 0.3
+          },
+          "rule": "위 두 시장 조건에 해당하지 않음",
+          "version": "purpose_rule_v1_unvalidated",
+          "estimated": false,
+          "interpretation": "시장 문맥으로 고른 참고 정책값이다. 기업 목적·선호·제약을 확인해 선정한 집중 비중이 아니므로 실제 W 결정은 보류한다.",
+          "sensitivity": [
+            {
+              "varied": "S",
+              "delta_pp": -10.0,
+              "weights": {
+                "S": 0.3,
+                "E": 0.35,
+                "R": 0.35
+              },
+              "first_priority": "E"
+            },
+            {
+              "varied": "S",
+              "delta_pp": 10.0,
+              "weights": {
+                "S": 0.5,
+                "E": 0.25,
+                "R": 0.25
+              },
+              "first_priority": "S"
+            },
+            {
+              "varied": "E",
+              "delta_pp": -10.0,
+              "weights": {
+                "S": 0.45714286,
+                "E": 0.2,
+                "R": 0.34285714
+              },
+              "first_priority": "S"
+            },
+            {
+              "varied": "E",
+              "delta_pp": 10.0,
+              "weights": {
+                "S": 0.34285714,
+                "E": 0.4,
+                "R": 0.25714286
+              },
+              "first_priority": "E"
+            },
+            {
+              "varied": "R",
+              "delta_pp": -10.0,
+              "weights": {
+                "S": 0.45714286,
+                "E": 0.34285714,
+                "R": 0.2
+              },
+              "first_priority": "S"
+            },
+            {
+              "varied": "R",
+              "delta_pp": 10.0,
+              "weights": {
+                "S": 0.34285714,
+                "E": 0.25714286,
+                "R": 0.4
+              },
+              "first_priority": "R"
+            }
+          ],
+          "first_priority_changes": true,
+          "applies_to": "2026-10-26",
+          "decision_status": "unselected_reference",
+          "selection_requirements": [
+            "목적과 의사결정 주체 확인",
+            "S/E/R의 병목·대안·상충 검토",
+            "비중 변경의 의사결정 영향 평가"
+          ]
+        },
+        "S": {
+          "kind": "proposed_dependency_roadmap_not_observed_execution",
+          "ordering_basis": "prerequisites_before_weights",
+          "tasks": [
+            {
+              "id": "context",
+              "element": "E",
+              "weight": null,
+              "owner": "전략·리스크 조직",
+              "task": "차입 수요·신용·감독 조건의 실행 허용 조건 확인",
+              "depends_on": [],
+              "review_due": "2026-10-28",
+              "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
+              "status": "proposed_not_executed"
+            },
+            {
+              "id": "capacity",
+              "element": "R",
+              "weight": null,
+              "owner": "재무·인사·기술 조직",
+              "task": "규제자본·유동성·심사 역량의 가용성과 투입 한도 확인",
+              "depends_on": [],
+              "review_due": "2026-10-28",
+              "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
+              "status": "proposed_not_executed"
+            },
+            {
+              "id": "authorize",
+              "element": "S",
+              "weight": null,
+              "owner": "경영진·이사회",
+              "task": "대출 성장·위험 관리·환원의 균형의 목적·대안 조합·중단 기준 승인",
+              "depends_on": [
+                "context",
+                "capacity"
+              ],
+              "review_due": "2026-11-02",
+              "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
+              "status": "proposed_not_executed"
+            },
+            {
+              "id": "deploy",
+              "element": "R",
+              "weight": null,
+              "owner": "사업·운영 조직",
+              "task": "승인 범위 안에서 자원 단계 투입",
+              "depends_on": [
+                "authorize"
+              ],
+              "review_due": "2026-11-09",
+              "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
+              "status": "proposed_not_executed"
+            },
+            {
+              "id": "review",
+              "element": "S",
+              "weight": null,
+              "owner": "경영진·성과관리 조직",
+              "task": "신용비용·자본비율·환원을 대조해 지속·축소·중단 재검토",
+              "depends_on": [
+                "deploy"
+              ],
+              "review_due": "2026-11-23",
+              "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
+              "status": "proposed_not_executed"
+            }
+          ]
+        }
+      },
+      "scenarios": {
+        "support": "차입 수요·신용·감독 조건과 규제자본·유동성·심사 역량이 함께 충족되고 신용비용·자본비율·환원이 확인되는 조건",
+        "adverse": "차입 수요·신용·감독 조건 또는 규제자본·유동성·심사 역량 미충족으로 단계 확대가 보류·축소되는 조건",
+        "reversal": "계획 발표·가격 기대와 달리 신용비용·자본비율·환원이 실현되지 않아 투입 한도·전략을 재검토하는 조건"
+      },
+      "conclusion_status": "conditional_review_with_evidence_gaps",
+      "estimated_probabilities": null,
+      "new_local_model_calls": 0,
+      "method": "explicit_rule_based_structured_analysis",
+      "official_ir": "https://www.jpmorganchase.com/ir",
+      "confidence": {
+        "price": "completed_session_source_checked",
+        "strategy": "not_verified",
+        "causality": "not_identified",
+        "prediction": "not_validated"
+      },
+      "objective_origin": "analyst_proposed_not_elicited_corporate_utility",
+      "method_version": "SER-M-CPT-WS-1.1"
+    }
+  ],
+  "selection": "KR: 2026-10-26 selected cohort; US: fixed representative cohort, not certified current top-10",
+  "calendar": "XNYS",
+  "new_model_calls": 0,
+  "analysis_type": "rule_based_methodology_application",
+  "source_status": "prices_fresh_completed_session; strategic_evidence_mixed_or_missing; each dated separately",
+  "revision_of": "20261027T092155_US",
+  "revision_reason": "Methodology correction; price and news snapshots reused without claiming fresh collection"
+}
