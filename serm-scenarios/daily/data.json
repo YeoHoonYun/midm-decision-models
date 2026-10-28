@@ -1,6 +1,6 @@
 {
   "method_version": "SER-M-CPT-WS-1.1",
-  "built_at": "2026-10-28T09:43:13.035821+09:00",
+  "built_at": "2026-10-28T15:03:01.452779+09:00",
   "reports": [
     {
       "method_version": "SER-M-CPT-WS-1.1",
@@ -7583,8 +7583,8 @@
     }
   },
   "schedule_kst": {
-    "KR": "Monday-Friday 19:15",
-    "US": "Tuesday-Saturday 09:45"
+    "KR": "Friday 19:15",
+    "US": "Saturday 09:45"
   },
   "research_validation": {
     "study": "36-R27",
