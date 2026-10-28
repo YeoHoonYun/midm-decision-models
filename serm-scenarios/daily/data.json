@@ -1,6 +1,6 @@
 {
   "method_version": "SER-M-CPT-WS-1.1",
-  "built_at": "2026-10-27T19:16:06.375960+09:00",
+  "built_at": "2026-10-28T09:43:13.035821+09:00",
   "reports": [
     {
       "method_version": "SER-M-CPT-WS-1.1",
@@ -3724,20 +3724,20 @@
     {
       "method_version": "SER-M-CPT-WS-1.1",
       "market": "US",
-      "asof": "2026-10-26",
-      "created_at": "2026-10-27T01:54:47.978455+00:00",
-      "run_id": "20261027T015447Z_US_method11",
+      "asof": "2026-10-27",
+      "created_at": "2026-10-28T09:41:54.918342+09:00",
+      "run_id": "20261028T094154_US",
       "index": {
         "name": "S&P 500",
-        "date": "2026-10-26",
-        "return_5": -0.0018151672172800337,
-        "return_20": -0.0009005987914361135,
-        "volatility_20": 0.09900498036098758,
+        "date": "2026-10-27",
+        "return_5": 0.0013005099034570922,
+        "return_20": 0.006747664527036568,
+        "volatility_20": 0.10101604620967769,
         "source": {
           "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?range=6mo&interval=1d",
-          "retrieved_at": "2026-10-27T00:21:56.400906+00:00",
-          "sha256": "4b9c0480719d39372d7d3977bd4df7b4d070ca0eba10524f3b20fc94eca68860",
-          "bytes": 14048
+          "retrieved_at": "2026-10-28T00:41:55.516519+00:00",
+          "sha256": "f978e3aab513d46859cc535a455844c18226e5fca847c821e8503b67de74ede4",
+          "bytes": 14050
         },
         "basis": "provider Close, descriptive price change; not dividend-reinvested return"
       },
@@ -3748,28 +3748,28 @@
           "market": "US",
           "industry": "반도체",
           "objective": "AI 플랫폼 전환의 공급 실행과 회수의 조건과 실패 경로를 비교하는 분석자 설정 목적",
-          "asof": "2026-10-26",
+          "asof": "2026-10-27",
           "price": {
-            "date": "2026-10-26",
-            "return_5": -0.0050209422648572755,
-            "return_20": -0.0561915606748884,
-            "volatility_20": 0.30055662013288226,
+            "date": "2026-10-27",
+            "return_5": 0.006790773645342751,
+            "return_20": -0.04079928893951046,
+            "volatility_20": 0.3028321749908121,
             "source": {
               "url": "https://query1.finance.yahoo.com/v8/finance/chart/NVDA?range=6mo&interval=1d",
-              "retrieved_at": "2026-10-27T00:21:56.772967+00:00",
-              "sha256": "6f6f0d9aed368622d6e1d50394a2f0d8e25e1bd75cb8d042c2c0afd277ac76e1",
-              "bytes": 15128,
+              "retrieved_at": "2026-10-28T00:41:55.923734+00:00",
+              "sha256": "d228cbc576a9951781bd064895056e8e17cfbbce4edd91f487539113b77bb72a",
+              "bytes": 15112,
               "completed_close_fallback": {
                 "url": "https://api.stock.naver.com/stock/NVDA.O/price",
-                "retrieved_at": "2026-10-27T00:21:56.815964+00:00",
-                "sha256": "3f04dad581cd6db178bcd7bd37557d48052285ae2f1ad45681488eeae92e3a3a",
-                "bytes": 11414
+                "retrieved_at": "2026-10-28T00:41:55.962767+00:00",
+                "sha256": "dc0b69824bfda5738800008adb3ba82105a93028a2853d365281c74cffead5b8",
+                "bytes": 11411
               },
               "overlap_check": {
                 "sessions": [
-                  "2026-10-21",
                   "2026-10-22",
-                  "2026-10-23"
+                  "2026-10-23",
+                  "2026-10-26"
                 ],
                 "max_relative_difference": 3.1825309054767104e-08
               }
@@ -3787,36 +3787,36 @@
             "count": 20,
             "items": [
               {
-                "title": "Why Range Resources Stock Surged Today",
-                "url": "https://www.fool.com/investing/2026/10/26/why-range-resources-stock-surged-today/?.tsrc=rss",
-                "published_at": "2026-10-26T22:47:50+00:00",
+                "title": "British Growth Stocks To Watch In October 2026",
+                "url": "https://finance.yahoo.com/markets/stocks/articles/british-growth-stocks-watch-october-001757969.html?.tsrc=rss",
+                "published_at": "2026-10-28T00:17:57+00:00",
                 "body_read": false
               },
               {
-                "title": "Intel vs. Nvidia: Flat Trends vs. Rapid Expansion in Revenue",
-                "url": "https://www.fool.com/coverage/charts/2026/10/26/intel-vs-nvidia-flat-trends-vs-rapid-expansion-in-revenue/?.tsrc=rss",
-                "published_at": "2026-10-26T22:20:01+00:00",
+                "title": "Nvidia Stock Is 10% Below Its Record. Does Anthropic's IPO Filing Make It a Buy?",
+                "url": "https://www.fool.com/investing/2026/10/27/nvidia-stock-is-10-below-its-record-does-anthropic-s-ipo-filing-make-it-a-buy/?.tsrc=rss",
+                "published_at": "2026-10-27T23:46:02+00:00",
                 "body_read": false
               },
               {
-                "title": "Anthropic Just Filed to Go Public. Should You Buy the Stock?",
-                "url": "https://www.fool.com/investing/2026/10/26/anthropic-just-filed-to-go-public-should-you-buy-the-stock/?.tsrc=rss",
-                "published_at": "2026-10-26T22:55:01+00:00",
+                "title": "History Says the Stock Market's Best 6 Months Start Nov. 1. Here's How Often They've Paid Off Since 1950.",
+                "url": "https://www.fool.com/investing/2026/10/27/history-says-the-stock-market-s-best-6-months-start-nov-1-here-s-how-often-they-ve-paid-off-since-1950/?.tsrc=rss",
+                "published_at": "2026-10-27T22:39:02+00:00",
                 "body_read": false
               }
             ],
             "source": {
               "url": "https://feeds.finance.yahoo.com/rss/2.0/headline?s=NVDA&region=US&lang=en-US",
-              "retrieved_at": "2026-10-27T00:21:57.659332+00:00",
-              "sha256": "0654272c3e1bd8eb56b6179f40a5a13e8f274cc14265f47d8201f35dc46bb892",
-              "bytes": 14067
+              "retrieved_at": "2026-10-28T00:41:57.041694+00:00",
+              "sha256": "25c2a397eed6e431b090b6e8059f30ecc4654f0ae544a0824163630b092fbb67",
+              "bytes": 13228
             }
           },
           "evidence": [
             {
               "id": "price",
               "type": "market_observation",
-              "date": "2026-10-26",
+              "date": "2026-10-27",
               "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/NVDA?range=6mo&interval=1d",
               "claim": "종가 계열에서 계산한 변화·변동성"
             },
@@ -3845,16 +3845,15 @@
           "E": {
             "focus": "고객 수요·수출규제·공급 경쟁",
             "market_context": {
-              "name": "S&P 500",
-              "date": "2026-10-26",
-              "return_5": -0.0018151672172800337,
-              "return_20": -0.0009005987914361135,
-              "volatility_20": 0.09900498036098758,
+              "date": "2026-10-27",
+              "return_5": 0.0013005099034570922,
+              "return_20": 0.006747664527036568,
+              "volatility_20": 0.10101604620967769,
               "source": {
                 "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?range=6mo&interval=1d",
-                "retrieved_at": "2026-10-27T00:21:56.400906+00:00",
-                "sha256": "4b9c0480719d39372d7d3977bd4df7b4d070ca0eba10524f3b20fc94eca68860",
-                "bytes": 14048
+                "retrieved_at": "2026-10-28T00:41:55.516519+00:00",
+                "sha256": "f978e3aab513d46859cc535a455844c18226e5fca847c821e8503b67de74ede4",
+                "bytes": 14050
               },
               "basis": "provider Close, descriptive price change; not dividend-reinvested return"
             },
@@ -3948,11 +3947,11 @@
               "activation": "고객 컴퓨팅 수요·수출 조건과 칩·네트워크·공급 파트너 역량 확인 및 경영 승인 뒤 단계 실행하는 조건부 제안",
               "speed": "일괄 확대보다 검증 가능한 단위로 집행하고 성과 관찰 후 확장하는 제안",
               "monitoring_sessions": {
-                "1": "2026-10-27",
-                "2": "2026-10-28",
-                "5": "2026-11-02",
-                "10": "2026-11-09",
-                "20": "2026-11-23"
+                "1": "2026-10-28",
+                "2": "2026-10-29",
+                "5": "2026-11-03",
+                "10": "2026-11-10",
+                "20": "2026-11-24"
               },
               "strategy_horizon": "다음 공식 실적·투자 계획의 실행과 중기 현금 회수에서 확인. 20거래일 내 성과 실현을 보장하지 않음",
               "next_official_event_date": null,
@@ -4037,7 +4036,7 @@
                 }
               ],
               "first_priority_changes": true,
-              "applies_to": "2026-10-26",
+              "applies_to": "2026-10-27",
               "decision_status": "unselected_reference",
               "selection_requirements": [
                 "목적과 의사결정 주체 확인",
@@ -4056,7 +4055,7 @@
                   "owner": "전략·리스크 조직",
                   "task": "고객 컴퓨팅 수요·수출 조건의 실행 허용 조건 확인",
                   "depends_on": [],
-                  "review_due": "2026-10-28",
+                  "review_due": "2026-10-29",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 },
@@ -4067,7 +4066,7 @@
                   "owner": "재무·인사·기술 조직",
                   "task": "칩·네트워크·공급 파트너 역량의 가용성과 투입 한도 확인",
                   "depends_on": [],
-                  "review_due": "2026-10-28",
+                  "review_due": "2026-10-29",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 },
@@ -4081,7 +4080,7 @@
                     "context",
                     "capacity"
                   ],
-                  "review_due": "2026-11-02",
+                  "review_due": "2026-11-03",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 },
@@ -4094,7 +4093,7 @@
                   "depends_on": [
                     "authorize"
                   ],
-                  "review_due": "2026-11-09",
+                  "review_due": "2026-11-10",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 },
@@ -4107,7 +4106,7 @@
                   "depends_on": [
                     "deploy"
                   ],
-                  "review_due": "2026-11-23",
+                  "review_due": "2026-11-24",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 }
@@ -4139,28 +4138,28 @@
           "market": "US",
           "industry": "전자·플랫폼",
           "objective": "제품·서비스 전환과 자본환원의 양립의 조건과 실패 경로를 비교하는 분석자 설정 목적",
-          "asof": "2026-10-26",
+          "asof": "2026-10-27",
           "price": {
-            "date": "2026-10-26",
-            "return_5": 0.0028284759773964385,
-            "return_20": 0.01628252424023735,
-            "volatility_20": 0.16660031684776208,
+            "date": "2026-10-27",
+            "return_5": 0.022385861561119436,
+            "return_20": 0.05373408145562375,
+            "volatility_20": 0.1335785590443942,
             "source": {
               "url": "https://query1.finance.yahoo.com/v8/finance/chart/AAPL?range=6mo&interval=1d",
-              "retrieved_at": "2026-10-27T00:21:56.965569+00:00",
-              "sha256": "bff816fb4fa9c0b178fb15c2569e00da67189a2b9b0fe81d845b7f3fc4d5a39e",
-              "bytes": 14743,
+              "retrieved_at": "2026-10-28T00:41:55.979837+00:00",
+              "sha256": "1da2ee60627c3a612ebf0d3dd7a315d5155fef67a5920c4f693e9e7f69b3ca94",
+              "bytes": 14737,
               "completed_close_fallback": {
                 "url": "https://api.stock.naver.com/stock/AAPL.O/price",
-                "retrieved_at": "2026-10-27T00:21:57.004068+00:00",
-                "sha256": "b556d861bb21b406248a4f14b1cbb124999bc81c23c11f498cc9220c784d1d72",
-                "bytes": 11408
+                "retrieved_at": "2026-10-28T00:41:56.008802+00:00",
+                "sha256": "2020532b571a97ec6ed4d6f9682831aa27ac82a00501613c0f4537f33d9442a9",
+                "bytes": 11405
               },
               "overlap_check": {
                 "sessions": [
-                  "2026-10-21",
                   "2026-10-22",
-                  "2026-10-23"
+                  "2026-10-23",
+                  "2026-10-26"
                 ],
                 "max_relative_difference": 3.159442130140633e-08
               }
@@ -4178,36 +4177,36 @@
             "count": 15,
             "items": [
               {
-                "title": "Mark Cuban puts Bitcoin and Apple in the same bucket",
-                "url": "https://www.thestreet.com/crypto/markets/mark-cuban-puts-bitcoin-and-apple-in-the-same-bucket?.tsrc=rss",
-                "published_at": "2026-10-26T22:05:25+00:00",
+                "title": "Why GM is still an automaker despite its move to the Nasdaq",
+                "url": "https://finance.yahoo.com/video/why-gm-is-still-an-automaker-despite-its-move-to-the-nasdaq-175411900.html?.tsrc=rss",
+                "published_at": "2026-10-27T17:54:11+00:00",
                 "body_read": false
               },
               {
-                "title": "Apple (AAPL) Stock Falls Amid Market Uptick: What Investors Need to Know",
-                "url": "https://finance.yahoo.com/markets/stocks/articles/apple-aapl-stock-falls-amid-204503686.html?.tsrc=rss",
-                "published_at": "2026-10-26T20:45:03+00:00",
+                "title": "The AI economy, Apple's iPhone Duo issues, and Meta partners with Nvidia",
+                "url": "https://finance.yahoo.com/video/the-ai-economy-apples-iphone-duo-issues-and-meta-partners-with-nvidia-174040695.html?.tsrc=rss",
+                "published_at": "2026-10-27T17:40:40+00:00",
                 "body_read": false
               },
               {
-                "title": "Billionaire predicts 'unhinged' future for iPhone Duo",
-                "url": "https://www.thestreet.com/crypto/innovation/billionaire-predicts-unhinged-future-for-iphone-duo?.tsrc=rss",
-                "published_at": "2026-10-26T20:07:19+00:00",
+                "title": "Can Apple charge $38.99 for new Siri AI?",
+                "url": "https://finance.yahoo.com/video/can-apple-charge-3899-for-new-siri-ai-173242587.html?.tsrc=rss",
+                "published_at": "2026-10-27T17:32:42+00:00",
                 "body_read": false
               }
             ],
             "source": {
               "url": "https://feeds.finance.yahoo.com/rss/2.0/headline?s=AAPL&region=US&lang=en-US",
-              "retrieved_at": "2026-10-27T00:21:57.558336+00:00",
-              "sha256": "0ed2a8889a310a6b41a697cf0f7e5b1bdfcc5161d3455a6838960291a64c87e3",
-              "bytes": 10268
+              "retrieved_at": "2026-10-28T00:41:56.547437+00:00",
+              "sha256": "734a1b944f11410fb61e159fb75d5b28edbaf941420c6ea59a8584758bff4df8",
+              "bytes": 11693
             }
           },
           "evidence": [
             {
               "id": "price",
               "type": "market_observation",
-              "date": "2026-10-26",
+              "date": "2026-10-27",
               "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/AAPL?range=6mo&interval=1d",
               "claim": "종가 계열에서 계산한 변화·변동성"
             },
@@ -4236,16 +4235,15 @@
           "E": {
             "focus": "기기 수요·경쟁·플랫폼 규제",
             "market_context": {
-              "name": "S&P 500",
-              "date": "2026-10-26",
-              "return_5": -0.0018151672172800337,
-              "return_20": -0.0009005987914361135,
-              "volatility_20": 0.09900498036098758,
+              "date": "2026-10-27",
+              "return_5": 0.0013005099034570922,
+              "return_20": 0.006747664527036568,
+              "volatility_20": 0.10101604620967769,
               "source": {
                 "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?range=6mo&interval=1d",
-                "retrieved_at": "2026-10-27T00:21:56.400906+00:00",
-                "sha256": "4b9c0480719d39372d7d3977bd4df7b4d070ca0eba10524f3b20fc94eca68860",
-                "bytes": 14048
+                "retrieved_at": "2026-10-28T00:41:55.516519+00:00",
+                "sha256": "f978e3aab513d46859cc535a455844c18226e5fca847c821e8503b67de74ede4",
+                "bytes": 14050
               },
               "basis": "provider Close, descriptive price change; not dividend-reinvested return"
             },
@@ -4339,11 +4337,11 @@
               "activation": "기기 교체·서비스 채택·규제과 설계·생태계·현금 여력 확인 및 경영 승인 뒤 단계 실행하는 조건부 제안",
               "speed": "일괄 확대보다 검증 가능한 단위로 집행하고 성과 관찰 후 확장하는 제안",
               "monitoring_sessions": {
-                "1": "2026-10-27",
-                "2": "2026-10-28",
-                "5": "2026-11-02",
-                "10": "2026-11-09",
-                "20": "2026-11-23"
+                "1": "2026-10-28",
+                "2": "2026-10-29",
+                "5": "2026-11-03",
+                "10": "2026-11-10",
+                "20": "2026-11-24"
               },
               "strategy_horizon": "다음 공식 실적·투자 계획의 실행과 중기 현금 회수에서 확인. 20거래일 내 성과 실현을 보장하지 않음",
               "next_official_event_date": null,
@@ -4428,7 +4426,7 @@
                 }
               ],
               "first_priority_changes": true,
-              "applies_to": "2026-10-26",
+              "applies_to": "2026-10-27",
               "decision_status": "unselected_reference",
               "selection_requirements": [
                 "목적과 의사결정 주체 확인",
@@ -4447,7 +4445,7 @@
                   "owner": "전략·리스크 조직",
                   "task": "기기 교체·서비스 채택·규제의 실행 허용 조건 확인",
                   "depends_on": [],
-                  "review_due": "2026-10-28",
+                  "review_due": "2026-10-29",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 },
@@ -4458,7 +4456,7 @@
                   "owner": "재무·인사·기술 조직",
                   "task": "설계·생태계·현금 여력의 가용성과 투입 한도 확인",
                   "depends_on": [],
-                  "review_due": "2026-10-28",
+                  "review_due": "2026-10-29",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 },
@@ -4472,7 +4470,7 @@
                     "context",
                     "capacity"
                   ],
-                  "review_due": "2026-11-02",
+                  "review_due": "2026-11-03",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 },
@@ -4485,7 +4483,7 @@
                   "depends_on": [
                     "authorize"
                   ],
-                  "review_due": "2026-11-09",
+                  "review_due": "2026-11-10",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 },
@@ -4498,7 +4496,7 @@
                   "depends_on": [
                     "deploy"
                   ],
-                  "review_due": "2026-11-23",
+                  "review_due": "2026-11-24",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 }
@@ -4530,30 +4528,30 @@
           "market": "US",
           "industry": "클라우드·소프트웨어",
           "objective": "AI 인프라 투자와 유료 수요의 정합성의 조건과 실패 경로를 비교하는 분석자 설정 목적",
-          "asof": "2026-10-26",
+          "asof": "2026-10-27",
           "price": {
-            "date": "2026-10-26",
-            "return_5": -0.001724433006390802,
-            "return_20": 0.0459133551770361,
-            "volatility_20": 0.19572217008825757,
+            "date": "2026-10-27",
+            "return_5": -0.0010152765189705981,
+            "return_20": 0.04395239099436421,
+            "volatility_20": 0.19619395767134878,
             "source": {
               "url": "https://query1.finance.yahoo.com/v8/finance/chart/MSFT?range=6mo&interval=1d",
-              "retrieved_at": "2026-10-27T00:21:56.811270+00:00",
-              "sha256": "489141a10d9744afd2316ef8450a12f57b13e3ac4870ec2afa8fee665f32776a",
-              "bytes": 14807,
+              "retrieved_at": "2026-10-28T00:41:55.888651+00:00",
+              "sha256": "2c461c580113051901e4cfddf1aee8bf3f917cb2588a5797c4df54d31fe73e55",
+              "bytes": 14809,
               "completed_close_fallback": {
                 "url": "https://api.stock.naver.com/stock/MSFT.O/price",
-                "retrieved_at": "2026-10-27T00:21:56.844053+00:00",
-                "sha256": "d77d8430ab5108a3daa1dc665b52e3e79ceb1ca446e0858c9f629500359ce9ee",
+                "retrieved_at": "2026-10-28T00:41:55.936034+00:00",
+                "sha256": "4e573c22277d088078448d758a510e9248b161bf69deb4a9c9f0946dd024c550",
                 "bytes": 11405
               },
               "overlap_check": {
                 "sessions": [
-                  "2026-10-21",
                   "2026-10-22",
-                  "2026-10-23"
+                  "2026-10-23",
+                  "2026-10-26"
                 ],
-                "max_relative_difference": 3.2796967364134844e-08
+                "max_relative_difference": 4.5839396389801834e-08
               }
             },
             "basis": "provider Close, descriptive price change; not dividend-reinvested return"
@@ -4566,39 +4564,39 @@
           },
           "news": {
             "status": "title_metadata_only",
-            "count": 15,
+            "count": 19,
             "items": [
               {
-                "title": "CORRECTING and REPLACING Waymo, Google and Microsoft Alums Raise $30M to Build the Data Layer for Physical AI",
-                "url": "https://finance.yahoo.com/technology/ai/articles/waymo-google-microsoft-alums-raise-160000050.html?.tsrc=rss",
-                "published_at": "2026-10-26T23:19:00+00:00",
+                "title": "Earnings from Google and Microsoft and a Fed rate decision: What to Watch",
+                "url": "https://finance.yahoo.com/video/earnings-google-microsoft-fed-rate-000000143.html?.tsrc=rss",
+                "published_at": "2026-10-28T00:00:00+00:00",
                 "body_read": false
               },
               {
-                "title": "Dow Jones Futures: Elon Musk-Led Tesla Leads Market Higher; Amazon, Alphabet, Microsoft Earnings On Deck",
-                "url": "https://finance.yahoo.com/m/4f45ec30-6388-381f-b8f7-2aed6d460b6f/dow-jones-futures%3A-elon.html?.tsrc=rss",
-                "published_at": "2026-10-26T22:03:09+00:00",
+                "title": "Microsoft and Skydance announced buyouts. What does it mean for workers in a 'low-hire' market?",
+                "url": "https://finance.yahoo.com/economy/article/microsoft-and-skydance-announced-buyouts-what-does-it-mean-for-workers-in-a-low-hire-market-191021868.html?.tsrc=rss",
+                "published_at": "2026-10-27T19:10:21+00:00",
                 "body_read": false
               },
               {
-                "title": "Microsoft offers buyouts to nearly 30% of workforce in ongoing AI shift",
-                "url": "https://finance.yahoo.com/technology/ai/articles/microsoft-offers-buyouts-nearly-30-212229529.html?.tsrc=rss",
-                "published_at": "2026-10-26T21:22:29+00:00",
+                "title": "Dow Jones Futures: Growth Stocks Rally, Tesla Clears Buy Point; Fed, Microsoft, Google On Tap",
+                "url": "https://finance.yahoo.com/m/7066a700-b33b-3fa1-858d-f75f49b920da/dow-jones-futures%3A-growth.html?.tsrc=rss",
+                "published_at": "2026-10-28T00:31:48+00:00",
                 "body_read": false
               }
             ],
             "source": {
               "url": "https://feeds.finance.yahoo.com/rss/2.0/headline?s=MSFT&region=US&lang=en-US",
-              "retrieved_at": "2026-10-27T00:21:57.555355+00:00",
-              "sha256": "6e3605d879ed473c416ad076eec62ffae79c8ab09fa341fe459508cdfc32d3c6",
-              "bytes": 11227
+              "retrieved_at": "2026-10-28T00:41:56.761789+00:00",
+              "sha256": "d7fccdcafb13238860763412a3302661aca6c867f60c4f3af3d79631d83af9af",
+              "bytes": 16344
             }
           },
           "evidence": [
             {
               "id": "price",
               "type": "market_observation",
-              "date": "2026-10-26",
+              "date": "2026-10-27",
               "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/MSFT?range=6mo&interval=1d",
               "claim": "종가 계열에서 계산한 변화·변동성"
             },
@@ -4627,16 +4625,15 @@
           "E": {
             "focus": "클라우드 수요·AI 경쟁·보안 규제",
             "market_context": {
-              "name": "S&P 500",
-              "date": "2026-10-26",
-              "return_5": -0.0018151672172800337,
-              "return_20": -0.0009005987914361135,
-              "volatility_20": 0.09900498036098758,
+              "date": "2026-10-27",
+              "return_5": 0.0013005099034570922,
+              "return_20": 0.006747664527036568,
+              "volatility_20": 0.10101604620967769,
               "source": {
                 "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?range=6mo&interval=1d",
-                "retrieved_at": "2026-10-27T00:21:56.400906+00:00",
-                "sha256": "4b9c0480719d39372d7d3977bd4df7b4d070ca0eba10524f3b20fc94eca68860",
-                "bytes": 14048
+                "retrieved_at": "2026-10-28T00:41:55.516519+00:00",
+                "sha256": "f978e3aab513d46859cc535a455844c18226e5fca847c821e8503b67de74ede4",
+                "bytes": 14050
               },
               "basis": "provider Close, descriptive price change; not dividend-reinvested return"
             },
@@ -4730,11 +4727,11 @@
               "activation": "클라우드 계약·유료 AI 수요과 전력·데이터센터·컴퓨팅 여력 확인 및 경영 승인 뒤 단계 실행하는 조건부 제안",
               "speed": "일괄 확대보다 검증 가능한 단위로 집행하고 성과 관찰 후 확장하는 제안",
               "monitoring_sessions": {
-                "1": "2026-10-27",
-                "2": "2026-10-28",
-                "5": "2026-11-02",
-                "10": "2026-11-09",
-                "20": "2026-11-23"
+                "1": "2026-10-28",
+                "2": "2026-10-29",
+                "5": "2026-11-03",
+                "10": "2026-11-10",
+                "20": "2026-11-24"
               },
               "strategy_horizon": "다음 공식 실적·투자 계획의 실행과 중기 현금 회수에서 확인. 20거래일 내 성과 실현을 보장하지 않음",
               "next_official_event_date": null,
@@ -4819,7 +4816,7 @@
                 }
               ],
               "first_priority_changes": true,
-              "applies_to": "2026-10-26",
+              "applies_to": "2026-10-27",
               "decision_status": "unselected_reference",
               "selection_requirements": [
                 "목적과 의사결정 주체 확인",
@@ -4838,7 +4835,7 @@
                   "owner": "전략·리스크 조직",
                   "task": "클라우드 계약·유료 AI 수요의 실행 허용 조건 확인",
                   "depends_on": [],
-                  "review_due": "2026-10-28",
+                  "review_due": "2026-10-29",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 },
@@ -4849,7 +4846,7 @@
                   "owner": "재무·인사·기술 조직",
                   "task": "전력·데이터센터·컴퓨팅 여력의 가용성과 투입 한도 확인",
                   "depends_on": [],
-                  "review_due": "2026-10-28",
+                  "review_due": "2026-10-29",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 },
@@ -4863,7 +4860,7 @@
                     "context",
                     "capacity"
                   ],
-                  "review_due": "2026-11-02",
+                  "review_due": "2026-11-03",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 },
@@ -4876,7 +4873,7 @@
                   "depends_on": [
                     "authorize"
                   ],
-                  "review_due": "2026-11-09",
+                  "review_due": "2026-11-10",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 },
@@ -4889,7 +4886,7 @@
                   "depends_on": [
                     "deploy"
                   ],
-                  "review_due": "2026-11-23",
+                  "review_due": "2026-11-24",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 }
@@ -4921,30 +4918,30 @@
           "market": "US",
           "industry": "광고·클라우드",
           "objective": "광고·AI·클라우드 투자 배분의 조건과 실패 경로를 비교하는 분석자 설정 목적",
-          "asof": "2026-10-26",
+          "asof": "2026-10-27",
           "price": {
-            "date": "2026-10-26",
-            "return_5": -0.07955137793722156,
-            "return_20": -0.07571115973741793,
-            "volatility_20": 0.21065813671996544,
+            "date": "2026-10-27",
+            "return_5": -0.057893496091359076,
+            "return_20": -0.0596621278499565,
+            "volatility_20": 0.21783144205996433,
             "source": {
               "url": "https://query1.finance.yahoo.com/v8/finance/chart/GOOGL?range=6mo&interval=1d",
-              "retrieved_at": "2026-10-27T00:21:57.958363+00:00",
-              "sha256": "42b4fab100d2b0da8252b4fb24f31ffb9d96a4b3b88bf27c630816f32ca0ccd9",
-              "bytes": 14774,
+              "retrieved_at": "2026-10-28T00:41:56.929346+00:00",
+              "sha256": "b356aa7b87f6a230d8c14dfe7e683008362851f7a4c034221d8e5618e6c4d828",
+              "bytes": 14765,
               "completed_close_fallback": {
                 "url": "https://api.stock.naver.com/stock/GOOGL.O/price",
-                "retrieved_at": "2026-10-27T00:21:57.997891+00:00",
-                "sha256": "9bb552c63369e0102242469eb625b73302e7b1b9d67f9629b6b0c81f47934647",
-                "bytes": 11412
+                "retrieved_at": "2026-10-28T00:41:56.946072+00:00",
+                "sha256": "d84b2f63a4638a8a2a8a6ef713bed6470be4803e2ee5641a6e219f9061ce6a99",
+                "bytes": 11409
               },
               "overlap_check": {
                 "sessions": [
-                  "2026-10-21",
                   "2026-10-22",
-                  "2026-10-23"
+                  "2026-10-23",
+                  "2026-10-26"
                 ],
-                "max_relative_difference": 2.9172018800593946e-08
+                "max_relative_difference": 3.853229568751004e-08
               }
             },
             "basis": "provider Close, descriptive price change; not dividend-reinvested return"
@@ -4957,39 +4954,39 @@
           },
           "news": {
             "status": "title_metadata_only",
-            "count": 16,
+            "count": 17,
             "items": [
               {
-                "title": "CORRECTING and REPLACING Waymo, Google and Microsoft Alums Raise $30M to Build the Data Layer for Physical AI",
-                "url": "https://finance.yahoo.com/technology/ai/articles/waymo-google-microsoft-alums-raise-160000050.html?.tsrc=rss",
-                "published_at": "2026-10-26T23:19:00+00:00",
+                "title": "Earnings from Google and Microsoft and a Fed rate decision: What to Watch",
+                "url": "https://finance.yahoo.com/video/earnings-google-microsoft-fed-rate-000000143.html?.tsrc=rss",
+                "published_at": "2026-10-28T00:00:00+00:00",
                 "body_read": false
               },
               {
-                "title": "Will Alphabet Stock Surge After Oct. 28?",
-                "url": "https://www.fool.com/investing/2026/10/26/will-alphabet-stock-surge-after-oct-28/?.tsrc=rss",
-                "published_at": "2026-10-26T22:25:00+00:00",
+                "title": "Dow Jones Futures: Growth Stocks Rally, Tesla Clears Buy Point; Fed, Microsoft, Google On Tap",
+                "url": "https://finance.yahoo.com/m/7066a700-b33b-3fa1-858d-f75f49b920da/dow-jones-futures%3A-growth.html?.tsrc=rss",
+                "published_at": "2026-10-28T00:31:48+00:00",
                 "body_read": false
               },
               {
-                "title": "Mark Cuban puts Bitcoin and Apple in the same bucket",
-                "url": "https://www.thestreet.com/crypto/markets/mark-cuban-puts-bitcoin-and-apple-in-the-same-bucket?.tsrc=rss",
-                "published_at": "2026-10-26T22:05:25+00:00",
+                "title": "'We're Trading Them Like Baseball Cards': Mark Cuban Warns ‘Everything’s a Meme Stock’ as AAPL, GOOGL and MU Fuel Market Bubble Fears",
+                "url": "https://finance.yahoo.com/markets/stocks/articles/were-trading-them-baseball-cards-220034335.html?.tsrc=rss",
+                "published_at": "2026-10-27T22:00:34+00:00",
                 "body_read": false
               }
             ],
             "source": {
               "url": "https://feeds.finance.yahoo.com/rss/2.0/headline?s=GOOGL&region=US&lang=en-US",
-              "retrieved_at": "2026-10-27T00:21:58.522716+00:00",
-              "sha256": "82c29d0d90bbbec7275155bbca98c005bb1ab7b15e5fc2e7a7ab482a3d47cc30",
-              "bytes": 12191
+              "retrieved_at": "2026-10-28T00:41:57.527848+00:00",
+              "sha256": "c266a6599f7edc32484c0223be693754a79aeee2452a746c02ec3547a8123e8d",
+              "bytes": 13129
             }
           },
           "evidence": [
             {
               "id": "price",
               "type": "market_observation",
-              "date": "2026-10-26",
+              "date": "2026-10-27",
               "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/GOOGL?range=6mo&interval=1d",
               "claim": "종가 계열에서 계산한 변화·변동성"
             }
@@ -5006,16 +5003,15 @@
           "E": {
             "focus": "광고·클라우드 수요·AI 경쟁·규제",
             "market_context": {
-              "name": "S&P 500",
-              "date": "2026-10-26",
-              "return_5": -0.0018151672172800337,
-              "return_20": -0.0009005987914361135,
-              "volatility_20": 0.09900498036098758,
+              "date": "2026-10-27",
+              "return_5": 0.0013005099034570922,
+              "return_20": 0.006747664527036568,
+              "volatility_20": 0.10101604620967769,
               "source": {
                 "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?range=6mo&interval=1d",
-                "retrieved_at": "2026-10-27T00:21:56.400906+00:00",
-                "sha256": "4b9c0480719d39372d7d3977bd4df7b4d070ca0eba10524f3b20fc94eca68860",
-                "bytes": 14048
+                "retrieved_at": "2026-10-28T00:41:55.516519+00:00",
+                "sha256": "f978e3aab513d46859cc535a455844c18226e5fca847c821e8503b67de74ede4",
+                "bytes": 14050
               },
               "basis": "provider Close, descriptive price change; not dividend-reinvested return"
             },
@@ -5109,11 +5105,11 @@
               "activation": "광고 전환·클라우드 수요·규제과 컴퓨팅·인력·데이터 역량 확인 및 경영 승인 뒤 단계 실행하는 조건부 제안",
               "speed": "일괄 확대보다 검증 가능한 단위로 집행하고 성과 관찰 후 확장하는 제안",
               "monitoring_sessions": {
-                "1": "2026-10-27",
-                "2": "2026-10-28",
-                "5": "2026-11-02",
-                "10": "2026-11-09",
-                "20": "2026-11-23"
+                "1": "2026-10-28",
+                "2": "2026-10-29",
+                "5": "2026-11-03",
+                "10": "2026-11-10",
+                "20": "2026-11-24"
               },
               "strategy_horizon": "다음 공식 실적·투자 계획의 실행과 중기 현금 회수에서 확인. 20거래일 내 성과 실현을 보장하지 않음",
               "next_official_event_date": null,
@@ -5198,7 +5194,7 @@
                 }
               ],
               "first_priority_changes": true,
-              "applies_to": "2026-10-26",
+              "applies_to": "2026-10-27",
               "decision_status": "unselected_reference",
               "selection_requirements": [
                 "목적과 의사결정 주체 확인",
@@ -5217,7 +5213,7 @@
                   "owner": "전략·리스크 조직",
                   "task": "광고 전환·클라우드 수요·규제의 실행 허용 조건 확인",
                   "depends_on": [],
-                  "review_due": "2026-10-28",
+                  "review_due": "2026-10-29",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 },
@@ -5228,7 +5224,7 @@
                   "owner": "재무·인사·기술 조직",
                   "task": "컴퓨팅·인력·데이터 역량의 가용성과 투입 한도 확인",
                   "depends_on": [],
-                  "review_due": "2026-10-28",
+                  "review_due": "2026-10-29",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 },
@@ -5242,7 +5238,7 @@
                     "context",
                     "capacity"
                   ],
-                  "review_due": "2026-11-02",
+                  "review_due": "2026-11-03",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 },
@@ -5255,7 +5251,7 @@
                   "depends_on": [
                     "authorize"
                   ],
-                  "review_due": "2026-11-09",
+                  "review_due": "2026-11-10",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 },
@@ -5268,7 +5264,7 @@
                   "depends_on": [
                     "deploy"
                   ],
-                  "review_due": "2026-11-23",
+                  "review_due": "2026-11-24",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 }
@@ -5300,28 +5296,28 @@
           "market": "US",
           "industry": "전자상거래·클라우드",
           "objective": "물류 효율과 클라우드 투자의 균형의 조건과 실패 경로를 비교하는 분석자 설정 목적",
-          "asof": "2026-10-26",
+          "asof": "2026-10-27",
           "price": {
-            "date": "2026-10-26",
-            "return_5": -0.050904978417346536,
-            "return_20": 0.011943961716091023,
-            "volatility_20": 0.32429637149095414,
+            "date": "2026-10-27",
+            "return_5": -0.03628680922069383,
+            "return_20": 0.026067222924495148,
+            "volatility_20": 0.3288205146975562,
             "source": {
               "url": "https://query1.finance.yahoo.com/v8/finance/chart/AMZN?range=6mo&interval=1d",
-              "retrieved_at": "2026-10-27T00:21:57.933419+00:00",
-              "sha256": "e1167393ad937c9ecc092e1b35a4bf8bba436f16ef70e056cac7d9c2dc5e17f8",
-              "bytes": 14843,
+              "retrieved_at": "2026-10-28T00:41:57.154869+00:00",
+              "sha256": "26e7c747f19ee91693624f7619873c8aad43a1f8f3db23a92f3db7baaea8f76c",
+              "bytes": 14848,
               "completed_close_fallback": {
                 "url": "https://api.stock.naver.com/stock/AMZN.O/price",
-                "retrieved_at": "2026-10-27T00:21:57.971695+00:00",
-                "sha256": "9f7a99cf20c78151ad5cb22af4f042b34f9dd08b283cdd873e194246922bd299",
+                "retrieved_at": "2026-10-28T00:41:57.202776+00:00",
+                "sha256": "d3ece6d1977092a25ebac968aa569f248fcafa99127d8a65815ec55ec1e4ae27",
                 "bytes": 11413
               },
               "overlap_check": {
                 "sessions": [
-                  "2026-10-21",
                   "2026-10-22",
-                  "2026-10-23"
+                  "2026-10-23",
+                  "2026-10-26"
                 ],
                 "max_relative_difference": 1.9501607662064657e-08
               }
@@ -5336,39 +5332,39 @@
           },
           "news": {
             "status": "title_metadata_only",
-            "count": 17,
+            "count": 18,
             "items": [
               {
-                "title": "Target has a problem that sends shoppers to Amazon",
-                "url": "https://www.thestreet.com/retail/target-has-a-problem-that-sends-shoppers-to-amazon?.tsrc=rss",
-                "published_at": "2026-10-26T23:17:00+00:00",
+                "title": "Amazon has a Muse problem. Is a deal with OpenAI a solution?",
+                "url": "https://finance.yahoo.com/video/amazon-has-a-muse-problem-is-a-deal-with-openai-a-solution-203942441.html?.tsrc=rss",
+                "published_at": "2026-10-27T20:39:42+00:00",
                 "body_read": false
               },
               {
-                "title": "Dow Jones Futures: Elon Musk-Led Tesla Leads Market Higher; Amazon, Alphabet, Microsoft Earnings On Deck",
-                "url": "https://finance.yahoo.com/m/4f45ec30-6388-381f-b8f7-2aed6d460b6f/dow-jones-futures%3A-elon.html?.tsrc=rss",
-                "published_at": "2026-10-26T22:03:09+00:00",
+                "title": "Amazon Backup Power Deal Could Be A Turning Point For Generac Stock",
+                "url": "https://finance.yahoo.com/markets/stocks/articles/amazon-backup-power-deal-could-230921348.html?.tsrc=rss",
+                "published_at": "2026-10-27T23:09:21+00:00",
                 "body_read": false
               },
               {
-                "title": "Tech Earnings Are the Market’s Biggest Story This Week: Here’s Why Microsoft, Amazon, Intel, SanDisk, and Alphabet Will Drive the Stock Market’s Next Move",
-                "url": "https://247wallst.com/videos/tech-earnings-are-the-markets-biggest-story-this-week-heres-why-microsoft-amazon-intel-sandisk-and-alphabet-will-drive-the-stock-markets-next-move/?.tsrc=rss",
-                "published_at": "2026-10-26T21:15:14+00:00",
+                "title": "RIVN Stock Rebounds As Unconfirmed Walmart Delivery Van Sparks Fleet Hopes",
+                "url": "https://stocktwits.com/news-articles/markets/equity/rivn-stock-rebounds-as-unconfirmed-walmart-delivery-van-sparks-fleet-hopes/cZUemCqRBCy?.tsrc=rss",
+                "published_at": "2026-10-27T21:20:09+00:00",
                 "body_read": false
               }
             ],
             "source": {
               "url": "https://feeds.finance.yahoo.com/rss/2.0/headline?s=AMZN&region=US&lang=en-US",
-              "retrieved_at": "2026-10-27T00:21:58.483409+00:00",
-              "sha256": "bea9f55d4f792bfa55ee1e5acbc2d1a4fb7e9375f6b4769b4e94430b247aed52",
-              "bytes": 12793
+              "retrieved_at": "2026-10-28T00:41:57.768680+00:00",
+              "sha256": "3ce7e588f2f3cbfa58b02bdc7b1bbc9a13fed7bc7786ec3b52d70fb68d2d197b",
+              "bytes": 12895
             }
           },
           "evidence": [
             {
               "id": "price",
               "type": "market_observation",
-              "date": "2026-10-26",
+              "date": "2026-10-27",
               "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/AMZN?range=6mo&interval=1d",
               "claim": "종가 계열에서 계산한 변화·변동성"
             }
@@ -5385,16 +5381,15 @@
           "E": {
             "focus": "소비·물류·클라우드 수요·경쟁",
             "market_context": {
-              "name": "S&P 500",
-              "date": "2026-10-26",
-              "return_5": -0.0018151672172800337,
-              "return_20": -0.0009005987914361135,
-              "volatility_20": 0.09900498036098758,
+              "date": "2026-10-27",
+              "return_5": 0.0013005099034570922,
+              "return_20": 0.006747664527036568,
+              "volatility_20": 0.10101604620967769,
               "source": {
                 "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?range=6mo&interval=1d",
-                "retrieved_at": "2026-10-27T00:21:56.400906+00:00",
-                "sha256": "4b9c0480719d39372d7d3977bd4df7b4d070ca0eba10524f3b20fc94eca68860",
-                "bytes": 14048
+                "retrieved_at": "2026-10-28T00:41:55.516519+00:00",
+                "sha256": "f978e3aab513d46859cc535a455844c18226e5fca847c821e8503b67de74ede4",
+                "bytes": 14050
               },
               "basis": "provider Close, descriptive price change; not dividend-reinvested return"
             },
@@ -5488,11 +5483,11 @@
               "activation": "소비·배송·클라우드 수요과 물류망·컴퓨팅·현금 확인 및 경영 승인 뒤 단계 실행하는 조건부 제안",
               "speed": "일괄 확대보다 검증 가능한 단위로 집행하고 성과 관찰 후 확장하는 제안",
               "monitoring_sessions": {
-                "1": "2026-10-27",
-                "2": "2026-10-28",
-                "5": "2026-11-02",
-                "10": "2026-11-09",
-                "20": "2026-11-23"
+                "1": "2026-10-28",
+                "2": "2026-10-29",
+                "5": "2026-11-03",
+                "10": "2026-11-10",
+                "20": "2026-11-24"
               },
               "strategy_horizon": "다음 공식 실적·투자 계획의 실행과 중기 현금 회수에서 확인. 20거래일 내 성과 실현을 보장하지 않음",
               "next_official_event_date": null,
@@ -5577,7 +5572,7 @@
                 }
               ],
               "first_priority_changes": true,
-              "applies_to": "2026-10-26",
+              "applies_to": "2026-10-27",
               "decision_status": "unselected_reference",
               "selection_requirements": [
                 "목적과 의사결정 주체 확인",
@@ -5596,7 +5591,7 @@
                   "owner": "전략·리스크 조직",
                   "task": "소비·배송·클라우드 수요의 실행 허용 조건 확인",
                   "depends_on": [],
-                  "review_due": "2026-10-28",
+                  "review_due": "2026-10-29",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 },
@@ -5607,7 +5602,7 @@
                   "owner": "재무·인사·기술 조직",
                   "task": "물류망·컴퓨팅·현금의 가용성과 투입 한도 확인",
                   "depends_on": [],
-                  "review_due": "2026-10-28",
+                  "review_due": "2026-10-29",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 },
@@ -5621,7 +5616,7 @@
                     "context",
                     "capacity"
                   ],
-                  "review_due": "2026-11-02",
+                  "review_due": "2026-11-03",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 },
@@ -5634,7 +5629,7 @@
                   "depends_on": [
                     "authorize"
                   ],
-                  "review_due": "2026-11-09",
+                  "review_due": "2026-11-10",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 },
@@ -5647,7 +5642,7 @@
                   "depends_on": [
                     "deploy"
                   ],
-                  "review_due": "2026-11-23",
+                  "review_due": "2026-11-24",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 }
@@ -5679,28 +5674,28 @@
           "market": "US",
           "industry": "광고·플랫폼",
           "objective": "AI 투자와 광고 수익화의 연결의 조건과 실패 경로를 비교하는 분석자 설정 목적",
-          "asof": "2026-10-26",
+          "asof": "2026-10-27",
           "price": {
-            "date": "2026-10-26",
-            "return_5": -0.10614652157839011,
-            "return_20": -0.11886195983562253,
-            "volatility_20": 0.3910926730317778,
+            "date": "2026-10-27",
+            "return_5": -0.1066762693554194,
+            "return_20": -0.1605327380645033,
+            "volatility_20": 0.3650575427765812,
             "source": {
               "url": "https://query1.finance.yahoo.com/v8/finance/chart/META?range=6mo&interval=1d",
-              "retrieved_at": "2026-10-27T00:21:58.039956+00:00",
-              "sha256": "055c629418e00cf12878b580bbfeeb659c661593f481b1712993aad5716b73fc",
-              "bytes": 14182,
+              "retrieved_at": "2026-10-28T00:41:57.406276+00:00",
+              "sha256": "51cc58fa8e0ec379ad647de10cef86ace4835fd9cd4ae2403db1f78ec13d805b",
+              "bytes": 14206,
               "completed_close_fallback": {
                 "url": "https://api.stock.naver.com/stock/META.O/price",
-                "retrieved_at": "2026-10-27T00:21:58.066246+00:00",
-                "sha256": "eb630e77d825ef296fa17357726715ebce2387cbcec8e6c012c22a0902d48b43",
-                "bytes": 11431
+                "retrieved_at": "2026-10-28T00:41:57.446758+00:00",
+                "sha256": "bdee5c5a3daf17a0598416ee8f4b74ff4f303de90437a373dc3a3f3b37bc1924",
+                "bytes": 11434
               },
               "overlap_check": {
                 "sessions": [
-                  "2026-10-21",
                   "2026-10-22",
-                  "2026-10-23"
+                  "2026-10-23",
+                  "2026-10-26"
                 ],
                 "max_relative_difference": 3.762666644924195e-08
               }
@@ -5715,39 +5710,39 @@
           },
           "news": {
             "status": "title_metadata_only",
-            "count": 14,
+            "count": 18,
             "items": [
               {
-                "title": "Stock Market Today, Oct. 26: AI Optimism Lifts Nasdaq as Tech Stocks Rebound",
-                "url": "https://www.fool.com/coverage/stock-market-today/2026/10/26/stock-market-today-oct-26-ai-optimism-lifts-nasdaq-as-tech-stocks-rebound/?.tsrc=rss",
-                "published_at": "2026-10-26T21:50:00+00:00",
+                "title": "Amazon has a Muse problem. Is a deal with OpenAI a solution?",
+                "url": "https://finance.yahoo.com/video/amazon-has-a-muse-problem-is-a-deal-with-openai-a-solution-203942441.html?.tsrc=rss",
+                "published_at": "2026-10-27T20:39:42+00:00",
                 "body_read": false
               },
               {
-                "title": "CleanSpark Stock Fell 39% in October. Its Landlord Bet Now Rides on Meta’s Credit",
-                "url": "https://www.tikr.com/blog/cleanspark-stock-fell-39-in-october-its-landlord-bet-now-rides-on-metas-credit?ref=yahoofinance&.tsrc=rss",
-                "published_at": "2026-10-26T21:02:57+00:00",
+                "title": "Penguin Solutions, Broadcom, FormFactor, Lattice Semiconductor, and AMD stocks trade up, what you need to know",
+                "url": "https://finance.yahoo.com/markets/stocks/articles/penguin-solutions-broadcom-formfactor-lattice-222247675.html?.tsrc=rss",
+                "published_at": "2026-10-27T22:22:47+00:00",
                 "body_read": false
               },
               {
-                "title": "Anthropic’s IPO Will “Suck a Massive Amount of Money” From AI Stocks, Cramer Warns",
-                "url": "https://www.tikr.com/blog/anthropics-ipo-will-suck-a-massive-amount-of-money-from-ai-stocks-cramer-warns?ref=yahoofinance&.tsrc=rss",
-                "published_at": "2026-10-26T20:13:14+00:00",
+                "title": "Nvidia’s New $3 Billion AI Bet Is on One of Its Own Customers",
+                "url": "https://www.fool.com/investing/2026/10/27/nvidias-new-3-billion-ai-bet-is-on-one-of-its-own-customers/?.tsrc=rss",
+                "published_at": "2026-10-27T21:40:01+00:00",
                 "body_read": false
               }
             ],
             "source": {
               "url": "https://feeds.finance.yahoo.com/rss/2.0/headline?s=META&region=US&lang=en-US",
-              "retrieved_at": "2026-10-27T00:21:58.569981+00:00",
-              "sha256": "9dd31b60472abb5bb86fbbe541dbf132454e3c998e0dee825745d5bb6f05cdcb",
-              "bytes": 10321
+              "retrieved_at": "2026-10-28T00:41:58.420037+00:00",
+              "sha256": "0bf856396ba7d5aa87e4e4e9577c56b58e28ab95695bffea61e5b1cd33db030a",
+              "bytes": 14131
             }
           },
           "evidence": [
             {
               "id": "price",
               "type": "market_observation",
-              "date": "2026-10-26",
+              "date": "2026-10-27",
               "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/META?range=6mo&interval=1d",
               "claim": "종가 계열에서 계산한 변화·변동성"
             }
@@ -5764,16 +5759,15 @@
           "E": {
             "focus": "광고 수요·플랫폼 경쟁·개인정보 규제",
             "market_context": {
-              "name": "S&P 500",
-              "date": "2026-10-26",
-              "return_5": -0.0018151672172800337,
-              "return_20": -0.0009005987914361135,
-              "volatility_20": 0.09900498036098758,
+              "date": "2026-10-27",
+              "return_5": 0.0013005099034570922,
+              "return_20": 0.006747664527036568,
+              "volatility_20": 0.10101604620967769,
               "source": {
                 "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?range=6mo&interval=1d",
-                "retrieved_at": "2026-10-27T00:21:56.400906+00:00",
-                "sha256": "4b9c0480719d39372d7d3977bd4df7b4d070ca0eba10524f3b20fc94eca68860",
-                "bytes": 14048
+                "retrieved_at": "2026-10-28T00:41:55.516519+00:00",
+                "sha256": "f978e3aab513d46859cc535a455844c18226e5fca847c821e8503b67de74ede4",
+                "bytes": 14050
               },
               "basis": "provider Close, descriptive price change; not dividend-reinvested return"
             },
@@ -5867,11 +5861,11 @@
               "activation": "광고 전환·개인정보 규제과 추천기술·컴퓨팅·인력 확인 및 경영 승인 뒤 단계 실행하는 조건부 제안",
               "speed": "일괄 확대보다 검증 가능한 단위로 집행하고 성과 관찰 후 확장하는 제안",
               "monitoring_sessions": {
-                "1": "2026-10-27",
-                "2": "2026-10-28",
-                "5": "2026-11-02",
-                "10": "2026-11-09",
-                "20": "2026-11-23"
+                "1": "2026-10-28",
+                "2": "2026-10-29",
+                "5": "2026-11-03",
+                "10": "2026-11-10",
+                "20": "2026-11-24"
               },
               "strategy_horizon": "다음 공식 실적·투자 계획의 실행과 중기 현금 회수에서 확인. 20거래일 내 성과 실현을 보장하지 않음",
               "next_official_event_date": null,
@@ -5956,7 +5950,7 @@
                 }
               ],
               "first_priority_changes": true,
-              "applies_to": "2026-10-26",
+              "applies_to": "2026-10-27",
               "decision_status": "unselected_reference",
               "selection_requirements": [
                 "목적과 의사결정 주체 확인",
@@ -5975,7 +5969,7 @@
                   "owner": "전략·리스크 조직",
                   "task": "광고 전환·개인정보 규제의 실행 허용 조건 확인",
                   "depends_on": [],
-                  "review_due": "2026-10-28",
+                  "review_due": "2026-10-29",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 },
@@ -5986,7 +5980,7 @@
                   "owner": "재무·인사·기술 조직",
                   "task": "추천기술·컴퓨팅·인력의 가용성과 투입 한도 확인",
                   "depends_on": [],
-                  "review_due": "2026-10-28",
+                  "review_due": "2026-10-29",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 },
@@ -6000,7 +5994,7 @@
                     "context",
                     "capacity"
                   ],
-                  "review_due": "2026-11-02",
+                  "review_due": "2026-11-03",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 },
@@ -6013,7 +6007,7 @@
                   "depends_on": [
                     "authorize"
                   ],
-                  "review_due": "2026-11-09",
+                  "review_due": "2026-11-10",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 },
@@ -6026,7 +6020,7 @@
                   "depends_on": [
                     "deploy"
                   ],
-                  "review_due": "2026-11-23",
+                  "review_due": "2026-11-24",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 }
@@ -6058,30 +6052,30 @@
           "market": "US",
           "industry": "반도체",
           "objective": "반도체와 소프트웨어의 자본배분의 조건과 실패 경로를 비교하는 분석자 설정 목적",
-          "asof": "2026-10-26",
+          "asof": "2026-10-27",
           "price": {
-            "date": "2026-10-26",
-            "return_5": -0.016198919266005585,
-            "return_20": -0.058357430262311216,
-            "volatility_20": 0.39529337995629305,
+            "date": "2026-10-27",
+            "return_5": 0.023805978404320305,
+            "return_20": -0.035961717499359946,
+            "volatility_20": 0.4189072737228405,
             "source": {
               "url": "https://query1.finance.yahoo.com/v8/finance/chart/AVGO?range=6mo&interval=1d",
-              "retrieved_at": "2026-10-27T00:21:58.855781+00:00",
-              "sha256": "694b170511ebbd1a6ca52ab5b8de9409f6f13a8a7cec4a2265b01c3b274f56b5",
-              "bytes": 14652,
+              "retrieved_at": "2026-10-28T00:41:57.888363+00:00",
+              "sha256": "cb9e3ea77c52f93c69bc9735238d4b9381c8b903c76a3d05a87c8df2bebffbac",
+              "bytes": 14640,
               "completed_close_fallback": {
                 "url": "https://api.stock.naver.com/stock/AVGO.O/price",
-                "retrieved_at": "2026-10-27T00:21:58.901887+00:00",
-                "sha256": "7682cf0b3a4d6470b58d8a150c04d9e56078e1c51e0d08e449aa6c8d736ea9f0",
-                "bytes": 11417
+                "retrieved_at": "2026-10-28T00:41:57.927737+00:00",
+                "sha256": "2d293447129e1d3ecb1e8d329ab82aa438390c7bef016236d3bddb4ca44d9106",
+                "bytes": 11418
               },
               "overlap_check": {
                 "sessions": [
-                  "2026-10-21",
                   "2026-10-22",
-                  "2026-10-23"
+                  "2026-10-23",
+                  "2026-10-26"
                 ],
-                "max_relative_difference": 3.613685983783199e-08
+                "max_relative_difference": 4.079270388146483e-08
               }
             },
             "basis": "provider Close, descriptive price change; not dividend-reinvested return"
@@ -6094,39 +6088,39 @@
           },
           "news": {
             "status": "title_metadata_only",
-            "count": 12,
+            "count": 19,
             "items": [
               {
-                "title": "Broadcom Partners With Wall Street Bigwigs To Forge $63B Deal To Power Anthropic’s AI Hardware",
-                "url": "https://stocktwits.com/news-articles/markets/equity/broadcom-partners-with-wall-street-bigwigs-to-forge-63-b-deal-to-power-anthropic-s-ai-hardware/cZU3ie1RBzJ?.tsrc=rss",
-                "published_at": "2026-10-26T22:50:16+00:00",
+                "title": "How Anthropic could be the 'biggest, baddest, most consequential IPO in history'",
+                "url": "https://finance.yahoo.com/video/how-anthropic-could-be-the-biggest-baddest-most-consequential-ipo-in-history-200647130.html?.tsrc=rss",
+                "published_at": "2026-10-27T20:06:47+00:00",
                 "body_read": false
               },
               {
-                "title": "Broadcom secures $63 billion from banks to finance AI compute sales to Anthropic",
-                "url": "https://finance.yahoo.com/technology/ai/articles/broadcom-secures-63-billion-banks-205926176.html?.tsrc=rss",
-                "published_at": "2026-10-26T20:59:26+00:00",
+                "title": "Intel, Microchip Technology, Marvell Technology, onsemi, and Seagate stocks trade up, what you need to know",
+                "url": "https://finance.yahoo.com/markets/stocks/articles/intel-microchip-technology-marvell-technology-231047842.html?.tsrc=rss",
+                "published_at": "2026-10-27T23:10:47+00:00",
                 "body_read": false
               },
               {
-                "title": "Broadcom Arranges $63 Billion Deal to Finance Anthropic’s Chips",
-                "url": "https://finance.yahoo.com/technology/ai/articles/broadcom-arranges-63-billion-deal-203614048.html?.tsrc=rss",
-                "published_at": "2026-10-26T20:36:14+00:00",
+                "title": "Penguin Solutions, Broadcom, FormFactor, Lattice Semiconductor, and AMD stocks trade up, what you need to know",
+                "url": "https://finance.yahoo.com/markets/stocks/articles/penguin-solutions-broadcom-formfactor-lattice-222247675.html?.tsrc=rss",
+                "published_at": "2026-10-27T22:22:47+00:00",
                 "body_read": false
               }
             ],
             "source": {
               "url": "https://feeds.finance.yahoo.com/rss/2.0/headline?s=AVGO&region=US&lang=en-US",
-              "retrieved_at": "2026-10-27T00:21:59.400359+00:00",
-              "sha256": "5b1cabe8e165ec321991e7824f7e848ff58485388bb0efd42a876aa26202053e",
-              "bytes": 9775
+              "retrieved_at": "2026-10-28T00:41:58.451521+00:00",
+              "sha256": "d61a2954a7571a24813e37e681d7ba020075a1931074fc7a2faa8085f1d6ecba",
+              "bytes": 12863
             }
           },
           "evidence": [
             {
               "id": "price",
               "type": "market_observation",
-              "date": "2026-10-26",
+              "date": "2026-10-27",
               "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/AVGO?range=6mo&interval=1d",
               "claim": "종가 계열에서 계산한 변화·변동성"
             }
@@ -6143,16 +6137,15 @@
           "E": {
             "focus": "고객 수요·수출규제·공급 경쟁",
             "market_context": {
-              "name": "S&P 500",
-              "date": "2026-10-26",
-              "return_5": -0.0018151672172800337,
-              "return_20": -0.0009005987914361135,
-              "volatility_20": 0.09900498036098758,
+              "date": "2026-10-27",
+              "return_5": 0.0013005099034570922,
+              "return_20": 0.006747664527036568,
+              "volatility_20": 0.10101604620967769,
               "source": {
                 "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?range=6mo&interval=1d",
-                "retrieved_at": "2026-10-27T00:21:56.400906+00:00",
-                "sha256": "4b9c0480719d39372d7d3977bd4df7b4d070ca0eba10524f3b20fc94eca68860",
-                "bytes": 14048
+                "retrieved_at": "2026-10-28T00:41:55.516519+00:00",
+                "sha256": "f978e3aab513d46859cc535a455844c18226e5fca847c821e8503b67de74ede4",
+                "bytes": 14050
               },
               "basis": "provider Close, descriptive price change; not dividend-reinvested return"
             },
@@ -6246,11 +6239,11 @@
               "activation": "AI 네트워크·소프트웨어 계약과 설계·공급 파트너·통합 역량 확인 및 경영 승인 뒤 단계 실행하는 조건부 제안",
               "speed": "일괄 확대보다 검증 가능한 단위로 집행하고 성과 관찰 후 확장하는 제안",
               "monitoring_sessions": {
-                "1": "2026-10-27",
-                "2": "2026-10-28",
-                "5": "2026-11-02",
-                "10": "2026-11-09",
-                "20": "2026-11-23"
+                "1": "2026-10-28",
+                "2": "2026-10-29",
+                "5": "2026-11-03",
+                "10": "2026-11-10",
+                "20": "2026-11-24"
               },
               "strategy_horizon": "다음 공식 실적·투자 계획의 실행과 중기 현금 회수에서 확인. 20거래일 내 성과 실현을 보장하지 않음",
               "next_official_event_date": null,
@@ -6335,7 +6328,7 @@
                 }
               ],
               "first_priority_changes": true,
-              "applies_to": "2026-10-26",
+              "applies_to": "2026-10-27",
               "decision_status": "unselected_reference",
               "selection_requirements": [
                 "목적과 의사결정 주체 확인",
@@ -6354,7 +6347,7 @@
                   "owner": "전략·리스크 조직",
                   "task": "AI 네트워크·소프트웨어 계약의 실행 허용 조건 확인",
                   "depends_on": [],
-                  "review_due": "2026-10-28",
+                  "review_due": "2026-10-29",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 },
@@ -6365,7 +6358,7 @@
                   "owner": "재무·인사·기술 조직",
                   "task": "설계·공급 파트너·통합 역량의 가용성과 투입 한도 확인",
                   "depends_on": [],
-                  "review_due": "2026-10-28",
+                  "review_due": "2026-10-29",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 },
@@ -6379,7 +6372,7 @@
                     "context",
                     "capacity"
                   ],
-                  "review_due": "2026-11-02",
+                  "review_due": "2026-11-03",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 },
@@ -6392,7 +6385,7 @@
                   "depends_on": [
                     "authorize"
                   ],
-                  "review_due": "2026-11-09",
+                  "review_due": "2026-11-10",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 },
@@ -6405,7 +6398,7 @@
                   "depends_on": [
                     "deploy"
                   ],
-                  "review_due": "2026-11-23",
+                  "review_due": "2026-11-24",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 }
@@ -6437,28 +6430,28 @@
           "market": "US",
           "industry": "자동차",
           "objective": "자동차와 신사업 투자의 회수 조건의 조건과 실패 경로를 비교하는 분석자 설정 목적",
-          "asof": "2026-10-26",
+          "asof": "2026-10-27",
           "price": {
-            "date": "2026-10-26",
-            "return_5": 0.06401130956279921,
-            "return_20": 0.09559375192629127,
-            "volatility_20": 0.37751169697496,
+            "date": "2026-10-27",
+            "return_5": 0.09031069363040767,
+            "return_20": 0.1548010549512746,
+            "volatility_20": 0.3914985053793753,
             "source": {
               "url": "https://query1.finance.yahoo.com/v8/finance/chart/TSLA?range=6mo&interval=1d",
-              "retrieved_at": "2026-10-27T00:21:58.884927+00:00",
-              "sha256": "f2ff09fe82bf1139dbaa6b9d83dfd74fb38dca407500e9346273d1cbc8892b81",
-              "bytes": 14706,
+              "retrieved_at": "2026-10-28T00:41:58.152397+00:00",
+              "sha256": "c1fc6e3b4d3a3ab7c4bebd9f57f0649a4a4cdfc844de8629e64b9dff9b1b4c74",
+              "bytes": 14696,
               "completed_close_fallback": {
                 "url": "https://api.stock.naver.com/stock/TSLA.O/price",
-                "retrieved_at": "2026-10-27T00:21:58.910884+00:00",
-                "sha256": "4d1371715f561ae7f66cb37af129eb2092762ec46adc1e7be686e4cad99020ba",
-                "bytes": 11419
+                "retrieved_at": "2026-10-28T00:41:58.196964+00:00",
+                "sha256": "ad3fe05222b958ad280269a48b274dc6636284fde2b90b6fc2aa1649cc628a05",
+                "bytes": 11417
               },
               "overlap_check": {
                 "sessions": [
-                  "2026-10-21",
                   "2026-10-22",
-                  "2026-10-23"
+                  "2026-10-23",
+                  "2026-10-26"
                 ],
                 "max_relative_difference": 3.584744079354607e-08
               }
@@ -6473,39 +6466,39 @@
           },
           "news": {
             "status": "title_metadata_only",
-            "count": 17,
+            "count": 19,
             "items": [
               {
-                "title": "TSLA Analyst Ratings Hit Highest Since 2023; ARK Reiterates $4,400 Long-Term Price Target And 80% Robotaxi Thesis",
-                "url": "https://stocktwits.com/news-articles/markets/equity/tsla-analyst-ratings-hit-highest-since-2023-ark-reiterates-4-400-tesla-2031-target-and-80-robotaxi-thesis/cZU3KLWRBzB?.tsrc=rss",
-                "published_at": "2026-10-26T23:35:04+00:00",
+                "title": "Dow Jones Futures: Growth Stocks Rally, Tesla Clears Buy Point; Fed, Microsoft, Google On Tap",
+                "url": "https://finance.yahoo.com/m/7066a700-b33b-3fa1-858d-f75f49b920da/dow-jones-futures%3A-growth.html?.tsrc=rss",
+                "published_at": "2026-10-28T00:31:48+00:00",
                 "body_read": false
               },
               {
-                "title": "Dow Jones Futures: Elon Musk-Led Tesla Leads Market Higher; Amazon, Alphabet, Microsoft Earnings On Deck",
-                "url": "https://finance.yahoo.com/m/4f45ec30-6388-381f-b8f7-2aed6d460b6f/dow-jones-futures%3A-elon.html?.tsrc=rss",
-                "published_at": "2026-10-26T22:03:09+00:00",
+                "title": "TSLA Stock Rises As Cybercabs Overtake Model Ys In Authorized Texas Robotaxi Fleet",
+                "url": "https://stocktwits.com/news-articles/markets/equity/tsla-stock-rises-as-cybercabs-overtake-model-ys-in-authorized-texas-robotaxi-fleet/cZUen2iRBCz?.tsrc=rss",
+                "published_at": "2026-10-27T22:39:57+00:00",
                 "body_read": false
               },
               {
-                "title": "Tesla Isn’t a Hyperscaler. Why the AI Bears Are Misreading Its $5 Billion Capex Cut.",
-                "url": "https://www.fool.com/investing/2026/10/26/tesla-isnt-a-hyperscaler-why-the-ai-bears-are-misreading-its-5-billion-capex-cut/?.tsrc=rss",
-                "published_at": "2026-10-26T20:53:02+00:00",
+                "title": "Scott Galloway Warns Tesla Is the ‘Patient’ and SpaceX Its ‘Organ Donor’ in Elon Musk’s $3.5 Trillion Merger Plan: 'Real Merger With a Fake Premise'",
+                "url": "https://finance.yahoo.com/markets/stocks/articles/scott-galloway-warns-tesla-patient-213018121.html?.tsrc=rss",
+                "published_at": "2026-10-27T21:30:18+00:00",
                 "body_read": false
               }
             ],
             "source": {
               "url": "https://feeds.finance.yahoo.com/rss/2.0/headline?s=TSLA&region=US&lang=en-US",
-              "retrieved_at": "2026-10-27T00:21:59.421528+00:00",
-              "sha256": "b5d0b4a0ef24e0f33b9ded2165a63774b406ae6e6ca0c1db26fb5e4dd4bfeba4",
-              "bytes": 12144
+              "retrieved_at": "2026-10-28T00:41:58.979968+00:00",
+              "sha256": "fb1105c71f032b68b9ca238ac9c864f1f094c61c3a1ad8518e62a28b46a5bc1d",
+              "bytes": 14562
             }
           },
           "evidence": [
             {
               "id": "price",
               "type": "market_observation",
-              "date": "2026-10-26",
+              "date": "2026-10-27",
               "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/TSLA?range=6mo&interval=1d",
               "claim": "종가 계열에서 계산한 변화·변동성"
             }
@@ -6522,16 +6515,15 @@
           "E": {
             "focus": "지역 수요·가격 경쟁·통상·정책",
             "market_context": {
-              "name": "S&P 500",
-              "date": "2026-10-26",
-              "return_5": -0.0018151672172800337,
-              "return_20": -0.0009005987914361135,
-              "volatility_20": 0.09900498036098758,
+              "date": "2026-10-27",
+              "return_5": 0.0013005099034570922,
+              "return_20": 0.006747664527036568,
+              "volatility_20": 0.10101604620967769,
               "source": {
                 "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?range=6mo&interval=1d",
-                "retrieved_at": "2026-10-27T00:21:56.400906+00:00",
-                "sha256": "4b9c0480719d39372d7d3977bd4df7b4d070ca0eba10524f3b20fc94eca68860",
-                "bytes": 14048
+                "retrieved_at": "2026-10-28T00:41:55.516519+00:00",
+                "sha256": "f978e3aab513d46859cc535a455844c18226e5fca847c821e8503b67de74ede4",
+                "bytes": 14050
               },
               "basis": "provider Close, descriptive price change; not dividend-reinvested return"
             },
@@ -6625,11 +6617,11 @@
               "activation": "차량 수요·가격 경쟁·인허가과 제조·소프트웨어·현금 확인 및 경영 승인 뒤 단계 실행하는 조건부 제안",
               "speed": "일괄 확대보다 검증 가능한 단위로 집행하고 성과 관찰 후 확장하는 제안",
               "monitoring_sessions": {
-                "1": "2026-10-27",
-                "2": "2026-10-28",
-                "5": "2026-11-02",
-                "10": "2026-11-09",
-                "20": "2026-11-23"
+                "1": "2026-10-28",
+                "2": "2026-10-29",
+                "5": "2026-11-03",
+                "10": "2026-11-10",
+                "20": "2026-11-24"
               },
               "strategy_horizon": "다음 공식 실적·투자 계획의 실행과 중기 현금 회수에서 확인. 20거래일 내 성과 실현을 보장하지 않음",
               "next_official_event_date": null,
@@ -6714,7 +6706,7 @@
                 }
               ],
               "first_priority_changes": true,
-              "applies_to": "2026-10-26",
+              "applies_to": "2026-10-27",
               "decision_status": "unselected_reference",
               "selection_requirements": [
                 "목적과 의사결정 주체 확인",
@@ -6733,7 +6725,7 @@
                   "owner": "전략·리스크 조직",
                   "task": "차량 수요·가격 경쟁·인허가의 실행 허용 조건 확인",
                   "depends_on": [],
-                  "review_due": "2026-10-28",
+                  "review_due": "2026-10-29",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 },
@@ -6744,7 +6736,7 @@
                   "owner": "재무·인사·기술 조직",
                   "task": "제조·소프트웨어·현금의 가용성과 투입 한도 확인",
                   "depends_on": [],
-                  "review_due": "2026-10-28",
+                  "review_due": "2026-10-29",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 },
@@ -6758,7 +6750,7 @@
                     "context",
                     "capacity"
                   ],
-                  "review_due": "2026-11-02",
+                  "review_due": "2026-11-03",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 },
@@ -6771,7 +6763,7 @@
                   "depends_on": [
                     "authorize"
                   ],
-                  "review_due": "2026-11-09",
+                  "review_due": "2026-11-10",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 },
@@ -6784,7 +6776,7 @@
                   "depends_on": [
                     "deploy"
                   ],
-                  "review_due": "2026-11-23",
+                  "review_due": "2026-11-24",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 }
@@ -6816,28 +6808,28 @@
           "market": "US",
           "industry": "지주·복합사업",
           "objective": "보험과 사업 포트폴리오의 자본배분의 조건과 실패 경로를 비교하는 분석자 설정 목적",
-          "asof": "2026-10-26",
+          "asof": "2026-10-27",
           "price": {
-            "date": "2026-10-26",
-            "return_5": 0.030682261673548705,
-            "return_20": 0.09038145062135228,
-            "volatility_20": 0.1086089546435913,
+            "date": "2026-10-27",
+            "return_5": 0.0058723141654091204,
+            "return_20": 0.08089975794309034,
+            "volatility_20": 0.11869455971952418,
             "source": {
               "url": "https://query1.finance.yahoo.com/v8/finance/chart/BRK-B?range=6mo&interval=1d",
-              "retrieved_at": "2026-10-27T00:21:58.948650+00:00",
-              "sha256": "4d984d51edce2fdb171d49318b868e87d35b0d38835165cdb91615ba3d7ab439",
-              "bytes": 14035,
+              "retrieved_at": "2026-10-28T00:41:58.830672+00:00",
+              "sha256": "c8382b84cc37ee97e76e2544bef4c1b3a49d70b720604f6da35293708754f76f",
+              "bytes": 14037,
               "completed_close_fallback": {
                 "url": "https://api.stock.naver.com/stock/BRKb/price",
-                "retrieved_at": "2026-10-27T00:21:58.980545+00:00",
-                "sha256": "353d2c3cbffd504410f65840923d27167053092374d81842d093aac8cd032345",
+                "retrieved_at": "2026-10-28T00:41:58.881025+00:00",
+                "sha256": "f78f8c32b78da6451450e3f9ff7122626fc89e65c52b7c5a8cc9dd83e30dc5df",
                 "bytes": 11216
               },
               "overlap_check": {
                 "sessions": [
-                  "2026-10-21",
                   "2026-10-22",
-                  "2026-10-23"
+                  "2026-10-23",
+                  "2026-10-26"
                 ],
                 "max_relative_difference": 5.3562124069372885e-08
               }
@@ -6852,39 +6844,39 @@
           },
           "news": {
             "status": "title_metadata_only",
-            "count": 17,
+            "count": 16,
             "items": [
               {
-                "title": "Berkshire Hathaway: Is the Stock Still a Safe Buy Without Warren Buffett?",
-                "url": "https://www.fool.com/investing/2026/10/26/berkshire-hathaway-is-the-stock-still-a-safe-buy-without-warren-buffett/?.tsrc=rss",
-                "published_at": "2026-10-26T22:46:01+00:00",
+                "title": "Warren Buffett's Successor, Greg Abel, Has $114.4 Billion Invested in These 3 Tech Stocks. None Is a Pure-Play Artificial Intelligence (AI) Company.",
+                "url": "https://www.fool.com/investing/2026/10/27/warren-buffetts-successor-greg-abel-has-1144-billi/?.tsrc=rss",
+                "published_at": "2026-10-27T20:35:00+00:00",
                 "body_read": false
               },
               {
-                "title": "Warren Buffett's Successor, Greg Abel, Has 69% of Berkshire Hathaway's Portfolio Invested in Just 5 Stocks. Here's My Top Pick for October.",
-                "url": "https://www.fool.com/investing/2026/10/26/warren-buffetts-successor-greg-abel-has-69-of/?.tsrc=rss",
-                "published_at": "2026-10-26T15:20:00+00:00",
+                "title": "Berkshire Hathaway (BRK.A) After Buffett’s Warning Looks Undervalued On Fair Value Narrative",
+                "url": "https://finance.yahoo.com/markets/stocks/articles/berkshire-hathaway-brk-buffett-warning-190722149.html?.tsrc=rss",
+                "published_at": "2026-10-27T19:07:22+00:00",
                 "body_read": false
               },
               {
-                "title": "Top 3 Undervalued Stocks To Watch In October 2026",
-                "url": "https://finance.yahoo.com/markets/stocks/articles/top-3-undervalued-stocks-watch-151018766.html?.tsrc=rss",
-                "published_at": "2026-10-26T15:10:18+00:00",
+                "title": "Is Berkshire Hathaway Stock a Buy Near Its All-Time High?",
+                "url": "https://www.fool.com/investing/2026/10/27/is-berkshire-hathaway-stock-a-buy-near-its-all-tim/?.tsrc=rss",
+                "published_at": "2026-10-27T18:35:00+00:00",
                 "body_read": false
               }
             ],
             "source": {
               "url": "https://feeds.finance.yahoo.com/rss/2.0/headline?s=BRK-B&region=US&lang=en-US",
-              "retrieved_at": "2026-10-27T00:21:59.444105+00:00",
-              "sha256": "2441effbb78c3f9ea66f7c741f58d97081baaf98d44134c532248b4851202634",
-              "bytes": 12091
+              "retrieved_at": "2026-10-28T00:41:59.400360+00:00",
+              "sha256": "47b2887065fa9883e89aae90f9406feae7327015e60a2348e4081aeb0ffa1b37",
+              "bytes": 11357
             }
           },
           "evidence": [
             {
               "id": "price",
               "type": "market_observation",
-              "date": "2026-10-26",
+              "date": "2026-10-27",
               "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/BRK-B?range=6mo&interval=1d",
               "claim": "종가 계열에서 계산한 변화·변동성"
             }
@@ -6901,16 +6893,15 @@
           "E": {
             "focus": "자회사 산업환경·평가 할인·금리",
             "market_context": {
-              "name": "S&P 500",
-              "date": "2026-10-26",
-              "return_5": -0.0018151672172800337,
-              "return_20": -0.0009005987914361135,
-              "volatility_20": 0.09900498036098758,
+              "date": "2026-10-27",
+              "return_5": 0.0013005099034570922,
+              "return_20": 0.006747664527036568,
+              "volatility_20": 0.10101604620967769,
               "source": {
                 "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?range=6mo&interval=1d",
-                "retrieved_at": "2026-10-27T00:21:56.400906+00:00",
-                "sha256": "4b9c0480719d39372d7d3977bd4df7b4d070ca0eba10524f3b20fc94eca68860",
-                "bytes": 14048
+                "retrieved_at": "2026-10-28T00:41:55.516519+00:00",
+                "sha256": "f978e3aab513d46859cc535a455844c18226e5fca847c821e8503b67de74ede4",
+                "bytes": 14050
               },
               "basis": "provider Close, descriptive price change; not dividend-reinvested return"
             },
@@ -7004,11 +6995,11 @@
               "activation": "보험 손해·매입 기회·금리과 유동성·보험 준비금·자회사 현금 확인 및 경영 승인 뒤 단계 실행하는 조건부 제안",
               "speed": "일괄 확대보다 검증 가능한 단위로 집행하고 성과 관찰 후 확장하는 제안",
               "monitoring_sessions": {
-                "1": "2026-10-27",
-                "2": "2026-10-28",
-                "5": "2026-11-02",
-                "10": "2026-11-09",
-                "20": "2026-11-23"
+                "1": "2026-10-28",
+                "2": "2026-10-29",
+                "5": "2026-11-03",
+                "10": "2026-11-10",
+                "20": "2026-11-24"
               },
               "strategy_horizon": "다음 공식 실적·투자 계획의 실행과 중기 현금 회수에서 확인. 20거래일 내 성과 실현을 보장하지 않음",
               "next_official_event_date": null,
@@ -7093,7 +7084,7 @@
                 }
               ],
               "first_priority_changes": true,
-              "applies_to": "2026-10-26",
+              "applies_to": "2026-10-27",
               "decision_status": "unselected_reference",
               "selection_requirements": [
                 "목적과 의사결정 주체 확인",
@@ -7112,7 +7103,7 @@
                   "owner": "전략·리스크 조직",
                   "task": "보험 손해·매입 기회·금리의 실행 허용 조건 확인",
                   "depends_on": [],
-                  "review_due": "2026-10-28",
+                  "review_due": "2026-10-29",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 },
@@ -7123,7 +7114,7 @@
                   "owner": "재무·인사·기술 조직",
                   "task": "유동성·보험 준비금·자회사 현금의 가용성과 투입 한도 확인",
                   "depends_on": [],
-                  "review_due": "2026-10-28",
+                  "review_due": "2026-10-29",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 },
@@ -7137,7 +7128,7 @@
                     "context",
                     "capacity"
                   ],
-                  "review_due": "2026-11-02",
+                  "review_due": "2026-11-03",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 },
@@ -7150,7 +7141,7 @@
                   "depends_on": [
                     "authorize"
                   ],
-                  "review_due": "2026-11-09",
+                  "review_due": "2026-11-10",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 },
@@ -7163,7 +7154,7 @@
                   "depends_on": [
                     "deploy"
                   ],
-                  "review_due": "2026-11-23",
+                  "review_due": "2026-11-24",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 }
@@ -7195,28 +7186,28 @@
           "market": "US",
           "industry": "은행·금융지주",
           "objective": "대출 성장·위험 관리·환원의 균형의 조건과 실패 경로를 비교하는 분석자 설정 목적",
-          "asof": "2026-10-26",
+          "asof": "2026-10-27",
           "price": {
-            "date": "2026-10-26",
-            "return_5": 0.0015291014978253692,
-            "return_20": -0.007575971851910723,
-            "volatility_20": 0.13376756114880028,
+            "date": "2026-10-27",
+            "return_5": 0.001580833439531082,
+            "return_20": 0.0024180219329712482,
+            "volatility_20": 0.13408875307711207,
             "source": {
               "url": "https://query1.finance.yahoo.com/v8/finance/chart/JPM?range=6mo&interval=1d",
-              "retrieved_at": "2026-10-27T00:21:59.879443+00:00",
-              "sha256": "ebc19264bf1e5c352eb29d96eb3ca5c0e04fce888a6e45dc4fa3fb7c49ba21ba",
-              "bytes": 14408,
+              "retrieved_at": "2026-10-28T00:41:59.024160+00:00",
+              "sha256": "d8792eb194cb2d0b5e2db1ce0739fa42002a807d458e2073f5a451dd688cb3b6",
+              "bytes": 14398,
               "completed_close_fallback": {
                 "url": "https://api.stock.naver.com/stock/JPM/price",
-                "retrieved_at": "2026-10-27T00:21:59.910154+00:00",
-                "sha256": "4fa6e136c6cc23bb354ed47d46f1eaf4544ef56d9728c4d508499851ee65de0c",
-                "bytes": 11228
+                "retrieved_at": "2026-10-28T00:41:59.059143+00:00",
+                "sha256": "bde4b12fdb753ed7e058aa652b875c2a71c8b3ae7df663331aee2d41118e2d63",
+                "bytes": 11225
               },
               "overlap_check": {
                 "sessions": [
-                  "2026-10-21",
                   "2026-10-22",
-                  "2026-10-23"
+                  "2026-10-23",
+                  "2026-10-26"
                 ],
                 "max_relative_difference": 4.049621316060126e-08
               }
@@ -7231,39 +7222,39 @@
           },
           "news": {
             "status": "title_metadata_only",
-            "count": 17,
+            "count": 18,
             "items": [
               {
-                "title": "Rockefeller Adds J.P. Morgan Team in Houston",
-                "url": "https://www.wealthmanagement.com/ria-news/rockefeller-adds-14b-jp-morgan-team-in-houston?.tsrc=rss",
-                "published_at": "2026-10-26T18:30:06+00:00",
+                "title": "Jim Bianco Says Banks Blocking AI Agents Are Protecting Their Profits, Not Customers",
+                "url": "https://unchainedcrypto.com/jim-bianco-says-banks-blocking-ai-agents-are-protecting-their-profits-not-customers/?.tsrc=rss",
+                "published_at": "2026-10-27T22:58:00+00:00",
                 "body_read": false
               },
               {
-                "title": "KBRA Assigns Preliminary Ratings to J.P. Morgan Mortgage Trust 2026-9 (JPMMT 2026-9)",
-                "url": "https://finance.yahoo.com/real-estate/articles/kbra-assigns-preliminary-ratings-j-161100388.html?.tsrc=rss",
-                "published_at": "2026-10-26T16:11:00+00:00",
+                "title": "JPM's Agather & Herbst on Texas Wealth Wave",
+                "url": "https://finance.yahoo.com/video/jpms-agather-herbst-texas-wealth-214929422.html?.tsrc=rss",
+                "published_at": "2026-10-27T21:49:29+00:00",
                 "body_read": false
               },
               {
-                "title": "Will JPMorgan's Nigeria Expansion Bolster Its Growth Prospects?",
-                "url": "https://finance.yahoo.com/markets/stocks/articles/jpmorgans-nigeria-expansion-bolster-growth-144000060.html?.tsrc=rss",
-                "published_at": "2026-10-26T14:40:00+00:00",
+                "title": "Jamie Dimon Just Named Five Threats to the Economy. JPMorgan Is Already Acting",
+                "url": "https://247wallst.com/videos/jamie-dimon-just-named-five-threats-to-the-economy-jpmorgan-is-already-acting/?.tsrc=rss",
+                "published_at": "2026-10-27T21:20:15+00:00",
                 "body_read": false
               }
             ],
             "source": {
               "url": "https://feeds.finance.yahoo.com/rss/2.0/headline?s=JPM&region=US&lang=en-US",
-              "retrieved_at": "2026-10-27T00:22:00.519976+00:00",
-              "sha256": "666d354031ac3bfbefe8c6c13dc053793eed592323095eb05414fe50ecbbfc9b",
-              "bytes": 13616
+              "retrieved_at": "2026-10-28T00:41:59.652057+00:00",
+              "sha256": "3a63fc1597a469faece8d0261c182804866a17a27bacd9d3f82dd4173d3773e0",
+              "bytes": 13817
             }
           },
           "evidence": [
             {
               "id": "price",
               "type": "market_observation",
-              "date": "2026-10-26",
+              "date": "2026-10-27",
               "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/JPM?range=6mo&interval=1d",
               "claim": "종가 계열에서 계산한 변화·변동성"
             }
@@ -7280,16 +7271,15 @@
           "E": {
             "focus": "금리·신용환경·규제",
             "market_context": {
-              "name": "S&P 500",
-              "date": "2026-10-26",
-              "return_5": -0.0018151672172800337,
-              "return_20": -0.0009005987914361135,
-              "volatility_20": 0.09900498036098758,
+              "date": "2026-10-27",
+              "return_5": 0.0013005099034570922,
+              "return_20": 0.006747664527036568,
+              "volatility_20": 0.10101604620967769,
               "source": {
                 "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?range=6mo&interval=1d",
-                "retrieved_at": "2026-10-27T00:21:56.400906+00:00",
-                "sha256": "4b9c0480719d39372d7d3977bd4df7b4d070ca0eba10524f3b20fc94eca68860",
-                "bytes": 14048
+                "retrieved_at": "2026-10-28T00:41:55.516519+00:00",
+                "sha256": "f978e3aab513d46859cc535a455844c18226e5fca847c821e8503b67de74ede4",
+                "bytes": 14050
               },
               "basis": "provider Close, descriptive price change; not dividend-reinvested return"
             },
@@ -7383,11 +7373,11 @@
               "activation": "차입 수요·신용·감독 조건과 규제자본·유동성·심사 역량 확인 및 경영 승인 뒤 단계 실행하는 조건부 제안",
               "speed": "일괄 확대보다 검증 가능한 단위로 집행하고 성과 관찰 후 확장하는 제안",
               "monitoring_sessions": {
-                "1": "2026-10-27",
-                "2": "2026-10-28",
-                "5": "2026-11-02",
-                "10": "2026-11-09",
-                "20": "2026-11-23"
+                "1": "2026-10-28",
+                "2": "2026-10-29",
+                "5": "2026-11-03",
+                "10": "2026-11-10",
+                "20": "2026-11-24"
               },
               "strategy_horizon": "다음 공식 실적·투자 계획의 실행과 중기 현금 회수에서 확인. 20거래일 내 성과 실현을 보장하지 않음",
               "next_official_event_date": null,
@@ -7472,7 +7462,7 @@
                 }
               ],
               "first_priority_changes": true,
-              "applies_to": "2026-10-26",
+              "applies_to": "2026-10-27",
               "decision_status": "unselected_reference",
               "selection_requirements": [
                 "목적과 의사결정 주체 확인",
@@ -7491,7 +7481,7 @@
                   "owner": "전략·리스크 조직",
                   "task": "차입 수요·신용·감독 조건의 실행 허용 조건 확인",
                   "depends_on": [],
-                  "review_due": "2026-10-28",
+                  "review_due": "2026-10-29",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 },
@@ -7502,7 +7492,7 @@
                   "owner": "재무·인사·기술 조직",
                   "task": "규제자본·유동성·심사 역량의 가용성과 투입 한도 확인",
                   "depends_on": [],
-                  "review_due": "2026-10-28",
+                  "review_due": "2026-10-29",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 },
@@ -7516,7 +7506,7 @@
                     "context",
                     "capacity"
                   ],
-                  "review_due": "2026-11-02",
+                  "review_due": "2026-11-03",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 },
@@ -7529,7 +7519,7 @@
                   "depends_on": [
                     "authorize"
                   ],
-                  "review_due": "2026-11-09",
+                  "review_due": "2026-11-10",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 },
@@ -7542,7 +7532,7 @@
                   "depends_on": [
                     "deploy"
                   ],
-                  "review_due": "2026-11-23",
+                  "review_due": "2026-11-24",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 }
@@ -7573,9 +7563,7 @@
       "calendar": "XNYS",
       "new_model_calls": 0,
       "analysis_type": "rule_based_methodology_application",
-      "source_status": "prices_fresh_completed_session; strategic_evidence_mixed_or_missing; each dated separately",
-      "revision_of": "20261027T092155_US",
-      "revision_reason": "Methodology correction; price and news snapshots reused without claiming fresh collection"
+      "source_status": "prices_fresh_completed_session; strategic_evidence_mixed_or_missing; each dated separately"
     }
   ],
   "status": {
@@ -7588,11 +7576,10 @@
     },
     "US": {
       "state": "built",
-      "asof": "2026-10-26",
-      "checked_at": "2026-10-27T01:54:47.978455+00:00",
-      "run_id": "20261027T015447Z_US_method11",
-      "companies": 10,
-      "collection_note": "method revision, retained price/news timestamps"
+      "asof": "2026-10-27",
+      "checked_at": "2026-10-28T00:41:54.918342+00:00",
+      "run_id": "20261028T094154_US",
+      "companies": 10
     }
   },
   "schedule_kst": {
