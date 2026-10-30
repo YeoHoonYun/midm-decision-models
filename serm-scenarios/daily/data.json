@@ -1,23 +1,23 @@
 {
   "method_version": "SER-M-CPT-WS-1.1",
-  "built_at": "2026-10-28T15:08:27.732001+09:00",
+  "built_at": "2026-10-31T00:38:49.493988+09:00",
   "reports": [
     {
       "method_version": "SER-M-CPT-WS-1.1",
       "market": "KR",
-      "asof": "2026-10-27",
-      "created_at": "2026-10-27T19:15:56.307253+09:00",
-      "run_id": "20261027T191556_KR",
+      "asof": "2026-10-30",
+      "created_at": "2026-10-31T00:38:40.228798+09:00",
+      "run_id": "20261031T003840_KR",
       "index": {
         "name": "KOSPI",
-        "date": "2026-10-27",
-        "return_5": 0.015415812733893697,
-        "return_20": -0.2037277641888342,
-        "volatility_20": 0.4550189421848283,
+        "date": "2026-10-30",
+        "return_5": 0.03250995441687832,
+        "return_20": -0.16193236658457688,
+        "volatility_20": 0.5358608111437997,
         "source": {
           "url": "https://fchart.stock.naver.com/sise.nhn?symbol=KOSPI&timeframe=day&count=180&requestType=0",
-          "retrieved_at": "2026-10-27T10:15:59.143976+00:00",
-          "sha256": "47333632090625fb9c5d4a1b97224b1c3a9c54b32ede0a10da99de46273379b6",
+          "retrieved_at": "2026-10-30T15:38:43.076893+00:00",
+          "sha256": "adbb34a06d90029ff7fc483620dd0efb102277b05e3a820d7a70b9e69f4d7bcd",
           "bytes": 13118
         },
         "basis": "provider Close, descriptive price change; not dividend-reinvested return"
@@ -29,16 +29,16 @@
           "market": "KR",
           "industry": "반도체",
           "objective": "메모리 고부가 제품 전환과 투자 회수의 조건과 실패 경로를 비교하는 분석자 설정 목적",
-          "asof": "2026-10-27",
+          "asof": "2026-10-30",
           "price": {
-            "date": "2026-10-27",
-            "return_5": 0.06698564593301426,
-            "return_20": -0.22164048865619546,
-            "volatility_20": 0.7118094087234966,
+            "date": "2026-10-30",
+            "return_5": 0.032786885245901676,
+            "return_20": -0.18181818181818177,
+            "volatility_20": 0.8099012317055297,
             "source": {
               "url": "https://fchart.stock.naver.com/sise.nhn?symbol=005930&timeframe=day&count=180&requestType=0",
-              "retrieved_at": "2026-10-27T10:15:59.193705+00:00",
-              "sha256": "09458e876ce5ec78f1b59795d109ecc68ace5296506297038e520163326a9ab4",
+              "retrieved_at": "2026-10-30T15:38:43.111340+00:00",
+              "sha256": "fd6a6c2b89b0f109d4263178057550c18e7c34811597cb26daa784653b47e9ea",
               "bytes": 12805
             },
             "basis": "provider Close, descriptive price change; not dividend-reinvested return"
@@ -50,39 +50,39 @@
           },
           "news": {
             "status": "title_metadata_only",
-            "count": 15,
+            "count": 14,
             "items": [
               {
-                "title": "South Korea GDP grows more than expected in Q3 on AI boost",
-                "url": "https://finance.yahoo.com/economy/articles/south-korea-gdp-grows-more-000306002.html?.tsrc=rss",
-                "published_at": "2026-10-27T00:03:06+00:00",
+                "title": "Asian tech stocks slump as AI rout deepens on disappointing U.S. earnings",
+                "url": "https://finance.yahoo.com/markets/stocks/articles/asian-tech-stocks-slump-ai-044824243.html?.tsrc=rss",
+                "published_at": "2026-10-30T04:48:24+00:00",
                 "body_read": false
               },
               {
-                "title": "Global Application-Specific Integrated Circuits (ASIC) Design Service Market Report 2026 | Capitalize on AI, EV and 3DIC Demand to 2030 with Broadcom, Samsung, Intel & Alchip",
-                "url": "https://finance.yahoo.com/technology/articles/global-application-specific-integrated-circuits-142500765.html?.tsrc=rss",
-                "published_at": "2026-10-26T14:25:00+00:00",
+                "title": "Asia stocks tumble as AI spending concerns deepen; BOJ holds rates",
+                "url": "https://finance.yahoo.com/markets/world-indices/articles/asia-stocks-tumble-ai-spending-040615318.html?.tsrc=rss",
+                "published_at": "2026-10-30T04:06:15+00:00",
                 "body_read": false
               },
               {
-                "title": "Global Flip Chip Technology Market Report 2026: Size, Share, Trends, and Forecast to 2030 | Capitalize on AI, 5G, and 3D Packaging with TSMC, Intel, Samsung, AMD, and Amkor",
-                "url": "https://finance.yahoo.com/technology/articles/global-flip-chip-technology-market-142300958.html?.tsrc=rss",
-                "published_at": "2026-10-26T14:23:00+00:00",
+                "title": "3 Growth Stocks To Own In October 2026",
+                "url": "https://finance.yahoo.com/markets/stocks/articles/3-growth-stocks-own-october-001818281.html?.tsrc=rss",
+                "published_at": "2026-10-30T00:18:18+00:00",
                 "body_read": false
               }
             ],
             "source": {
               "url": "https://feeds.finance.yahoo.com/rss/2.0/headline?s=005930.KS&region=US&lang=en-US",
-              "retrieved_at": "2026-10-27T10:15:59.674472+00:00",
-              "sha256": "e3f227a51bd0f2e4460d0376a1dcf3e2cc8dd31cf6b0e508625386a3140b423c",
-              "bytes": 12176
+              "retrieved_at": "2026-10-30T15:38:43.581718+00:00",
+              "sha256": "ed04aec39f9d2f256fe319bfcf2a014c28c513755f504825031556a47e4d5579",
+              "bytes": 11303
             }
           },
           "evidence": [
             {
               "id": "price",
               "type": "market_observation",
-              "date": "2026-10-27",
+              "date": "2026-10-30",
               "source_url": "https://fchart.stock.naver.com/sise.nhn?symbol=005930&timeframe=day&count=180&requestType=0",
               "claim": "종가 계열에서 계산한 변화·변동성"
             },
@@ -127,14 +127,14 @@
           "E": {
             "focus": "고객 수요·수출규제·공급 경쟁",
             "market_context": {
-              "date": "2026-10-27",
-              "return_5": 0.015415812733893697,
-              "return_20": -0.2037277641888342,
-              "volatility_20": 0.4550189421848283,
+              "date": "2026-10-30",
+              "return_5": 0.03250995441687832,
+              "return_20": -0.16193236658457688,
+              "volatility_20": 0.5358608111437997,
               "source": {
                 "url": "https://fchart.stock.naver.com/sise.nhn?symbol=KOSPI&timeframe=day&count=180&requestType=0",
-                "retrieved_at": "2026-10-27T10:15:59.143976+00:00",
-                "sha256": "47333632090625fb9c5d4a1b97224b1c3a9c54b32ede0a10da99de46273379b6",
+                "retrieved_at": "2026-10-30T15:38:43.076893+00:00",
+                "sha256": "adbb34a06d90029ff7fc483620dd0efb102277b05e3a820d7a70b9e69f4d7bcd",
                 "bytes": 13118
               },
               "basis": "provider Close, descriptive price change; not dividend-reinvested return"
@@ -228,11 +228,11 @@
               "activation": "HBM 고객 인증·제품별 수요과 수율·패키징·설비 가용성 확인 및 경영 승인 뒤 단계 실행하는 조건부 제안",
               "speed": "일괄 확대보다 검증 가능한 단위로 집행하고 성과 관찰 후 확장하는 제안",
               "monitoring_sessions": {
-                "1": "2026-10-28",
-                "2": "2026-10-29",
-                "5": "2026-11-03",
-                "10": "2026-11-10",
-                "20": "2026-11-24"
+                "1": "2026-11-02",
+                "2": "2026-11-03",
+                "5": "2026-11-06",
+                "10": "2026-11-13",
+                "20": "2026-11-27"
               },
               "strategy_horizon": "다음 공식 실적·투자 계획의 실행과 중기 현금 회수에서 확인. 20거래일 내 성과 실현을 보장하지 않음",
               "next_official_event_date": null,
@@ -317,7 +317,7 @@
                 }
               ],
               "first_priority_changes": false,
-              "applies_to": "2026-10-27",
+              "applies_to": "2026-10-30",
               "decision_status": "unselected_reference",
               "selection_requirements": [
                 "목적과 의사결정 주체 확인",
@@ -336,7 +336,7 @@
                   "owner": "전략·리스크 조직",
                   "task": "HBM 고객 인증·제품별 수요의 실행 허용 조건 확인",
                   "depends_on": [],
-                  "review_due": "2026-10-29",
+                  "review_due": "2026-11-03",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 },
@@ -347,7 +347,7 @@
                   "owner": "재무·인사·기술 조직",
                   "task": "수율·패키징·설비 가용성의 가용성과 투입 한도 확인",
                   "depends_on": [],
-                  "review_due": "2026-10-29",
+                  "review_due": "2026-11-03",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 },
@@ -361,7 +361,7 @@
                     "context",
                     "capacity"
                   ],
-                  "review_due": "2026-11-03",
+                  "review_due": "2026-11-06",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 },
@@ -374,7 +374,7 @@
                   "depends_on": [
                     "authorize"
                   ],
-                  "review_due": "2026-11-10",
+                  "review_due": "2026-11-13",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 },
@@ -387,7 +387,7 @@
                   "depends_on": [
                     "deploy"
                   ],
-                  "review_due": "2026-11-24",
+                  "review_due": "2026-11-27",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 }
@@ -419,17 +419,17 @@
           "market": "KR",
           "industry": "반도체",
           "objective": "HBM 공급 확대의 실행력과 집중 위험의 조건과 실패 경로를 비교하는 분석자 설정 목적",
-          "asof": "2026-10-27",
+          "asof": "2026-10-30",
           "price": {
-            "date": "2026-10-27",
-            "return_5": 0.14537815126050413,
-            "return_20": -0.2683843263553408,
-            "volatility_20": 0.8398358618273396,
+            "date": "2026-10-30",
+            "return_5": 0.10134600158353124,
+            "return_20": -0.21985417835109367,
+            "volatility_20": 0.9568313475807514,
             "source": {
               "url": "https://fchart.stock.naver.com/sise.nhn?symbol=000660&timeframe=day&count=180&requestType=0",
-              "retrieved_at": "2026-10-27T10:15:59.176520+00:00",
-              "sha256": "fcb011c276042db68d5e960abe6ca258aca1020ecb8199d95085939eddec1ab7",
-              "bytes": 13196
+              "retrieved_at": "2026-10-30T15:38:43.104811+00:00",
+              "sha256": "499d90e8c35d1b546ab7d6bf961ea3c5f02b4a0f5aa3e48dddaadca18d21e04a",
+              "bytes": 13208
             },
             "basis": "provider Close, descriptive price change; not dividend-reinvested return"
           },
@@ -440,39 +440,39 @@
           },
           "news": {
             "status": "title_metadata_only",
-            "count": 17,
+            "count": 15,
             "items": [
               {
-                "title": "Does Jensen Huang Know Something Wall Street Doesn't? Nvidia's CEO Sees No Signs of Memory Demand Fading by 2029",
-                "url": "https://www.fool.com/investing/2026/10/27/does-jensen-huang-know-something-wall-street-doesn/?.tsrc=rss",
-                "published_at": "2026-10-27T07:51:00+00:00",
+                "title": "SK Hynix Just Delivered Fantastic News for Micron",
+                "url": "https://www.fool.com/investing/2026/10/30/sk-hynix-just-delivered-fantastic-news-for-micron/?.tsrc=rss",
+                "published_at": "2026-10-30T15:10:16+00:00",
                 "body_read": false
               },
               {
-                "title": "MU, SKHY Stocks Rise As Anthropic Filing Shows $450B In Compute Commitments; Kospi Rally Triggers Program-Trading Pause",
-                "url": "https://stocktwits.com/news-articles/markets/equity/mu-skhy-stocks-rise-as-anthropic-filing-shows-450-b-in-compute-commitments-kospi-rally-triggers-program-trading-pause/cZUI6gARBzq?.tsrc=rss",
-                "published_at": "2026-10-27T07:13:32+00:00",
+                "title": "Applied Materials Is Up Nearly 9% Since Moving to Lift Its Besi Stake to 20%. Here’s What Hybrid Bonding Could Mean for the Stock by 2030",
+                "url": "https://www.tikr.com/blog/applied-materials-is-up-nearly-9-since-moving-to-lift-its-besi-stake-to-20-heres-what-hybrid-bonding-could-mean-for-the-stock-by-2030?ref=yahoofinance&.tsrc=rss",
+                "published_at": "2026-10-30T13:23:16+00:00",
                 "body_read": false
               },
               {
-                "title": "Global shares are mixed as investors await central bank rate decisions",
-                "url": "https://finance.yahoo.com/markets/world-indices/articles/asian-stocks-advance-following-rally-071057338.html?.tsrc=rss",
-                "published_at": "2026-10-27T07:10:57+00:00",
+                "title": "Tech firms take fresh hit as disappointing earnings fan AI fears",
+                "url": "https://www.euronews.com/2026/10/30/tech-firms-take-fresh-hit-as-disappointing-earnings-fan-ai-fears?.tsrc=rss",
+                "published_at": "2026-10-30T09:36:52+00:00",
                 "body_read": false
               }
             ],
             "source": {
               "url": "https://feeds.finance.yahoo.com/rss/2.0/headline?s=000660.KS&region=US&lang=en-US",
-              "retrieved_at": "2026-10-27T10:15:59.727422+00:00",
-              "sha256": "8296e8826cd67384a0ec8061d7c1d94448ea483de3e5216fd55bf941fca5a997",
-              "bytes": 13282
+              "retrieved_at": "2026-10-30T15:38:43.575688+00:00",
+              "sha256": "8c006afdf8d62b2615e520789186ac756e4f12c612ff5e9294f0c6d44560fc98",
+              "bytes": 10827
             }
           },
           "evidence": [
             {
               "id": "price",
               "type": "market_observation",
-              "date": "2026-10-27",
+              "date": "2026-10-30",
               "source_url": "https://fchart.stock.naver.com/sise.nhn?symbol=000660&timeframe=day&count=180&requestType=0",
               "claim": "종가 계열에서 계산한 변화·변동성"
             },
@@ -497,14 +497,14 @@
           "E": {
             "focus": "고객 수요·수출규제·공급 경쟁",
             "market_context": {
-              "date": "2026-10-27",
-              "return_5": 0.015415812733893697,
-              "return_20": -0.2037277641888342,
-              "volatility_20": 0.4550189421848283,
+              "date": "2026-10-30",
+              "return_5": 0.03250995441687832,
+              "return_20": -0.16193236658457688,
+              "volatility_20": 0.5358608111437997,
               "source": {
                 "url": "https://fchart.stock.naver.com/sise.nhn?symbol=KOSPI&timeframe=day&count=180&requestType=0",
-                "retrieved_at": "2026-10-27T10:15:59.143976+00:00",
-                "sha256": "47333632090625fb9c5d4a1b97224b1c3a9c54b32ede0a10da99de46273379b6",
+                "retrieved_at": "2026-10-30T15:38:43.076893+00:00",
+                "sha256": "adbb34a06d90029ff7fc483620dd0efb102277b05e3a820d7a70b9e69f4d7bcd",
                 "bytes": 13118
               },
               "basis": "provider Close, descriptive price change; not dividend-reinvested return"
@@ -598,11 +598,11 @@
               "activation": "고객별 확정 수요·납기과 HBM 수율·패키징·투자 여력 확인 및 경영 승인 뒤 단계 실행하는 조건부 제안",
               "speed": "일괄 확대보다 검증 가능한 단위로 집행하고 성과 관찰 후 확장하는 제안",
               "monitoring_sessions": {
-                "1": "2026-10-28",
-                "2": "2026-10-29",
-                "5": "2026-11-03",
-                "10": "2026-11-10",
-                "20": "2026-11-24"
+                "1": "2026-11-02",
+                "2": "2026-11-03",
+                "5": "2026-11-06",
+                "10": "2026-11-13",
+                "20": "2026-11-27"
               },
               "strategy_horizon": "다음 공식 실적·투자 계획의 실행과 중기 현금 회수에서 확인. 20거래일 내 성과 실현을 보장하지 않음",
               "next_official_event_date": null,
@@ -687,7 +687,7 @@
                 }
               ],
               "first_priority_changes": false,
-              "applies_to": "2026-10-27",
+              "applies_to": "2026-10-30",
               "decision_status": "unselected_reference",
               "selection_requirements": [
                 "목적과 의사결정 주체 확인",
@@ -706,7 +706,7 @@
                   "owner": "전략·리스크 조직",
                   "task": "고객별 확정 수요·납기의 실행 허용 조건 확인",
                   "depends_on": [],
-                  "review_due": "2026-10-29",
+                  "review_due": "2026-11-03",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 },
@@ -717,7 +717,7 @@
                   "owner": "재무·인사·기술 조직",
                   "task": "HBM 수율·패키징·투자 여력의 가용성과 투입 한도 확인",
                   "depends_on": [],
-                  "review_due": "2026-10-29",
+                  "review_due": "2026-11-03",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 },
@@ -731,7 +731,7 @@
                     "context",
                     "capacity"
                   ],
-                  "review_due": "2026-11-03",
+                  "review_due": "2026-11-06",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 },
@@ -744,7 +744,7 @@
                   "depends_on": [
                     "authorize"
                   ],
-                  "review_due": "2026-11-10",
+                  "review_due": "2026-11-13",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 },
@@ -757,7 +757,7 @@
                   "depends_on": [
                     "deploy"
                   ],
-                  "review_due": "2026-11-24",
+                  "review_due": "2026-11-27",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 }
@@ -789,16 +789,16 @@
           "market": "KR",
           "industry": "지주·복합사업",
           "objective": "포트폴리오 집중 위험과 자본배분의 조건과 실패 경로를 비교하는 분석자 설정 목적",
-          "asof": "2026-10-27",
+          "asof": "2026-10-30",
           "price": {
-            "date": "2026-10-27",
-            "return_5": 0.16712707182320452,
-            "return_20": -0.2845046570702794,
-            "volatility_20": 0.9471478842560469,
+            "date": "2026-10-30",
+            "return_5": 0.14528795811518314,
+            "return_20": -0.2270318021201413,
+            "volatility_20": 1.0400955726941548,
             "source": {
               "url": "https://fchart.stock.naver.com/sise.nhn?symbol=402340&timeframe=day&count=180&requestType=0",
-              "retrieved_at": "2026-10-27T10:15:59.178854+00:00",
-              "sha256": "ef52b333d534347cb5155535a02a3437c20069c69d4e733f07f0b076de714ec1",
+              "retrieved_at": "2026-10-30T15:38:43.108860+00:00",
+              "sha256": "ca3b1dcc5c9fc1ef8fbdc7c44a93a75d609d97f2e5b92a1a66c156d28e812848",
               "bytes": 12868
             },
             "basis": "provider Close, descriptive price change; not dividend-reinvested return"
@@ -813,24 +813,24 @@
             "count": 1,
             "items": [
               {
-                "title": "Align Partners discloses 1.5% stake in SK, flags 75% valuation discount - report",
-                "url": "https://finance.yahoo.com/markets/stocks/articles/align-partners-discloses-1-5-045517386.html?.tsrc=rss",
-                "published_at": "2026-10-21T04:55:17+00:00",
+                "title": "Market Chatter: Goldman Sachs Reportedly Looking to Acquire Controlling Stake in South Korea's Tmap Mobility",
+                "url": "https://finance.yahoo.com/markets/stocks/articles/market-chatter-goldman-sachs-reportedly-092612694.html?.tsrc=rss",
+                "published_at": "2026-10-30T09:26:12+00:00",
                 "body_read": false
               }
             ],
             "source": {
               "url": "https://feeds.finance.yahoo.com/rss/2.0/headline?s=402340.KS&region=US&lang=en-US",
-              "retrieved_at": "2026-10-27T10:15:59.645635+00:00",
-              "sha256": "f2ac4a38ea4756a6b220f4c306202b87cd3f2d8111e54d738e5df1047425640e",
-              "bytes": 6430
+              "retrieved_at": "2026-10-30T15:38:43.676758+00:00",
+              "sha256": "069d7ba05b4572d33fcbbe73195837ca4bde3b7676b7b43595ef4453274aaad5",
+              "bytes": 6428
             }
           },
           "evidence": [
             {
               "id": "price",
               "type": "market_observation",
-              "date": "2026-10-27",
+              "date": "2026-10-30",
               "source_url": "https://fchart.stock.naver.com/sise.nhn?symbol=402340&timeframe=day&count=180&requestType=0",
               "claim": "종가 계열에서 계산한 변화·변동성"
             },
@@ -855,14 +855,14 @@
           "E": {
             "focus": "자회사 산업환경·평가 할인·금리",
             "market_context": {
-              "date": "2026-10-27",
-              "return_5": 0.015415812733893697,
-              "return_20": -0.2037277641888342,
-              "volatility_20": 0.4550189421848283,
+              "date": "2026-10-30",
+              "return_5": 0.03250995441687832,
+              "return_20": -0.16193236658457688,
+              "volatility_20": 0.5358608111437997,
               "source": {
                 "url": "https://fchart.stock.naver.com/sise.nhn?symbol=KOSPI&timeframe=day&count=180&requestType=0",
-                "retrieved_at": "2026-10-27T10:15:59.143976+00:00",
-                "sha256": "47333632090625fb9c5d4a1b97224b1c3a9c54b32ede0a10da99de46273379b6",
+                "retrieved_at": "2026-10-30T15:38:43.076893+00:00",
+                "sha256": "adbb34a06d90029ff7fc483620dd0efb102277b05e3a820d7a70b9e69f4d7bcd",
                 "bytes": 13118
               },
               "basis": "provider Close, descriptive price change; not dividend-reinvested return"
@@ -956,11 +956,11 @@
               "activation": "자회사 가치·할인 해소 조건과 가용 현금·지분 처분 제약 확인 및 경영 승인 뒤 단계 실행하는 조건부 제안",
               "speed": "일괄 확대보다 검증 가능한 단위로 집행하고 성과 관찰 후 확장하는 제안",
               "monitoring_sessions": {
-                "1": "2026-10-28",
-                "2": "2026-10-29",
-                "5": "2026-11-03",
-                "10": "2026-11-10",
-                "20": "2026-11-24"
+                "1": "2026-11-02",
+                "2": "2026-11-03",
+                "5": "2026-11-06",
+                "10": "2026-11-13",
+                "20": "2026-11-27"
               },
               "strategy_horizon": "다음 공식 실적·투자 계획의 실행과 중기 현금 회수에서 확인. 20거래일 내 성과 실현을 보장하지 않음",
               "next_official_event_date": null,
@@ -1045,7 +1045,7 @@
                 }
               ],
               "first_priority_changes": false,
-              "applies_to": "2026-10-27",
+              "applies_to": "2026-10-30",
               "decision_status": "unselected_reference",
               "selection_requirements": [
                 "목적과 의사결정 주체 확인",
@@ -1064,7 +1064,7 @@
                   "owner": "전략·리스크 조직",
                   "task": "자회사 가치·할인 해소 조건의 실행 허용 조건 확인",
                   "depends_on": [],
-                  "review_due": "2026-10-29",
+                  "review_due": "2026-11-03",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 },
@@ -1075,7 +1075,7 @@
                   "owner": "재무·인사·기술 조직",
                   "task": "가용 현금·지분 처분 제약의 가용성과 투입 한도 확인",
                   "depends_on": [],
-                  "review_due": "2026-10-29",
+                  "review_due": "2026-11-03",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 },
@@ -1089,7 +1089,7 @@
                     "context",
                     "capacity"
                   ],
-                  "review_due": "2026-11-03",
+                  "review_due": "2026-11-06",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 },
@@ -1102,7 +1102,7 @@
                   "depends_on": [
                     "authorize"
                   ],
-                  "review_due": "2026-11-10",
+                  "review_due": "2026-11-13",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 },
@@ -1115,7 +1115,7 @@
                   "depends_on": [
                     "deploy"
                   ],
-                  "review_due": "2026-11-24",
+                  "review_due": "2026-11-27",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 }
@@ -1147,16 +1147,16 @@
           "market": "KR",
           "industry": "배터리",
           "objective": "보조금 의존도와 생산 투자 회수의 조건과 실패 경로를 비교하는 분석자 설정 목적",
-          "asof": "2026-10-27",
+          "asof": "2026-10-30",
           "price": {
-            "date": "2026-10-27",
-            "return_5": -0.06925880923450789,
-            "return_20": 0.08806818181818188,
-            "volatility_20": 0.5406072381908501,
+            "date": "2026-10-30",
+            "return_5": -0.07601572739187423,
+            "return_20": -0.008438818565400852,
+            "volatility_20": 0.5786405987750403,
             "source": {
               "url": "https://fchart.stock.naver.com/sise.nhn?symbol=373220&timeframe=day&count=180&requestType=0",
-              "retrieved_at": "2026-10-27T10:15:59.667592+00:00",
-              "sha256": "d0d107b634b1bad42f707e68c4834293e1f20345f1a58369893ac5feb2c2cab1",
+              "retrieved_at": "2026-10-30T15:38:43.596216+00:00",
+              "sha256": "4ff008501af19e1d65647810d694336e8c14035d48475d8d6dd0be4a508e6469",
               "bytes": 12455
             },
             "basis": "provider Close, descriptive price change; not dividend-reinvested return"
@@ -1168,39 +1168,39 @@
           },
           "news": {
             "status": "title_metadata_only",
-            "count": 3,
+            "count": 4,
             "items": [
               {
-                "title": "Tesla Asian supplier shares fall after mixed Q3 earnings, cautious outlook",
-                "url": "https://finance.yahoo.com/markets/stocks/articles/tesla-asian-supplier-shares-fall-040733543.html?.tsrc=rss",
-                "published_at": "2026-10-22T04:07:33+00:00",
+                "title": "LG Energy Solution Opens 'Battery Innovation Contest (BIC) 2026' to Connect Innovative Research Ideas with Industry Needs",
+                "url": "https://finance.yahoo.com/energy/articles/lg-energy-solution-opens-battery-071700664.html?.tsrc=rss",
+                "published_at": "2026-10-29T07:17:00+00:00",
                 "body_read": false
               },
               {
-                "title": "GM bets on new batteries, AI to make EVs mainstream, but skips the energy storage boom",
-                "url": "https://finance.yahoo.com/markets/stocks/article/gm-bets-on-new-batteries-ai-to-make-evs-mainstream-but-skips-the-energy-storage-boom-183616679.html?.tsrc=rss",
-                "published_at": "2026-10-21T18:34:27+00:00",
+                "title": "Global Mobile Battery Market Opportunities and Strategies to 2035 | Samsung SDI, BYD, Panasonic, and LG Energy Solution Capitalize on $45.95 Billion High-Density Battery Market",
+                "url": "https://finance.yahoo.com/technology/articles/global-mobile-battery-market-opportunities-205900087.html?.tsrc=rss",
+                "published_at": "2026-10-28T20:59:00+00:00",
                 "body_read": false
               },
               {
-                "title": "What Elevra Lithium (ELVR) Said on Its Q1 Earnings Call",
-                "url": "https://www.marketbeat.com/instant-alerts/transcript-what-elevra-lithium-elvr-said-on-its-q1-earnings-call-2026-10-26/?utm_source=yahoofinance&utm_medium=yahoofinance&.tsrc=rss",
-                "published_at": "2026-10-27T01:02:19+00:00",
+                "title": "Global Prismatic LFP Battery Market Report 2026 | Capitalize on 19.7% CAGR to $26.86 Billion by 2030 as CATL, BYD, LG Energy Solution and SVOLT Accelerate EV and Grid Storage",
+                "url": "https://finance.yahoo.com/energy/articles/global-prismatic-lfp-battery-market-151500393.html?.tsrc=rss",
+                "published_at": "2026-10-28T15:15:00+00:00",
                 "body_read": false
               }
             ],
             "source": {
               "url": "https://feeds.finance.yahoo.com/rss/2.0/headline?s=373220.KS&region=US&lang=en-US",
-              "retrieved_at": "2026-10-27T10:16:00.245131+00:00",
-              "sha256": "3c6b0cb33ce9e4c05bb494e271676797331cd47868db4d7adda5ca2ca1530c3a",
-              "bytes": 10837
+              "retrieved_at": "2026-10-30T15:38:44.214022+00:00",
+              "sha256": "84d37f88437fae30ceabf8cf848d90e034de436a8e17c738fcb61acf46b45b18",
+              "bytes": 12510
             }
           },
           "evidence": [
             {
               "id": "price",
               "type": "market_observation",
-              "date": "2026-10-27",
+              "date": "2026-10-30",
               "source_url": "https://fchart.stock.naver.com/sise.nhn?symbol=373220&timeframe=day&count=180&requestType=0",
               "claim": "종가 계열에서 계산한 변화·변동성"
             },
@@ -1225,14 +1225,14 @@
           "E": {
             "focus": "전기차 수요·보조금·원가 경쟁",
             "market_context": {
-              "date": "2026-10-27",
-              "return_5": 0.015415812733893697,
-              "return_20": -0.2037277641888342,
-              "volatility_20": 0.4550189421848283,
+              "date": "2026-10-30",
+              "return_5": 0.03250995441687832,
+              "return_20": -0.16193236658457688,
+              "volatility_20": 0.5358608111437997,
               "source": {
                 "url": "https://fchart.stock.naver.com/sise.nhn?symbol=KOSPI&timeframe=day&count=180&requestType=0",
-                "retrieved_at": "2026-10-27T10:15:59.143976+00:00",
-                "sha256": "47333632090625fb9c5d4a1b97224b1c3a9c54b32ede0a10da99de46273379b6",
+                "retrieved_at": "2026-10-30T15:38:43.076893+00:00",
+                "sha256": "adbb34a06d90029ff7fc483620dd0efb102277b05e3a820d7a70b9e69f4d7bcd",
                 "bytes": 13118
               },
               "basis": "provider Close, descriptive price change; not dividend-reinvested return"
@@ -1326,11 +1326,11 @@
               "activation": "지역별 수요·지원 제도과 공장 가동률·현금 소요 확인 및 경영 승인 뒤 단계 실행하는 조건부 제안",
               "speed": "일괄 확대보다 검증 가능한 단위로 집행하고 성과 관찰 후 확장하는 제안",
               "monitoring_sessions": {
-                "1": "2026-10-28",
-                "2": "2026-10-29",
-                "5": "2026-11-03",
-                "10": "2026-11-10",
-                "20": "2026-11-24"
+                "1": "2026-11-02",
+                "2": "2026-11-03",
+                "5": "2026-11-06",
+                "10": "2026-11-13",
+                "20": "2026-11-27"
               },
               "strategy_horizon": "다음 공식 실적·투자 계획의 실행과 중기 현금 회수에서 확인. 20거래일 내 성과 실현을 보장하지 않음",
               "next_official_event_date": null,
@@ -1415,7 +1415,7 @@
                 }
               ],
               "first_priority_changes": false,
-              "applies_to": "2026-10-27",
+              "applies_to": "2026-10-30",
               "decision_status": "unselected_reference",
               "selection_requirements": [
                 "목적과 의사결정 주체 확인",
@@ -1434,7 +1434,7 @@
                   "owner": "전략·리스크 조직",
                   "task": "지역별 수요·지원 제도의 실행 허용 조건 확인",
                   "depends_on": [],
-                  "review_due": "2026-10-29",
+                  "review_due": "2026-11-03",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 },
@@ -1445,7 +1445,7 @@
                   "owner": "재무·인사·기술 조직",
                   "task": "공장 가동률·현금 소요의 가용성과 투입 한도 확인",
                   "depends_on": [],
-                  "review_due": "2026-10-29",
+                  "review_due": "2026-11-03",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 },
@@ -1459,7 +1459,7 @@
                     "context",
                     "capacity"
                   ],
-                  "review_due": "2026-11-03",
+                  "review_due": "2026-11-06",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 },
@@ -1472,7 +1472,7 @@
                   "depends_on": [
                     "authorize"
                   ],
-                  "review_due": "2026-11-10",
+                  "review_due": "2026-11-13",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 },
@@ -1485,7 +1485,7 @@
                   "depends_on": [
                     "deploy"
                   ],
-                  "review_due": "2026-11-24",
+                  "review_due": "2026-11-27",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 }
@@ -1517,17 +1517,17 @@
           "market": "KR",
           "industry": "전자부품",
           "objective": "고부가 부품 공급 확대의 수익성의 조건과 실패 경로를 비교하는 분석자 설정 목적",
-          "asof": "2026-10-27",
+          "asof": "2026-10-30",
           "price": {
-            "date": "2026-10-27",
-            "return_5": 0.08000000000000007,
-            "return_20": -0.19053964023984016,
-            "volatility_20": 0.9854901225237712,
+            "date": "2026-10-30",
+            "return_5": 0.04950495049504955,
+            "return_20": -0.22985468956406874,
+            "volatility_20": 1.0688685799349773,
             "source": {
               "url": "https://fchart.stock.naver.com/sise.nhn?symbol=009150&timeframe=day&count=180&requestType=0",
-              "retrieved_at": "2026-10-27T10:15:59.705392+00:00",
-              "sha256": "2d146b28b7769917065f93543a20e21fcd314cc9f7ee3f7766d1f44ec497dbcc",
-              "bytes": 12938
+              "retrieved_at": "2026-10-30T15:38:43.602435+00:00",
+              "sha256": "fd9d71367b27288367ba17c99313c785c8d59ca232a2bace2e324d1b2f314fa2",
+              "bytes": 12950
             },
             "basis": "provider Close, descriptive price change; not dividend-reinvested return"
           },
@@ -1538,18 +1538,18 @@
           },
           "news": {
             "status": "title_metadata_only",
-            "count": 8,
+            "count": 4,
             "items": [
               {
-                "title": "Market Chatter: Nvidia, Tesla to Invest $2.80 Billion in Samsung Electro-Mechanics",
-                "url": "https://finance.yahoo.com/technology/articles/market-chatter-nvidia-tesla-invest-082524681.html?.tsrc=rss",
-                "published_at": "2026-10-22T08:25:24+00:00",
+                "title": "Nvidia forges supplier agreements to expand capacity for AI",
+                "url": "https://www.supplychaindive.com/news/nvidia-forges-supplier-agreements-to-expand-capacity-for-ai/872780/?.tsrc=rss",
+                "published_at": "2026-10-28T14:20:20+00:00",
                 "body_read": false
               },
               {
-                "title": "Samsung Electro-Mechanics and NVIDIA Announce Strategic Partnership to Supply ABF Substrates",
-                "url": "https://finance.yahoo.com/technology/ai/articles/samsung-electro-mechanics-nvidia-announce-113000283.html?.tsrc=rss",
-                "published_at": "2026-10-21T11:30:00+00:00",
+                "title": "Samsung Electro-Mechanics Q3 profit surges 166% on AI demand; shares surge",
+                "url": "https://finance.yahoo.com/technology/ai/articles/samsung-electro-mechanics-q3-profit-054900108.html?.tsrc=rss",
+                "published_at": "2026-10-28T05:49:00+00:00",
                 "body_read": false
               },
               {
@@ -1561,16 +1561,16 @@
             ],
             "source": {
               "url": "https://feeds.finance.yahoo.com/rss/2.0/headline?s=009150.KS&region=US&lang=en-US",
-              "retrieved_at": "2026-10-27T10:16:00.157492+00:00",
-              "sha256": "7b5c08adb246de726cedcc499bc223395946f020ad31aa46fa788bd8f864421e",
-              "bytes": 12558
+              "retrieved_at": "2026-10-30T15:38:44.084162+00:00",
+              "sha256": "08fbc528fc1868507cd95d6acdf7dd84848c138d1294d243d22ddd9638e88dbd",
+              "bytes": 11775
             }
           },
           "evidence": [
             {
               "id": "price",
               "type": "market_observation",
-              "date": "2026-10-27",
+              "date": "2026-10-30",
               "source_url": "https://fchart.stock.naver.com/sise.nhn?symbol=009150&timeframe=day&count=180&requestType=0",
               "claim": "종가 계열에서 계산한 변화·변동성"
             },
@@ -1607,14 +1607,14 @@
           "E": {
             "focus": "고객 투자·부품수요·경쟁",
             "market_context": {
-              "date": "2026-10-27",
-              "return_5": 0.015415812733893697,
-              "return_20": -0.2037277641888342,
-              "volatility_20": 0.4550189421848283,
+              "date": "2026-10-30",
+              "return_5": 0.03250995441687832,
+              "return_20": -0.16193236658457688,
+              "volatility_20": 0.5358608111437997,
               "source": {
                 "url": "https://fchart.stock.naver.com/sise.nhn?symbol=KOSPI&timeframe=day&count=180&requestType=0",
-                "retrieved_at": "2026-10-27T10:15:59.143976+00:00",
-                "sha256": "47333632090625fb9c5d4a1b97224b1c3a9c54b32ede0a10da99de46273379b6",
+                "retrieved_at": "2026-10-30T15:38:43.076893+00:00",
+                "sha256": "adbb34a06d90029ff7fc483620dd0efb102277b05e3a820d7a70b9e69f4d7bcd",
                 "bytes": 13118
               },
               "basis": "provider Close, descriptive price change; not dividend-reinvested return"
@@ -1708,11 +1708,11 @@
               "activation": "고객 장기계약·인증·납기과 기판·MLCC 생산 역량 확인 및 경영 승인 뒤 단계 실행하는 조건부 제안",
               "speed": "일괄 확대보다 검증 가능한 단위로 집행하고 성과 관찰 후 확장하는 제안",
               "monitoring_sessions": {
-                "1": "2026-10-28",
-                "2": "2026-10-29",
-                "5": "2026-11-03",
-                "10": "2026-11-10",
-                "20": "2026-11-24"
+                "1": "2026-11-02",
+                "2": "2026-11-03",
+                "5": "2026-11-06",
+                "10": "2026-11-13",
+                "20": "2026-11-27"
               },
               "strategy_horizon": "다음 공식 실적·투자 계획의 실행과 중기 현금 회수에서 확인. 20거래일 내 성과 실현을 보장하지 않음",
               "next_official_event_date": null,
@@ -1797,7 +1797,7 @@
                 }
               ],
               "first_priority_changes": false,
-              "applies_to": "2026-10-27",
+              "applies_to": "2026-10-30",
               "decision_status": "unselected_reference",
               "selection_requirements": [
                 "목적과 의사결정 주체 확인",
@@ -1816,7 +1816,7 @@
                   "owner": "전략·리스크 조직",
                   "task": "고객 장기계약·인증·납기의 실행 허용 조건 확인",
                   "depends_on": [],
-                  "review_due": "2026-10-29",
+                  "review_due": "2026-11-03",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 },
@@ -1827,7 +1827,7 @@
                   "owner": "재무·인사·기술 조직",
                   "task": "기판·MLCC 생산 역량의 가용성과 투입 한도 확인",
                   "depends_on": [],
-                  "review_due": "2026-10-29",
+                  "review_due": "2026-11-03",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 },
@@ -1841,7 +1841,7 @@
                     "context",
                     "capacity"
                   ],
-                  "review_due": "2026-11-03",
+                  "review_due": "2026-11-06",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 },
@@ -1854,7 +1854,7 @@
                   "depends_on": [
                     "authorize"
                   ],
-                  "review_due": "2026-11-10",
+                  "review_due": "2026-11-13",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 },
@@ -1867,7 +1867,7 @@
                   "depends_on": [
                     "deploy"
                   ],
-                  "review_due": "2026-11-24",
+                  "review_due": "2026-11-27",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 }
@@ -1899,17 +1899,17 @@
           "market": "KR",
           "industry": "바이오 위탁개발·생산",
           "objective": "사업 확장과 주당 가치의 동반 개선의 조건과 실패 경로를 비교하는 분석자 설정 목적",
-          "asof": "2026-10-27",
+          "asof": "2026-10-30",
           "price": {
-            "date": "2026-10-27",
-            "return_5": -0.010830324909747335,
-            "return_20": 0.005556248761404259,
-            "volatility_20": 0.5982476775391704,
+            "date": "2026-10-30",
+            "return_5": -0.019178082191780854,
+            "return_20": 0.035229615663775915,
+            "volatility_20": 0.6140835812544726,
             "source": {
               "url": "https://fchart.stock.naver.com/sise.nhn?symbol=207940&timeframe=day&count=180&requestType=0",
-              "retrieved_at": "2026-10-27T10:15:59.762883+00:00",
-              "sha256": "2044991cf19bbf6966085be941c173105a172eb72cdc1fe5d47812555d05a90d",
-              "bytes": 13006
+              "retrieved_at": "2026-10-30T15:38:43.714050+00:00",
+              "sha256": "ea07f7a7a5de9d2f4e1a5551cad6f359229c9e129e1f210ced47e87e0a9f4d26",
+              "bytes": 13007
             },
             "basis": "provider Close, descriptive price change; not dividend-reinvested return"
           },
@@ -1920,19 +1920,12 @@
           },
           "news": {
             "status": "title_metadata_only",
-            "count": 1,
-            "items": [
-              {
-                "title": "Samsung Biologics Reports Third Quarter 2026 Financial Results",
-                "url": "https://finance.yahoo.com/healthcare/articles/samsung-biologics-reports-third-quarter-070000841.html?.tsrc=rss",
-                "published_at": "2026-10-21T07:00:00+00:00",
-                "body_read": false
-              }
-            ],
+            "count": 0,
+            "items": [],
             "source": {
               "url": "https://feeds.finance.yahoo.com/rss/2.0/headline?s=207940.KS&region=US&lang=en-US",
-              "retrieved_at": "2026-10-27T10:16:00.305519+00:00",
-              "sha256": "1f2b3210ae0670b66532568fef4771d17c49e7e05a906aa3a4b49d9f4782e8b4",
+              "retrieved_at": "2026-10-30T15:38:44.279257+00:00",
+              "sha256": "5d3b9e64c8b90c53e9ea43e4c3c99a4d7801ace2ba5c0da49c54a616e5807f62",
               "bytes": 13750
             }
           },
@@ -1940,7 +1933,7 @@
             {
               "id": "price",
               "type": "market_observation",
-              "date": "2026-10-27",
+              "date": "2026-10-30",
               "source_url": "https://fchart.stock.naver.com/sise.nhn?symbol=207940&timeframe=day&count=180&requestType=0",
               "claim": "종가 계열에서 계산한 변화·변동성"
             },
@@ -1977,14 +1970,14 @@
           "E": {
             "focus": "고객 수주·의약품 규제·경쟁",
             "market_context": {
-              "date": "2026-10-27",
-              "return_5": 0.015415812733893697,
-              "return_20": -0.2037277641888342,
-              "volatility_20": 0.4550189421848283,
+              "date": "2026-10-30",
+              "return_5": 0.03250995441687832,
+              "return_20": -0.16193236658457688,
+              "volatility_20": 0.5358608111437997,
               "source": {
                 "url": "https://fchart.stock.naver.com/sise.nhn?symbol=KOSPI&timeframe=day&count=180&requestType=0",
-                "retrieved_at": "2026-10-27T10:15:59.143976+00:00",
-                "sha256": "47333632090625fb9c5d4a1b97224b1c3a9c54b32ede0a10da99de46273379b6",
+                "retrieved_at": "2026-10-30T15:38:43.076893+00:00",
+                "sha256": "adbb34a06d90029ff7fc483620dd0efb102277b05e3a820d7a70b9e69f4d7bcd",
                 "bytes": 13118
               },
               "basis": "provider Close, descriptive price change; not dividend-reinvested return"
@@ -2078,11 +2071,11 @@
               "activation": "수주·품질/규제 요건과 인수 자금·증자·생산 여력 확인 및 경영 승인 뒤 단계 실행하는 조건부 제안",
               "speed": "일괄 확대보다 검증 가능한 단위로 집행하고 성과 관찰 후 확장하는 제안",
               "monitoring_sessions": {
-                "1": "2026-10-28",
-                "2": "2026-10-29",
-                "5": "2026-11-03",
-                "10": "2026-11-10",
-                "20": "2026-11-24"
+                "1": "2026-11-02",
+                "2": "2026-11-03",
+                "5": "2026-11-06",
+                "10": "2026-11-13",
+                "20": "2026-11-27"
               },
               "strategy_horizon": "다음 공식 실적·투자 계획의 실행과 중기 현금 회수에서 확인. 20거래일 내 성과 실현을 보장하지 않음",
               "next_official_event_date": null,
@@ -2175,7 +2168,7 @@
                 }
               ],
               "first_priority_changes": false,
-              "applies_to": "2026-10-27",
+              "applies_to": "2026-10-30",
               "decision_status": "unselected_reference",
               "selection_requirements": [
                 "목적과 의사결정 주체 확인",
@@ -2194,7 +2187,7 @@
                   "owner": "전략·리스크 조직",
                   "task": "수주·품질/규제 요건의 실행 허용 조건 확인",
                   "depends_on": [],
-                  "review_due": "2026-10-29",
+                  "review_due": "2026-11-03",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 },
@@ -2205,7 +2198,7 @@
                   "owner": "재무·인사·기술 조직",
                   "task": "인수 자금·증자·생산 여력의 가용성과 투입 한도 확인",
                   "depends_on": [],
-                  "review_due": "2026-10-29",
+                  "review_due": "2026-11-03",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 },
@@ -2219,7 +2212,7 @@
                     "context",
                     "capacity"
                   ],
-                  "review_due": "2026-11-03",
+                  "review_due": "2026-11-06",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 },
@@ -2232,7 +2225,7 @@
                   "depends_on": [
                     "authorize"
                   ],
-                  "review_due": "2026-11-10",
+                  "review_due": "2026-11-13",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 },
@@ -2245,7 +2238,7 @@
                   "depends_on": [
                     "deploy"
                   ],
-                  "review_due": "2026-11-24",
+                  "review_due": "2026-11-27",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 }
@@ -2277,17 +2270,17 @@
           "market": "KR",
           "industry": "자동차",
           "objective": "지역별 생산 배분과 판매 수익성의 조건과 실패 경로를 비교하는 분석자 설정 목적",
-          "asof": "2026-10-27",
+          "asof": "2026-10-30",
           "price": {
-            "date": "2026-10-27",
-            "return_5": -0.04909983633387893,
-            "return_20": -0.18627450980392157,
-            "volatility_20": 0.5321055811299261,
+            "date": "2026-10-30",
+            "return_5": -0.04948805460750849,
+            "return_20": -0.1974063400576369,
+            "volatility_20": 0.560115272643099,
             "source": {
               "url": "https://fchart.stock.naver.com/sise.nhn?symbol=005380&timeframe=day&count=180&requestType=0",
-              "retrieved_at": "2026-10-27T10:16:00.191820+00:00",
-              "sha256": "14fb0856ca59823680f85321ee97225792f1974c2c597c8edd4ce92d652234cd",
-              "bytes": 12526
+              "retrieved_at": "2026-10-30T15:38:44.105855+00:00",
+              "sha256": "3f6986354faba641b331472ae7aaf134eaf338c8fde398777ac04dacb8e37a1d",
+              "bytes": 12523
             },
             "basis": "provider Close, descriptive price change; not dividend-reinvested return"
           },
@@ -2298,39 +2291,39 @@
           },
           "news": {
             "status": "title_metadata_only",
-            "count": 8,
+            "count": 9,
             "items": [
+              {
+                "title": "Hyundai Motor lowers sales outlook as strikes hit Q3 deliveries",
+                "url": "https://finance.yahoo.com/markets/stocks/articles/hyundai-motor-q3-operating-profit-051717829.html?.tsrc=rss",
+                "published_at": "2026-10-29T05:17:17+00:00",
+                "body_read": false
+              },
+              {
+                "title": "Kerrigan Advisors Represents Gossett Motor Cars on the Sale of Four Kia and Hyundai Dealerships in Memphis, Tennessee to Lithia Motors",
+                "url": "https://finance.yahoo.com/small-business/articles/kerrigan-advisors-represents-gossett-motor-110000835.html?.tsrc=rss",
+                "published_at": "2026-10-27T11:00:00+00:00",
+                "body_read": false
+              },
               {
                 "title": "Flock cam sent cops to tow a Virginia mom’s car at 2 a.m. It was cleared in 4 hours. She says she learned 4 days later",
                 "url": "https://finance.yahoo.com/small-business/articles/flock-cam-sent-cops-tow-161500727.html?.tsrc=rss",
                 "published_at": "2026-10-26T16:15:00+00:00",
                 "body_read": false
-              },
-              {
-                "title": "The ASSEMBLY Show Opens October 27 in Rosemont with Plant of The Year Spotlight, Exclusive Factory Tour and Industry Networking",
-                "url": "https://finance.yahoo.com/technology/articles/assembly-show-opens-october-27-120000804.html?.tsrc=rss",
-                "published_at": "2026-10-22T12:00:00+00:00",
-                "body_read": false
-              },
-              {
-                "title": "Hyundai Motor Group and Rhode Island School of Design Collaborate on Regenerative Biodesign Strategies and the Future of Mobility",
-                "url": "https://finance.yahoo.com/technology/articles/hyundai-motor-group-rhode-island-130000377.html?.tsrc=rss",
-                "published_at": "2026-10-21T13:00:00+00:00",
-                "body_read": false
               }
             ],
             "source": {
               "url": "https://feeds.finance.yahoo.com/rss/2.0/headline?s=005380.KS&region=US&lang=en-US",
-              "retrieved_at": "2026-10-27T10:16:00.648081+00:00",
-              "sha256": "6190f85cff547cf11beb6d25b2d7ed9c1d8bcdc51d5065c836d3b7b811d2b176",
-              "bytes": 10721
+              "retrieved_at": "2026-10-30T15:38:44.584506+00:00",
+              "sha256": "763b55bbd64d3a4952b20c17b2afa4824e7a745e93f792db25d442ecf1686594",
+              "bytes": 7872
             }
           },
           "evidence": [
             {
               "id": "price",
               "type": "market_observation",
-              "date": "2026-10-27",
+              "date": "2026-10-30",
               "source_url": "https://fchart.stock.naver.com/sise.nhn?symbol=005380&timeframe=day&count=180&requestType=0",
               "claim": "종가 계열에서 계산한 변화·변동성"
             },
@@ -2355,14 +2348,14 @@
           "E": {
             "focus": "지역 수요·가격 경쟁·통상·정책",
             "market_context": {
-              "date": "2026-10-27",
-              "return_5": 0.015415812733893697,
-              "return_20": -0.2037277641888342,
-              "volatility_20": 0.4550189421848283,
+              "date": "2026-10-30",
+              "return_5": 0.03250995441687832,
+              "return_20": -0.16193236658457688,
+              "volatility_20": 0.5358608111437997,
               "source": {
                 "url": "https://fchart.stock.naver.com/sise.nhn?symbol=KOSPI&timeframe=day&count=180&requestType=0",
-                "retrieved_at": "2026-10-27T10:15:59.143976+00:00",
-                "sha256": "47333632090625fb9c5d4a1b97224b1c3a9c54b32ede0a10da99de46273379b6",
+                "retrieved_at": "2026-10-30T15:38:43.076893+00:00",
+                "sha256": "adbb34a06d90029ff7fc483620dd0efb102277b05e3a820d7a70b9e69f4d7bcd",
                 "bytes": 13118
               },
               "basis": "provider Close, descriptive price change; not dividend-reinvested return"
@@ -2456,11 +2449,11 @@
               "activation": "현지 수요·통상 조건과 공장·차종 전환·공급망 확인 및 경영 승인 뒤 단계 실행하는 조건부 제안",
               "speed": "일괄 확대보다 검증 가능한 단위로 집행하고 성과 관찰 후 확장하는 제안",
               "monitoring_sessions": {
-                "1": "2026-10-28",
-                "2": "2026-10-29",
-                "5": "2026-11-03",
-                "10": "2026-11-10",
-                "20": "2026-11-24"
+                "1": "2026-11-02",
+                "2": "2026-11-03",
+                "5": "2026-11-06",
+                "10": "2026-11-13",
+                "20": "2026-11-27"
               },
               "strategy_horizon": "다음 공식 실적·투자 계획의 실행과 중기 현금 회수에서 확인. 20거래일 내 성과 실현을 보장하지 않음",
               "next_official_event_date": null,
@@ -2545,7 +2538,7 @@
                 }
               ],
               "first_priority_changes": false,
-              "applies_to": "2026-10-27",
+              "applies_to": "2026-10-30",
               "decision_status": "unselected_reference",
               "selection_requirements": [
                 "목적과 의사결정 주체 확인",
@@ -2564,7 +2557,7 @@
                   "owner": "전략·리스크 조직",
                   "task": "현지 수요·통상 조건의 실행 허용 조건 확인",
                   "depends_on": [],
-                  "review_due": "2026-10-29",
+                  "review_due": "2026-11-03",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 },
@@ -2575,7 +2568,7 @@
                   "owner": "재무·인사·기술 조직",
                   "task": "공장·차종 전환·공급망의 가용성과 투입 한도 확인",
                   "depends_on": [],
-                  "review_due": "2026-10-29",
+                  "review_due": "2026-11-03",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 },
@@ -2589,7 +2582,7 @@
                     "context",
                     "capacity"
                   ],
-                  "review_due": "2026-11-03",
+                  "review_due": "2026-11-06",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 },
@@ -2602,7 +2595,7 @@
                   "depends_on": [
                     "authorize"
                   ],
-                  "review_due": "2026-11-10",
+                  "review_due": "2026-11-13",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 },
@@ -2615,7 +2608,7 @@
                   "depends_on": [
                     "deploy"
                   ],
-                  "review_due": "2026-11-24",
+                  "review_due": "2026-11-27",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 }
@@ -2647,17 +2640,17 @@
           "market": "KR",
           "industry": "은행·금융지주",
           "objective": "신용 위험과 자본환원의 양립의 조건과 실패 경로를 비교하는 분석자 설정 목적",
-          "asof": "2026-10-27",
+          "asof": "2026-10-30",
           "price": {
-            "date": "2026-10-27",
-            "return_5": -0.08798017348203224,
-            "return_20": -0.15450890292935093,
-            "volatility_20": 0.19058795187121869,
+            "date": "2026-10-30",
+            "return_5": 0.010457516339869244,
+            "return_20": -0.08951707891637217,
+            "volatility_20": 0.27048684699183206,
             "source": {
               "url": "https://fchart.stock.naver.com/sise.nhn?symbol=105560&timeframe=day&count=180&requestType=0",
-              "retrieved_at": "2026-10-27T10:16:00.266151+00:00",
-              "sha256": "4282ad646fed2020983f92704f135846387fcb06e30196bb2be8f59aa584fe44",
-              "bytes": 12567
+              "retrieved_at": "2026-10-30T15:38:44.236683+00:00",
+              "sha256": "0f8401b91ce1640c528d6de747b68bc2fd03a00cd0ee82abb7f2ea3ca2d55c79",
+              "bytes": 12565
             },
             "basis": "provider Close, descriptive price change; not dividend-reinvested return"
           },
@@ -2668,20 +2661,39 @@
           },
           "news": {
             "status": "title_metadata_only",
-            "count": 0,
-            "items": [],
+            "count": 5,
+            "items": [
+              {
+                "title": "KB Financial (KB) Q3 2026 Earnings Call Transcript",
+                "url": "https://www.fool.com/earnings/call-transcripts/2026/10/29/kb-financial-kb-q3-2026-earnings-call-transcript/?.tsrc=rss",
+                "published_at": "2026-10-30T00:13:15+00:00",
+                "body_read": false
+              },
+              {
+                "title": "AM Best Affirms Credit Ratings of KB Insurance Co., Ltd.",
+                "url": "https://finance.yahoo.com/healthcare/articles/am-best-affirms-credit-ratings-125800073.html?.tsrc=rss",
+                "published_at": "2026-10-29T12:58:00+00:00",
+                "body_read": false
+              },
+              {
+                "title": "What KB Financial Group (KB) Said on Its Q3 Earnings Call",
+                "url": "https://www.marketbeat.com/instant-alerts/transcript-what-kb-financial-group-kb-said-on-its-q3-earnings-call-2026-10-29/?utm_source=yahoofinance&utm_medium=yahoofinance&.tsrc=rss",
+                "published_at": "2026-10-29T10:02:18+00:00",
+                "body_read": false
+              }
+            ],
             "source": {
               "url": "https://feeds.finance.yahoo.com/rss/2.0/headline?s=105560.KS&region=US&lang=en-US",
-              "retrieved_at": "2026-10-27T10:16:00.727139+00:00",
-              "sha256": "e0ace39c944754df4774a9f706cdfaf39e1ab494098af440d503b8609d4940c8",
-              "bytes": 11558
+              "retrieved_at": "2026-10-30T15:38:44.696860+00:00",
+              "sha256": "5199360bf728b89cfbe91b31ec430f45b7595fc82ca65ee32c6f2f0b69ec1c67",
+              "bytes": 12635
             }
           },
           "evidence": [
             {
               "id": "price",
               "type": "market_observation",
-              "date": "2026-10-27",
+              "date": "2026-10-30",
               "source_url": "https://fchart.stock.naver.com/sise.nhn?symbol=105560&timeframe=day&count=180&requestType=0",
               "claim": "종가 계열에서 계산한 변화·변동성"
             },
@@ -2706,14 +2718,14 @@
           "E": {
             "focus": "금리·신용환경·규제",
             "market_context": {
-              "date": "2026-10-27",
-              "return_5": 0.015415812733893697,
-              "return_20": -0.2037277641888342,
-              "volatility_20": 0.4550189421848283,
+              "date": "2026-10-30",
+              "return_5": 0.03250995441687832,
+              "return_20": -0.16193236658457688,
+              "volatility_20": 0.5358608111437997,
               "source": {
                 "url": "https://fchart.stock.naver.com/sise.nhn?symbol=KOSPI&timeframe=day&count=180&requestType=0",
-                "retrieved_at": "2026-10-27T10:15:59.143976+00:00",
-                "sha256": "47333632090625fb9c5d4a1b97224b1c3a9c54b32ede0a10da99de46273379b6",
+                "retrieved_at": "2026-10-30T15:38:43.076893+00:00",
+                "sha256": "adbb34a06d90029ff7fc483620dd0efb102277b05e3a820d7a70b9e69f4d7bcd",
                 "bytes": 13118
               },
               "basis": "provider Close, descriptive price change; not dividend-reinvested return"
@@ -2807,11 +2819,11 @@
               "activation": "신용 사이클·감독 조건과 CET1·손실흡수·유동성 확인 및 경영 승인 뒤 단계 실행하는 조건부 제안",
               "speed": "일괄 확대보다 검증 가능한 단위로 집행하고 성과 관찰 후 확장하는 제안",
               "monitoring_sessions": {
-                "1": "2026-10-28",
-                "2": "2026-10-29",
-                "5": "2026-11-03",
-                "10": "2026-11-10",
-                "20": "2026-11-24"
+                "1": "2026-11-02",
+                "2": "2026-11-03",
+                "5": "2026-11-06",
+                "10": "2026-11-13",
+                "20": "2026-11-27"
               },
               "strategy_horizon": "다음 공식 실적·투자 계획의 실행과 중기 현금 회수에서 확인. 20거래일 내 성과 실현을 보장하지 않음",
               "next_official_event_date": null,
@@ -2896,7 +2908,7 @@
                 }
               ],
               "first_priority_changes": false,
-              "applies_to": "2026-10-27",
+              "applies_to": "2026-10-30",
               "decision_status": "unselected_reference",
               "selection_requirements": [
                 "목적과 의사결정 주체 확인",
@@ -2915,7 +2927,7 @@
                   "owner": "전략·리스크 조직",
                   "task": "신용 사이클·감독 조건의 실행 허용 조건 확인",
                   "depends_on": [],
-                  "review_due": "2026-10-29",
+                  "review_due": "2026-11-03",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 },
@@ -2926,7 +2938,7 @@
                   "owner": "재무·인사·기술 조직",
                   "task": "CET1·손실흡수·유동성의 가용성과 투입 한도 확인",
                   "depends_on": [],
-                  "review_due": "2026-10-29",
+                  "review_due": "2026-11-03",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 },
@@ -2940,7 +2952,7 @@
                     "context",
                     "capacity"
                   ],
-                  "review_due": "2026-11-03",
+                  "review_due": "2026-11-06",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 },
@@ -2953,7 +2965,7 @@
                   "depends_on": [
                     "authorize"
                   ],
-                  "review_due": "2026-11-10",
+                  "review_due": "2026-11-13",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 },
@@ -2966,7 +2978,7 @@
                   "depends_on": [
                     "deploy"
                   ],
-                  "review_due": "2026-11-24",
+                  "review_due": "2026-11-27",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 }
@@ -2998,16 +3010,16 @@
           "market": "KR",
           "industry": "보험",
           "objective": "보험 성장과 지급여력의 양립의 조건과 실패 경로를 비교하는 분석자 설정 목적",
-          "asof": "2026-10-27",
+          "asof": "2026-10-30",
           "price": {
-            "date": "2026-10-27",
-            "return_5": 0.08955223880597019,
-            "return_20": -0.13389830508474576,
-            "volatility_20": 0.5190194875522445,
+            "date": "2026-10-30",
+            "return_5": 0.1049382716049383,
+            "return_20": -0.051236749116607805,
+            "volatility_20": 0.6091268596213577,
             "source": {
               "url": "https://fchart.stock.naver.com/sise.nhn?symbol=032830&timeframe=day&count=180&requestType=0",
-              "retrieved_at": "2026-10-27T10:16:00.342913+00:00",
-              "sha256": "6515dc02d56766fbf5b43829c36a997c3e8e5fe51e91e3cd69e0ed864ccf2402",
+              "retrieved_at": "2026-10-30T15:38:44.299329+00:00",
+              "sha256": "7ff0e64042fc121c70969b8666b858471bf26e69bd3627b48c2b5aeb2e5d980e",
               "bytes": 12450
             },
             "basis": "provider Close, descriptive price change; not dividend-reinvested return"
@@ -3030,16 +3042,16 @@
             ],
             "source": {
               "url": "https://feeds.finance.yahoo.com/rss/2.0/headline?s=032830.KS&region=US&lang=en-US",
-              "retrieved_at": "2026-10-27T10:16:01.289599+00:00",
-              "sha256": "b0a91e2842e073746d4043b64e76085be9cde9817ce50598889804b1eb6c61cb",
-              "bytes": 7783
+              "retrieved_at": "2026-10-30T15:38:44.787779+00:00",
+              "sha256": "06944c04690cd850e354fe64fca38ab8d50fb6516721ca071bdce04f4c088346",
+              "bytes": 7059
             }
           },
           "evidence": [
             {
               "id": "price",
               "type": "market_observation",
-              "date": "2026-10-27",
+              "date": "2026-10-30",
               "source_url": "https://fchart.stock.naver.com/sise.nhn?symbol=032830&timeframe=day&count=180&requestType=0",
               "claim": "종가 계열에서 계산한 변화·변동성"
             },
@@ -3064,14 +3076,14 @@
           "E": {
             "focus": "금리·보험수요·감독기준",
             "market_context": {
-              "date": "2026-10-27",
-              "return_5": 0.015415812733893697,
-              "return_20": -0.2037277641888342,
-              "volatility_20": 0.4550189421848283,
+              "date": "2026-10-30",
+              "return_5": 0.03250995441687832,
+              "return_20": -0.16193236658457688,
+              "volatility_20": 0.5358608111437997,
               "source": {
                 "url": "https://fchart.stock.naver.com/sise.nhn?symbol=KOSPI&timeframe=day&count=180&requestType=0",
-                "retrieved_at": "2026-10-27T10:15:59.143976+00:00",
-                "sha256": "47333632090625fb9c5d4a1b97224b1c3a9c54b32ede0a10da99de46273379b6",
+                "retrieved_at": "2026-10-30T15:38:43.076893+00:00",
+                "sha256": "adbb34a06d90029ff7fc483620dd0efb102277b05e3a820d7a70b9e69f4d7bcd",
                 "bytes": 13118
               },
               "basis": "provider Close, descriptive price change; not dividend-reinvested return"
@@ -3165,11 +3177,11 @@
               "activation": "보험 수요·금리·감독 조건과 총/기본자본 K-ICS·ALM 확인 및 경영 승인 뒤 단계 실행하는 조건부 제안",
               "speed": "일괄 확대보다 검증 가능한 단위로 집행하고 성과 관찰 후 확장하는 제안",
               "monitoring_sessions": {
-                "1": "2026-10-28",
-                "2": "2026-10-29",
-                "5": "2026-11-03",
-                "10": "2026-11-10",
-                "20": "2026-11-24"
+                "1": "2026-11-02",
+                "2": "2026-11-03",
+                "5": "2026-11-06",
+                "10": "2026-11-13",
+                "20": "2026-11-27"
               },
               "strategy_horizon": "다음 공식 실적·투자 계획의 실행과 중기 현금 회수에서 확인. 20거래일 내 성과 실현을 보장하지 않음",
               "next_official_event_date": null,
@@ -3254,7 +3266,7 @@
                 }
               ],
               "first_priority_changes": false,
-              "applies_to": "2026-10-27",
+              "applies_to": "2026-10-30",
               "decision_status": "unselected_reference",
               "selection_requirements": [
                 "목적과 의사결정 주체 확인",
@@ -3273,7 +3285,7 @@
                   "owner": "전략·리스크 조직",
                   "task": "보험 수요·금리·감독 조건의 실행 허용 조건 확인",
                   "depends_on": [],
-                  "review_due": "2026-10-29",
+                  "review_due": "2026-11-03",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 },
@@ -3284,7 +3296,7 @@
                   "owner": "재무·인사·기술 조직",
                   "task": "총/기본자본 K-ICS·ALM의 가용성과 투입 한도 확인",
                   "depends_on": [],
-                  "review_due": "2026-10-29",
+                  "review_due": "2026-11-03",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 },
@@ -3298,7 +3310,7 @@
                     "context",
                     "capacity"
                   ],
-                  "review_due": "2026-11-03",
+                  "review_due": "2026-11-06",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 },
@@ -3311,7 +3323,7 @@
                   "depends_on": [
                     "authorize"
                   ],
-                  "review_due": "2026-11-10",
+                  "review_due": "2026-11-13",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 },
@@ -3324,7 +3336,7 @@
                   "depends_on": [
                     "deploy"
                   ],
-                  "review_due": "2026-11-24",
+                  "review_due": "2026-11-27",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 }
@@ -3356,16 +3368,16 @@
           "market": "KR",
           "industry": "지주·복합사업",
           "objective": "복합사업의 자본배분과 현금 회수의 조건과 실패 경로를 비교하는 분석자 설정 목적",
-          "asof": "2026-10-27",
+          "asof": "2026-10-30",
           "price": {
-            "date": "2026-10-27",
-            "return_5": 0.11029411764705888,
-            "return_20": -0.18046132971506101,
-            "volatility_20": 0.6512086591655745,
+            "date": "2026-10-30",
+            "return_5": 0.07342657342657333,
+            "return_20": -0.10364963503649638,
+            "volatility_20": 0.6957086345060127,
             "source": {
               "url": "https://fchart.stock.naver.com/sise.nhn?symbol=028260&timeframe=day&count=180&requestType=0",
-              "retrieved_at": "2026-10-27T10:16:00.684883+00:00",
-              "sha256": "f24502c2af21917977fc2d3f5cd4df5fedad453f0186285e0ae05fd261ea5d67",
+              "retrieved_at": "2026-10-30T15:38:44.605441+00:00",
+              "sha256": "8879e8bdb3f87697fd463b936c153b937ec88bfcb7a176fa2ae7ca144ef4f2ae",
               "bytes": 12455
             },
             "basis": "provider Close, descriptive price change; not dividend-reinvested return"
@@ -3377,33 +3389,27 @@
           },
           "news": {
             "status": "title_metadata_only",
-            "count": 2,
+            "count": 1,
             "items": [
               {
                 "title": "ELEMENTL POWER, DS INVESTMENT PARTNERS AND SAMSUNG C&T TO ADVANCE NEW U.S. NUCLEAR DEVELOPMENT",
                 "url": "https://finance.yahoo.com/energy/articles/elementl-power-ds-investment-partners-153500174.html?.tsrc=rss",
                 "published_at": "2026-10-26T15:35:00+00:00",
                 "body_read": false
-              },
-              {
-                "title": "Nuclear needs ‘humility’: Kairos Power CTO on Hermes 2, safety, costs and scaling",
-                "url": "https://www.power-technology.com/features/nuclear-needs-humility-kairos-power-cto-on-hermes-2-safety-costs-and-scaling/?.tsrc=rss",
-                "published_at": "2026-10-21T11:54:40+00:00",
-                "body_read": false
               }
             ],
             "source": {
               "url": "https://feeds.finance.yahoo.com/rss/2.0/headline?s=028260.KS&region=US&lang=en-US",
-              "retrieved_at": "2026-10-27T10:16:01.328366+00:00",
-              "sha256": "c78ea10bec3fb384d386392927f274eb2f19d2f8ece5a0414cef8b89f020e78f",
-              "bytes": 10538
+              "retrieved_at": "2026-10-30T15:38:45.065301+00:00",
+              "sha256": "9017a730c733ee8bcc43289954b7ac3d2f9d575f0cd997289c16701efb6643ac",
+              "bytes": 9818
             }
           },
           "evidence": [
             {
               "id": "price",
               "type": "market_observation",
-              "date": "2026-10-27",
+              "date": "2026-10-30",
               "source_url": "https://fchart.stock.naver.com/sise.nhn?symbol=028260&timeframe=day&count=180&requestType=0",
               "claim": "종가 계열에서 계산한 변화·변동성"
             },
@@ -3428,14 +3434,14 @@
           "E": {
             "focus": "자회사 산업환경·평가 할인·금리",
             "market_context": {
-              "date": "2026-10-27",
-              "return_5": 0.015415812733893697,
-              "return_20": -0.2037277641888342,
-              "volatility_20": 0.4550189421848283,
+              "date": "2026-10-30",
+              "return_5": 0.03250995441687832,
+              "return_20": -0.16193236658457688,
+              "volatility_20": 0.5358608111437997,
               "source": {
                 "url": "https://fchart.stock.naver.com/sise.nhn?symbol=KOSPI&timeframe=day&count=180&requestType=0",
-                "retrieved_at": "2026-10-27T10:15:59.143976+00:00",
-                "sha256": "47333632090625fb9c5d4a1b97224b1c3a9c54b32ede0a10da99de46273379b6",
+                "retrieved_at": "2026-10-30T15:38:43.076893+00:00",
+                "sha256": "adbb34a06d90029ff7fc483620dd0efb102277b05e3a820d7a70b9e69f4d7bcd",
                 "bytes": 13118
               },
               "basis": "provider Close, descriptive price change; not dividend-reinvested return"
@@ -3529,11 +3535,11 @@
               "activation": "수주·원자재·사업별 수요과 사업별 투자·운전자본 확인 및 경영 승인 뒤 단계 실행하는 조건부 제안",
               "speed": "일괄 확대보다 검증 가능한 단위로 집행하고 성과 관찰 후 확장하는 제안",
               "monitoring_sessions": {
-                "1": "2026-10-28",
-                "2": "2026-10-29",
-                "5": "2026-11-03",
-                "10": "2026-11-10",
-                "20": "2026-11-24"
+                "1": "2026-11-02",
+                "2": "2026-11-03",
+                "5": "2026-11-06",
+                "10": "2026-11-13",
+                "20": "2026-11-27"
               },
               "strategy_horizon": "다음 공식 실적·투자 계획의 실행과 중기 현금 회수에서 확인. 20거래일 내 성과 실현을 보장하지 않음",
               "next_official_event_date": null,
@@ -3618,7 +3624,7 @@
                 }
               ],
               "first_priority_changes": false,
-              "applies_to": "2026-10-27",
+              "applies_to": "2026-10-30",
               "decision_status": "unselected_reference",
               "selection_requirements": [
                 "목적과 의사결정 주체 확인",
@@ -3637,7 +3643,7 @@
                   "owner": "전략·리스크 조직",
                   "task": "수주·원자재·사업별 수요의 실행 허용 조건 확인",
                   "depends_on": [],
-                  "review_due": "2026-10-29",
+                  "review_due": "2026-11-03",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 },
@@ -3648,7 +3654,7 @@
                   "owner": "재무·인사·기술 조직",
                   "task": "사업별 투자·운전자본의 가용성과 투입 한도 확인",
                   "depends_on": [],
-                  "review_due": "2026-10-29",
+                  "review_due": "2026-11-03",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 },
@@ -3662,7 +3668,7 @@
                     "context",
                     "capacity"
                   ],
-                  "review_due": "2026-11-03",
+                  "review_due": "2026-11-06",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 },
@@ -3675,7 +3681,7 @@
                   "depends_on": [
                     "authorize"
                   ],
-                  "review_due": "2026-11-10",
+                  "review_due": "2026-11-13",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 },
@@ -3688,7 +3694,7 @@
                   "depends_on": [
                     "deploy"
                   ],
-                  "review_due": "2026-11-24",
+                  "review_due": "2026-11-27",
                   "completion_condition": "해당 원문·승인 또는 실제 실행 증거 확인. 날짜 경과만으로 완료 처리하지 않음",
                   "status": "proposed_not_executed"
                 }
@@ -7569,9 +7575,9 @@
   "status": {
     "KR": {
       "state": "built",
-      "asof": "2026-10-27",
-      "checked_at": "2026-10-27T10:15:56.307253+00:00",
-      "run_id": "20261027T191556_KR",
+      "asof": "2026-10-30",
+      "checked_at": "2026-10-30T15:38:40.228798+00:00",
+      "run_id": "20261031T003840_KR",
       "companies": 10
     },
     "US": {
