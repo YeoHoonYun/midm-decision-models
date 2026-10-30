@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T16:37:26+09:00",
+  "updated_at": "2026-10-31T05:39:35+09:00",
   "markets": {
     "KR": {
       "edition": "20261030",
@@ -826,7 +826,7 @@
       "delivery": {
         "status": "fresh",
         "expected_signal": "20261029",
-        "sent_at": "2026-10-30T07:19:04.538181+09:00"
+        "sent_at": "2026-10-30T22:01:09.779833+09:00"
       },
       "tracking_latest_signal": "20261029"
     }
