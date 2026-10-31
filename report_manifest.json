@@ -17,7 +17,7 @@
       "name": "S&P 500",
       "market": "US",
       "kind": "index",
-      "data_as_of": "2026-10-29",
+      "data_as_of": "2026-10-30",
       "report": "SP500.html",
       "b3_applied": true,
       "report_ko": "SP500.ko.html",
@@ -79,33 +79,33 @@
       "report_en": "373220.en.html"
     },
     {
-      "id": "NVDA",
-      "name": "NVIDIA",
-      "market": "US",
-      "kind": "stock",
-      "data_as_of": "2026-10-29",
-      "report": "NVDA.html",
-      "b3_applied": false,
-      "report_ko": "NVDA.ko.html",
-      "report_en": "NVDA.en.html"
-    },
-    {
       "id": "AAPL",
       "name": "Apple",
       "market": "US",
       "kind": "stock",
-      "data_as_of": "2026-10-29",
+      "data_as_of": "2026-10-30",
       "report": "AAPL.html",
       "b3_applied": false,
       "report_ko": "AAPL.ko.html",
       "report_en": "AAPL.en.html"
     },
     {
+      "id": "NVDA",
+      "name": "NVIDIA",
+      "market": "US",
+      "kind": "stock",
+      "data_as_of": "2026-10-30",
+      "report": "NVDA.html",
+      "b3_applied": false,
+      "report_ko": "NVDA.ko.html",
+      "report_en": "NVDA.en.html"
+    },
+    {
       "id": "MSFT",
       "name": "Microsoft",
       "market": "US",
       "kind": "stock",
-      "data_as_of": "2026-10-29",
+      "data_as_of": "2026-10-30",
       "report": "MSFT.html",
       "b3_applied": false,
       "report_ko": "MSFT.ko.html",
@@ -116,7 +116,7 @@
       "name": "Alphabet",
       "market": "US",
       "kind": "stock",
-      "data_as_of": "2026-10-29",
+      "data_as_of": "2026-10-30",
       "report": "GOOGL.html",
       "b3_applied": false,
       "report_ko": "GOOGL.ko.html",
@@ -127,7 +127,7 @@
       "name": "Amazon",
       "market": "US",
       "kind": "stock",
-      "data_as_of": "2026-10-29",
+      "data_as_of": "2026-10-30",
       "report": "AMZN.html",
       "b3_applied": false,
       "report_ko": "AMZN.ko.html",
@@ -147,7 +147,7 @@
   "acquisition_phase": "public prices only; no private model inputs sent",
   "expected_close": {
     "KR": "2026-10-30",
-    "US": "2026-10-29"
+    "US": "2026-10-30"
   },
   "price_basis": "Provider Close price paths; not dividend-reinvested total returns",
   "languages": [
